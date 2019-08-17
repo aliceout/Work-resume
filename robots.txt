@@ -1,0 +1,15 @@
+User-agent: *
+User-agent: Googlebot-Image
+User-agent: msnbot-media
+Disallow: /assets/*
+Disallow: //*.png$
+Disallow: //*.jpg$
+Disallow: /*
+Disallow: /
+
+User-agent: *
+User-agent: Googlebot-Image
+User-agent: bingbot
+User-agent: msnbot
+Disallow: benevolat.phpDisallow: competences.phpDisallow: contact.phpDisallow: education.phpDisallow: experiences.phpDisallow: personnal.phpDisallow: realisations.php
+
