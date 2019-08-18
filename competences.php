@@ -36,12 +36,64 @@ include('start.php');
         </div>
 
         <div class="card ">
-            <h3>Applications</h3>
+            <h3>Cours en ligne</h3>
             <ul class="list-unstyled">
-                <li><strong class="color">OS Systems</strong> (Windows, OSX, Debian)</li>
-                <li><strong class="color">Bureautique</strong> (Suite Office, LibreOffice)</li>
-                <li><strong class="color">Graphique</strong> (InDesign, Illustrator, Photoshop)</li>
-                <li><strong class="color">IDE</strong> (Atom, PYCharm)</li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:SciencesPo+05008+session01/about" target="_blank">Migrations internationales : un enjeu mondial</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:ulg+108003+session01/about" target="_blank">Migrations Internationales : Comment les mobilités transforment les sociétés ?</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:ulg+108004+session01/about" target="_blank">La Fabrique de l'aide internationale</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:LaSagesse+152001+session01/about" target="_blank">Les Compétences pour le dialogue interculturel</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:lorraine+30011+session01/about" target="_blank">Au-delà des frontières, diagnostiquer les territoires</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:Paris1+16007+session01/about" target="_blank">Ressources naturelles et développement des territoires en Afrique</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div><strong><span class="color"><a href="https://www.fun-mooc.fr/courses/course-v1:Paris2+09004+session06/about" target="_blank">Gstion de crise</a></span></strong></div>
+                            <span>Plateform MOOC France Université Numérique</span>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -50,6 +102,7 @@ include('start.php');
 
 <div class="col-md-5">
     <aside>
+
         <div class="card ">
             <h3>Certifications obtenues</h3>
             <ul class="list-unstyled">
@@ -105,6 +158,18 @@ include('start.php');
                 </li>
             </ul>
         </div>
+
+        <div class="card ">
+            <h3>Applications</h3>
+            <ul class="list-unstyled">
+                <li><strong class="color">OS Systems</strong> (Windows, OSX, Debian)</li>
+                <li><strong class="color">Bureautique</strong> (Suite Office, LibreOffice)</li>
+                <li><strong class="color">Graphique</strong> (InDesign, Illustrator, Photoshop)</li>
+                <li><strong class="color">IDE</strong> (Atom, PYCharm)</li>
+            </ul>
+        </div>
+
+
     </aside>
 </div>
 
