@@ -7,7 +7,7 @@
                 <img src="assets/images/my-photo.png" class="circle middle" alt="">
             </figure>
 
-            <h1>FRANÇOIS <span class="color">DELAMAIDE</span><small>30 ans<br></small></h1>
+            <h1>FRANÇOIS <span class="color">DELAMAIDE</span><small>31 ans<br></small></h1>
 
             <nav>
                 <ul class="list-unstyled">
