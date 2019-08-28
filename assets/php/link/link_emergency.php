@@ -1,5 +1,5 @@
 <script>
-    function linkfra() {
+    function link_fanch() {
         if (typeof(Storage) !== "undefinedch") {
             if (localStorage.clickcount) {
                 localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -15,7 +15,7 @@
         }
     }
 
-    function linkplus() {
+    function link_plus() {
         if (typeof(Storage) !== "undefinedch") {
             if (localStorage.clickcount) {
                 localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -31,7 +31,7 @@
         }
     }
 
-    function linkano() {
+    function link_znouk() {
         if (typeof(Storage) !== "undefinedch") {
             if (localStorage.clickcount) {
                 localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -47,7 +47,7 @@
         }
     }
 
-    function linkede() {
+    function link_cyber() {
         if (typeof(Storage) !== "undefinedch") {
             if (localStorage.clickcount) {
                 localStorage.clickcount = Number(localStorage.clickcount) + 1;

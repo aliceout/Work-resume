@@ -24,7 +24,7 @@ include('start-index.php');
         <div class="card text-center card-cv">
             <div class="card-container">
                 <div class="downloadcv">
-                    <a href="" onclick="linksky()" class="btn btn-primary">Me contacter · via Skype</a>
+                    <a href="" onclick="link_skype()" class="btn btn-primary">Me contacter · via Skype</a>
                 </div>
             </div>
         </div>
@@ -85,5 +85,5 @@ include('start-index.php');
         </div>
     </aside>
 </div>
-<?php include('assets/php/link/link3.php'); ?>
+<?php include('assets/php/link/link_skype.php'); ?>
 <?php include('end.php'); ?>

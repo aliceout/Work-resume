@@ -27,18 +27,18 @@ include('start.php');
         <div class="card ">
             <h3><span class="color">Culturelles</span></h3>
             <strong>Lectures</strong>
-            <p>Romans étrangers (Moyen-Orient, Afrique, Asie), anticipation, science-fiction, essais politiques, essais <span onclick="linkfra()">universitaires</span></p><br>
+            <p>Romans étrangers (Moyen-Orient, Afrique, Asie), anticipation, science-fiction, essais politiques, essais <span onclick="link_fanch()">universitaires</span></p><br>
             <strong>Actualité</strong>
-            <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre <span onclick="linkplus()">associatif</span></p><br>
+            <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre <span onclick="link_plus()">associatif</span></p><br>
             <strong>Apprentissage continu</strong>
-            <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, religieux, <span onclick="linkano()">écologique</span></p>
+            <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, religieux, <span onclick="link_znouk()">écologique</span></p>
         </div>
         <div class="card ">
             <h3><span class="color">Bénevolat</span></h3>
-            <p><span onclick="linkede()">Pour</span> plus d'informations, consulter : <a href="benevolat.php">la page Bénevolat</a></p>
+            <p><span onclick="link_cyber()">Pour</span> plus d'informations, consulter : <a href="benevolat.php">la page Bénevolat</a></p>
         </div>
     </aside>
 </div>
 
-<?php include('assets/php/link/link2.php'); ?>
+<?php include('assets/php/link/link_emergency.php'); ?>
 <?php include('end.php'); ?>

@@ -18,7 +18,7 @@
                     <li class="<?php if($currentPage =='benevolat'){echo 'active';}?>"><a href="benevolat.php">Benevolat</a></li>
                     <li class="<?php if($currentPage =='competences'){echo 'active';}?>"><a href="competences.php">Langues & compétences</a></li>
                     <li class="<?php if($currentPage =='personnal'){echo 'active';}?>"><a href="personnal.php">Activités personnelles</a></li>
-                    <li><a href="" onclick="linkpdf()">Curriculum <span class="label label-primary">pdf</span></a></li>
+                    <li><a href="" onclick="link_cv()">Curriculum <span class="label label-primary">pdf</span></a></li>
                 </ul>
                 <br>
                 <div class="nav-toggle visible-sm visible-xs">
@@ -32,4 +32,4 @@
     </div>
 </div>
 
-<?php include('assets/php/link/link.php'); ?>
+<?php include('assets/php/link/link_cv.php'); ?>
