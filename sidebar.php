@@ -4,7 +4,7 @@
         <header>
 
             <figure>
-                <img src="assets/images/my-photo.png" class="circle middle" alt="">
+                <img src="assets/images/my-photo.png" class="circle middle" alt="" height="135px;">
             </figure>
 
             <h1>FRANÇOIS <span class="color">DELAMAIDE</span><small>31 ans<br></small></h1>
