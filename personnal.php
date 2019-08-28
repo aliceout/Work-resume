@@ -13,7 +13,7 @@ include('start.php');
         </div>
         <div class="card">
             <h3><span class="color">Sportives</span></h3>
-            <p><span title="Foucault 280512">Pratique</span> de sports de montagne (randonnée, escalade, canyoning), VTT, roller, natation</p>
+            <p>Pratique de sports de montagne (randonnée, escalade, canyoning), VTT, roller, natation</p>
         </div>
         <div class="card">
             <h3><span class="color">Créatives</span></h3>
@@ -31,11 +31,11 @@ include('start.php');
             <strong>Actualité</strong>
             <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre associatif</p><br>
             <strong>Apprentissage continu</strong>
-            <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, religieux, <span onclick="link_znouk()">écologique</span></p>
+            <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes <span  onclick="link_explain-znouk()">géopolitique</span>, <span  onclick="link_wiki-znouk()">internationaux</span>, <span onclick="link_cyber-znouk()">religieux</span>, <span onclick="link_cloud-znouk()">écologique</span></p>
         </div>
         <div class="card ">
             <h3><span class="color">Bénevolat</span></h3>
-            <p><span onclick="link_cyber()">Pour</span> plus d'informations, consulter : <a href="benevolat.php">la page Bénevolat</a></p>
+            <p>Pour plus d'informations, consulter : <a href="benevolat.php">la page Bénevolat</a></p>
         </div>
     </aside>
 </div>
