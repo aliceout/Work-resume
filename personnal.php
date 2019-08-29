@@ -27,9 +27,9 @@ include('start.php');
         <div class="card ">
             <h3><span class="color">Culturelles</span></h3>
             <strong>Lectures</strong>
-            <p>Romans étrangers (Moyen-Orient, Afrique, Asie), <span onclick="link_fanch()">anticipation</span>, science-fiction, essais politiques, essaisuniversitaires</p><br>
+            <p>Romans étrangers (Moyen-Orient, Afrique, Asie), <span onclick="link_fanch()">anticipation</span>, science-fiction, essais politiques, essais universitaires</p><br>
             <strong>Actualité</strong>
-            <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre associatif</p><br>
+            <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre <span onclick="link_vault()">associatif</span></p><br>
             <strong>Apprentissage continu</strong>
             <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, religieux, <span onclick="link_znouk()">écologique</span></p>
         </div>

