@@ -20,7 +20,7 @@ include('start.php');
                             </div>
                             <h3>Stagiaire en appui juridique aux études et diagnostiques</h3>
                             <div class="date">2019 · 5 mois </div>
-                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud Tunisien<br /></p>
+                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud Tunisien</p><br />
                             <p>Travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques initiaux</p><br />
                             <ul>
                                 <li>
