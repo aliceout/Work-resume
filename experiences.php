@@ -16,7 +16,7 @@ include('start.php');
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;&emsp;&emsp;</i>Tunis, <strong>Tunisie</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Tunis, <strong>Tunisie</strong></div>
                             </div>
                             <h3>Stagiaire en appui juridique aux études et diagnostiques</h3>
                             <div class="date">2019 · 5 mois </div>
