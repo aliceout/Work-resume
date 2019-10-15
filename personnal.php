@@ -13,7 +13,7 @@ include('start.php');
         </div>
         <div class="card">
             <h3><span class="color">Sportives</span></h3>
-            <p>Pratique de sports de montagne (randonnée, escalade, canyoning), VTT, roller, natation</p>
+            <p>Pratique de sports de montagne (randonnée, escalade, canyoning), fintness, VTT, roller, natation</p>
         </div>
         <div class="card">
             <h3><span class="color">Créatives</span></h3>
