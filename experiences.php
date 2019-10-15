@@ -43,7 +43,7 @@ include('start.php');
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">CARITAS AU MAROC</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Rabat, <strong>Maroc</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Rabat, <strong>Maroc</strong></div>
                             </div>
                             <h3>Stagiaire en appui à la coordination de programme</h3>
                             <div class="date">2018-2019 · 8 mois</div>
@@ -63,7 +63,7 @@ include('start.php');
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">COMMUNE D'OLIVET</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Olivet, <strong>France</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Olivet, <strong>France</strong></div>
                             </div>
                             <h3>Stagiaire en appui juridique au pôle de la vie citoyenne</h3>
                             <div class="date">2015 · 2 mois</div>
@@ -83,7 +83,7 @@ include('start.php');
                                     <small><span class="color">LA COMPAGNIE DU CHOCOLAT</span></small>
                                 </div>
                                 <div class="col">
-                                    <i class="fas fa-map-marker-alt">&emsp;</i>Toulouse, <strong>France</strong>
+                                    <i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Toulouse, <strong>France</strong>
                                 </div>
                             </div>
                             <h3>Vendeur et préparateur en chocolaterie</h3>
@@ -104,7 +104,7 @@ include('start.php');
                                     <small><span class="color">GEODIS CALBERSON</span></small>
                                 </div>
                                 <div class="col">
-                                    <i class="fas fa-map-marker-alt">&emsp;</i>Orléans, <strong>France</strong>
+                                    <i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Orléans, <strong>France</strong>
                                 </div>
                             </div>
                             <h3>Responsable adjoint de service</h3>
@@ -125,7 +125,7 @@ include('start.php');
                                     <small><span class="color">COOL-JET SAS</span></small>
                                 </div>
                                 <div class="col">
-                                    <i class="fas fa-map-marker-alt">&emsp;</i>Orléans, <strong>France</strong>
+                                    <i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Orléans, <strong>France</strong>
                                 </div>
                             </div>
                             <h3>Agent d'exploitation des transports</h3>
@@ -146,7 +146,7 @@ include('start.php');
                                     <small><span class="color">COOL-JET SAS</span></small>
                                 </div>
                                 <div class="col">
-                                    <i class="fas fa-map-marker-alt">&emsp;</i>Orléans, <strong>France</strong>
+                                    <i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Orléans, <strong>France</strong>
                                 </div>
                             </div>
                             <h3>Manutentionnaire</h3>
