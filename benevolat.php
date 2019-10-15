@@ -14,9 +14,9 @@ include('start.php');
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
-                            <small><span class="color">LA CIMADE</span></small>
+                                    <small><span class="color">LA CIMADE</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Lyon, <strong>France</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Lyon, <strong>France</strong></div>
                             </div>
                             <h3>Juriste bénévole, co-animateur Pôle "Plaidoyer, sensibilisation et solidarités internationales"</h3>
                             <div class="date">2017 - En cours</div>
@@ -33,9 +33,9 @@ include('start.php');
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
-                            <small><span class="color">LA CIMADE</span></small>
+                                    <small><span class="color">LA CIMADE</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Toulouse, <strong>France</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Toulouse, <strong>France</strong></div>
                             </div>
                             <h3>Juriste bénévole</h3>
                             <div class="date">2015 - 2017</div>
@@ -52,9 +52,9 @@ include('start.php');
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
-                            <small><span class="color">ASSOCIATION A BUT POLITIQUE · ORLÉANS</span></small>
+                                    <small><span class="color">ASSOCIATION A BUT POLITIQUE · ORLÉANS</span></small>
                                 </div>
-                                <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Orléans, <strong>France</strong></div>
+                                <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Orléans, <strong>France</strong></div>
                             </div>
                             <h3>Militant et responsable communication</h3>
                             <div class="date">2010-2012 · 2 ans</div>
