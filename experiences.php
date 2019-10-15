@@ -19,17 +19,15 @@ include('start.php');
                                 <div class="col"><i class="fas fa-map-marker-alt">&emsp;</i>Tunis, <strong>Tunisie</strong></div>
                             </div>
                             <h3>Stagiaire en appui juridique aux études et diagnostiques</h3>
-                            <div class="date">2019 · 5 mois (En cours) </div>
-                            <p>Travail d'analyse du cadre l'égal, pour la réalisation de trois études exploratoires</p><br />
+                            <div class="date">2019 · 5 mois </div>
+                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le gouvernorat de Médenine</p>
+                            <p>Travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques initiaux</p><br />
                             <ul>
                                 <li>
                                     <p>Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap</p>
                                 </li>
                                 <li>
                                     <p>Etudes sur les conditions de séjour, d'accueil et d'accés aux services de droit commun, des personnes migrantes</p>
-                                </li>
-                                <li>
-                                    <p>Etudes sur les conditions d'accés à l'emloi des personnes en situation de handicap</p>
                                 </li>
                             </ul>
                         </div>
