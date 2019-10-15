@@ -39,18 +39,17 @@ include('start-index.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-md-9 col-sm-9 col-xs-9">
-                            <h5><span class="color">Master II · Politiques publiques</span></h5>
-                            <small>Université Paris-Est Créteil</small>
-                            <div class="date">2018 - 2019 (En cours)</div>
+                            <h5><span class="color">Master II · Droit & Action Humanitaire</span></h5>
+                            <small>Université Aix-Marseille</small>
+                            <div class="date">2019 - 2020 (En cours)</div>
                         </div>
                         <div class="col-md-1">
-                            <div class="logo-petit"><img src="assets/images/upec.png"></div>
+                            <div class="logo-petit"><img src="assets/images/aix.png"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <p><strong>Mention</strong> : Aide Humanitaire Internationale<br>
-                                <strong>Option</strong> : Urgence et réhabilitation<br><br>
+                            <p><strong>Diplôme d'études supérieures universitaires </strong><br>Juriste internationaliste et humanitaire de terrain<br><br>
                                 <a href="education.php">En savoir plus</a>
                             </p>
                         </div>
@@ -67,7 +66,7 @@ include('start-index.php');
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
                             <h5>Stagiaire en appui juridique aux études et diagnostiques</h5>
-                            <div class="date">2019 · 5 mois (En cours) </div>
+                            <div class="date">2019 · 5 mois</div>
                         </div>
                         <div class="col-md-1">
                             <div class="logo-petit"><img src="assets/images/hi.png"></div>
@@ -76,7 +75,7 @@ include('start-index.php');
 
                     <div class="row">
                         <div class="col-md-12">
-                            <p>Travail d'analyse du cadre l'égal, pour la réalisation de trois études exploratoires<br><br>
+                            <p>Particpation à la réalisation d'une mission exploratoire, et travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques<br><br>
                                 <a href="experiences.php">En savoir plus</a></p>
                         </div>
                     </div>
