@@ -12,9 +12,9 @@ include('start-index.php');
                     <small>
                         Fort de six années d'expérience dans le domaine du transport de marchandises, j'ai décidé en 2013, de reprendre mes études.
                         <br><br>
-                        En effet, engagé de longue date à titre militant, dans le milieu associatif, sensibilisé à de nombreuses problèmatiques sociales, internationales, et environnementale, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel correspondant aux valeurs qui sont les miennes.
+                        Engagé de longue date dans le milieu associatif, sur les questions de droit des étrangers et de politiques migratoire, sensibilisé à de nombreuses problèmatiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel correspondant aux valeurs qui sont miennes.
                         <br><br>
-                        De plus, ayant toujours eu un fort attrait pour les questions de politiques et d'actualités internationales c'est tout naturellement que ma reprise d'études c'est d'abord orienté vers un parcours juridique, me permettant d'acquérir les bases nécessaires à la poursuite de mes études, au sein d'une maîtrise de relations internationales et d'un master de politiques publiques en aide humanitaire internationale.
+                        Ayant toujours eu un fort attrait pour les questions de politiques et d'actualités internationales c'est tout naturellement que ma reprise d'études s'est d'abord orienté vers un parcours juridique, me permettant d'acquérir les bases nécessaires à la poursuite de mes études, au sein de cursus en relations internationales, poliques publiques et droit international, me permettant de me spécialiser sur des sujets en lien avec le cadre de la solidarité internationale et des thématiques migratoires.
                     </small>
                     <br>
                 </p>
