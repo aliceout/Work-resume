@@ -48,15 +48,15 @@ if($to) {
 	} else{
 		$arrResult = array ('response'=>'error');
 	}
-
-    sleep ( int 5 ) : int
+    
+    sleep(5);
     header("Location: ../../../index.php");
 	echo json_encode($arrResult);
 
 } else {
-
-	$arrResult = array ('response'=>'error'); 
-    sleep ( int 5 ) : int
+    
+    sleep(5);
     header("Location: ../../../contact.php");
+	$arrResult = array ('response'=>'error'); 
 }
 ?>
