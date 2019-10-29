@@ -45,20 +45,17 @@ if($to) {
 
 	if (mail($to, $subject, $message, $headers)){
 		$arrResult = array ('response'=>'success');
-        setTimeout(fonctionAExecuter, 5000);
-        header("Location: index.php");
 	} else{
 		$arrResult = array ('response'=>'error');
-        setTimeout(fonctionAExecuter, 5000);
-        header("Location: contact.php");
 	}
 
 	echo json_encode($arrResult);
+    header("Location: index.php");
 
 } else {
 
 	$arrResult = array ('response'=>'error');
 	echo json_encode($arrResult);
-
+    header("Location: contact.php");
 }
 ?>
