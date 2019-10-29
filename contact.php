@@ -20,9 +20,9 @@ include('start.php');
         <div class="card-container">
             <h2>Contactez moi par email</h2>
             <div class="reply-form">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac tellus vel orci pharetra gravida.</p>
+                <p>Contactez moi par <a href="https://join.skype.com/invite/o8a7Gb21ckeS">Skype</a>, ou bien par email en remplissant le formulaire ci-dessous. </p>
                 <div class="alert alert-success hidden" id="contactSuccess">
-                    <strong>Success!</strong> Votre message a été envoyé.
+                    <strong>Réussite!</strong> Votre message a été envoyé.
                 </div>
 
                 <div class="alert alert-danger hidden" id="contactError">
@@ -30,17 +30,17 @@ include('start.php');
                 </div>
                 <form id="contactForm" action="assets/php/contact-form.php" method="post">
                     <div class="form-group">
-                        <textarea class="form-control" rows="4" placeholder="Votre message..." maxlength="5000" data-msg-required="Please enter your message." name="message" id="message"></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Votre message..." maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message"></textarea>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nom *" data-msg-required="Please enter your name." minlength="2" id="name" name="name">
+                                <input type="text" class="form-control" placeholder="Nom *" data-msg-required="Merci d'entrer votre nom." minlength="2" id="name" name="name">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email *" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" id="email" name="email">
+                                <input type="email" class="form-control" placeholder="Email *" data-msg-required="Merci d'entrer votre adresse email." data-msg-email="Merci d'entrer une adresse email valide." maxlength="100" id="email" name="email">
                             </div>
                         </div>
                     </div>

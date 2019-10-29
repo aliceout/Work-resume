@@ -3,7 +3,7 @@
 // Enter your email address below.
 $to = 'ofanch@protonmail.com';
 
-$subject = 'Contact from fdelamaide.work';
+$subject = 'Contact depuis fdelamaide.work';
 
 if($to) {
 	$name = $_POST['name'];
@@ -45,8 +45,12 @@ if($to) {
 
 	if (mail($to, $subject, $message, $headers)){
 		$arrResult = array ('response'=>'success');
+        setTimeout(fonctionAExecuter, 5000);
+        header("Location: index.php");
 	} else{
 		$arrResult = array ('response'=>'error');
+        setTimeout(fonctionAExecuter, 5000);
+        header("Location: contact.php");
 	}
 
 	echo json_encode($arrResult);
