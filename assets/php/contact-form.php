@@ -49,13 +49,13 @@ if($to) {
 		$arrResult = array ('response'=>'error');
 	}
 
-	echo json_encode($arrResult);
     header("Location: index.php");
+	echo json_encode($arrResult);
 
 } else {
 
 	$arrResult = array ('response'=>'error');
-	echo json_encode($arrResult);
     header("Location: contact.php");
+	echo json_encode($arrResult);
 }
 ?>
