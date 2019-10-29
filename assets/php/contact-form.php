@@ -3,7 +3,7 @@
 // Enter your email address below.
 $to = 'ofanch@protonmail.com';
 
-$subject = 'Contact depuis fdelamaide.work';
+$subject = 'Email depuis fdelamaide.work';
 
 if($to) {
 	$name = $_POST['name'];
@@ -48,15 +48,17 @@ if($to) {
 	} else{
 		$arrResult = array ('response'=>'error');
 	}
-    
+
     sleep(5);
     header("Location: ../../../index.php");
 	echo json_encode($arrResult);
 
 } else {
-    
+
     sleep(5);
     header("Location: ../../../contact.php");
-	$arrResult = array ('response'=>'error'); 
+	$arrResult = array ('response'=>'error');
+	echo json_encode($arrResult);
+
 }
 ?>
