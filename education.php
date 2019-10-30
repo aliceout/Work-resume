@@ -48,12 +48,12 @@ include('start.php');
                             <h3><span class="color">Master II · Politiques publiques</span></h3>
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
                             <span class="date">2018 - 2019<br></span><br>
-                            <p><strong>Mention</strong> : Aide Humanitaire Internationale, <strong>Option</strong> : Urgence et réhabilitation<br>
+                            <p><strong>Mention</strong> : Action Humanitaire Internationale <strong>Option</strong> : Urgence et réhabilitation<br>
                                 Diplomé mention AB</p><br>
                             <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
                                 Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
-                                <strong>Mémoire de stage I</strong>: Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée<br>
-                                <strong>Mémoire de stage II</strong>: La notion de crise et son utilisation dans la thématique migratoires, d'un outil de mobilisation à l'abus d'un objet devenue politique
+                                <strong>Mémoire de stage I</strong>: <i>"Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée"</i><br>
+                                <strong>Mémoire de stage II</strong>: <i>"La notion de crise et son utilisation dans la thématique migratoires, d'un outil de mobilisation à l'abus d'un objet devenue politique"</i>
                             </p>
                         </div>
                         <div class="col-md-1">
