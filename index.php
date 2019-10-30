@@ -60,7 +60,7 @@ include('start-index.php');
         </div>
 
         <div class="card">
-            <h3>Dernier stage</h3>
+            <h3>Dernière expérience</h3>
             <div class="experience">
                 <div class="job-position">
                     <div class="row">
