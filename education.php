@@ -12,17 +12,29 @@ include('start.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-md-9 col-sm-9 col-xs-9">
+                            <h3><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h3>
+                            <small>Université Aix Marseille&ensp;·&ensp;</small>
+                            <span class="date">2019 - 2020 (En cours)</span>
+                            <p><br><strong>Diplôme d'Etudes Supérieures Universitaires </strong> : Juriste internationaliste et humanitaire de terrain</p>
+                            <p>Clinique juridique &amp; Clinique humanitaire, Prestation humanitaire, Urgence, Crises et Développement, Gestion Humanitaire, Art et pratique de l'argumentation</p>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="logo"><img src="assets/images/aix.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="graduation">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-9">
                             <h3><span class="color">Master II · Droit et Action humanitaire</span></h3>
                             <small>Université Aix Marseille&ensp;·&ensp;</small>
-                            <span class="date">2019 - 2020 (A venir)</span>
-                            <p><br><strong>Parcours</strong> : Humanitaire et développement humain<br>
-                                Géopolitique et protection humanitaire, Approches pluridisciplinaires de l’humanitaire <br>
+                            <span class="date">2019 - 2020 (En cours)<br></span><br>
+                            <p><strong>Parcours</strong> : Humanitaire et développement humain</p><br>
+                            <p>Géopolitique et protection humanitaire, Approches pluridisciplinaires de l’humanitaire <br>
                                 Clinique juridique et protection humanitaire, Justice internationale et protection <br>
                                 Stratégie, protection et crises, Mémoire de recherche
-                            </p><br>
-
-                            <p><strong>Diplôme d'études supérieures universitaires </strong> : Juriste internationaliste et humanitaire de terrain<br>
-                                Clinique juridique &amp; Clinique humanitaire, Prestation humanitaire, Urgence, Crises et Développement, Gestion Humanitaire, Art et pratique de l'argumentation</p>
+                            </p>
                         </div>
                         <div class="col-md-1">
                             <div class="logo"><img src="assets/images/aix.png"></div>
@@ -35,12 +47,14 @@ include('start.php');
                         <div class="col-md-9 col-sm-9 col-xs-9">
                             <h3><span class="color">Master II · Politiques publiques</span></h3>
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
-                            <span class="date">2018 - 2019 (En cours)</span>
-                            <p><br><strong>Mention</strong> : Aide Humanitaire Internationale<br>
-                                <strong>Option</strong> : Urgence et réhabilitation<br><br>
-                                Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
+                            <span class="date">2018 - 2019<br></span><br>
+                            <p><strong>Mention</strong> : Aide Humanitaire Internationale, <strong>Option</strong> : Urgence et réhabilitation<br>
+                                Diplomé mention AB</p><br>
+                            <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
                                 Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
-                                <strong>Mémoire de stage </strong>: Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée</p>
+                                <strong>Mémoire de stage I</strong>: Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée<br>
+                                <strong>Mémoire de stage II</strong>: La notion de crise et son utilisation dans la thématique migratoires, d'un outil de mobilisation à l'abus d'un objet devenue politique
+                            </p>
                         </div>
                         <div class="col-md-1">
                             <div class="logo"><img src="assets/images/upec.png"></div>
