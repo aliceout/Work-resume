@@ -27,7 +27,7 @@ include('start.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-md-9 col-sm-9 col-xs-9">
-                            <h3><span class="color">Master II · Droit et Action humanitaire</span></h3>
+                            <h3><span class="color">Master II · Action et droit humanitaires</span></h3>
                             <small>Université Aix Marseille&ensp;·&ensp;</small>
                             <span class="date">2019 - 2020 (En cours)<br></span><br>
                             <p><strong>Parcours</strong> : Humanitaire et développement humain</p><br>
