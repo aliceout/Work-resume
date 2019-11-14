@@ -25,7 +25,6 @@ include('start-index.php');
             <div class="card-container">
                 <div class="downloadcv">
                     <a href="contact.php" class="btn btn-primary">Me contacter · Skype ou email</a>
-
                 </div>
             </div>
         </div>
