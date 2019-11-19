@@ -19,7 +19,7 @@ include('start.php');
                             <p>Clinique juridique &amp; Clinique humanitaire, Prestation humanitaire, Urgence, Crises et Développement, Gestion Humanitaire, Art et pratique de l'argumentation</p>
                         </div>
                         <div class="col-md-1">
-                            <div class="logo"><img src="assets/images/iehi.png"></div>
+                            <div class="logo"><img src="assets/images/aix.png"></div>
                         </div>
                     </div>
                 </div>
