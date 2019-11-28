@@ -700,11 +700,11 @@ header h1 {
     margin-top: 9px; }
 
 header figure {
-  width: 120px;
-  height: 120px;
+  width: 132px;
+  height: 132px;
   overflow: hidden;
   position: relative;
-  border-radius: 60px; }
+  border-radius: 75px; }
   header figure img {
     display: block; }
 
