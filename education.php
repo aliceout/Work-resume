@@ -48,7 +48,8 @@ include('start.php');
                             <h3><span class="color">Master II · Politiques publiques</span></h3>
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
                             <span class="date">2018 - 2019<br></span><br>
-                            <p><strong>Mention</strong> : Action Humanitaire Internationale <strong>Option</strong> : Urgence et réhabilitation<br>
+                            <p><strong>Mention</strong> : Action Humanitaire Internationale<br>
+                                <strong>Option</strong> : Urgence et réhabilitation<br>
                                 Diplomé mention AB</p><br>
                             <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
                                 Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
