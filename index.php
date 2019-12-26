@@ -39,7 +39,7 @@ include('start-index.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-md-9 col-sm-9 col-xs-9">
-                            <h5><span class="color">Master II · Action et droit humanitaires</span></h5>
+                            <h5><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h5>
                             <small>Université Aix-Marseille</small>
                             <div class="date">2019 - 2020 (En cours)</div>
                         </div>
@@ -49,7 +49,7 @@ include('start-index.php');
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <p><strong>Diplôme d'études supérieures universitaires </strong><br>Juriste internationaliste et humanitaire de terrain<br><br>
+                            <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie<br><br>
                                 <a href="education.php">En savoir plus</a>
                             </p>
                         </div>

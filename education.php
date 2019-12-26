@@ -16,25 +16,7 @@ include('start.php');
                             <small>Université Aix Marseille&ensp;·&ensp;</small>
                             <span class="date">2019 - 2020 (En cours)</span>
                             <p><br><strong>Diplôme d'Etudes Supérieures Universitaires </strong> : Juriste internationaliste et humanitaire de terrain</p>
-                            <p>Clinique juridique &amp; Clinique humanitaire, Prestation humanitaire, Urgence, Crises et Développement, Gestion Humanitaire, Art et pratique de l'argumentation</p>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="logo"><img src="assets/images/aix.png"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="graduation">
-                    <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
-                            <h3><span class="color">Master II · Action et droit humanitaires</span></h3>
-                            <small>Université Aix Marseille&ensp;·&ensp;</small>
-                            <span class="date">2019 - 2020 (En cours)<br></span><br>
-                            <p><strong>Parcours</strong> : Humanitaire et développement humain</p><br>
-                            <p>Géopolitique et protection humanitaire, Approches pluridisciplinaires de l’humanitaire <br>
-                                Clinique juridique et protection humanitaire, Justice internationale et protection <br>
-                                Stratégie, protection et crises, Mémoire de recherche
-                            </p>
+                            <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie</p>
                         </div>
                         <div class="col-md-1">
                             <div class="logo"><img src="assets/images/aix.png"></div>
