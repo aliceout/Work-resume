@@ -1191,7 +1191,13 @@ footer p.copy {
   .isotope-grid .grid-item {
     width: 100%; }
   .menu-wrapper-mask nav {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .card .experience .job-position p,
+  .card .education .graduation p,
+  .justify {
+    text-align: justify; }
+  .center {
+    text-align: center; } }
 
 @media screen and (max-height: 420px) and (orientation: landscape) {
   .fullbg header h1,

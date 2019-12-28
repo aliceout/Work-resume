@@ -5,7 +5,7 @@ include('start.php');
 
 <div class="col-md-5">
     <aside>
-        <div class="card">
+        <div class="card ">
             <h3>Niveau linguistique</h3>
 
             <div class="skills">
@@ -102,13 +102,12 @@ include('start.php');
 
 <div class="col-md-5">
     <aside>
-
         <div class="card ">
             <h3>Certifications obtenues</h3>
             <ul class="list-unstyled">
                 <li>
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div><strong><span class="color">Certificat universitaire d'initiation en langue et cultures arabe</span></strong></div>
                             <span>Université Lyon III Jean Moulin <br /> 2018</span>
                         </div>
@@ -120,7 +119,7 @@ include('start.php');
                 <li>
 
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div><strong><span class="color">Certificat informatique PIX</span></strong></div>
                             <span>Université Lyon III Jean Moulin <br /> 2018 · Score : 675</span>
                         </div>
@@ -134,9 +133,8 @@ include('start.php');
             <h3>Certifications envisagées</h3>
             <ul class="list-unstyled">
                 <li>
-
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div><strong><span class="color">Certificat en langue anglaise</span></strong></div>
                             <span>Certificat Toeic · Envisagé pour 2019</span>
                         </div>
@@ -147,7 +145,7 @@ include('start.php');
                 </li>
                 <li>
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div> <strong><span class="color">Certification en langue française</span></strong></div>
                             <span>Certificat Voltaire · Envisagé pour 2019</span>
                         </div>

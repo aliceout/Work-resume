@@ -11,10 +11,10 @@ include('start.php');
 
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h3>
-                            <small>Université Aix Marseille&ensp;·&ensp;</small>
-                            <span class="date">2019 - 2020 (En cours)</span>
+                            <small>Université Aix Marseille, &ensp;·&ensp;</small>
+                            <span class="date">2019 - 2020 (En cours)</span><br>
                             <p><br><strong>Diplôme d'Etudes Supérieures Universitaires </strong> : Juriste internationaliste et humanitaire de terrain</p>
                             <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie</p>
                         </div>
@@ -26,7 +26,7 @@ include('start.php');
 
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">Master II · Politiques publiques</span></h3>
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
                             <span class="date">2018 - 2019<br></span><br>
@@ -47,7 +47,7 @@ include('start.php');
 
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">Master I · Sciences Politiques</span></h3>
                             <small>Université Lyon III Jean Moulin&ensp;·&ensp;</small>
                             <span class="date">2017 - 2018</span>
@@ -65,7 +65,7 @@ include('start.php');
 
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">Licence · Droit</span></h3>
                             <small>Université Toulouse I Capitole&ensp;·&ensp;</small>
                             <span class="date">2015 - 2017</span>
@@ -80,7 +80,7 @@ include('start.php');
 
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">Capacité en Droit</span></h3>
                             <small>Conservatoire national des arts et métiers&ensp;·&ensp;</small>
                             <span class="date">2013 - 2015</span>

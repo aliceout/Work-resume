@@ -3,7 +3,7 @@ $currentPage = 'benevolat';
 include('start.php');
 ?>
 
-<div class="col-md-10">
+<div var extracted1="col-md-9 col-sm-9 col-xs-12" ; class="col-md-10">
     <div class="card">
         <div class="card-container">
             <h2>Experiences benevole</h2>
@@ -11,9 +11,9 @@ include('start.php');
 
                 <!--                <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
-                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                <div class="col-md-8 col-sm-8 col-xs-6">
                                     <small><span class="color">MÉDECINS DU MONDE</span></small>
                                 </div>
                                 <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Marseille, <strong>France</strong></div>
@@ -30,9 +30,9 @@ include('start.php');
 -->
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class=extracted1>
                             <div class="row">
-                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                <div class="col-md-8 col-sm-8 col-xs-6">
                                     <small><span class="color">LA CIMADE</span></small>
                                 </div>
                                 <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Lyon, <strong>France</strong></div>
@@ -49,9 +49,9 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
-                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                <div class="col-md-8 col-sm-8 col-xs-6">
                                     <small><span class="color">LA CIMADE</span></small>
                                 </div>
                                 <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Toulouse, <strong>France</strong></div>
@@ -68,9 +68,9 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
-                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                <div class="col-md-8 col-sm-8 col-xs-6">
                                     <small><span class="color">ASSOCIATION A BUT POLITIQUE · ORLÉANS</span></small>
                                 </div>
                                 <div class="col"><i class="fas fa-map-marker-alt"></i>&emsp;&emsp;&emsp;Orléans, <strong>France</strong></div>

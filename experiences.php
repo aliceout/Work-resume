@@ -11,7 +11,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
@@ -38,7 +38,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">CARITAS AU MAROC</span></small>
@@ -58,7 +58,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">COMMUNE D'OLIVET</span></small>
@@ -77,7 +77,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">LA COMPAGNIE DU CHOCOLAT</span></small>
@@ -98,7 +98,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">GEODIS CALBERSON</span></small>
@@ -119,7 +119,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">COOL-JET SAS</span></small>
@@ -140,7 +140,7 @@ include('start.php');
 
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-8">
                                     <small><span class="color">COOL-JET SAS</span></small>

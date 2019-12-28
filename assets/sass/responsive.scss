@@ -142,6 +142,16 @@
     .menu-wrapper-mask nav {
         margin-top: 100px;
     }
+
+    .card .experience .job-position p,
+    .card .education .graduation p,
+    .justify {
+        text-align: justify;
+    }
+
+    .center {
+        text-align: center;
+    }
 }
 
 @media screen and (max-height: 420px) and (orientation: landscape) {
