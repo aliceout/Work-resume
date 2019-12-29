@@ -14,9 +14,9 @@ include('start.php');
                         <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h3>
                             <small>Université Aix Marseille, &ensp;·&ensp;</small>
-                            <span class="date">2019 - 2020 (En cours)</span><br>
+                            <span class="date">2019 - En cours</span><br>
                             <p><br><strong>Diplôme d'Etudes Supérieures Universitaires </strong> : Juriste internationaliste et humanitaire de terrain</p>
-                            <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie</p>
+                            <p>Clinique juridique &amp; Clinique hu manitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie</p>
                         </div>
                         <div class="col-md-1">
                             <div class="logo"><img src="assets/images/aix.png"></div>
