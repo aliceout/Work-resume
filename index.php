@@ -84,5 +84,4 @@ include('assets/php/partials/head.php');
         </div>
     </aside>
 </div>
-<?php include('assets/php/link/link_skype.php'); ?>
 <?php include('assets/php/partials/end.php'); ?>
