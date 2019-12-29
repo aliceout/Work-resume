@@ -1215,10 +1215,10 @@ footer p.copy {
   width: 200%; }
 
 .logo-ttpetit img {
-  width: 400%; }
+  width: 1000%; }
 
 .logo-petit img {
-  width: 600%; }
+  width: 1500%; }
 
 @media screen and (max-width: 991px) {
   .logo img,

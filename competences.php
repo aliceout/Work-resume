@@ -158,7 +158,7 @@ include('assets/php/partials/head.php');
         </div>
 
         <div class="card ">
-            <h3>Applications</h3>
+            <h3>Informatique · Numérique</h3>
             <ul class="list-unstyled">
                 <li><strong class="color">OS Systems</strong> (Windows, OSX, Debian)</li>
                 <li><strong class="color">Bureautique</strong> (Suite Office, LibreOffice)</li>
