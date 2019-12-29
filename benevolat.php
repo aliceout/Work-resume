@@ -30,7 +30,7 @@ include('start.php');
 -->
                 <div class="job-position">
                     <div class="row">
-                        <div class=extracted1>
+                        <div class=col-md-9 col-sm-9 col-xs-12>
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-6">
                                     <small><span class="color">LA CIMADE</span></small>
