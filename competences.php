@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'competences';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div class="col-md-5">
@@ -173,4 +173,4 @@ include('start.php');
 
 
 
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

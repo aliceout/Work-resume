@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'index';
-include('start-index.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div class="col-md-5">
@@ -38,7 +38,7 @@ include('start-index.php');
             <div class="education">
                 <div class="graduation">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h5><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h5>
                             <small>Université Aix-Marseille</small>
                             <div class="date">2019 - 2020 (En cours)</div>
@@ -63,7 +63,7 @@ include('start-index.php');
             <div class="experience">
                 <div class="job-position">
                     <div class="row">
-                        <div class="col-md-9 col-sm-9 col-xs-9">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
                             <h5>Stagiaire en appui juridique aux études et diagnostiques</h5>
                             <div class="date">2019 · 5 mois</div>
@@ -85,4 +85,4 @@ include('start-index.php');
     </aside>
 </div>
 <?php include('assets/php/link/link_skype.php'); ?>
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

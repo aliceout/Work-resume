@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'personnal';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div class="col-md-5">
@@ -41,4 +41,4 @@ include('start.php');
 </div>
 
 <?php include('assets/php/link/link_emergency.php'); ?>
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

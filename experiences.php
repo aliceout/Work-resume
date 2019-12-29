@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'experience';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div class="col-md-10">
@@ -164,4 +164,4 @@ include('start.php');
     </div>
 </div>
 
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

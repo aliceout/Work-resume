@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'realisations';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 
@@ -293,4 +293,4 @@ include('start.php');
 
 
 
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

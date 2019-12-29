@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'benevolat';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div var extracted1="col-md-9 col-sm-9 col-xs-12" ; class="col-md-10">
@@ -90,4 +90,4 @@ include('start.php');
     </div>
 </div>
 
-<?php include('end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>

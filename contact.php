@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'contact';
-include('start.php');
+include('assets/php/partials/head.php');
 ?>
 
 <div class="col-md-10">
@@ -16,7 +16,7 @@ include('start.php');
                 <div class="alert alert-danger hidden" id="contactError">
                     <strong>Erreur!</strong> Le processus a rencontré un problème.
                 </div>
-                <form id="contactForm" action="assets/php/contact-form.php" method="post">
+                <form id="contactForm" action="assets/php/tools/contact-form.php" method="post">
                     <div class="form-group">
                         <textarea class="form-control" rows="4" placeholder="Votre message *" maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message"></textarea>
                     </div><br>
@@ -38,4 +38,4 @@ include('start.php');
         </div>
     </div>
 
-    <?php include('end.php'); ?>
+    <?php include('assets/php/partials/end.php'); ?>
