@@ -1257,3 +1257,32 @@ aside .card-cv,
 
 .experience {
   margin-top: 25px; }
+
+#captcha_reload {
+  margin-left: 1.5em; }
+
+.btn-skype {
+  background-color: #00aff0;
+  color: #e5f7fd; }
+  .btn-skype:hover {
+    background-color: #0077a4;
+    color: #e5f7fd; }
+
+.panel-skype {
+  border: 1px solid #00aff0; }
+  .panel-skype .panel-heading {
+    background-color: #00aff0;
+    color: #e5f7fd; }
+
+.panel-sessions {
+  border: 1px solid #00f782; }
+  .panel-sessions .panel-heading {
+    background-color: #00f782;
+    color: black; }
+
+header nav ul li a:hover .fa-file-pdf {
+  color: #dc3e4b; }
+
+.resume:hover {
+  color: #dc3e4b;
+  border-bottom-color: #dc3e4b; }

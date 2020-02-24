@@ -18,7 +18,7 @@
                     <li class="<?php if($currentPage =='realisations'){echo 'active';}?>"><a href="realisations.php">Réalisations</a></li>
                     <li class="<?php if($currentPage =='competences'){echo 'active';}?>"><a href="competences.php">Langues & compétences</a></li>
                     <li class="<?php if($currentPage =='personnal'){echo 'active';}?>"><a href="personnal.php">Activités personnelles</a></li>
-                    <li><a href="https://cloud.ofanch.me/s/3XbjQixKoPb9fXF#pdfviewer" target="_blank">Curriculum <span class="label label-primary">pdf</span></a></li>
+                    <li><a class="resume" href="https://cloud.ofanch.me/s/3XbjQixKoPb9fXF#pdfviewer" target="_blank"> Curriculum vitae &nbsp;<span style="font-size: 1.1rem;"><i class="far fa-file-pdf fa-lg"></i></span></a></li>
                 </ul>
                 <br>
                 <div class="nav-toggle visible-sm visible-xs">

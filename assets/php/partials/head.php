@@ -36,9 +36,10 @@
 </head>
 
 <body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/vendor/html5shiv.min.js"></script>
     <script src="assets/vendor/respond.min.js"></script>
+    <script src="assets/php/contact-form/form.js"></script>
     <div class="container">
         <div class="row">
             <?php include('assets/php/partials/sidebar.php'); ?>
