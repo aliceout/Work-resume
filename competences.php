@@ -172,8 +172,8 @@ include('assets/php/partials/head.php');
             <h3>Informatique · Numérique</h3>
             <ul class="list-unstyled">
                 <li><strong class="color">OS Systems</strong> (Windows, OSX, Debian)</li>
-                <li><strong class="color">Bureautique</strong> (Suite Office, LibreOffice)</li>
-                <li><strong class="color">Graphique</strong> (InDesign, Illustrator, Photoshop)</li>
+                <li><strong class="color">Bureautique</strong> (Office 365, LibreOffice)</li>
+                <li><strong class="color">Graphique</strong> (InDesign, Photoshop, The Gimp)</li>
                 <li><strong class="color">IDE</strong> (Atom, PYCharm)</li>
             </ul>
         </div>

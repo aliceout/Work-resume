@@ -20,14 +20,6 @@ include('assets/php/partials/head.php');
                 </p>
             </div>
         </div>
-
-        <div class="card text-center card-cv">
-            <div class="card-container">
-                <div class="downloadcv">
-                    <a href="contact.php" class="btn btn-primary">Me contacter · Skype ou email</a>
-                </div>
-            </div>
-        </div>
     </aside>
 </div>
 

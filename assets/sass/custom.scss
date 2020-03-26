@@ -66,17 +66,36 @@ aside .card-cv,
     margin-top: 25px;
 }
 
-#captcha_reload {
-    margin-left: 1.5em;
+.btn-mail {
+    background-color: #dc4a3f;
+    color: white;
+    min-width: 15rem;
+
+    &:hover {
+        background-color: #b03b32;
+        color: white;
+    }
 }
 
 .btn-skype {
     background-color: #00aff0;
     color: #e5f7fd;
+    min-width: 15rem;
 
     &:hover {
         background-color: #0077a4;
         color: #e5f7fd;
+    }
+}
+
+.btn-session {
+    background-color: #00f782;
+    color: black;
+    min-width: 15rem;
+
+    &:hover {
+        background-color: black;
+        color: #00f782;
     }
 }
 
