@@ -46,18 +46,6 @@ include('assets/php/partials/head.php');
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Sujet" minlength="2" id="subject" name="subject">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="N° de téléphone" minlength="2" id="phone" name="phone">
-                            </div>
-                        </div>
-                    </div>
                     <br>
                     <div class="form-group">
                         <textarea class="form-control" rows="4" placeholder="Message *" maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message"></textarea>

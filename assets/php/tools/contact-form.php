@@ -8,8 +8,6 @@ $subject = 'Email depuis fdelamaide.work';
 if($to) {
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$name = $_POST['subject'];
-	$email = $_POST['phone'];
 	$message = $_POST['message'];
 
 	$fields = array(
@@ -22,14 +20,6 @@ if($to) {
 			'val' => $email
 		),
 		2 => array(
-			'text' => 'Sujet',
-			'val' => subject
-		),
-		3 => array(
-			'text' => 'Téléphone',
-			'val' => phone
-		),
-		4 => array(
 			'text' => 'Message',
 			'val' => $message
 		)
@@ -54,8 +44,7 @@ if($to) {
 	// exit;
 
 	if (mail($to, $subject, $message, $headers)){
-		$arrResult = array ('response'=>'success')
-            removeClass( "hidden" );
+		$arrResult = array ('response'=>'success');
 	} else{
 		$arrResult = array ('response'=>'error');
 	}
