@@ -1,23 +1,29 @@
-.color {
+.entete {
+    margin-bottom: 0;
+}
+
+.entete-color {
     color: $mainColor;
     font-weight: 700;
 }
 
 .logo {
     img {
-        width: 200%;
+        width: 105%;
     }
 }
 
-.logo-ttpetit {
+.logo-index {
     img {
-        width: 1000%;
+        width: 250%;
     }
 }
 
-.logo-petit {
+.logo-certif {
+
     img {
-        width: 1500%;
+        margin-left: 1rem;
+        width: 150%;
     }
 }
 
@@ -69,7 +75,6 @@ aside .card-cv,
 .btn-mail {
     background-color: #dc4a3f;
     color: white;
-    min-width: 15rem;
 
     &:hover {
         background-color: #b03b32;
@@ -80,7 +85,6 @@ aside .card-cv,
 .btn-skype {
     background-color: #00aff0;
     color: #e5f7fd;
-    min-width: 15rem;
 
     &:hover {
         background-color: #0077a4;
@@ -91,7 +95,6 @@ aside .card-cv,
 .btn-session {
     background-color: #00f782;
     color: black;
-    min-width: 15rem;
 
     &:hover {
         background-color: black;
@@ -99,24 +102,15 @@ aside .card-cv,
     }
 }
 
-.panel-skype {
-    border: 1px solid #00aff0;
+.btn-session-invert {
+    background-color: black;
+    color: #00f782;
 
-    .panel-heading {
-        background-color: #00aff0;
-        color: #e5f7fd;
-    }
-}
-
-.panel-sessions {
-    border: 1px solid #00f782;
-
-    .panel-heading {
+    &:hover {
         background-color: #00f782;
         color: black;
     }
 }
-
 
 header nav ul li a:hover {
 
@@ -128,4 +122,26 @@ header nav ul li a:hover {
 .resume:hover {
     color: #dc3e4b;
     border-bottom-color: #dc3e4b;
+}
+
+.btn-big {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.card-carousel {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    .btn-mail,
+    .btn-skype,
+    .btn-session {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
 }
