@@ -82,7 +82,7 @@ include('assets/php/partials/head.php');
                         <div class="col-12 col-md-6">
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-session btn-big btn-block" href="https://getsession.org/iphone" target="_blank"><i class="fab fa-android"></i>&nbsp;&nbsp; iPhone</button>
+                                    <button type="button" class="btn btn-session btn-big btn-block" href="https://getsession.org/iphone" target="_blank"><i class="fab fa-apple"></i>&nbsp;&nbsp; iPhone</button>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-session btn-big btn-block" href="https://github.com/loki-project/session-android/releases" target="_blank"><i class="fab fa-android"></i>&nbsp;&nbsp; Apk</button>
