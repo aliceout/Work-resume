@@ -95,12 +95,14 @@ include('assets/php/partials/head.php');
                     <img class="img-fluid" src="assets/images/session.png">
                 </div>
                 <div class="col-12 btn-big">
-                    <input class="d-none" type="text" value="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25" id="myInput">
-                    <button type="button" class="btn btn-session-invert btn-block" onclick="sessionID()"> ID: 05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25</button>
+                    <input id="p1" class="d-none" type="text" value="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25" id="myInput">
+                    <button class="btn btn-session-invert btn-block" data-clipboard-text="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25"> ID: 05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25</button>
+
+
+
                 </div>
             </div>
         </div>
-
 
         <script type="text/javascript">
             function toggle_visibility(mailform) {
@@ -113,21 +115,16 @@ include('assets/php/partials/head.php');
 
         </script>
 
-        <script type="text/javascript">
-            function sessionID() {
-                /* Get the text field */
-                var copyText = document.getElementById("myInput");
+        <script>
+            var clip = new Clipboard('.btn');
 
-                /* Select the text field */
-                copyText.select();
-                copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-                /* Copy the text inside the text field */
-                document.execCommand("copy");
-
-                /* Alert the copied text */
-                alert("ID copié dans le presse-papier");
-            }
+            clip.on("success", function() {
+                document.body.insertAdjacentHTML('beforeend');
+            });
+            clip.on("error", function() {
+                document.body.insertAdjacentHTML('beforeend');
+            });
 
         </script>
+
         <?php include('assets/php/partials/end.php'); ?>
