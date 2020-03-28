@@ -72,20 +72,20 @@ include('assets/php/partials/head.php');
                         <div class="col-12 col-md-6">
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-session btn-big btn-block" href="https://getsession.org/android" target="_blank"><i class="fab fa-android"></i>&nbsp;&nbsp; Android</button>
+                                    <a href="https://getsession.org/android" target="_blank" style="text-decoration:none"><button type="button" class="btn btn-session btn-big btn-block"><i class="fab fa-android"></i>&nbsp;&nbsp; Android</button></a>
                                 </div>
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-session btn-big btn-block" href="https://getsession.org/download" target="_blank"><i class="far fa-desktop"></i>&nbsp;&nbsp; Desktop</button>
+                                    <a href="https://getsession.org/download" target="_blank" style="text-decoration:none"><button class="btn btn-session btn-big btn-block"> <i class="far fa-desktop"></i>&nbsp;&nbsp; Desktop</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-session btn-big btn-block" href="https://getsession.org/iphone" target="_blank"><i class="fab fa-apple"></i>&nbsp;&nbsp; iPhone</button>
+                                    <a href="https://getsession.org/iphone" target="_blank" style="text-decoration:none"><button type="button" class="btn btn-session btn-big btn-block"><i class="fab fa-apple"></i>&nbsp;&nbsp; iPhone</button></a>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-session btn-big btn-block" href="https://github.com/loki-project/session-android/releases" target="_blank"><i class="fab fa-android"></i>&nbsp;&nbsp; Apk</button>
+                                    <a href="https://github.com/loki-project/session-android/releases" target="_blank" style="text-decoration:none"><button class="btn btn-session btn-big btn-block"><i class="fab fa-android"></i>&nbsp;&nbsp; Apk</button></a>
                                 </div>
                             </div>
                         </div>
@@ -94,12 +94,17 @@ include('assets/php/partials/head.php');
                 <div class="col-md-5 offset-lg-1 d-none d-md-block">
                     <img class="img-fluid" src="assets/images/session.png">
                 </div>
-                <div class="col-12 btn-big">
-                    <input id="p1" class="d-none" type="text" value="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25" id="myInput">
-                    <button class="btn btn-session-invert btn-block" data-clipboard-text="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25"> ID: 05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25</button>
 
-
-
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 div-copy">
+                            <span id="tooltiptext">Copier ID</span>
+                            <button onclick="copyID()" class="btn btn-session btn-copy btn-block" data-clipboard-text="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25">Copier ID</button>
+                        </div>
+                        <div class="col-11 col-lg-8 alert btn-session-id " role="alert">
+                            <strong>05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +120,7 @@ include('assets/php/partials/head.php');
 
         </script>
 
-        <script>
+        <script type="text/javascript">
             var clip = new Clipboard('.btn');
 
             clip.on("success", function() {
@@ -124,6 +129,14 @@ include('assets/php/partials/head.php');
             clip.on("error", function() {
                 document.body.insertAdjacentHTML('beforeend');
             });
+
+        </script>
+
+        <script type="text/javascript">
+            function copyID() {
+                var tooltip = document.getElementById("tooltiptext");
+                tooltip.innerHTML = "ID copié";
+            }
 
         </script>
 

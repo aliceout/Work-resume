@@ -102,14 +102,49 @@ aside .card-cv,
     }
 }
 
-.btn-session-invert {
+.btn-copy {
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+}
+
+#tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -60px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+}
+
+.div-copy:hover {
+    #tooltiptext {
+        visibility: visible;
+    }
+}
+
+.btn-session-id {
     background-color: black;
     color: #00f782;
-
-    &:hover {
-        background-color: #00f782;
-        color: black;
-    }
+    text-align: center;
+    margin: auto;
+    padding: auto 1rem auto;
 }
 
 header nav ul li a:hover {
@@ -136,12 +171,28 @@ header nav ul li a:hover {
     padding-bottom: 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
 
     .btn-mail,
     .btn-skype,
     .btn-session {
         margin-top: .5rem;
         margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .div-copy {
+        margin: 1rem auto .5rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .btn-copy {
+        padding-top: 1rem;
+
+        padding-bottom: 1rem;
     }
 }
