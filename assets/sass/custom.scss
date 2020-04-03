@@ -73,32 +73,38 @@ aside .card-cv,
 }
 
 .btn-mail {
-    background-color: #dc4a3f;
-    color: white;
+    background-color: white;
+    color: #dc4a3f;
+    border: 1px solid #dc4a3f;
 
     &:hover {
-        background-color: #b03b32;
+        background-color: #dc4a3f;
         color: white;
+        border: 1px solid #dc4a3f;
     }
 }
 
 .btn-skype {
-    background-color: #00aff0;
-    color: #e5f7fd;
+    background-color: white;
+    color: #00aff0;
+    border: 1px solid #00aff0;
 
     &:hover {
-        background-color: #0077a4;
+        background-color: #00aff0;
         color: #e5f7fd;
+        border: 1px solid #00aff0;
     }
 }
 
 .btn-session {
-    background-color: #00f782;
-    color: black;
+    background-color: white;
+    color: #00f782;
+    border: 1px solid #00f782;
 
     &:hover {
         background-color: black;
         color: #00f782;
+        border: 1px solid black;
     }
 }
 
