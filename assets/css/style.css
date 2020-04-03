@@ -1264,25 +1264,31 @@ aside .card-cv,
   margin-top: 25px; }
 
 .btn-mail {
-  background-color: #dc4a3f;
-  color: white; }
+  background-color: white;
+  color: #dc4a3f;
+  border: 1px solid #dc4a3f; }
   .btn-mail:hover {
-    background-color: #b03b32;
-    color: white; }
+    background-color: #dc4a3f;
+    color: white;
+    border: 1px solid #dc4a3f; }
 
 .btn-skype {
-  background-color: #00aff0;
-  color: #e5f7fd; }
+  background-color: white;
+  color: #00aff0;
+  border: 1px solid #00aff0; }
   .btn-skype:hover {
-    background-color: #0077a4;
-    color: #e5f7fd; }
+    background-color: #00aff0;
+    color: #e5f7fd;
+    border: 1px solid #00aff0; }
 
 .btn-session {
-  background-color: #00f782;
-  color: black; }
+  background-color: white;
+  color: #00f782;
+  border: 1px solid #00f782; }
   .btn-session:hover {
     background-color: black;
-    color: #00f782; }
+    color: #00f782;
+    border: 1px solid black; }
 
 .btn-copy {
   margin-top: 1.5px;
