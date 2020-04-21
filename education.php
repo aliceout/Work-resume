@@ -15,7 +15,7 @@ include('assets/php/partials/head.php');
                             <h3><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h3>
                             <small>Université Aix Marseille, &ensp;·&ensp;</small>
                             <span class="date">2019 - En cours</span>
-                            <p><br><strong>Diplôme d'Etudes Supérieures Universitaires </strong> : Juriste internationaliste et humanitaire de terrain</p><br>
+                            <p><br><strong>Diplôme d'Etudes Supérieures Universitaires · </strong><a href="https://www.service-public.fr/particuliers/vosdroits/F199">Diplôme de niveau 7</a></p><br>
                             <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
@@ -27,11 +27,10 @@ include('assets/php/partials/head.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-lg-9 col-sm-12">
-                            <h3><span class="color">Master II · Politiques publiques</span></h3>
+                            <h3><span class="color">Master II · Politiques publiques · Action Humanitaire Internationale</span></h3>
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
                             <span class="date">2018 - 2019</span>
-                            <p><strong>Mention</strong> : Action Humanitaire Internationale<br>
-                                <strong>Option</strong> : Urgence et réhabilitation<br>
+                            <p><br><strong>Option</strong> : Urgence et réhabilitation<br>
                                 Diplomé mention AB</p><br />
                             <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
                                 Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
