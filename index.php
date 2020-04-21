@@ -43,7 +43,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Stage de survie<br><br>
+                                    <p>Clinique juridique, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire<br><br>
                                         <a href="education.php">En savoir plus</a>
                                     </p>
                                 </div>
@@ -59,8 +59,8 @@ include('assets/php/partials/head.php');
                             <div class="row">
                                 <div class="col-8">
                                     <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
-                                    <h5>Stagiaire en appui juridique aux études et diagnostiques</h5>
-                                    <div class="date">2019 · 5 mois</div>
+                                    <h5>Chargé d'appui juridique aux études et diagnostics</h5>
+                                    <div class="date">2019 · 5 mois (stage)</div>
                                 </div>
                                 <div class="col-2">
                                     <div class="logo-index"><img src="assets/images/hi.png"></div>
@@ -69,7 +69,7 @@ include('assets/php/partials/head.php');
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Particpation à la réalisation d'une mission exploratoire, et travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques<br><br>
+                                    <p>Particpation à la réalisation d'une mission exploratoire, et travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux<br><br>
                                         <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>

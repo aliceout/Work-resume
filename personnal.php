@@ -8,8 +8,8 @@ include('assets/php/partials/head.php');
             <aside>
                 <div class="card justify">
                     <h3><span class="color">Numériques</span></h3>
-                    <p>Création et administration d’un serveur web, maitrise outils de mise en page, création de sites web.<br>
-                        Attrait pour les questions de politques numériques, ainsi que pour les questions de sécurisation et de réapropriation des données. Sensibilité au projet du Logiciel Libre.<br>
+                    <p>Création et administration d’un serveur web, maitrise outils de mise en page, création de sites web.<br><br>
+                        Attrait pour les questions de politques numériques, ainsi que pour les questions de sécurisation et de réapropriation des données. Sensibilité au projet du Logiciel Libre.<br><br>
                         Contribution à des projets open-source (ajouts fonctionnalités, traductions)</p>
                 </div>
                 <div class="card justify">
@@ -29,11 +29,11 @@ include('assets/php/partials/head.php');
                 <div class="card justify">
                     <h3><span class="color">Culturelles</span></h3>
                     <strong>Lectures</strong>
-                    <p>Romans étrangers (Moyen-Orient, Afrique, Asie), science-fiction, essais politiques, essais universitaires</p><br>
+                    <p>Romans étrangers (Moyen-Orient, Afrique, Asie), science-fiction, anticipation, essais politiques, essais universitaires</p><br>
                     <strong>Actualité</strong>
-                    <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires). Écriture de notes de veille et revues de presse dans cadre</p><br>
+                    <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires)</p><br>
                     <strong>Apprentissage continu</strong>
-                    <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, religieux, écologique</p>
+                    <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, écologique</p>
                 </div>
                 <div class="card justify">
                     <h3><span class="color">Bénevolat</span></h3>

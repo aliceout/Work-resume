@@ -18,9 +18,9 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Tunis, <strong>Tunisie</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Stagiaire en appui juridique aux études et diagnostiques</h3>
-                            <div class="date">2019 · 5 mois </div>
-                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques initiaux sur le teritoire tunisien</p><br />
+                            <h3>Chargé d'appui juridique aux études et diagnostics</h3>
+                            <div class="date">2019 · 5 mois (stage)</div>
+                            <p>Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (governorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien</p><br />
                             <ul>
                                 <li>
                                     <p>Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap</p>
@@ -47,10 +47,10 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Rabat, <strong>Maroc</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Stagiaire en appui à la coordination de programme</h3>
-                            <div class="date">2018-2019 · 8 mois</div>
-                            <p>Programme de défense des droits et d’appui à l’insertion des personnes migrantes<br><br>
-                                Rédaction et mise en page de supports de sensibilisation, conception d’un plan de communication et d’une nouvelle charte graphique, élaboration d’un cahier des charges pour le développement d’une nouvelle version d’une application de prise en charge des usagers, écriture de notes d’actualités, élaboration d’un protocole de démarrage de partenariat, écriture de cadres logiques</p>
+                            <h3>Chargé d'appui à la coordination de programme</h3>
+                            <div class="date">2018-2019 · 8 mois (stage)</div>
+                            <p>Programme de défense des droits et d’appui à l’insertion des personnes en migration<br><br>
+                                Rédaction et mise en page de supports de sensibilisation, conception d’un plan de communication et d’une nouvelle charte graphique, élaboration d’un cahier des charges pour le développement d’une nouvelle version d’une application de prise en charge des usagers, écriture de notes d’actualité, élaboration d’un protocole de démarrage de partenariat, écriture de cadres logiques</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/caritas.png"></div>
@@ -67,8 +67,8 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Olivet, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Stagiaire en appui juridique au pôle de la vie citoyenne</h3>
-                            <div class="date">2015 · 2 mois</div>
+                            <h3>Chargé d'appui juridique au pôle de la vie citoyenne</h3>
+                            <div class="date">2015 · 2 mois (stage)</div>
                             <p>Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
@@ -105,7 +105,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Orléans, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Responsable adjoint de service</h3>
+                            <h3>Responsable adjoint de service de transport</h3>
                             <div class="date">2009-2012 · 3 ans</div>
                             <p>Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service</p>
                         </div>

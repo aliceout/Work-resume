@@ -12,11 +12,10 @@ include('assets/php/partials/head.php');
                 <div class="graduation">
                     <div class="row">
                         <div class="col-lg-9 col-sm-12">
-                            <h3><span class="color">DESU · Juriste internationaliste et humanitaire de terrain</span></h3>
+                            <h3><span class="color">Diplôme d'Etudes Supérieures Universitaires · <br>Juriste internationaliste et humanitaire de terrain</span></h3>
                             <small>Université Aix Marseille, &ensp;·&ensp;</small>
                             <span class="date">2019 - En cours</span>
-                            <p><br><strong>Diplôme d'Etudes Supérieures Universitaires · </strong><a href="https://www.service-public.fr/particuliers/vosdroits/F199">Diplôme de niveau 7</a></p><br>
-                            <p>Clinique juridique &amp; Clinique humanitaire, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire</p>
+                            <p><br>Clinique juridique, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/aix.png"></div>

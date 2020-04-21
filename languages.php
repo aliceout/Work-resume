@@ -146,7 +146,6 @@ include('assets/php/partials/head.php');
                         </li>
                     </ul>
                 </div>
-
                 <div class="card ">
                     <h3>Informatique · Numérique</h3>
                     <ul class="list-unstyled">

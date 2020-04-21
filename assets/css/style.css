@@ -1216,14 +1216,17 @@ footer p.copy {
   font-weight: 700; }
 
 .logo img {
-  width: 105%; }
+  width: 125%;
+  margin-left: -2rem;
+  margin-top: 1.5rem; }
 
 .logo-index img {
+  margin-left: 1rem;
   width: 250%; }
 
 .logo-certif img {
-  margin-left: 1rem;
-  width: 150%; }
+  margin-left: 0.6rem;
+  width: 160%; }
 
 @media screen and (max-width: 991px) {
   .logo img,
