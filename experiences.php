@@ -20,7 +20,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Stagiaire en appui juridique aux études et diagnostiques</h3>
                             <div class="date">2019 · 5 mois </div>
-                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud Tunisien, et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques initiaux</p><br />
+                            <p>Réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostiques initiaux sur le teritoire tunisien</p><br />
                             <ul>
                                 <li>
                                     <p>Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap</p>
@@ -50,7 +50,7 @@ include('assets/php/partials/head.php');
                             <h3>Stagiaire en appui à la coordination de programme</h3>
                             <div class="date">2018-2019 · 8 mois</div>
                             <p>Programme de défense des droits et d’appui à l’insertion des personnes migrantes<br><br>
-                                Rédaction et mise en page de supports de sensibilisation, conception d’un plan de communication et d’une nouvelle charte graphique, élaboration d’un cahier des charges pour le développement d’une nouvelle version d’une application de prise en charge des usagers, écriture de notes d’actualités, élaboration d’un protocole de démarrage de partenariat</p>
+                                Rédaction et mise en page de supports de sensibilisation, conception d’un plan de communication et d’une nouvelle charte graphique, élaboration d’un cahier des charges pour le développement d’une nouvelle version d’une application de prise en charge des usagers, écriture de notes d’actualités, élaboration d’un protocole de démarrage de partenariat, écriture de cadres logiques</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/caritas.png"></div>
