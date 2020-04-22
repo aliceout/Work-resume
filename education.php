@@ -13,7 +13,7 @@ include('assets/php/partials/head.php');
                     <div class="row">
                         <div class="col-lg-9 col-sm-12">
                             <h3><span class="color">Diplôme d'Etudes Supérieures Universitaires · <br>Juriste internationaliste et humanitaire de terrain</span></h3>
-                            <small>Université Aix Marseille, &ensp;·&ensp;</small>
+                            <small>Aix Marseille Université &ensp;·&ensp;</small>
                             <span class="date">2019 - En cours</span>
                             <p><br>Clinique juridique, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire</p>
                         </div>
