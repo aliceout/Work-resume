@@ -58,7 +58,7 @@ include('assets/php/partials/head.php');
                                 <div class="col text-right">Toulouse, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Permanent en droit des étrangers</h3>
-                            <div class="date">2016 - 2017</div>
+                            <div class="date">2015 - 2017</div>
                             <p>Permanences d’accès aux droits. Élaboration et mise en page des rapports d’activités régionaux et du festival Migrant’scène, missions internes de support</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
