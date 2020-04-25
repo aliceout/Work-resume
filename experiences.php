@@ -66,8 +66,27 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Chargé d'appui à la coordination de programme</h3>
                             <div class="date">2018-2019 · 8 mois (stage)</div>
-                            <p>Programme de défense des droits et d’appui à l’insertion des personnes en migration<br><br>
-                                Rédaction et mise en page de supports de sensibilisation, conception d’un plan de communication et d’une nouvelle charte graphique, élaboration d’un cahier des charges pour le développement d’une nouvelle version d’une application de prise en charge des usagers, écriture de notes d’actualité, élaboration d’un protocole de démarrage de partenariat, écriture de cadres logiques</p>
+                            <p>Programme "Migration"<br><br></p>
+                            <ul>
+                                <li>
+                                    <p>Participation à des actions d'appui au renforcement des capacités des partenaires</p>
+                                </li>
+                                <li>
+                                    <p>Appui au suivi de projets (cadre logique, budget, fiches de postes, rapports)</p>
+                                </li>
+                                <li>
+                                    <p>Refonte d'un outil de recueil de données. (définition des besoins, élaboration d'un cahier des charges, interface, OpenData, sécurisation, fonctionnalités</p>
+                                </li>
+                                <li>
+                                    <p>Conception d’un plan de communication et d’une nouvelle charte graphique, et accompagnement à la "numérisation" de certains process</p>
+                                </li>
+                                <li>
+                                    <p>Rédaction et mise en page de supports de sensibilisation, de notes d'actualités</p>
+                                </li>
+                                <li>
+                                    <p>Animation réunion, team building</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/caritas.png"></div>
