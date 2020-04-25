@@ -14,6 +14,24 @@ include('assets/php/partials/head.php');
                         <div class="col-lg-9 col-sm-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-12">
+                                    <small><span class="color">MÉDECINS DU MONDE</span></small>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-right">Marseille, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                            </div>
+                            <h3>Logisticien</h3>
+                            <div class="date">2019 · En cours</div>
+                        </div>
+                        <div class="col-2 offset-1 d-none d-lg-block">
+                            <div class="logo"><img src="assets/images/mdm.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-position">
+                    <div class="row">
+                        <div class="col-lg-9 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12">
                                     <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Tunis, <strong>Tunisie</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
@@ -35,8 +53,6 @@ include('assets/php/partials/head.php');
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="job-position">
                     <div class="row">
