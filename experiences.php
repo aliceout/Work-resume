@@ -19,7 +19,8 @@ include('assets/php/partials/head.php');
                                 <div class="col-md-4 col-sm-12 text-right">Marseille, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Logisticien</h3>
-                            <div class="date">2019 · En cours</div>
+                            <div class="date">2020 · En cours</div>
+                            <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
@@ -38,7 +39,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Chargé d'appui juridique aux études et diagnostics</h3>
                             <div class="date">2019 · 5 mois (stage)</div>
-                            <p>Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (governorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien</p><br />
+                            <p>Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien</p><br />
                             <ul>
                                 <li>
                                     <p>Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap</p>

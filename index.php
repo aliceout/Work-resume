@@ -58,18 +58,18 @@ include('assets/php/partials/head.php');
                         <div class="job-position">
                             <div class="row">
                                 <div class="col-8">
-                                    <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
-                                    <h5>Chargé d'appui juridique aux études et diagnostics</h5>
-                                    <div class="date">2019 · 5 mois (stage)</div>
+                                    <small><span class="color">MÉDECINS DU MONDE</span></small>
+                                    <h5>Logisticien</h5>
+                                    <div class="date">2020 · En cours</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/hi.png"></div>
+                                    <div class="logo-index"><img src="assets/images/mdm.png"></div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Particpation à la réalisation d'une mission exploratoire, et travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux<br><br>
+                                    <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19<br><br>
                                         <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>
