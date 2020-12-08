@@ -69,7 +69,8 @@ include('assets/php/partials/head.php');
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>République Démocratique du Congo - Province du Tanganyika<br><br>
+                                    <p><strong>République Démocratique du Congo</strong><br>
+                                    <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit dans la province du Tanganyika<br><br>
                                     <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>
