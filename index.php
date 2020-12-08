@@ -59,7 +59,7 @@ include('assets/php/partials/head.php');
                             <div class="row">
                                 <div class="col-8">
                                     <small><span class="color">MÉDECINS DU MONDE</span></small>
-                                    <h5>Logisticien</h5>
+                                    <h5>Responsable logistique base</h5>
                                     <div class="date">2020 · En cours</div>
                                 </div>
                                 <div class="col-2">
@@ -69,8 +69,8 @@ include('assets/php/partials/head.php');
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19<br><br>
-                                        <a href="experiences.php">En savoir plus</a></p>
+                                    <p>République Démocratique du Congo - Province du Tanganyika<br><br>
+                                    <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>
                         </div>
