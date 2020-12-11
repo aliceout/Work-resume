@@ -58,7 +58,7 @@ include('assets/php/partials/head.php');
                         <div class="job-position">
                             <div class="row">
                                 <div class="col-8">
-                                    <small><span class="color">MÉDECINS DU MONDE</span></small>
+                                    <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
                                     <h5>Responsable logistique base</h5>
                                     <div class="date">2020 · En cours</div>
                                 </div>

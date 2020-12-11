@@ -14,12 +14,31 @@ include('assets/php/partials/head.php');
                         <div class="col-lg-9 col-sm-12">
                             <div class="row">
                                 <div class="col-md-8 col-sm-12">
-                                    <small><span class="color">MÉDECINS DU MONDE</span></small>
+                                    <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                            </div>
+                            <h3>Responsable logistique base</h3>
+                            <div class="date">2020 · En cours</div>
+                            <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika</p>
+                        </div>
+                        <div class="col-2 offset-1 d-none d-lg-block">
+                            <div class="logo"><img src="assets/images/mdm.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-position">
+                    <div class="row">
+                        <div class="col-lg-9 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12">
+                                    <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Marseille, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Logisticien</h3>
-                            <div class="date">2020 · En cours</div>
+                            <div class="date">2020 · 3 mois</div>
                             <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
