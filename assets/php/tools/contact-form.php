@@ -1,64 +1,86 @@
 <?php
+$postData = $statusMsg = '';
+$status = 'error';
 
-// Enter your email address below.
-$to = 'ofanch@protonmail.com';
+// hCAPTCHA API key configuration
+$siteKey 	= '71fdc48a-0d57-4cf8-b1db-152305e4c202';
+$secretKey 	= '0x4341BaE1a151E9dEA3Fe7b9c8a1eCBc277281490';
 
-$subject = 'Email depuis fdelamaide.work';
-
-if($to) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
-
-	$fields = array(
-		0 => array(
-			'text' => 'Name',
-			'val' => $name
-		),
-		1 => array(
-			'text' => 'Email address',
-			'val' => $email
-		),
-		2 => array(
-			'text' => 'Message',
-			'val' => $message
-		)
-	);
-
-	$message = "";
-
-	foreach($fields as $field) {
-		$message .= $field['text'].": " . htmlspecialchars($field['val'], ENT_QUOTES) . "<br>\n";
+// If the form is submitted
+if(isset($_POST['submit'])){
+	$postData = $_POST;
+	
+	// Validate form fields
+	if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])){
+		
+		// Validate hCAPTCHA checkbox
+		if(!empty($_POST['h-captcha-response'])){
+			// Verify API URL
+			$verifyURL = 'https://hcaptcha.com/siteverify';
+			
+			// Retrieve token from post data with key 'h-captcha-response'
+			$token = $_POST['h-captcha-response'];
+			
+			// Build payload with secret key and token
+			$data = array(
+				'secret' => $secretKey,
+				'response' => $token,
+				'remoteip' => $_SERVER['REMOTE_ADDR']
+			);
+			
+			// Initialize cURL request
+			// Make POST request with data payload to hCaptcha API endpoint
+			$curlConfig = array(
+				CURLOPT_URL => $verifyURL,
+				CURLOPT_POST => true,
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_POSTFIELDS => $data
+			);
+			$ch = curl_init();
+			curl_setopt_array($ch, $curlConfig);
+			$response = curl_exec($ch);
+			curl_close($ch);
+			
+			// Parse JSON from response. Check for success or error codes
+			$responseData = json_decode($response);
+			
+			// If reCAPTCHA response is valid
+			if($responseData->success){
+				// Posted form data
+				$name = !empty($_POST['name'])?$_POST['name']:'';
+				$email = !empty($_POST['email'])?$_POST['email']:'';
+				$message = !empty($_POST['message'])?$_POST['message']:'';
+				
+				// Send email notification to the site admin
+				$to = 'ofanch@protonmail.com';
+				$subject = 'Nouvel email du formulaire de contact';
+				$htmlContent = "
+					<h1>Contact request details</h1>
+					<p><b>Name: </b>".$name."</p>
+					<p><b>Email: </b>".$email."</p>
+					<p><b>Message: </b>".$message."</p>
+				";
+				
+				// Always set content-type when sending HTML email
+				$headers = "MIME-Version: 1.0" . "\r\n";
+				$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+				// More headers
+				$headers .= 'From:'.$name.' <'.$email.'>' . "\r\n";
+				
+				// Send email
+				@mail($to,$subject,$htmlContent,$headers);
+				
+				$status = 'success';
+				$statusMsg = 'Your contact request has submitted successfully.';
+				$postData = '';
+			}else{
+				$statusMsg = 'Robot verification failed, please try again.';
+			}
+		}else{
+			$statusMsg = 'Please check on the CAPTCHA box.';
+		}
+	}else{
+		$statusMsg = 'Please fill all the mandatory fields.';
 	}
-
-	$headers = '';
-	$headers .= 'From: ' . $name . ' <' . $email . '>' . "\r\n";
-	$headers .= "Reply-To: " .  $email . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-	// echo($to);
-	// echo($subject);
-	// echo($message);
-	// echo($headers);
-	// exit;
-
-	if (mail($to, $subject, $message, $headers)){
-		$arrResult = array ('response'=>'success');
-	} else{
-		$arrResult = array ('response'=>'error');
-	}
-
-    sleep(5);
-    header("Location: ../../../index.php");
-	echo json_encode($arrResult);
-
-} else {
-
-    sleep(5);
-    header("Location: ../../../contact.php");
-	$arrResult = array ('response'=>'error');
-	echo json_encode($arrResult);
-
 }
 ?>

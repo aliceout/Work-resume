@@ -25,34 +25,37 @@ include('assets/php/partials/head.php');
     <div id="mailForm" class="collapse card startwith-h2">
         <div class="card-container">
             <h2>Formulaire de contact</h2>
-            <div class="reply-form">
-                <div class="alert alert-success d-none" id="contactSuccess">
-                    <strong>Réussite!</strong> Votre message a été envoyé.
-                </div>
-
-                <div class="alert alert-danger d-none" id="contactError">
-                    <strong>Erreur!</strong> Le processus a rencontré un problème.
-                </div>
-                <form id="contactForm" action="assets/php/tools/contact-form.php" method="post">
+                <form id="contactForm" action="assets/php/tools/contact-form.php" method="post">      
+                <!-- Status message -->
+			<?php if(!empty($statusMsg)){ ?>
+				<p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
+			<?php } ?>
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nom et prénom *" data-msg-required="Merci d'entrer votre nom." minlength="2" id="name" name="name">
+                                <input type="text" class="form-control" placeholder="Nom et prénom *" data-msg-required="Merci d'entrer votre nom." minlength="2" id="name" name="name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email *" data-msg-required="Merci d'entrer votre adresse email." data-msg-email="Merci d'entrer une adresse email valide." maxlength="100" id="email" name="email">
+                                <input type="email" class="form-control" placeholder="Email *" data-msg-required="Merci d'entrer votre adresse email." data-msg-email="Merci d'entrer une adresse email valide." maxlength="100" id="email" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>">
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="form-group">
-                        <textarea class="form-control" rows="4" placeholder="Message *" maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message"></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Message *" maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message" <?php echo !empty($postData['message'])?$postData['message']:''; ?>></textarea>
                     </div>
+                    <div class="row">
                     <div class="col-12 col-md-4">
-                        <button type="submit" class="btn btn-mail btn-block">Envoyer</button>
+                        <button type="submit" name="submit" value="SUBMIT" class="btn btn-mail btn-block">Envoyer</button>
                     </div>
+                    <div class="col-12 col-md-2"></div>
+                    <div class="col-12 col-md-6">
+                        <!-- Add hCaptcha CAPTCHA box -->
+                        <div class="h-captcha" data-sitekey="71fdc48a-0d57-4cf8-b1db-152305e4c202"></div>
+                    </div>
+                        </div>
                 </form>
             </div>
         </div>
