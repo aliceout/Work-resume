@@ -9,14 +9,11 @@ include('assets/php/partials/head.php');
             <h2>Prendre contact</h2>
 
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <button data-toggle="collapse" data-target="#mailForm" type="button" class="btn btn-mail btn-block"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp; Email</button>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <button onclick="window.location.href = 'https://join.skype.com/invite/o8a7Gb21ckeS';" type="button" class="btn btn-skype btn-block"><i class="fab fa-skype fa-lg"></i>&nbsp;&nbsp; Skype</button>
-                </div>
-                <div class="col-12 col-md-4">
-                    <button data-toggle="collapse" data-target="#sessionForm" type="button" class="btn btn-session btn-block"><i class="fab fa-keycdn"></i>&nbsp;&nbsp; Session</button>
                 </div>
             </div>
         </div>
@@ -25,122 +22,77 @@ include('assets/php/partials/head.php');
     <div id="mailForm" class="collapse card startwith-h2">
         <div class="card-container">
             <h2>Formulaire de contact</h2>
-                <form id="contactForm" action="assets/php/tools/contact-form.php" method="post">      
-                <!-- Status message -->
-			<?php if(!empty($statusMsg)){ ?>
-				<p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
-			<?php } ?>
+            <div class="cw-frm">
+                <form action="" method="post">
+                    <h3>Contact Form</h3>
+
+                    <!-- Status message -->
+                    <?php if(!empty($statusMsg)){ ?>
+                    <p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
+                    <?php } ?>
+
+                    <!-- Form fields -->
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nom et prénom *" data-msg-required="Merci d'entrer votre nom." minlength="2" id="name" name="name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>">
+                                <input type="text" class="form-control" name="name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" placeholder="Vos noms et prénoms" required="" />
                             </div>
                         </div>
+
                         <div class="col-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email *" data-msg-required="Merci d'entrer votre adresse email." data-msg-email="Merci d'entrer une adresse email valide." maxlength="100" id="email" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>">
+                                <input type="email" class="form-control" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" placeholder="Votre email" required="" />
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="form-group">
-                        <textarea class="form-control" rows="4" placeholder="Message *" maxlength="5000" data-msg-required="Merci d'entrer votre message." name="message" id="message" <?php echo !empty($postData['message'])?$postData['message']:''; ?>></textarea>
+                        <textarea name="message" class="form-control" rows="4" placeholder="Votre message" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
                     </div>
                     <div class="row">
-                    <div class="col-12 col-md-4">
-                        <button type="submit" name="submit" value="SUBMIT" class="btn btn-mail btn-block">Envoyer</button>
-                    </div>
-                    <div class="col-12 col-md-2"></div>
-                    <div class="col-12 col-md-6">
-                        <!-- Add hCaptcha CAPTCHA box -->
-                        <div class="h-captcha" data-sitekey="71fdc48a-0d57-4cf8-b1db-152305e4c202"></div>
-                    </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Submit button -->
+                            <input type="submit" name="submit" class="btn btn-mail btn-block" value="Envoyer">
                         </div>
+                        <div class="col-12 col-md-2"></div>
+                        <div class="col-12 col-md-6">
+                            <!-- Add hCaptcha CAPTCHA box -->
+                            <div class="h-captcha" data-sitekey="71fdc48a-0d57-4cf8-b1db-152305e4c202"></div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="sessionForm" class="collapse card startwith-h2">
-        <div class="card-container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="img-fluid" src="https://getsession.org/wp-content/uploads/2019/12/sitelogo-1.png">
-                            <br>
-                            <div class="d-none d-lg-block"><br></div>
-                            <div class="d-none d-xl-block"><br></div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="https://getsession.org/android" target="_blank" style="text-decoration:none"><button type="button" class="btn btn-session btn-big btn-block"><i class="fab fa-android"></i>&nbsp;&nbsp; Android</button></a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="https://getsession.org/download" target="_blank" style="text-decoration:none"><button class="btn btn-session btn-big btn-block"> <i class="far fa-desktop"></i>&nbsp;&nbsp; Desktop</button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="https://getsession.org/iphone" target="_blank" style="text-decoration:none"><button type="button" class="btn btn-session btn-big btn-block"><i class="fab fa-apple"></i>&nbsp;&nbsp; iPhone</button></a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="https://github.com/loki-project/session-android/releases" target="_blank" style="text-decoration:none"><button class="btn btn-session btn-big btn-block"><i class="fab fa-android"></i>&nbsp;&nbsp; Apk</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 offset-lg-1 d-none d-md-block">
-                    <img class="img-fluid" src="assets/images/session.png">
-                </div>
+<script type="text/javascript">
+    function toggle_visibility(mailform) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
 
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-lg-3 div-copy">
-                            <span id="tooltiptext">Copier ID</span>
-                            <button onclick="copyID()" class="btn btn-session btn-copy btn-block" data-clipboard-text="05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25">Copier ID</button>
-                        </div>
-                        <div class="col-11 col-lg-8 alert btn-session-id " role="alert">
-                            <strong>05fa315c8b2c9eee0a22a82d3a53dafcb9a0cd7c3f39543c053c693c3ae1066d25</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+</script>
+<script type="text/javascript">
+    var clip = new Clipboard('.btn');
 
-        <script type="text/javascript">
-            function toggle_visibility(mailform) {
-                var e = document.getElementById(id);
-                if (e.style.display == 'block')
-                    e.style.display = 'none';
-                else
-                    e.style.display = 'block';
-            }
+    clip.on("success", function() {
+        document.body.insertAdjacentHTML('beforeend');
+    });
+    clip.on("error", function() {
+        document.body.insertAdjacentHTML('beforeend');
+    });
 
-        </script>
+</script>
+<script type="text/javascript">
+    function copyID() {
+        var tooltip = document.getElementById("tooltiptext");
+        tooltip.innerHTML = "ID copié";
+    }
 
-        <script type="text/javascript">
-            var clip = new Clipboard('.btn');
+</script>
 
-            clip.on("success", function() {
-                document.body.insertAdjacentHTML('beforeend');
-            });
-            clip.on("error", function() {
-                document.body.insertAdjacentHTML('beforeend');
-            });
-
-        </script>
-
-        <script type="text/javascript">
-            function copyID() {
-                var tooltip = document.getElementById("tooltiptext");
-                tooltip.innerHTML = "ID copié";
-            }
-
-        </script>
-
-        <?php include('assets/php/partials/end.php'); ?>
+<?php include('assets/php/partials/end.php'); ?>
