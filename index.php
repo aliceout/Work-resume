@@ -43,8 +43,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Clinique juridique, Urgence, Crises et Développement, Sécurité humanitaire, Gestion Humanitaire, Budgétisation et financements, Médiation et négociation humanitaire<br><br>
-                                        <a href="education.php">En savoir plus</a>
+<p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation, Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>                                        <a href="education.php">En savoir plus</a>
                                     </p>
                                 </div>
                             </div>
