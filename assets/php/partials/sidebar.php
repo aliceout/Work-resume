@@ -7,7 +7,7 @@
                 <img src="assets/images/identity.png" class="circle middle" alt="" height="135px;">
             </figure>
 
-            <h1 class="entete">FRANÇOIS <span class="entete-color">DELAMAIDE</span><small>32 ans<br></small></h1>
+            <h1 class="entete">FRANÇOIS <span class="entete-color">DELAMAIDE</span><small>33 ans<br></small></h1>
 
             <nav>
                 <div class="d-none d-lg-block">&emsp;</div>
