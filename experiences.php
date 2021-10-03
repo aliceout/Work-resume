@@ -37,7 +37,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Responsable logistique base</h3>
+                            <h3>Logisticien base</h3>
                             <div class="date">2020-2021 · 9 mois</div>
                             <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika<br><br></p>
                                  <ul>
