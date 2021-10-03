@@ -20,7 +20,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Coordinateur logistique</h3>
                             <div class="date">sept. 2021 · En cours</div>
-                            <p>Animation d'une équipe logistique capitale, et soutient technique et opérationnel de deux projets sur le pays</p>
+                            <p>Animation d'une équipe logistique capitale, et soutient technique et opérationnel de deux projets sur le pays<br><br></p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
@@ -39,7 +39,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Responsable logistique base</h3>
                             <div class="date">2020-2021 · 9 mois</div>
-                            <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika</p>
+                            <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika<br><br></p>
                                  <ul>
                                 <li>
                                     <p>Encadrement, animation et formation d'une équipe d'une douzaine de personnes</p>
@@ -81,7 +81,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Logisticien</h3>
                             <div class="date">2020 · 3 mois</div>
-                            <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19</p>
+                            <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19<br><br></p>
                             <ul>
                                 <li>
                                     <p>Gestion et suivi de stock</p>
