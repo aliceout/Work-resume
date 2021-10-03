@@ -38,7 +38,7 @@ include('assets/php/partials/head.php');
                                     <div class="date">2019 - 2020 (En cours)</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/aix.png"></div>
+                                    <div class="logo-index"><img src="assets/images/aix‧png"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -59,18 +59,17 @@ include('assets/php/partials/head.php');
                             <div class="row">
                                 <div class="col-8">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
-                                    <h5>Responsable logistique base</h5>
-                                    <div class="date">2020 · En cours</div>
+                                    <h5>Coordinateur Logistique</h5>
+                                    <div class="date">sept. 2021 · En cours</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/mdm.png"></div>
+                                    <div class="logo-index"><img src="assets/images/mdm‧png"></div>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p><strong>République Démocratique du Congo</strong><br>
-                                    <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit dans la province du Tanganyika<br><br>
+                                    <p><strong>République Centrafricaine</strong><br>
                                     <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>
