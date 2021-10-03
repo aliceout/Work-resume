@@ -20,6 +20,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <h3>Coordinateur logistique</h3>
                             <div class="date">sept. 2021 · En cours</div>
+                            <p>Animation d'une équipe logistique capitale, et soutient technique et opérationnel de deux projets sur le pays</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
@@ -39,6 +40,29 @@ include('assets/php/partials/head.php');
                             <h3>Responsable logistique base</h3>
                             <div class="date">2020-2021 · 9 mois</div>
                             <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika</p>
+                                 <ul>
+                                <li>
+                                    <p>Encadrement, animation et formation d'une équipe d'une douzaine de personnes</p>
+                                </li>
+                                <li>
+                                    <p>Supervision des tâches des approvisionnements, transport et stockage des intrants programmes sur la province</p>
+                                </li>
+                                <li>
+                                    <p>Suivi et gestion des parcs automobile, des communications et du parc informatique </p>
+                                </li>
+                                <li>
+                                    <p>Ouverture d'une sous-base en urgence, et participation à l'élaboration et au lancement d'une réponse rapide</p>
+                                </li>
+                                <li>
+                                    <p>Veille sécuritaire, analyse et suivi de la sécurité de la base, des déplacements et des équipes, participation à l'écriture des protocoles</p>
+                                </li>
+                                <li>
+                                    <p>Participation aux processus de recrutement, aux évaluations et aux définitions des besoins RH</p>
+                                </li>
+                                <li>
+                                    <p>Supervision des réhabilitations et approvisionnements des centres de santé</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
@@ -58,6 +82,29 @@ include('assets/php/partials/head.php');
                             <h3>Logisticien</h3>
                             <div class="date">2020 · 3 mois</div>
                             <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19</p>
+                            <ul>
+                                <li>
+                                    <p>Gestion et suivi de stock</p>
+                                </li>
+                                <li>
+                                    <p>Gestion des EPI Covid19 (stock, commande, préparation, suivi)</p>
+                                </li>
+                                <li>
+                                    <p>Approvisionnement</p>
+                                </li>
+                                <li>
+                                    <p>Préparation distribution et intervention</p>
+                                </li>
+                                <li>
+                                    <p>Travail de mise à niveau du parc informatique</p>
+                                </li>
+                                <li>
+                                    <p>Création et mise à niveau protocoles (sorties, stock, achat)</p>
+                                </li>
+                                <li>
+                                    <p>Accompagnement à évaluation de la sécurité</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
