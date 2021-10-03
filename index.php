@@ -38,7 +38,7 @@ include('assets/php/partials/head.php');
                                     <div class="date">2019 - 2020 (En cours)</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/aix‧png"></div>
+                                    <div class="logo-index"><img src="assets/images/aix.png"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -63,7 +63,7 @@ include('assets/php/partials/head.php');
                                     <div class="date">sept. 2021 · En cours</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/mdm‧png"></div>
+                                    <div class="logo-index"><img src="assets/images/mdm.png"></div>
                                 </div>
                             </div>
 
