@@ -16,14 +16,32 @@ include('assets/php/partials/head.php');
                                 <div class="col-md-8 col-sm-12">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
                                 </div>
+                                <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>RCA</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                            </div>
+                            <h3>Coordinateur logistique</h3>
+                            <div class="date">sept. 2021 · En cours</div>
+                        </div>
+                        <div class="col-2 offset-1 d-none d-lg-block">
+                            <div class="logo"><img src="assets/images/mdm‧png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-position">
+                    <div class="row">
+                        <div class="col-lg-9 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12">
+                                    <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
+                                </div>
                                 <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Responsable logistique base</h3>
-                            <div class="date">2020 · En cours</div>
+                            <div class="date">2020-2021 · 9 mois</div>
                             <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/mdm.png"></div>
+                            <div class="logo"><img src="assets/images/mdm‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -42,7 +60,7 @@ include('assets/php/partials/head.php');
                             <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/mdm.png"></div>
+                            <div class="logo"><img src="assets/images/mdm‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +87,7 @@ include('assets/php/partials/head.php');
                             </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/hi.png"></div>
+                            <div class="logo"><img src="assets/images/hi‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -108,7 +126,7 @@ include('assets/php/partials/head.php');
                             </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/caritas.png"></div>
+                            <div class="logo"><img src="assets/images/caritas‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -127,7 +145,7 @@ include('assets/php/partials/head.php');
                             <p>Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/olivet.png"></div>
+                            <div class="logo"><img src="assets/images/olivet‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +164,7 @@ include('assets/php/partials/head.php');
                             <p>Accueil et conseil client, vente et encaissement, mise en rayon et respect rotation des produits, réception et préparation de commandes, suivi de l’état des stocks, production des produits.</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/choco.png"></div>
+                            <div class="logo"><img src="assets/images/choco‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -165,7 +183,7 @@ include('assets/php/partials/head.php');
                             <p>Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/geodis.png"></div>
+                            <div class="logo"><img src="assets/images/geodis‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -184,7 +202,7 @@ include('assets/php/partials/head.php');
                             <p>Enregistrement et saisie des flux de départ, traitement réclamations, suivi et optimisation des process, dispatching tournées, coordination inter-services</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/cooljet.png"></div>
+                            <div class="logo"><img src="assets/images/cooljet‧png"></div>
                         </div>
                     </div>
                 </div>
@@ -203,7 +221,7 @@ include('assets/php/partials/head.php');
                             <p>Réception et comptabilisation des marchandises, contrôle qualité et tri des produits, reconditionnement des marchandises.</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/cooljet.png"></div>
+                            <div class="logo"><img src="assets/images/cooljet‧png"></div>
                         </div>
                     </div>
                 </div>
