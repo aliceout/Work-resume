@@ -65,6 +65,12 @@ include('assets/php/partials/head.php');
                                     <div class="logo-index"><img src="assets/images/mdm.png"></div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+<p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation, Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>                                        <a href="education.php">En savoir plus</a>
+                                    </p>
+                                </div>
+                            </div>
 
                             <div class="row">
                                 <div class="col-md-12">
