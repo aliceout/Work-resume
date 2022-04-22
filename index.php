@@ -43,7 +43,8 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-<p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation, Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>                                        <a href="education.php">En savoir plus</a>
+                                    <p>Gestion de cycles de projets, mojets, renforcement et partenariats<br><br>                                        
+                                        <a href="education.php">En savoir plus</a>
                                     </p>
                                 </div>
                             </div>
@@ -67,15 +68,9 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-<p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation, Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>                                        <a href="education.php">En savoir plus</a>
+                                    <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br>                                        
+                                        <a href="experiences.php">En savoir plus</a></p>
                                     </p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><strong>République Centrafricaine</strong><br>
-                                    <a href="experiences.php">En savoir plus</a></p>
                                 </div>
                             </div>
                         </div>
