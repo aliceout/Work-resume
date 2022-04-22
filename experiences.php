@@ -19,8 +19,37 @@ include('assets/php/partials/head.php');
                                 <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>RCA</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Coordinateur logistique</h3>
-                            <div class="date">sept. 2021 · En cours</div>
-                            <p>Animation d'une équipe logistique capitale, et soutient technique et opérationnel de deux projets sur le pays<br><br></p>
+                            <div class="date">2021-2022 · 9 mois · En cours</div>
+                            <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br></p>
+                                 <ul>
+                                <li>
+                                    <p>Encadrement de l’équipe logistique capitale, et appui de deux bases en arrière-pays</p>
+                                </li>
+                                <li>
+                                    <p>Gestion d'équipe (environ 25 personnes), animation des équipes, embauches de personnels, écritures de fiches de postes</p>
+                                </li>
+                                <li>
+                                    <p>Supervision et appui logistique des projets</p>
+                                </li>
+                                <li>
+                                    <p>Définition des stratégies et planification des activités logistiques</p>
+                                </li>
+                                <li>
+                                    <p>Appui technique à un projet de Clinique mobile en réponse d'urgence</p>
+                                </li>
+                                <li>
+                                    <p>Supervision de la mise en œuvre matérielle des procédures de sécurité, participation aux cellules de crises</p>
+                                </li>
+                                <li>
+                                    <p>Supervision des flux d'approvisionnements nationaux, et des opérations de dédouanement</p>
+                                </li>
+                                <li>
+                                    <p>Supervision des réhabilitations et constructions des centres de santé</p>
+                                </li>
+                                <li>
+                                    <p>Travail de représentation et de réseau (RLH, ClusterLog, ONG)</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/mdm.png"></div>
@@ -42,25 +71,31 @@ include('assets/php/partials/head.php');
                             <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika<br><br></p>
                                  <ul>
                                 <li>
-                                    <p>Encadrement, animation et formation d'une équipe d'une douzaine de personnes</p>
+                                    <p>Encadrement et animation d'une équipe d'une douzaine de personnes</p>
                                 </li>
                                 <li>
-                                    <p>Supervision des tâches des approvisionnements, transport et stockage des intrants programmes sur la province</p>
+                                    <p>Supervision des tâches d'approvisionnement, transport et stockage des intrants programmes sur la province</p>
                                 </li>
                                 <li>
-                                    <p>Suivi et gestion des parcs automobile, des communications et du parc informatique </p>
+                                    <p>Suivi et gestion des parcs automobile, des communications et du parc informatique</p>
                                 </li>
                                 <li>
-                                    <p>Ouverture d'une sous-base en urgence, et participation à l'élaboration et au lancement d'une réponse rapide</p>
+                                    <p>Ouverture d'une sous-base dans le cadre d'une réponse d'urgence, et participation à l'élaboration et au lancement d'une réponse rapide</p>
+                                </li>
+                                <li>
+                                    <p>Participation à la définition des construction de projet et écriture et suivi des budgets</p>
                                 </li>
                                 <li>
                                     <p>Veille sécuritaire, analyse et suivi de la sécurité de la base, des déplacements et des équipes, participation à l'écriture des protocoles</p>
                                 </li>
                                 <li>
-                                    <p>Participation aux processus de recrutement, aux évaluations et aux définitions des besoins RH</p>
+                                    <p>Animation des processus de recrutement, d'évaluations et de définitions des besoins RH</p>
                                 </li>
                                 <li>
-                                    <p>Supervision des réhabilitations et approvisionnements des centres de santé</p>
+                                    <p>Supervision des réhabilitations et constructions des centres de santé</p>
+                                </li>
+                                <li>
+                                    <p>Formation des équipes (Excel, Word, gestion des stocks, procédures d'achat, etc...)</p>
                                 </li>
                             </ul>
                         </div>
