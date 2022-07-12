@@ -18,7 +18,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>RCA</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Coordinateur logistique</h3>
+                            <h3>Coordinatrice logistique</h3>
                             <div class="date">2021-2022 · 9 mois · En cours</div>
                             <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br></p>
                                  <ul>
@@ -66,7 +66,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Logisticien base</h3>
+                            <h3>Logisticienne base</h3>
                             <div class="date">2020-2021 · 9 mois</div>
                             <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika<br><br></p>
                                  <ul>
@@ -114,7 +114,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Marseille, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Logisticien</h3>
+                            <h3>Logisticienne</h3>
                             <div class="date">2020 · 3 mois</div>
                             <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19<br><br></p>
                             <ul>
@@ -156,7 +156,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Tunis, <strong>Tunisie</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargé d'appui juridique aux études et diagnostics</h3>
+                            <h3>Chargée d'appui juridique aux études et diagnostics</h3>
                             <div class="date">2019 · 5 mois (stage)</div>
                             <p>Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien</p><br />
                             <ul>
@@ -183,7 +183,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-md-4 col-sm-12 text-right">Rabat, <strong>Maroc</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargé d'appui à la coordination de programme</h3>
+                            <h3>Chargée d'appui à la coordination de programme</h3>
                             <div class="date">2018-2019 · 8 mois (stage)</div>
                             <p>Programme "Migration"<br><br></p>
                             <ul>
@@ -222,7 +222,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Olivet, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargé d'appui juridique au pôle de la vie citoyenne</h3>
+                            <h3>Chargée d'appui juridique au pôle de la vie citoyenne</h3>
                             <div class="date">2015 · 2 mois (stage)</div>
                             <p>Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques</p>
                         </div>
@@ -260,7 +260,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Orléans, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Responsable adjoint de service de transport</h3>
+                            <h3>Responsable adjointe de service de transport</h3>
                             <div class="date">2009-2012 · 3 ans</div>
                             <p>Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service</p>
                         </div>

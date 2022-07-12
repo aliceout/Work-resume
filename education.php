@@ -6,7 +6,7 @@ include('assets/php/partials/head.php');
 <div class="col-12 col-lg-9 col-xl-10">
     <div class="card">
         <div class="card-container">
-            <h2>Cursus universitaire</h2>
+            <h2>Formations</h2>
             <div class="education">
 
                 <div class="graduation">
@@ -16,7 +16,7 @@ include('assets/php/partials/head.php');
                             <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
                             <span class="date">2018 - 2019</span>
                             <p><br><strong>Option</strong> : Urgence et réhabilitation<br>
-                                Diplomé mention AB</p><br />
+                                Diplomée mention AB</p><br />
                             <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
                                 Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
                                 <strong>Mémoire de stage I</strong>: <i>"Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée"</i><br>
@@ -36,7 +36,7 @@ include('assets/php/partials/head.php');
                             <small>Université Lyon III Jean Moulin&ensp;·&ensp;</small>
                             <span class="date">2017 - 2018</span>
                             <p><br><strong>Mention</strong> : Relations Internationales <br>
-                                Diplômé<br><br>
+                                Diplômée<br><br>
                                 Simulation de gestion de crise internationale, Aires culturelles mondiales<br>
                                 Religions et mondialisation, Economie politique européenne, Politiques étrangères comparées<br><br>
                                 <strong>Mémoire</strong> : <i>"L’externalisation des contrôles migratoires au Sahel. Étude sur un nouvel outil d’une politique européenne extra territorialisée de gestion des frontières"</i></p>
@@ -53,7 +53,7 @@ include('assets/php/partials/head.php');
                             <h3><span class="color">Licence · Droit</span></h3>
                             <small>Université Toulouse I Capitole&ensp;·&ensp;</small>
                             <span class="date">2015 - 2017</span>
-                            <p><br><strong>Mention</strong> : Droit Public<br>Diplomé mention AB<br><br>
+                            <p><br><strong>Mention</strong> : Droit Public<br>Diplomée mention AB<br><br>
                                 Dominante en droit administratif, droit international et droit européen</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
@@ -68,7 +68,7 @@ include('assets/php/partials/head.php');
                             <h3><span class="color">Capacité en Droit</span></h3>
                             <small>Conservatoire national des arts et métiers&ensp;·&ensp;</small>
                             <span class="date">2013 - 2015</span>
-                            <p><br>Diplôme délivré par l'Université Toulouse I Capitole <br>Diplomé mention B</p>
+                            <p><br>Diplômee délivré par l'Université Toulouse I Capitole <br>Diplomé mention B</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="assets/images/cnam.png"></div>
