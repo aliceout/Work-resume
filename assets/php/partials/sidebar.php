@@ -20,7 +20,7 @@
                     <li class="<?php if($currentPage =='skills'){echo 'active';}?>"><a href="skills.php">Langues &amp; compétences</a></li>
                     <li class="<?php if($currentPage =='personnal'){echo 'active';}?>"><a href="personnal.php">Activités personnelles</a></li>
                     <li class="<?php if($currentPage =='contact'){echo 'active';}?>"><a href="contact.php"><i class="fal fa-mail-bulk"></i>&nbsp;Me contacter</a></li>
-                    <li><a class="resume" href="https://cloud.ofanch.me/s/FpBJoZbepR6NngG#pdfviewer" target="_blank"><i class="far fa-files-medical"></i>&nbsp; Curriculum vitae</a></li>
+                    <li><a class="resume" href="https://cloud.ofanch.me/s/zjZq82exoLn2ntp#pdfviewer" target="_blank"><i class="far fa-files-medical"></i>&nbsp; Curriculum vitae</a></li>
                 </ul>
                 <div class="nav-toggle d-block d-lg-none">
                     <i class="material-icons menu">menu</i>
