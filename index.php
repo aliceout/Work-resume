@@ -12,11 +12,11 @@ include('assets/php/partials/head.php');
                         <h4>Bonjour,</h4>
                         <p class="text-justify">
                             <small>
-                                Fort de six années d'expérience dans le domaine du transport de marchandises, j'ai décidé en 2013, de reprendre mes études.
+                                Forte de six années d'expérience dans le domaine du transport de marchandises, et ayant acquis de nombreuses compétences transversales, sj'ai décidé en 2013, de reprendre mes études.
                                 <br><br>
-                                Engagé de longue date dans le milieu associatif, sur les questions de droit des étrangers et de politiques migratoire, sensibilisé à de nombreuses problèmatiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel correspondant aux valeurs qui sont miennes.
+                                Engagé de longue date dans le milieu associatif, sur les questions de défense droit des étrangers et de politiques migratoire, sensibilisé à de nombreuses problématiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel me permetant d'y trouver un sens, et correspondant aux valeurs qui sont miennes.
                                 <br><br>
-                                Ayant toujours eu un fort attrait pour les questions de politiques et d'actualités internationales c'est tout naturellement que ma reprise d'études s'est d'abord orienté vers un parcours juridique, me permettant d'acquérir les bases nécessaires à la poursuite de mes études, au sein de cursus en relations internationales, poliques publiques et droit international, me permettant de me spécialiser sur des sujets en lien avec le cadre de la solidarité internationale et des thématiques migratoires.
+                                Après plusieurs expériences associatives à l’étranger (Maroc, Tunisie, RDC, RCA), dans des fonctions liées à logistique, au juridique, ou encore de gestion de projet, j'ai décidé de réorienter mon action professionnelle, au sein de programmes en France ou en Europe, plus ancrés dans l'engagement militant, et sur des postes en lien avec la gestion de projets, et la coordination.
                             </small>
                             <br>
                         </p>
@@ -43,7 +43,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Gestion de cycles de projets, mojets, renforcement et partenariats<br><br>                                        
+                                    <p>Gestion de cycles de projets, mojets, renforcement et partenariats<br><br>
                                         <a href="education.php">En savoir plus</a>
                                     </p>
                                 </div>
@@ -68,7 +68,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br>                                        
+                                    <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br>
                                         <a href="experiences.php">En savoir plus</a></p>
                                     </p>
                                 </div>

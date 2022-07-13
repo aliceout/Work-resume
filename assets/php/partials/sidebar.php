@@ -4,7 +4,7 @@
         <header>
 
             <figure>
-                <img src="assets/images/identity.jpg" class="circle middle" alt="" height="135px;">
+                <img src="assets/images/identity2.jpg" class="circle middle" alt="" height="135px;">
             </figure>
 
             <h1 class="entete">ALICE <span class="entete-color">DELAMAIDE</span><small>33 ans<br></small></h1>
@@ -17,7 +17,7 @@
                     <li class="<?php if($currentPage =='education'){echo 'active';}?>"><a href="education.php">Formations</a></li>
                     <li class="<?php if($currentPage =='benevolat'){echo 'active';}?>"><a href="benevolat.php">Bénévolat</a></li>
                     <li class="<?php if($currentPage =='realisations'){echo 'active';}?>"><a href="realisations.php">Réalisations</a></li>
-                    <li class="<?php if($currentPage =='languages'){echo 'active';}?>"><a href="languages.php">Langues &amp; compétences</a></li>
+                    <li class="<?php if($currentPage =='skills'){echo 'active';}?>"><a href="skills.php">Langues &amp; compétences</a></li>
                     <li class="<?php if($currentPage =='personnal'){echo 'active';}?>"><a href="personnal.php">Activités personnelles</a></li>
                     <li class="<?php if($currentPage =='contact'){echo 'active';}?>"><a href="contact.php"><i class="fal fa-mail-bulk"></i>&nbsp;Me contacter</a></li>
                     <li><a class="resume" href="https://cloud.ofanch.me/s/FpBJoZbepR6NngG#pdfviewer" target="_blank"><i class="far fa-files-medical"></i>&nbsp; Curriculum vitae</a></li>

@@ -19,7 +19,7 @@ include('assets/php/partials/head.php');
                                 <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>RCA</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Coordinatrice logistique</h3>
-                            <div class="date">2021-2022 · 9 mois · En cours</div>
+                            <div class="date">2021-2022 · 9 mois</div>
                             <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br></p>
                                  <ul>
                                 <li>
