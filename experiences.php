@@ -241,7 +241,7 @@ include('assets/php/partials/head.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Toulouse, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Vendeur et préparateur en chocolaterie</h3>
+                            <h3>Vendeuse et préparatrice en chocolaterie</h3>
                             <div class="date">2014 · 6 mois</div>
                             <p>Accueil et conseil client, vente et encaissement, mise en rayon et respect rotation des produits, réception et préparation de commandes, suivi de l’état des stocks, production des produits.</p>
                         </div>
