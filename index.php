@@ -59,7 +59,7 @@ include('assets/php/partials/head.php');
                             <div class="row">
                                 <div class="col-8">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
-                                    <h5>Coordinateur Logistique</h5>
+                                    <h5>Coordinatrice Logistique</h5>
                                     <div class="date">2021-2022 · 9 mois · En cours</div>
                                 </div>
                                 <div class="col-2">
