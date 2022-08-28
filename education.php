@@ -6,15 +6,12 @@ include('assets/php/partials/head.php');
 <div class="col-12 col-lg-9 col-xl-10">
     <div class="card">
         <div class="card-container">
-            <h2>Formations</h2>
+            <h2>Formations universitaires</h2>
             <div class="education">
              <div class="graduation">
                     <div class="row">
                         <div class="col-lg-9 col-sm-12">
                             <p>Pour les certifications et formations courtes, voir page <a href="skills.php">Langues &amp; compétences</a></p>
-                        </div>
-                        <div class="col-2 offset-1 d-none d-lg-block">
-                            <div class="logo"><img src="assets/images/upec.png"></div>
                         </div>
                     </div>
                 </div>
