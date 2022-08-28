@@ -1,0 +1,168 @@
+@media screen and (min-width: 991px) {
+
+    .fullbg .fixed-sidebar.fixed {
+        position: fixed;
+    }
+
+    .fixedbottom {
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer {
+        .fullbg & {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        text-align: center;
+
+        figure {
+            display: inline-block;
+        }
+
+        nav {
+            > ul {
+                margin-top: 0px;
+                margin-bottom: 16px;
+                overflow: hidden;
+
+                li {
+                    a {
+                        i.material-icons {
+                            float: none;
+                            display: inline-block;
+                            padding-top: 0;
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+
+                ul {
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    li {
+                        a {
+                            background-color: #444;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-icons {
+            margin-bottom: 40px;
+        }
+    }
+
+    .isotope-grid {
+        .grid-item {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        .gallery {
+            figure {
+                margin-bottom: 10px;
+
+                &.last {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .skill {
+            .text-right {
+                text-align: left;
+            }
+        }
+    }
+
+    .space-bottom-xs {
+        margin-bottom: 10px;
+    }
+
+    .fullbg header div.nav-toggle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .services {
+        figure {
+            img {
+                float: none;
+                margin: 0;
+                display: block;
+                width: auto;
+                max-width: 100%;
+                height: auto;
+            }
+
+            img.right {
+                float: none;
+                margin: 0;
+            }
+
+            figcaption {
+                padding-top: 23px;
+            }
+        }
+    }
+
+    .card {
+        .card-container {
+            padding: 0 20px;
+        }
+    }
+
+    .card.blog-post .post-text {
+        padding: 21px 19px 19px 19px;
+    }
+
+    aside .card {
+        padding: 26px 20px 30px 20px;
+    }
+
+    .isotope-grid {
+        .grid-item {
+            width: 100%;
+        }
+    }
+
+    .menu-wrapper-mask nav {
+        margin-top: 100px;
+    }
+
+    .card .experience .job-position p,
+    .card .education .graduation p,
+    .justify {
+        text-align: justify;
+    }
+
+    .center {
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 420px) and (orientation: landscape) {
+
+    .fullbg header h1,
+    .fullbg header .social-icons {
+        z-index: -2;
+        position: relative;
+    }
+
+    .menu-wrapper-mask nav ul li a {
+        padding: 6px 0 8px 0;
+    }
+}

@@ -1,0 +1,207 @@
+.entete {
+    margin-bottom: 0;
+}
+
+.entete-color {
+    color: $mainColor;
+    font-weight: 700;
+}
+
+.logo {
+    img {
+        width: 125%;
+        margin-left: -2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.logo-index {
+    img {
+        margin-left: 1rem;
+        width: 250%;
+    }
+}
+
+.logo-certif {
+
+    img {
+        margin-left: 0.6rem;
+        width: 160%;
+    }
+}
+
+.logo,
+.logo-ttpetit,
+.logo-petit {
+    img {
+        @media screen and (max-width: 991px) {
+            width: 15%;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 20%;
+        }
+
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+aside .card,
+.card {
+    background-color: white;
+}
+
+aside .card-cv,
+.card-cv {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.card.work figure .doubleline {
+    padding: 20px 20px 8px 20px;
+
+    h3 {
+        margin-bottom: 2px;
+    }
+}
+
+.experience {
+    margin-top: 25px;
+}
+
+.btn-mail {
+    background-color: white;
+    color: #dc4a3f;
+    border: 1px solid #dc4a3f;
+
+    &:hover {
+        background-color: #dc4a3f;
+        color: white;
+        border: 1px solid #dc4a3f;
+    }
+}
+
+.btn-skype {
+    background-color: white;
+    color: #00aff0;
+    border: 1px solid #00aff0;
+
+    &:hover {
+        background-color: #00aff0;
+        color: #e5f7fd;
+        border: 1px solid #00aff0;
+    }
+}
+
+.btn-session {
+    background-color: white;
+    color: #00f782;
+    border: 1px solid #00f782;
+
+    &:hover {
+        background-color: black;
+        color: #00f782;
+        border: 1px solid black;
+    }
+}
+
+.btn-copy {
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+}
+
+#tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -60px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+}
+
+.div-copy:hover {
+    #tooltiptext {
+        visibility: visible;
+    }
+}
+
+.btn-session-id {
+    background-color: black;
+    color: #00f782;
+    text-align: center;
+    margin: auto;
+    padding: auto 1rem auto;
+}
+
+header nav ul li a:hover {
+
+    .fa-file-pdf {
+        color: #dc3e4b;
+    }
+}
+
+.resume:hover {
+    color: #dc3e4b;
+    border-bottom-color: #dc3e4b;
+}
+
+.btn-big {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.card-carousel {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .btn-mail,
+    .btn-skype,
+    .btn-session {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .div-copy {
+        margin: 1rem auto .5rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .btn-copy {
+        padding-top: 1rem;
+
+        padding-bottom: 1rem;
+    }
+}
