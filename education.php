@@ -4,6 +4,19 @@ include('assets/php/partials/head.php');
 ?>
 
 <div class="col-12 col-lg-9 col-xl-10">
+        <div class="card">
+        <div class="card-container">
+            <h2>Formations</h2>
+                <div class="graduation">
+                    <div class="row">
+                        <div class="col-lg-9 col-sm-12">
+                            <p>Certifications et formations courtes -> voir page <a href="skills.php">Langues &amp; compétences</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="card">
         <div class="card-container">
             <h2>Formations</h2>
