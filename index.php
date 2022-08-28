@@ -33,12 +33,12 @@ include('assets/php/partials/head.php');
                         <div class="graduation">
                             <div class="row">
                                 <div class="col-8">
-                                    <h5><span class="color">Master II · Politiques publiques · Action Humanitaire Internationale</span></h5>
-                                    <small>Université Paris-Est Créteil&ensp;·&ensp;</small>
-                                    <div class="date">2018 - 2019</div>
+                                    <h5><span class="color">Concevoir et piloter un projet humanitaire</span></h5>
+                                    <small>Institut Bioforce </small>
+                                    <div class="date">2021</div>
                                 </div>
                                 <div class="col-2">
-                                    <div class="logo-index"><img src="assets/images/upec.png"></div>
+                                    <div class="logo-index"><img src="assets/images/bioforce.png"></div>
                                 </div>
                             </div>
                             <div class="row">
