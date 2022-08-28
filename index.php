@@ -14,7 +14,7 @@ include('assets/php/partials/head.php');
                             <small>
                                 Forte de six années d'expérience dans le domaine du transport de marchandises, et ayant acquis de nombreuses compétences transversales, sj'ai décidé en 2013, de reprendre mes études.
                                 <br><br>
-                                Engagé de longue date dans le milieu associatif, sur les questions de défense droit des étrangers et de politiques migratoire, sensibilisé à de nombreuses problématiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel me permetant d'y trouver un sens, et correspondant aux valeurs qui sont miennes.
+                                Engagée de longue date dans le milieu associatif, sur les questions de défense droit des étrangers et de politiques migratoire, sensibilisée à de nombreuses problématiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel me permetant d'y trouver un sens, et correspondant aux valeurs qui sont miennes.
                                 <br><br>
                                 Après plusieurs expériences associatives à l’étranger (Maroc, Tunisie, RDC, RCA), dans des fonctions liées à logistique, au juridique, ou encore de gestion de projet, j'ai décidé de réorienter mon action professionnelle, au sein de programmes en France ou en Europe, plus ancrés dans l'engagement militant, et sur des postes en lien avec la gestion de projets, et la coordination.
                             </small>
@@ -59,8 +59,8 @@ include('assets/php/partials/head.php');
                             <div class="row">
                                 <div class="col-8">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
-                                    <h5>Coordinateur Logistique</h5>
-                                    <div class="date">2021-2022 · 9 mois · En cours</div>
+                                    <h5>Coordinatrice Logistique</h5>
+                                    <div class="date">2021-2022 · 9 mois</div>
                                 </div>
                                 <div class="col-2">
                                     <div class="logo-index"><img src="assets/images/mdm.png"></div>

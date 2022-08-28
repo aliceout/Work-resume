@@ -7,7 +7,7 @@
                 <img src="assets/images/identity2.jpg" class="circle middle" alt="" height="135px;">
             </figure>
 
-            <h1 class="entete">ALICE <span class="entete-color">DELAMAIDE</span><small>33 ans<br></small></h1>
+            <h1 class="entete">ALICE <span class="entete-color">DELAMAIDE</span><small>34 ans<br></small></h1>
 
             <nav>
                 <div class="d-none d-lg-block">&emsp;</div>
@@ -19,8 +19,8 @@
                     <li class="<?php if($currentPage =='realisations'){echo 'active';}?>"><a href="realisations.php">Réalisations</a></li>
                     <li class="<?php if($currentPage =='skills'){echo 'active';}?>"><a href="skills.php">Langues &amp; compétences</a></li>
                     <li class="<?php if($currentPage =='personnal'){echo 'active';}?>"><a href="personnal.php">Activités personnelles</a></li>
-                    <li class="<?php if($currentPage =='contact'){echo 'active';}?>"><a href="contact.php"><i class="fal fa-mail-bulk"></i>&nbsp;Me contacter</a></li>
-                    <li><a class="resume" href="https://cloud.ofanch.me/s/zjZq82exoLn2ntp#pdfviewer" target="_blank"><i class="far fa-files-medical"></i>&nbsp; Curriculum vitae</a></li>
+                    <li class="<?php if($currentPage =='contact'){echo 'active';}?>"><a href="https://join.skype.com/invite/II99wpbBBR78" target="_blank"><i class="fal fa-mail-bulk"></i>&nbsp;Me contacter</a></li>
+                    <li><a class="resume" href="https://cloud.ofanch.me/s/zjZq82exoLn2ntp#pdfviewer" target="_blank"><i class="far fa-files-medical"></i>&nbsp;Curriculum vitae</a></li>
                 </ul>
                 <div class="nav-toggle d-block d-lg-none">
                     <i class="material-icons menu">menu</i>
