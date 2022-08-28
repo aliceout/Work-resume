@@ -16,7 +16,6 @@ include('assets/php/partials/head.php');
                 </div>
             </div>
         </div>
-    </div>
     <div class="card">
         <div class="card-container">
             <h2>Formations</h2>
