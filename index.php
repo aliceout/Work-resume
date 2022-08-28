@@ -43,7 +43,7 @@ include('assets/php/partials/head.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Gestion de cycles de projets, mojets, renforcement et partenariats<br><br>
+                                    <p>Cycle de projets, outils de suivi et de gestion de projets, <br><br>
                                         <a href="education.php">En savoir plus</a>
                                     </p>
                                 </div>
