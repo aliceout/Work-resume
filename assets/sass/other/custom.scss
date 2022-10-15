@@ -3,15 +3,14 @@
 }
 
 .entete-color {
-    color: $mainColor;
+    color: var(--primary-font);
     font-weight: 700;
 }
 
 .logo {
     img {
         width: 125%;
-        margin-left: -2rem;
-        margin-top: 1.5rem;
+        margin-left: -1rem;
     }
 }
 
@@ -54,14 +53,29 @@
 
 aside .card,
 .card {
-    background-color: white;
+    background-color: var (--back-card);
 }
 
 aside .card-cv,
 .card-cv {
     padding-top: 8px;
     padding-bottom: 8px;
-}
+} 
+
+aside .options{ 
+    padding: 6px 20px 6px 20px;
+    margin-bottom: 20px;
+    background-color: var (--back-card);
+} 
+
+.label-checkbox, .option-category {
+    text-align: center;
+    justify-content: center;
+    p {
+        margin-bottom: 0px; 
+    }
+} 
+
 
 .card.work figure .doubleline {
     padding: 20px 20px 8px 20px;
@@ -75,17 +89,6 @@ aside .card-cv,
     margin-top: 25px;
 }
 
-.btn-mail {
-    background-color: white;
-    color: #dc4a3f;
-    border: 1px solid #dc4a3f;
-
-    &:hover {
-        background-color: #dc4a3f;
-        color: white;
-        border: 1px solid #dc4a3f;
-    }
-}
 
 .btn-skype {
     background-color: white;
@@ -99,22 +102,6 @@ aside .card-cv,
     }
 }
 
-.btn-session {
-    background-color: white;
-    color: #00f782;
-    border: 1px solid #00f782;
-
-    &:hover {
-        background-color: black;
-        color: #00f782;
-        border: 1px solid black;
-    }
-}
-
-.btn-copy {
-    margin-top: 1.5px;
-    margin-bottom: 1.5px;
-}
 
 #tooltiptext {
     visibility: hidden;
@@ -148,13 +135,6 @@ aside .card-cv,
     }
 }
 
-.btn-session-id {
-    background-color: black;
-    color: #00f782;
-    text-align: center;
-    margin: auto;
-    padding: auto 1rem auto;
-}
 
 header nav ul li a:hover {
 
@@ -180,28 +160,3 @@ header nav ul li a:hover {
     padding-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
-
-    .btn-mail,
-    .btn-skype,
-    .btn-session {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-    }
-}
-
-@media screen and (max-width: 992px) {
-
-    .div-copy {
-        margin: 1rem auto .5rem;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-    .btn-copy {
-        padding-top: 1rem;
-
-        padding-bottom: 1rem;
-    }
-}

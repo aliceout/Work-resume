@@ -1,8 +1,8 @@
 <?php
 $currentPage = 'personnal';
-include('assets/php/partials/head.php');
+include('../assets/php/partials/head.php');
 ?>
-<div class="col-lg-9 col-xl-10">
+<div class="col-12">
     <div class="row">
         <div class="col-12 col-md-6">
             <aside>
@@ -44,5 +44,5 @@ include('assets/php/partials/head.php');
     </div>
 </div>
 
-<?php include('assets/php/link/link_emergency.php'); ?>
-<?php include('assets/php/partials/end.php'); ?>
+<?php include('../assets/php/link/link_emergency.php'); ?>
+<?php include('../assets/php/partials/end.php'); ?>
