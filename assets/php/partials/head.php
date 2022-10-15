@@ -32,15 +32,12 @@
     </head>
 
     <body>
-
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
             <script src="../assets/vendor/html5shiv.min.js"></script>
             <script src="../assets/vendor/respond.min.js"></script>
-            <script src="../assets/php/contact-form/form.js"></script>
-            <script src="https://hcaptcha.com/1/api.js" async defer></script>
+        
 
-            <script src="../assets/.js"></script>
             <div class="container">
                 <div class="row">
 

@@ -1,0 +1,1 @@
+"use strict";var newsletterType="mailchimp",newsletterEmail="example@example.tld",mailchimpAjaxLink="http://publicthemes.us7.list-manage.com/subscribe/post-json?u=0e55f682ed9d61847d065bf85&amp;id=793c157ca4&c=?",newsletterSuccessMsg="Awesome! We sent you a confirmation email.";
