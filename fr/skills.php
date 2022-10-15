@@ -1,8 +1,8 @@
 <?php
 $currentPage = 'skills';
-include('assets/php/partials/head.php');
+include('../assets/php/partials/head.php');
 ?>
-<div class="col-lg-9 col-xl-10">
+<div class="col-12">
     <div class="row">
         <div class="col-12 col-md-6">
             <aside>
@@ -91,7 +91,7 @@ include('assets/php/partials/head.php');
                                 <span>Institut Bioforce <br /> 2021</span>
                             </div>
                             <div class="d-none d-xl-block col-xl-2">
-                                <div class="logo-certif"><img src="assets/images/bioforce.png"></div>
+                                <div class="logo-certif"><img src="../assets/images/bioforce.png"></div>
                             </div>
                         </div>
                     </li>
@@ -102,7 +102,7 @@ include('assets/php/partials/head.php');
                                 <span>Institut Bioforce <br /> 2021</span>
                             </div>
                             <div class="d-none d-xl-block col-xl-2">
-                                <div class="logo-certif"><img src="assets/images/bioforce.png"></div>
+                                <div class="logo-certif"><img src="../assets/images/bioforce.png"></div>
                             </div>
                         </div>
                     </li>
@@ -114,7 +114,7 @@ include('assets/php/partials/head.php');
                                         Université Aix-Marseille <br />2020</span>
                                 </div>
                                 <div class="d-none d-xl-block col-xl-2">
-                                    <div class="logo-certif"><img src="assets/images/iehi.png"></div>
+                                    <div class="logo-certif"><img src="../assets/images/iehi.png"></div>
                                 </div>
                             </div>
                         </li>
@@ -125,7 +125,7 @@ include('assets/php/partials/head.php');
                                     <span>Université Lyon III Jean Moulin <br /> 2018</span>
                                 </div>
                                 <div class="d-none d-xl-block col-xl-2">
-                                    <div class="logo-certif"><img src="assets/images/lyon3.png"></div>
+                                    <div class="logo-certif"><img src="../assets/images/lyon3.png"></div>
                                 </div>
                             </div>
                         </li>
@@ -136,7 +136,7 @@ include('assets/php/partials/head.php');
                                     <span>Université Lyon III Jean Moulin <br /> 2018 · Score : 675</span>
                                 </div>
                                 <div class="d-none d-xl-block col-xl-2">
-                                    <div class="logo-certif"><img src="assets/images/pix.png"></div>
+                                    <div class="logo-certif"><img src="../assets/images/pix.png"></div>
                                 </div>
                             </div>
                         </li>
@@ -158,4 +158,4 @@ include('assets/php/partials/head.php');
     </div>
 </div>
 
-<?php include('assets/php/partials/end.php'); ?>
+<?php include('../assets/php/partials/end.php'); ?>
