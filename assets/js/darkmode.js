@@ -3,23 +3,30 @@ let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.getElementById('darkmode-checkbox');
 
-
 const enableDarkMode = () => {
-    // 1. Add the class to the body
+    // 1. Add the class to the body & html
     document.body.classList.add('dark-mode');
     document.documentElement.classList.add('dark-mode');
     // 2. Update darkMode in localStorage
     localStorage.setItem('darkMode', 'enabled');
     // 3. toggle the checkbox
     darkModeToggle.setAttribute('checked', true);
+    // 4. Display black & white picture
+    document.getElementById('grey-picture').style.visibility = 'visible';
+    // 5. Hide color picture
+    document.getElementById('color-picture').style.visibility = 'hidden'; 
 }
 
 const disableDarkMode = () => {
-    // 1. Remove the class from the body
+    // 1. Remove the class from the body & html
     document.body.classList.remove('dark-mode');
     document.documentElement.classList.remove('dark-mode');
     // 2. Update darkMode and toggle in localStorage 
     localStorage.setItem('darkMode', null);
+    // 3. Display color picture
+    document.getElementById('color-picture').style.visibility = 'visible';
+    // 4. Hide black & white picture
+    document.getElementById('grey-picture').style.visibility = 'hidden'; 
 }
 
 // If the user already visited and enabled darkMode

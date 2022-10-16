@@ -7,7 +7,7 @@ include('front.php');
 <div class="col-12">
     <div class="card">
         <div class="card-container">
-            <h2>Expériences professionnelles</h2>
+            <h2>Professional experiences</h2>
             <div class="experience">
 
                 <div class="job-position">
@@ -17,38 +17,38 @@ include('front.php');
                                 <div class="col-md-8 col-sm-12">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
                                 </div>
-                                <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>RCA</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                                <div class="col-md-4 col-sm-12 text-right">Bangui, <strong>CAR</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Coordinatrice logistique</h3>
+                            <h3>Logistics Coordinator</h3>
                             <div class="date">2021-2022 · 9 mois</div>
-                            <p>Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain<br><br></p>
-                                 <ul>
+                            <p>Emergency responses to the health needs of conflict-affected populations in Central African territory<br><br></p>
+                            <ul>
                                 <li>
-                                    <p>Encadrement de l’équipe logistique capitale, et appui de deux bases en arrière-pays</p>
+                                    <p>Management of the capital logistics team, and support of two backcountry bases</p> 
+                                </li> 
+                                <li> 
+                                    <p>Team management (approximately 25 people), team facilitation, staff hires, writing job descriptions</p>
                                 </li>
                                 <li>
-                                    <p>Gestion d'équipe (environ 25 personnes), animation des équipes, embauches de personnels, écritures de fiches de postes</p>
+                                    <p>Supervision and logistical support of projects</p> </li>
+
+                                <li>
+                                    <p>Strategizing and planning logistics activities</p>
                                 </li>
                                 <li>
-                                    <p>Supervision et appui logistique des projets</p>
+                                    <p>Technical support to a Mobile Clinic project in emergency response</p>
+                                </li> 
+                                <li>
+                                    <p>Overseeing physical implementation of safety procedures, participating in crisis cells</p>
                                 </li>
                                 <li>
-                                    <p>Définition des stratégies et planification des activités logistiques</p>
+                                    <p>Supervision of national supply flows, and customs clearance operations</p>
                                 </li>
-                                <li>
-                                    <p>Appui technique à un projet de Clinique mobile en réponse d'urgence</p>
+                                <li> 
+                                    <p>Supervision of health center rehabilitation and construction</p>
                                 </li>
-                                <li>
-                                    <p>Supervision de la mise en œuvre matérielle des procédures de sécurité, participation aux cellules de crises</p>
-                                </li>
-                                <li>
-                                    <p>Supervision des flux d'approvisionnements nationaux, et des opérations de dédouanement</p>
-                                </li>
-                                <li>
-                                    <p>Supervision des réhabilitations et constructions des centres de santé</p>
-                                </li>
-                                <li>
-                                    <p>Travail de représentation et de réseau (RLH, ClusterLog, ONG)</p>
+                                <li> 
+                                    <p>Representation and networking work (RLH, ClusterLog, NGOs)</p>
                                 </li>
                             </ul>
                         </div>
@@ -65,38 +65,35 @@ include('front.php');
                                 <div class="col-md-8 col-sm-12">
                                     <small><span class="color">MÉDECINS DU MONDE FRANCE</span></small>
                                 </div>
-                                <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                                <div class="col-md-4 col-sm-12 text-right">Kalemie, <strong>Congo DR</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Logisticienne base</h3>
-                            <div class="date">2020-2021 · 9 mois</div>
-                            <p>Réponse d'urgence aux besoins de santé des populations affectées par le conflit, dans la province du Tanganyika<br><br></p>
-                                 <ul>
+                            <h3>Base Logistician</h3>
+                            <div class="date">2020-2021 · 9 months</div>
+                            <p>Emergency response to the health needs of conflict-affected populations in Tanganyika province<br><br></p>
+                            <ul>
                                 <li>
-                                    <p>Encadrement et animation d'une équipe d'une douzaine de personnes</p>
+                                    <p>Supervising and leading a team of a dozen people</p> 
+                                </li> 
+                                <li>
+                                    <p>Supervising the tasks of procurement, transportation and storage of program inputs in the province</p> 
+                                </li> 
+                                <li> <p>Monitoring and managing the car fleet, communications and computer fleet</p> 
                                 </li>
                                 <li>
-                                    <p>Supervision des tâches d'approvisionnement, transport et stockage des intrants programmes sur la province</p>
+                                    <p>Opening a sub-base as part of an emergency response, and participating in the development and launch of a rapid response</p>
+                                </li> 
+                                <li> <p>Participating in the definition of project construction and writing and tracking budgets</p> </li>
+                                <li>
+                                    <p>Security watch, analyzing and tracking base, travel, and team security, participating in writing protocols</p> 
                                 </li>
                                 <li>
-                                    <p>Suivi et gestion des parcs automobile, des communications et du parc informatique</p>
-                                </li>
+                                    <p>Facilitating recruitment processes, assessments and HR needs definitions</p>
+                                </li> 
                                 <li>
-                                    <p>Ouverture d'une sous-base dans le cadre d'une réponse d'urgence, et participation à l'élaboration et au lancement d'une réponse rapide</p>
-                                </li>
-                                <li>
-                                    <p>Participation à la définition des construction de projet et écriture et suivi des budgets</p>
-                                </li>
-                                <li>
-                                    <p>Veille sécuritaire, analyse et suivi de la sécurité de la base, des déplacements et des équipes, participation à l'écriture des protocoles</p>
-                                </li>
-                                <li>
-                                    <p>Animation des processus de recrutement, d'évaluations et de définitions des besoins RH</p>
-                                </li>
-                                <li>
-                                    <p>Supervision des réhabilitations et constructions des centres de santé</p>
-                                </li>
-                                <li>
-                                    <p>Formation des équipes (Excel, Word, gestion des stocks, procédures d'achat, etc...)</p>
+                                    <p>Supervision of health center rehabilitations and constructions</p>
+                                </li> 
+                                <li> 
+                                    <p>Team training (Excel, Word, inventory management, purchasing procedures, etc...)</p> 
                                 </li>
                             </ul>
                         </div>
@@ -116,29 +113,28 @@ include('front.php');
                                 <div class="col-md-4 col-sm-12 text-right">Marseille, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
                             <h3>Logisticienne</h3>
-                            <div class="date">2020 · 3 mois</div>
-                            <p>Programmes Squat et Bidonville &amp; CASO · Réponse Covid-19<br><br></p>
+                            <div class="date">2020 · 3 months</div>
+                            <p>Squat and Slum Programs & CASO - Covid-19 Response<br><br></p>
                             <ul>
                                 <li>
-                                    <p>Gestion et suivi de stock</p>
+                                    <p>Stock management and tracking</p> 
+                                </li>
+                                <li> 
+                                    <p>Covid19 PPE management (stock, order, preparation, tracking)</p>
+                                </li> 
+                                <li> <p>Procurement</p>
+                                </li>
+                                <li> 
+                                    <p>Distribution preparation and intervention</p>
                                 </li>
                                 <li>
-                                    <p>Gestion des EPI Covid19 (stock, commande, préparation, suivi)</p>
+                                    <p>Computer fleet upgrade work</p>
+                                </li> 
+                                <li>
+                                    <p>Protocol creation and upgrade (output, stock, purchase)</p>
                                 </li>
                                 <li>
-                                    <p>Approvisionnement</p>
-                                </li>
-                                <li>
-                                    <p>Préparation distribution et intervention</p>
-                                </li>
-                                <li>
-                                    <p>Travail de mise à niveau du parc informatique</p>
-                                </li>
-                                <li>
-                                    <p>Création et mise à niveau protocoles (sorties, stock, achat)</p>
-                                </li>
-                                <li>
-                                    <p>Accompagnement à évaluation de la sécurité</p>
+                                    <p>Security assessment support</p>
                                 </li>
                             </ul>
                         </div>
@@ -155,17 +151,17 @@ include('front.php');
                                 <div class="col-md-8 col-sm-12">
                                     <small><span class="color">HUMANITÉ &amp; INCLUSION</span></small>
                                 </div>
-                                <div class="col-md-4 col-sm-12 text-right">Tunis, <strong>Tunisie</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                                <div class="col-md-4 col-sm-12 text-right">Tunis, <strong>Tunisia</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargée d'appui juridique aux études et diagnostics</h3>
-                            <div class="date">2019 · 5 mois (stage)</div>
-                            <p>Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien</p><br />
+                            <h3>Legal support for studies and diagnoses</h3>
+                            <div class="date">2019 · 6 months (internship)</div>
+                            <p>Support of the regional direction, in the realization of an exploratory mission on the situation of the migrant people in the Tunisian south (governorates of Medenine and Tataouine), and of a work of analysis of the framework the equal, for the realization of two initial diagnoses on the Tunisian territory</p><br />
                             <ul>
                                 <li>
-                                    <p>Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap</p>
-                                </li>
-                                <li>
-                                    <p>Etudes sur les conditions de séjour, d'accueil et d'accés aux services de droit commun, des personnes migrantes</p>
+                                    <p>Study on sexual violence and the sexual and reproductive health needs of young people and women with disabilities</p>
+                                </li> 
+                                <li> 
+                                    <p>Studies on the conditions of residence, reception and access to mainstream services, of migrant persons</p>
                                 </li>
                             </ul>
                         </div>
@@ -182,29 +178,28 @@ include('front.php');
                                 <div class="col-md-8 col-sm-12">
                                     <small><span class="color">CARITAS AU MAROC</span></small>
                                 </div>
-                                <div class="col-md-4 col-sm-12 text-right">Rabat, <strong>Maroc</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
+                                <div class="col-md-4 col-sm-12 text-right">Rabat, <strong>Morocco</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargée d'appui à la coordination de programme</h3>
-                            <div class="date">2018-2019 · 8 mois (stage)</div>
-                            <p>Programme "Migration"<br><br></p>
+                            <h3>Program Coordination Support Officer</h3>
+                            <div class="date">2018-2019 · 8 months (internship)</div>
+                            <p>"Migration"program <br><br></p>
                             <ul>
                                 <li>
-                                    <p>Participation à des actions d'appui au renforcement des capacités des partenaires</p>
+                                    <p>Participation in actions to support capacity building of partners</p>
+                                </li> 
+                                <li>
+                                    <p>Support for project monitoring (logical framework, budget, job descriptions, reports)</p> </li>
+                                <li>
+                                    <p>Re-design of a data collection tool. (definition of needs, development of specifications, interface, OpenData, securing, features</p>
                                 </li>
                                 <li>
-                                    <p>Appui au suivi de projets (cadre logique, budget, fiches de postes, rapports)</p>
+                                    <p>Design of a communication plan and a new graphic charter, and support for the "digitization" of certain processes</p> 
                                 </li>
-                                <li>
-                                    <p>Refonte d'un outil de recueil de données. (définition des besoins, élaboration d'un cahier des charges, interface, OpenData, sécurisation, fonctionnalités</p>
-                                </li>
-                                <li>
-                                    <p>Conception d’un plan de communication et d’une nouvelle charte graphique, et accompagnement à la "numérisation" de certains process</p>
-                                </li>
-                                <li>
-                                    <p>Rédaction et mise en page de supports de sensibilisation, de notes d'actualités</p>
-                                </li>
-                                <li>
-                                    <p>Animation réunion, team building</p>
+                                <li> 
+                                    <p>Editing and layout of awareness materials, news notes</p> 
+                                </li> 
+                                <li> 
+                                    <p>Meeting facilitation, team building</p>
                                 </li>
                             </ul>
                         </div>
@@ -223,9 +218,9 @@ include('front.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Olivet, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Chargée d'appui juridique au pôle de la vie citoyenne</h3>
-                            <div class="date">2015 · 2 mois (stage)</div>
-                            <p>Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques</p>
+                            <h3>Legal Support Officer at the Citizen Life Unit</h3>
+                            <div class="date">2015 · 2 month (internship)</div>
+                            <p>Accompaniment and support for the implementation of procedures for the redesign of public reception. Legal studies of the feasibility of projects on partnership and emphyteutic leases.</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="../assets/images/olivet.png"></div>
@@ -242,9 +237,9 @@ include('front.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Toulouse, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Vendeuse et préparatrice en chocolaterie</h3>
+                            <h3>Saleswoman and preparer in chocolate factory</h3>
                             <div class="date">2014 · 6 mois</div>
-                            <p>Accueil et conseil client, vente et encaissement, mise en rayon et respect rotation des produits, réception et préparation de commandes, suivi de l’état des stocks, production des produits.</p>
+                            <p>Customer reception and advice, selling and cashing, shelving and respecting product rotation, receiving and preparing orders, monitoring stock levels, producing products.</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="../assets/images/choco.png"></div>
@@ -261,9 +256,9 @@ include('front.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Orléans, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Responsable adjointe de service de transport</h3>
-                            <div class="date">2009-2012 · 3 ans</div>
-                            <p>Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service</p>
+                            <h3>Assistant Manager of Transportation Services</h3>
+                            <div class="date">2009-2012 · 3 years</div>
+                            <p>Driver scheduling, team coordination and supervision (~15 people), adapting between customer requests and resource exploitation, training actions for employees, organization and optimization of exploitation resources, control and optimization of productivity, replacement of service manager</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="../assets/images/geodis.png"></div>
@@ -280,9 +275,9 @@ include('front.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Orléans, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Agent d'exploitation des transports</h3>
+                            <h3>Transportation Operations Officer</h3>
                             <div class="date">2010-2012 · 3 ans</div>
-                            <p>Enregistrement et saisie des flux de départ, traitement réclamations, suivi et optimisation des process, dispatching tournées, coordination inter-services</p>
+                            <p>Registration and input of outgoing flows, complaints processing, process monitoring and optimization, tour dispatching, inter-departmental coordination</p>
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="../assets/images/cooljet.png"></div>
@@ -299,9 +294,9 @@ include('front.php');
                                 </div>
                                 <div class="col-sm-4 col-xs-12 text-right">Orléans, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                             </div>
-                            <h3>Manutentionnaire</h3>
-                            <div class="date">2009 · 3 mois</div>
-                            <p>Réception et comptabilisation des marchandises, contrôle qualité et tri des produits, reconditionnement des marchandises.</p>
+                            <h3>Material handler</h3>
+                            <div class="date">2009 · 3 month</div>
+                            <p>Receiving and accounting for goods, quality control and sorting of products, repackaging of goods.</p>.
                         </div>
                         <div class="col-2 offset-1 d-none d-lg-block">
                             <div class="logo"><img src="../assets/images/cooljet.png"></div>

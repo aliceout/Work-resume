@@ -17,8 +17,8 @@
 }
 
 .dark-mode {
-  --background: #1e2129;
-  --back-card: #292d38;
+  --background: #181826;
+  --back-card: #212134;
   --primary-back: #185a89;
   --primary-font: #53a6e0;
   --gradiant-lev9: #FAFAFA;
@@ -524,7 +524,7 @@ label.error {
   border-radius: 6px;
   background-color: var(--back-card);
   border: 1px solid;
-  border-color: var(--gradiant-lev4);
+  border-color: var(--gradiant-lev3);
   margin-bottom: 20px;
   overflow: hidden;
   padding: 40px 0;
@@ -910,7 +910,7 @@ header nav ul li {
 header nav ul li a {
   padding: 11px 0 13px 0;
   display: block;
-  border-bottom: var(--gradiant-lev5) 1px solid;
+  border-bottom: var(--gradiant-lev3) 1px solid;
   color: var(--gradiant-lev5);
   font-size: 14px;
 }
@@ -1669,6 +1669,14 @@ header nav ul li a:hover .fa-file-pdf {
 .card-carousel {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.display-no {
+  display: none;
+}
+
+.display-yes {
+  display: block;
 }
 
 .dark-mode .card {

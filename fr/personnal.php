@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'personnal';
 include('../assets/php/partials/head.php');
+include('front.php');
 ?>
 <div class="col-12">
     <div class="row">

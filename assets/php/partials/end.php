@@ -17,6 +17,9 @@
 <!-- Dark mode -->
 <script src="../assets/js/darkmode.js"></script>
 
+<!-- Language changer -->
+<script src="../assets/js/langchange.js"></script>
+
 </body>
 
 </html>

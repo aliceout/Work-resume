@@ -36,8 +36,8 @@ include('front.php');
                     </a>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">Flyer santé</h4>
-                    <p class="card-text">Document de sensibilisation - Caritas au Maroc - Janv. 2019</p>
+                    <h4 class="card-title">Health flyer</h4>
+                    <p class="card-text">Advocacy document - Caritas in Morocco - Janv. 2019</p>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ include('front.php');
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Migrappi</h4>
-                    <p class="card-text">Application de prise en charge - Caritas au Maroc - Janv. 2019</p>
+                    <p class="card-text">Support application - Caritas in Morocco - Janv. 2019</p>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@ include('front.php');
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Focus Qantara</h4>
-                    <p class="card-text">Document de communication - Caritas au Maroc - Nov. 2018</p>
+                    <p class="card-text">Communication document - Caritas in Morocco - Nov. 2018</p>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@ include('front.php');
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Assises PNPM</h4>
-                    <p class="card-text">Document de communication - Caritas au Maroc - Juil. 2018</p>
+                    <p class="card-text">Communication document - Caritas in Morocco - Juil. 2018</p>
                 </div>
             </div>
         </div>
@@ -173,9 +173,9 @@ include('front.php');
                     </a>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">Programme Migrant'Scène Lyon 2017</h4>
-                    <p class="card-text">Document de comunication - La Cimade Lyon - Octobre 2017 <br />
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Visuel de la 1° de couverture crée par La Cimade nationale</p>
+                    <h4 class="card-title">Migrant'Scène program, Lyon 2017 edition</h4>
+                    <p class="card-text">Communication document - La Cimade Lyon - Octobre 2017 <br />
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Visual of the 1st cover created by La Cimade nationale</p>
                 </div>
             </div>
         </div>
@@ -206,9 +206,9 @@ include('front.php');
                     </a>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">Rapport Migrant'Scène Toulouse 2016</h4>
-                    <p class="card-text">Document de comunication - La Cimade Toulouse - Mai 2016<br />
-                        <i class="fa fa-info-circle"></i>&nbsp;Visuel de la 1° et 2° de couverture crée par La Cimade</p>
+                    <h4 class="card-title">Migrant'Scène report, Toulouse 2016 edition </h4>
+                    <p class="card-text">Communication document - La Cimade Toulouse - Mai 2016<br />
+                        <i class="fa fa-info-circle"></i>&nbsp;Visual of the 1st and 2nd cover created by La Cimade</p>
                 </div>
             </div>
         </div>
@@ -242,8 +242,8 @@ include('front.php');
                     </a>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title">Livret Etat-civil</h4>
-                    <p class="card-text">Document de sensibilisation - Caritas au Maroc - Juil. 2018</p>
+                    <h4 class="card-title">Civil status booklet</h4>
+                    <p class="card-text">Advocacy document - Caritas in Morocco - Juil. 2018</p>
                 </div>
             </div>
         </div>

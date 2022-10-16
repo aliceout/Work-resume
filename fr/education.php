@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'education';
 include('../assets/php/partials/head.php');
+include('front.php');
 ?>
 
 <div class="col-12">

@@ -32,57 +32,7 @@
     </head>
 
     <body>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-            <script src="../assets/vendor/html5shiv.min.js"></script>
-            <script src="../assets/vendor/respond.min.js"></script>
-        
-
-            <div class="container">
-                <div class="row">
-
-                    <?php include('../assets/php/partials/sidebar.php'); ?>
-                    <div class="col-lg-9 col-xl-10">
-                        <div class="row">
-                            <div class="col-12">
-                                <aside>
-                                    <div class="card options">
-                                        <div class="row">
-                                            <div class="col col-lg-6 col-md-12">
-                                                <div class="row option-category">
-                                                    <div class="col-lg-3 label-checkbox">
-                                                        <p>Light</p>
-                                                    </div>
-                                                    <div class="col-lg-1">
-                                                        <div class="custom-control custom-switch">
-                                                            <input type="checkbox" class="custom-control-input" id="darkmode-checkbox">
-                                                            <label class="custom-control-label" for="darkmode-checkbox"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 label-checkbox">
-                                                        <p>Dark</p> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col col-lg-6 col-md-12">
-                                                <div class="row option-category">
-                                                    <div class="col-lg-3 label-checkbox">
-                                                        <p>French</p>
-                                                    </div>
-                                                    <div class="col-lg-1">
-                                                        <div class="custom-control custom-switch">
-                                                            <input type="checkbox" class="custom-control-input" id="language-checlkbox">
-                                                            <label class="custom-control-label" for="language-checlkbox"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 label-checkbox">
-                                                        <p>English</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </aside>
-                            </div>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+        <script src="../assets/vendor/html5shiv.min.js"></script>
+        <script src="../assets/vendor/respond.min.js"></script>
