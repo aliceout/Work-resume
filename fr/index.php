@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'index';
 include('../assets/php/partials/head.php');
+include('front.php');
 ?>
         <div class="col-12 col-md-6">
             <aside>
