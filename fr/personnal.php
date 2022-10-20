@@ -33,7 +33,8 @@ include('front.php');
                     <p>Romans étrangers (Moyen-Orient, Afrique, Asie), science-fiction, anticipation, essais politiques, essais universitaires</p><br>
                     <strong>Actualité</strong>
                     <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires)</p><br>
-                    <strong>Apprentissage continu</strong>
+                    <strong>Autres</strong>
+                    <p>Pratique du piano, théâtre, concerts, festivals, <br></p>
                     <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, écologique</p>
                 </div>
                 <div class="card justify">
