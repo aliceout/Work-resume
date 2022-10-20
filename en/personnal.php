@@ -27,8 +27,12 @@ include('front.php');
         <div class="col-12 col-md-6">
             <aside>
                 <div class="card justify">
-                    <h3><span class="color">Cultural</span></h3> <strong>Readings</strong> <p>Foreign novels (Middle East, Africa, Asia), science fiction, anticipation, political essays, academic essays</p><br>
-                    <strong>News</strong> <p>Important news monitoring - national and international (newspapers, rss feeds, news monitoring, magazines, pure player press, documentary films)</p><br>
+                    <h3><span class="color">Cultural</span></h3>
+                    <strong>Readings</strong> <p>Foreign novels (Middle East, Africa, Asia), science fiction, anticipation, political essays, academic essays</p><br>
+                    <strong>Music & shows</strong>
+                    <p>Piano practice, electronic music creation, theater, concerts, festivals</p><br>
+                    <strong>News</strong>
+                    <p>Important news monitoring - national and international (newspapers, rss feeds, news monitoring, magazines, pure player press, documentary films)</p><br>
                     <strong>Other</strong> 
                     <p>Piano practice, theater, concerts, festivals</p><br>
                     <p>Following numerous MOOCs (massive open online course), on geopolitical, international, ecological topics</p>
