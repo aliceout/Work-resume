@@ -31,11 +31,12 @@ include('front.php');
                     <h3><span class="color">Culturelles</span></h3>
                     <strong>Lectures</strong>
                     <p>Romans étrangers (Moyen-Orient, Afrique, Asie), science-fiction, anticipation, essais politiques, essais universitaires</p><br>
+                    <strong>Musique & spectacles</strong>
+                    <p>Pratique du piano, création musique électronique, théâtre, concerts, festivals<br></p>
                     <strong>Actualité</strong>
                     <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires)</p><br>
-                    <strong>Autres</strong>
-                    <p>Pratique du piano, théâtre, concerts, festivals, <br></p>
-                    <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, écologique</p>
+                    <strong>Apprentissage continu</strong>
+                    <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, écologique</p><br>
                 </div>
                 <div class="card justify">
                     <h3><span class="color">Bénevolat</span></h3>
