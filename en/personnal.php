@@ -29,7 +29,9 @@ include('front.php');
                 <div class="card justify">
                     <h3><span class="color">Cultural</span></h3> <strong>Readings</strong> <p>Foreign novels (Middle East, Africa, Asia), science fiction, anticipation, political essays, academic essays</p><br>
                     <strong>News</strong> <p>Important news monitoring - national and international (newspapers, rss feeds, news monitoring, magazines, pure player press, documentary films)</p><br>
-                    <strong>Continuous learning</strong> <p>Following numerous MOOCs (massive open online course), on geopolitical, international, ecological topics</p>
+                    <strong>Other</strong> 
+                    <p>Piano practice, theater, concerts, festivals</p><br>
+                    <p>Following numerous MOOCs (massive open online course), on geopolitical, international, ecological topics</p>
                 </div>
                 <div class="card justify">
                     <h3><span class="color">Volunteer</span></h3> 
