@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'skills';
 include('../assets/php/partials/head.php');
+<link rel="canonical" href="https://alicedel.work/fr/skills.php" />
 include('front.php');
 ?>
 <div class="col-12">
