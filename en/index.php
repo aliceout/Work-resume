@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'index';
 include('../assets/php/partials/head.php');
+<link rel="canonical" href="https://alicedel.work/fr/index.php" />
 include('front.php');
 ?>
 <div class="col-12 col-md-6">

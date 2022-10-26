@@ -1,6 +1,7 @@
 <?php
 $currentPage = 'benevolat';
 include('../assets/php/partials/head.php');
+<link rel="canonical" href="https://alicedel.work/fr/benevolat.php" />
 include('front.php');
 ?>
 
