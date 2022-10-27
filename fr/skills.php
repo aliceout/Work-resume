@@ -20,7 +20,7 @@ include('front.php');
                                 </div>
                             </li>
                             <li>
-                                <div class="title">Anglais<span class="info"><span class="seperator"></span><a href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale" target="_blank">B1 · CECR - Utilisatrice indépendante</a></span></div>
+                                <div class="title">Anglais<span class="info"><span class="seperator"></span><a href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale" target="_blank">B1+ · CECR -  : 695 / 990</a></span></div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 45%;">
                                     </div>

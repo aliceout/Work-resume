@@ -1,7 +1,6 @@
 <?php
 $currentPage = 'realisations';
-include('../assets/php/partials/head.php');
-<link rel="canonical" href="https://alicedel.work/fr/realisations.php" />
+include('../assets/php/partials/head.php');s
 include('front.php');
 ?>
 
