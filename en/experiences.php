@@ -1,7 +1,6 @@
 <?php
 $currentPage = 'experience';
 include('../assets/php/partials/head.php');
-<link rel="canonical" href="https://alicedel.work/fr/experiences.php" />
 include('front.php');
 ?>
 

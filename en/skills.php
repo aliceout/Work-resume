@@ -1,7 +1,6 @@
 <?php
 $currentPage = 'skills';
 include('../assets/php/partials/head.php');
-<link rel="canonical" href="https://alicedel.work/fr/skills.php" />
 include('front.php');
 ?>
 <div class="col-12">
@@ -21,7 +20,7 @@ include('front.php');
                                 </div>
                             </li>
                             <li>
-                                <div class="title">English<span class="info"><span class="seperator"></span><a href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale" target="_blank">B1 · CEFR  - Independent user</a></span></div>
+                                <div class="title">English<span class="info"><span class="seperator"></span><a href="https://www.coe.int/fr/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale" target="_blank">B1+ · CEFR  - TOEIC : 695 / 990</a></span></div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 45%;">
                                     </div>
