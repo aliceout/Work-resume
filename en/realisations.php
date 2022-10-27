@@ -1,6 +1,6 @@
 <?php
 $currentPage = 'realisations';
-include('../assets/php/partials/head.php');s
+include('../assets/php/partials/head.php');
 include('front.php');
 ?>
 
