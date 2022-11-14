@@ -44,8 +44,7 @@ if (langChange === 'enabled') {
    if (langue_en_cours != 'en') {
         englishLang();
    } 
-}
-;
+};
 
 
 // Quand quelqu'un clique sur le bouton
@@ -53,7 +52,7 @@ langChangeToggle.addEventListener('click', () => {
     // On obtient les paramètres langChange
     langChange = localStorage.getItem('langChange');
 
-    // s'il n'est pas actuellement activé, activez-le
+    // S'il n'est pas actuellement activé, activez-le
     if (langChange !== 'enabled') {
         englishLang();
         // s'il a été activé, le désactiver
