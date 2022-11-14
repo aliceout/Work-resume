@@ -1,0 +1,137 @@
+#fixed-sidebar {
+    text-align: center;
+    font-size: .8rem;
+    @apply (--card);
+
+    #navList, #openBtn, #closeBtn {
+        display : none;
+    }
+
+    #navList.active, #openBtn.active, #closeBtn.active {
+        display : inline-block;
+        font-weight: 700;
+    }
+
+
+    #openBtn.active, #closeBtn.active {
+        background: var(--back-card);
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    #closeBtn {
+        margin-top: .5rem; 
+    }
+
+    #navToggle {
+        font-style: normal;
+        color: var(--gradiant-lev6);
+        font-weight: 300;
+        .fa {
+            color: var(--primary-font);
+        }
+        .name {
+            margin-left: .25rem;
+            display : none;
+            @include tablet {
+                display : inline-block;
+            }
+        }
+    }
+
+    @include widescreen  { 
+        font-size: .9rem;
+        margin-left: 1rem;
+        text-align: left;
+
+        position: sticky;   
+        display: inline-block;
+        vertical-align: top;
+        max-height: 70vh;
+        overflow-y: auto;
+        top: 3rem;
+        bottom: 0;
+        padding-top: 0;
+
+        #navList {
+            display : inline-block;
+        }
+
+        #navToggle {
+            display : none;
+        }
+    }
+
+    figure {
+        display: inline-block;
+
+        img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+        #color-picture {
+            display: block;
+        }
+
+        #grey-picture {
+            display: none;
+        }
+    }
+
+    h1 {
+        margin-bottom: .8rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--gradiant-lev6);
+        line-height: 2rem;
+
+        small {
+            font-size: 1rem;
+            margin-top: .5rem;
+        }
+
+        .name-color {
+            color: var(--primary-font);
+            font-weight: 700;
+            padding-bottom: 1rem;
+        }
+    }
+
+    nav {
+        ul {
+
+            a {
+                &:hover {
+                color: var(--gradiant-lev6);
+                }
+            }
+            li {
+                margin-top: .8rem;
+                padding-bottom: .5rem;
+                font-weight: 500;
+                text-decoration: none;
+                color: var(--gradiant-lev5);
+                border-bottom: var(--gradiant-lev2) 0.063rem solid;
+
+                &:hover {
+                    color: var(--gradiant-lev6);
+                    border-bottom: var(--gradiant-lev4) 0.063rem solid;
+                }
+            }
+
+            li.active {
+                color: var(--primary-font);
+                border-bottom: var(--primary-font) 0.063rem solid;
+            }
+            .contact, .resume 
+            {
+                &:hover {
+                    color: #c42381;
+                    border-bottom: #c42381 0.063rem solid;
+                }
+            }
+        }
+    }
+}

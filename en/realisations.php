@@ -1,255 +1,237 @@
-<?php
-$currentPage = 'realisations';
-include('../assets/php/partials/head.php');
-include('front.php');
-?>
+<!doctype html>
+<html xml:lang="fr" lang="fr">
 
-<div class="col-12">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="Flysante" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/Flysante-1.jpg" class="d-block w-100" alt="Flysante-1">
+    <?php
+    $currentPage = 'realisations';
+    include('../assets/php/header.php');
+    ?>
+
+    <body>
+        <div class="container">
+            <div class="section">
+
+                <div id="big-main" class="columns is-multiline">
+                    <?php include('sidebar.php'); ?>
+                    <main class="column">
+
+                        <div class="columns is-multiline">
+                            <?php include('top.php'); ?>
+                            <div class="column is-12">
+
+                                <div class="columns is-multiline"> 
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/Flysante-1.jpg" alt="Flysante-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Flysante-2.jpg" alt="Flysante-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Flysante-3.jpg" alt="Flysante-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Flysante-4.jpg" alt="Flysante-4">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Flysante-5.jpg" alt="Flysante-5">
+                                                </figure>
+                                            </div>
+
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Flyer santé</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    Document de sensibilisation - Caritas au Maroc - Janv. 2019
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/migrappi-1.jpg" alt="Migrappi-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/migrappi-2.jpg" alt="Migrappi-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/migrappi-3.jpg" alt="Migrappi-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/migrappi-4.jpg" alt="Migrappi-4">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Migrappi</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    Application de prise en charge - Caritas au Maroc - Janv. 2019
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/Focus-1.jpg" alt="Focus-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Focus-2.jpg" alt="Focus-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Focus-3.jpg" alt="Focus-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Focus-4.jpg" alt="Focus-4">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Focus Qantara</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">Document de communication - Caritas au Maroc - Nov. 2018
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/Pnpm-1.jpg" alt="Pnpm-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Pnpm-2.jpg" alt="Pnpm-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Pnpm-3.jpg" alt="Pnpm-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Pnpm-4.jpg" alt="Pnpm-4">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/Pnpm-5.jpg" alt="Pnpm-5">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Assises PNPM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">Document de communication - Caritas au Maroc - Juil. 2018
+                                                </div>                    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6"><div class="card">
+                                        <div class="card-image carousel">
+                                            <figure class="image active">
+                                                <img src="../assets/images/maquette/Lyon-1.jpg" alt="Lyon-1">
+                                            </figure>
+                                            <figure style="display:none">
+                                                <img src="../assets/images/maquette/Lyon-2.jpg" alt="Lyon-2">
+                                            </figure>
+                                            <figure style="display:none">
+                                                <img src="../assets/images/maquette/Lyon-3.jpg" alt="Lyon-3">
+                                            </figure>
+                                            <figure style="display:none">
+                                                <img src="../assets/images/maquette/Lyon-4.jpg" alt="Lyon-4">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="media">
+                                                <div class="media-content">
+                                                    <p class="title is-4">Programme Migrant'Scène Lyon 2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="content">Document de comunication - La Cimade Lyon - Octobre 2017 <br />
+                                                <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Visuel de la 1° de couverture crée par La Cimade nationale
+                                            </div>                     
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/RapportTls-1.jpg" alt="RapportTls-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/RapportTls-2.jpg" alt="RapportTls-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/RapportTls-3.jpg" alt="RapportTls-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/RapportTls-4.jpg" alt="RapportTls-4">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Rapport Migrant'Scène Toulouse 2016</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">Document de comunication - La Cimade Toulouse - Mai 2016<br />
+                                                    <i class="fa fa-info-circle"></i>&nbsp;Visuel de la 1° et 2° de couverture crée par La Cimade
+                                                </div>            
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-6">
+                                        <div class="card">
+                                            <div class="card-image carousel">
+                                                <figure class="image active">
+                                                    <img src="../assets/images/maquette/LivretEC-1.jpg" alt="LivretEC-1">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/LivretEC-2.jpg" alt="LivretEC-2">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/LivretEC-3.jpg" alt="LivretEC-3">
+                                                </figure>
+                                                <figure style="display:none">
+                                                    <img src="../assets/images/maquette/LivretEC-4.jpg" alt="LivretEC-4">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title is-4">Livret Etat-civil</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">Document de sensibilisation - Caritas au Maroc - Juil. 2018
+                                                </div>             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Flysante-2.jpg" class="d-block w-100" alt="Flysante-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Flysante-3.jpg" class="d-block w-100" alt="Flysante-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Flysante-4.jpg" class="d-block w-100" alt="Flysante-4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Flysante-5.jpg" class="d-block w-100" alt="Flysante-5">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#Flysante" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#Flysante" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Health flyer</h4>
-                    <p class="card-text">Advocacy document - Caritas in Morocco - Janv. 2019</p>
+                    </main>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="Migrappi" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/migrappi-1.jpg" class="d-block w-100" alt="Migrappi-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/migrappi-2.jpg" class="d-block w-100" alt="Migrappi-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/migrappi-3.jpg" class="d-block w-100" alt="Migrappi-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/migrappi-4.jpg" class="d-block w-100" alt="Migrappi-4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#Migrappi" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#Migrappi" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Migrappi</h4>
-                    <p class="card-text">Support application - Caritas in Morocco - Janv. 2019</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="Focus" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/Focus-1.jpg" class="d-block w-100" alt="Focus-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Focus-2.jpg" class="d-block w-100" alt="Focus-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Focus-3.jpg" class="d-block w-100" alt="Focus-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Focus-4.jpg" class="d-block w-100" alt="Focus-4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#Focus" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#Focus" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Focus Qantara</h4>
-                    <p class="card-text">Communication document - Caritas in Morocco - Nov. 2018</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="Pnpm" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/Pnpm-1.jpg" class="d-block w-100" alt="Pnpm-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Pnpm-2.jpg" class="d-block w-100" alt="Pnpm-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Pnpm-3.jpg" class="d-block w-100" alt="Pnpm-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Pnpm-4.jpg" class="d-block w-100" alt="Pnpm-4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Pnpm-5.jpg" class="d-block w-100" alt="Pnpm-5">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#Pnpm" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#Pnpm" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Assises PNPM</h4>
-                    <p class="card-text">Communication document - Caritas in Morocco - Juil. 2018</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="Lyon" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/Lyon-1.jpg" class="d-block w-100" alt="Lyon-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Lyon-2.jpg" class="d-block w-100" alt="Lyon-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Lyon-3.jpg" class="d-block w-100" alt="Lyon-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/Lyon-4.jpg" class="d-block w-100" alt="Lyon-4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#Lyon" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#Lyon" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Migrant'Scène program, Lyon 2017 edition</h4>
-                    <p class="card-text">Communication document - La Cimade Lyon - Octobre 2017 <br />
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Visual of the 1st cover created by La Cimade nationale</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="RapportTls" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/RapportTls-1.jpg" class="d-block w-100" alt="RapportTls-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/RapportTls-2.jpg" class="d-block w-100" alt="RapportTls-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/RapportTls-3.jpg" class="d-block w-100" alt="RapportTls-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/RapportTls-4.jpg" class="d-block w-100" alt="RapportTls-4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#RapportTls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#RapportTls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Migrant'Scène report, Toulouse 2016 edition </h4>
-                    <p class="card-text">Communication document - La Cimade Toulouse - Mai 2016<br />
-                        <i class="fa fa-info-circle"></i>&nbsp;Visual of the 1st and 2nd cover created by La Cimade</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card card-carousel">
-                <div id="LivretEC" class="carousel slide carousel-fade" data-ride="carousel" style="max-height: 325px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/maquette/LivretEC-1.jpg" class="d-block w-100" alt="LivretEC-1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/LivretEC-2.jpg" class="d-block w-100" alt="LivretEC-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/LivretEC-3.jpg" class="d-block w-100" alt="LivretEC-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/maquette/LivretEC-4.jpg" class="d-block w-100" alt="LivretEC-4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#LivretEC" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#LivretEC" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Civil status booklet</h4>
-                    <p class="card-text">Advocacy document - Caritas in Morocco - Juil. 2018</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<?php include('../assets/php/partials/end.php'); ?>
+    </body>
+    <?php include('../assets/php/footer.php'); ?>
+</html>

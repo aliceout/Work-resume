@@ -12,9 +12,9 @@ const enableDarkMode = () => {
     // 3. toggle the checkbox
     darkModeToggle.setAttribute('checked', true);
     // 4. Display black & white picture
-    document.getElementById('grey-picture').style.visibility = 'visible';
+    document.getElementById('grey-picture').style.display ='block';
     // 5. Hide color picture
-    document.getElementById('color-picture').style.visibility = 'hidden'; 
+    document.getElementById('color-picture').style.display ='none';
 }
 
 const disableDarkMode = () => {
@@ -24,9 +24,9 @@ const disableDarkMode = () => {
     // 2. Update darkMode and toggle in localStorage 
     localStorage.setItem('darkMode', null);
     // 3. Display color picture
-    document.getElementById('color-picture').style.visibility = 'visible';
+    document.getElementById('color-picture').style.display ='block';
     // 4. Hide black & white picture
-    document.getElementById('grey-picture').style.visibility = 'hidden'; 
+    document.getElementById('grey-picture').style.display ='none';
 }
 
 // If the user already visited and enabled darkMode

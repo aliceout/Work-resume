@@ -1,0 +1,58 @@
+/** ------------------------------------------------------BASE **/
+/** BASED **/
+html, body {
+    background: var(--background);
+    font-family: "Open Sans", sans-serif;
+
+
+    a {
+        text-decoration: none;
+        color: var(--primary-font);
+
+
+        &:hover {
+            color: #c4b723;
+        }
+    }
+    
+    transition-duration: 1.5s;
+}
+
+/** ----------------------------------------------------TITRES **/
+/** TITRES **/
+h1 {
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.063rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.563rem;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 0.938rem;
+    font-weight: 600;
+    color: var(--gradiant-lev6);
+    line-height: 1.313rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+strong {
+    color: var(--gradiant-lev6);
+}
