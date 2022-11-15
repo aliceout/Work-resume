@@ -49,6 +49,11 @@ const frenchLang = () => {
     }
 };
 
+
+if (urlcourante.indexOf('/en') > 0) {
+document.getElementById('language-checkbox').checked = true;
+ };
+
 // Si l'utilisateur a déjà visité et activé langChange on l'active directement
 // 1. On extrait la chaine de caractère correspondante à la langue
 langue_en_cours = urlcourante.slice(22,24);
