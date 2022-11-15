@@ -1,8 +1,8 @@
 <aside id="fixed-sidebar" class="column is-full-touch is-full-desktop is-2-widescreen">
 
     <figure class="image">
-        <img id="color-picture" class="circle middle" src="../assets/images/color-picture.jpg" alt="Photo de profil">
-        <img id="grey-picture" class="circle middle" src="../assets/images/grey-picture.jpg" alt="Photo de profil">
+        <img id="color-picture" class="circle middle lightMode-elements" src="../assets/images/color-picture.jpg" alt="Photo de profil">
+        <img id="grey-picture" class="circle middle darkMode-elements" src="../assets/images/grey-picture.jpg" alt="Photo de profil">
     </figure>
 
     <h1 id="name">ALICE<br>
@@ -21,6 +21,20 @@
             <a href="personnal.php"><li class="<?php if($currentPage =='personnal'){echo 'active';}?>">Personal activities</li></a>
             <a href="https://join.skype.com/invite/II99wpbBBR78" target="_blank"><li class="contact">Contact me</li></a>
             <a href="https://cloud.ofanch.me/s/zjZq82exoLn2ntp#pdfviewer" target="_blank"><li class="resume">Curriculum vitae</li></a>
+            <li id="darkmode-switch" class="custom-control custom-switch li-switch">
+                <input type="checkbox" class="custom-control-input switch is-rounded" id="darkmode-checkbox">
+                <label class="custom-control-label" for="darkmode-checkbox">
+                    <span class="lightMode-elements switchLabel">Light</span>
+                    <span class="darkMode-elements switchLabel">Dark</span> 
+                </label>
+            </li>
+            <li id="language-switch" class="custom-control custom-switch li-switch">
+                <input type="checkbox" class="custom-control-input switch is-rounded" id="language-checkbox">
+                <label class="custom-control-label" for="language-checkbox">
+                    <span class="switchLabel" style="display:none">French</span>
+                    <span class="switchLabel">English</span> 
+                </label>
+            </li>
         </ul>
         <div id="navToggle">
             <i id="openBtn" class="active">

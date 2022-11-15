@@ -3,6 +3,7 @@
 html, body {
     background: var(--background);
     font-family: "Open Sans", sans-serif;
+    height: 100%;
 
 
     a {
@@ -14,9 +15,26 @@ html, body {
             color: #c4b723;
         }
     }
-    
-    transition-duration: 1.5s;
-}
+
+            transition: all 1.5s ease-out;
+
+
+
+
+    .darkMode-elements, #englishMode-elements {
+        display: none;    
+    }
+    #section {
+        padding-top: 1rem;
+        #big-main {
+            margin-top: 0;
+            main {
+                margin-top: 4rem;
+                padding-top: 0;
+                min-height: 85vh;
+            }
+        }
+    }}
 
 /** ----------------------------------------------------TITRES **/
 /** TITRES **/
