@@ -11,10 +11,15 @@ const enableDarkMode = () => {
     localStorage.setItem('darkMode', 'enabled');
     // 3. toggle the checkbox
     darkModeToggle.setAttribute('checked', true);
-    // 4. Display black & white picture
-    document.getElementById('grey-picture').style.display ='block';
-    // 5. Hide color picture
-    document.getElementById('color-picture').style.display ='none';
+    // 4. Hide light-mode elements
+    const lightModeHide = document.querySelectorAll(".lightMode-elements");
+    for (let i = 0; i < lightModeHide.length; i++) {
+        lightModeHide[i].style.display = "none";}
+    // 5. Show dark-mode elements
+    const darkModeShow = document.querySelectorAll(".darkMode-elements");
+    for (let i = 0; i < darkModeShow.length; i++) {
+        darkModeShow[i].style.display = "block";}
+    
 }
 
 const disableDarkMode = () => {
@@ -23,10 +28,15 @@ const disableDarkMode = () => {
     document.documentElement.classList.remove('dark-mode');
     // 2. Update darkMode and toggle in localStorage 
     localStorage.setItem('darkMode', null);
-    // 3. Display color picture
-    document.getElementById('color-picture').style.display ='block';
-    // 4. Hide black & white picture
-    document.getElementById('grey-picture').style.display ='none';
+    // 3. Hide dark-mode elements
+    const darkModeHide = document.querySelectorAll(".darkMode-elements");
+    for (let i = 0; i < darkModeHide.length; i++) {
+        darkModeHide[i].style.display = "none"; }
+    // 4. Show light-mode elements
+    const lightModeShow = document.querySelectorAll(".lightMode-elements");
+    for (let i = 0; i < lightModeShow.length; i++) {
+        lightModeShow[i].style.display = "block";}
+    
 }
 
 // If the user already visited and enabled darkMode

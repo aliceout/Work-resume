@@ -11,20 +11,24 @@ var urlcourante = urlcourante.replace(/\/$/, "");
 page_en_cours = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 ); 
 
 
-//langue_en_cours = urlcourante.slice(22,24);   
-//alert(langue_en_cours);
-
 const englishLang = () => {
     // 4. Update langChange in localStorage
     localStorage.setItem('langChange', 'enabled');
     // 5. toggle the checkbox
     langChangeToggle.setAttribute('checked', true);
-    if (page_en_cours != "fr") {
-        // 6a. Redirection vers la langue demandée
-        window.location.href = "/en/" +page_en_cours;
-    } else {
-        // 6b. Redirection vers la langue demandée
-        window.location.href = "/en/index.php";
+
+    if (urlcourante.indexOf('/fr') > 0) {
+        
+        const langModeShow = document.querySelectorAll(".langLabel");
+        for (let i = 0; i < langModeShow.length; i++) {
+            langModeShow[i].style.display = "block";}
+
+        if (page_en_cours != "fr") {
+            window.location.href = "/en/" +page_en_cours;
+        } else if (page_en_cours == "fr") {
+            window.location.href = "/en/index.php";
+        }
+    } else if (urlcourante.indexOf('/en') > 0) {
     }
 };
 
@@ -32,18 +36,27 @@ const frenchLang = () => {
     // 4. Update langChange and toggle in localStorage 
     localStorage.setItem('langChange', null);
     // 5. Redirection vers la langue demandée
-    window.location.href = "/fr/" +page_en_cours;
-}
+    langChangeToggle.setAttribute('checked', false);
 
+    if (urlcourante.indexOf('/en') > 0) {
+        if (page_en_cours != "en") {
+            window.location.href = "/fr/" +page_en_cours;
+
+        } else if (page_en_cours == "en") {
+            window.location.href = "/fr/index.php";
+        }
+    } else if (urlcourante.indexOf('/fr') > 0) {
+    }
+};
 
 // Si l'utilisateur a déjà visité et activé langChange on l'active directement
 // 1. On extrait la chaine de caractère correspondante à la langue
 langue_en_cours = urlcourante.slice(22,24);
 // 2. On lui dit de charger en anglais seulement si la checkbox est cliquée et que la langue n'est pas l'anglais
 if (langChange === 'enabled') {
-   if (langue_en_cours != 'en') {
+    if (langue_en_cours != 'en') {
         englishLang();
-   } 
+    } 
 };
 
 
