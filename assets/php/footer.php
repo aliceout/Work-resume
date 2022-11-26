@@ -3,7 +3,7 @@
 
 
 <!-- Carousel -->
-		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 <script src="../assets/js/carousel.js"></script>
 
 <!-- Dark mode -->
@@ -17,8 +17,3 @@
 
 <!-- Responsive class changer -->
 <script src="../assets/js/responsive.js"></script>
-
-
-
-
-
