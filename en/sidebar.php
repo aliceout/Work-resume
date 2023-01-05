@@ -20,7 +20,7 @@
             <a href="skills.php"><li class="<?php if($currentPage =='skills'){echo 'active';}?>">Languages &amp; skills</li></a>
             <a href="personnal.php"><li class="<?php if($currentPage =='personnal'){echo 'active';}?>">Personal activities</li></a>
             <a href="https://join.skype.com/invite/II99wpbBBR78" target="_blank"><li class="contact">Contact me</li></a>
-            <a href="https://cloud.ofanch.me/s/zjZq82exoLn2ntp#pdfviewer" target="_blank"><li class="resume">Curriculum vitae</li></a>
+            <a href="https://cloud.ofanch.me/s/nCnZ5W7AM5adape#pdfviewer" target="_blank"><li class="resume">Curriculum vitae</li></a>
             <li id="darkmode-switch" class="custom-control custom-switch li-switch">
                 <input type="checkbox" class="custom-control-input switch is-rounded" id="darkmode-checkbox">
                 <label class="custom-control-label" for="darkmode-checkbox">
