@@ -21,11 +21,11 @@
                                         <div class="about">
                                             <h3>Bonjour,</h3>
                                             <p>
-                                                With six years of experience in the field of freight transport, and having acquired many cross-cutting skills, I decided in 2013, to resume my studies.
-                                                <br><br>
-                                                I have been involved for a long time in the associative field, on the issues of defense of foreigners' rights and migration policies, and I am aware of many social, international and environmental issues. I decided to change direction in order to find a professional framework that would allow me to find a meaning and that would correspond to my own values.
-                                                <br><br>
-                                                After several associative experiences abroad (Morocco, Tunisia, DRC, CAR), in functions related to logistics, legal, or project management, I decided to reorient my professional action, within programs in France or in Europe, more anchored in the militant commitment, and on positions related to project management, and coordination.
+                                            After ten years of working in the fields of international solidarity and freight transport, I decided to give a new professional impetus to my life, by moving towards a job that I am passionate about, corresponding to my professional and personal expectations and aspirations.<br><br>
+                                            Thanks to these experiences and my previous university education (in law and international relations) which allowed me to acquire many skills and knowledge, I decided to start a professional reconversion towards the web and mobile web development.<br><br>
+                                            It is for this reason that I will start a training of "Full Stack Javascript Developer" in February 2023 in the O'Clock school.<br><br>
+                                            Curious, creative, autonomous, proactive, dynamic, organized and used to teamwork, I know how to adapt to all situations and work environment.<br><br>
+                                            I have always been passionate about the world of technology, and I have already developed many personal projects. I am enthusiastic about the upcoming challenges and discoveries. 
                                                 <br>
                                             </p>
                                         </div>
@@ -38,20 +38,33 @@
                                     <div class="card-content">
                                         <div class="media">
                                             <div class="media-content">
-                                                <h3>Last training</h3>
-                                                <h5>Designing and managing a humanitarian project</h5>
-                                                <h6>BIOFORCE INSTITUT<br>2021</h6>
+                                                <h3>GITHUB PROFIL</h3>
+                                                <h5><a href="https://github.com/Liliyce" target="_blank">Liliyce (Alice OsDel)</a></h5>
                                             </div>
                                             <div class="media-left">
                                                 <figure>
-                                                    <div class="logo"><img src="../assets/images/bioforce.png" alt="Bioforce"></div>
+                                                    <div class="logo"><img src="../assets/images/github.png" alt="O'Clock"></div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-index">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <h3>Next training</h3>
+                                                <h5>Full Stack Javascript Developer</h5>
+                                                <h6>O'CLOCK School<br>2023</h6>
+                                            </div>
+                                            <div class="media-left">
+                                                <figure>
+                                                    <div class="logo"><img src="../assets/images/oclock.png" alt="O'Clock"></div>
                                                 </figure>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            Project cycle, monitoring and project management tools
-                                            <br>
-                                            <a href="education.php">Read more</a>
+                                            <a href="education.php">En savoir plus</a>
                                         </div>
                                     </div>
                                 </div>
