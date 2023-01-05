@@ -21,11 +21,12 @@
                                         <div class="about">
                                             <h3>Bonjour,</h3>
                                             <p>
-                                                Forte de six années d'expérience dans le domaine du transport de marchandises, et ayant acquis de nombreuses compétences transversales, j'ai décidé en 2013, de reprendre mes études.
-                                                <br><br>
-                                                Engagée de longue date dans le milieu associatif, sur les questions de défense droit des étrangers et de politiques migratoire, sensibilisée à de nombreuses problématiques sociales, internationales, et environnementales, j'ai pris la décision de me réorienter, afin de me diriger vers un cadre professionnel me permetant d'y trouver un sens, et correspondant aux valeurs qui sont miennes.
-                                                <br><br>
-                                                Après plusieurs expériences associatives à l’étranger (Maroc, Tunisie, RDC, RCA), dans des fonctions liées à logistique, au juridique, ou encore de gestion de projet, j'ai décidé de réorienter mon action professionnelle, au sein de programmes en France ou en Europe, plus ancrés dans l'engagement militant, et sur des postes en lien avec la gestion de projets, et la coordination.
+                                            Après dix années partagées entre les domaines de la solidarité internationale et du transport de marchandises, j'ai décidé de donner un nouvel élan professionnel à ma vie, en me dirigeant vers un métier passion, correspondant à mes attentes et aspirations professionnelles et personnelles.<br><br>
+                                            Forte de ces expériences et de mes précédentes formations universitaires (en droit et relations internationales) m’ayant permis d’acquérir de nombreuses compétences et savoir, j’ai décidé de débuter une reconversion professionnelle vers le milieu du développement web et web mobile.<br><br>
+                                            C’est à ce titre que je débuterai une formation de « Développeuse Full Stack Javascript » en février 2023 au sein de l’école O’Clock.<br><br>
+                                            Curieuse, créative, autonome, proactive, dynamique, organisée et habituée au travail en équipe, je sais m’adapter à toutes les situations et environnement de travail.<br><br>
+                                            Passionnée par le monde de la tech depuis toujours, et développant d’ores et déjà de nombreux projets personnels, je suis enthousiaste des prochains défis et découvertes qui s’annoncent. 
+
                                                 <br>
                                             </p>
                                         </div>
@@ -38,19 +39,32 @@
                                     <div class="card-content">
                                         <div class="media">
                                             <div class="media-content">
-                                                <h3>Dernière formation</h3>
-                                                <h5>Concevoir et piloter un projet humanitaire</h5>
-                                                <h6>INSTITUT BIOFORCE<br>2021</h6>
+                                                <h3>PROFIL GITHUB</h3>
+                                                <h5><a href="https://github.com/Liliyce" target="_blank">Liliyce (Alice OsDel)</a></h5>
                                             </div>
                                             <div class="media-left">
                                                 <figure>
-                                                    <div class="logo"><img src="../assets/images/bioforce.png" alt="Bioforce"></div>
+                                                    <div class="logo"><img src="../assets/images/github.png" alt="O'Clock"></div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-index">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <h3>Prochaine formation</h3>
+                                                <h5>Développeuse Full Stack Javascript</h5>
+                                                <h6>Ecole O'CLOCK<br>2023</h6>
+                                            </div>
+                                            <div class="media-left">
+                                                <figure>
+                                                    <div class="logo"><img src="../assets/images/oclock.png" alt="O'Clock"></div>
                                                 </figure>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            Cycle de projets, outils de suivi et de gestion de projets
-                                            <br>
                                             <a href="education.php">En savoir plus</a>
                                         </div>
                                     </div>
