@@ -12,10 +12,10 @@ const enableDarkMode = () => {
     // 3. toggle the checkbox
     darkModeToggle.setAttribute('checked', true);
     // 4. Hide light-mode elements
-    for (const element of document.querySelectorAll(".lightMode-elements")) {element.style.display = "none";}
+    for (const element of document.querySelectorAll(".lightMode-elements")) { element.style.display = "none"; }
     // 5. Show dark-mode elements
-    for (const element of document.querySelectorAll(".darkMode-elements")) {element.style.display = "block";}
-    
+    for (const element of document.querySelectorAll(".darkMode-elements")) { element.style.display = "block"; }
+
 }
 
 const disableDarkMode = () => {
@@ -25,23 +25,41 @@ const disableDarkMode = () => {
     // 2. Update darkMode and toggle in localStorage 
     localStorage.setItem('darkMode', null);
     // 3. Hide dark-mode elements
-    for (const element of document.querySelectorAll(".darkMode-elements")) {element.style.display = "none";}
+    for (const element of document.querySelectorAll(".darkMode-elements")) { element.style.display = "none"; }
     // 4. Show light-mode elements
-    for (const element of document.querySelectorAll(".lightMode-elements")) {element.style.display = "block";}
-    
+    for (const element of document.querySelectorAll(".lightMode-elements")) { element.style.display = "block"; }
+
 }
 
+const toggleTransition = () => {
+    document.body.classList.toggle('transition');
+    document.documentElement.classList.toggle('transition');
+    for (const element of document.querySelectorAll(".card")) { element.classList.toggle('transition') }
+    for (const element of document.querySelectorAll(".logo")) { element.classList.toggle('transition') }
+    for (const element of document.querySelectorAll(".switch")) { element.classList.toggle('transitionSidebar') }
+}
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+    enableDarkMode();
+}
 
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
     // get their darkMode setting
     darkMode = localStorage.getItem('darkMode');
+    console.log(darkMode)
     // if it not current enabled, enable it
     if (darkMode !== 'enabled') {
+        toggleTransition();
         enableDarkMode();
+        setTimeout(toggleTransition, 500);
         // if it has been enabled, turn it off  
-    } else {  
-        disableDarkMode(); 
+    } else {
+        toggleTransition();
+        disableDarkMode();
+        setTimeout(toggleTransition, 500);
     }
 });
 
