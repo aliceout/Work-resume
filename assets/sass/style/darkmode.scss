@@ -5,3 +5,11 @@
 .dark-mode .logo {
     display: none;
 }
+
+.transition {
+    transition: all 1.5s ease-out;
+}
+
+.transitionSidebar {
+    transition: all .75s ease-out;
+}
