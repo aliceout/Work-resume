@@ -166,7 +166,7 @@
                                                 <div class="jobTitle"><h5>HUMANITÉ &amp; INCLUSION</h5>
                                                     <div class="lieu">Tunis, <strong>Tunisie</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
                                                 <h6 class="position">Chargée d'appui juridique aux études et diagnostics</h6>
-                                                <div class="date">2019 · 5 mois (stage)</div>
+                                                <div class="date">2019 · 6 mois</div>
                                             </div>
                                             <div class="media-left">
                                                 <figure class="logo"><img src="../assets/images/hi.png"></figure>
@@ -194,7 +194,7 @@
                                                 <div class="jobTitle"><h5>CARITAS AU MAROC</h5>
                                                     <div class="lieu">Rabat, <strong>Maroc</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
                                                 <h6 class="position">Chargée d'appui à la coordination de programme</h6>
-                                                <div class="date">2018-2019 · 8 mois (stage)</div>
+                                                <div class="date">2018-2019 · 8 mois</div>
                                             </div>
                                             <div class="media-left">
                                                 <figure class="logo"><img src="../assets/images/caritas.png"></figure>
