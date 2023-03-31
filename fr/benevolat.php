@@ -49,7 +49,7 @@
                                                     <div class="jobTitle"><h5>LA CIMADE</h5>
                                                         <div class="lieu">Lyon, <strong>France</strong>&emsp;<i class="fas fa-map-marker-alt"></i></div>
                                                     </div>
-                                                    <h6 class="position">Permanente en droit des étrangers, co-animateur Pôle "Plaidoyer, sensibilisation et solidarités internationales"</h6>
+                                                    <h6 class="position">Permanente en droit des étrangers, co-animatrice Pôle "Plaidoyer, sensibilisation et solidarités internationales"</h6>
                                                     <div class="date">2017 - 2019</div>
                                                 </div>
                                                 <div class="media-left">

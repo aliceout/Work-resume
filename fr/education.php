@@ -17,7 +17,7 @@
 
                         <section class="card sub-main">
                             <div class="card-content">
-                                <h2>Formations universitaires</h2>
+                                <h2>Formations</h2>
 
                                 <div class="graduation">
                                     <div class="card-content">
