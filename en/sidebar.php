@@ -7,7 +7,6 @@
 
     <h1 id="name">ALICE<br>
         <span class="name-color">DELAMAIDE</span><br>
-        <small id="age">34 years old<br></small>
     </h1>
 
     <nav>

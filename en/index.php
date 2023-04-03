@@ -23,7 +23,7 @@
                                             <p>
                                             After ten years of working in the fields of international solidarity and freight transport, I decided to give a new professional impetus to my life, by moving towards a job that I am passionate about, corresponding to my professional and personal expectations and aspirations.<br><br>
                                             Thanks to these experiences and my previous university education (in law and international relations) which allowed me to acquire many skills and knowledge, I decided to start a professional reconversion towards the web and mobile web development.<br><br>
-                                            It is for this reason that I will start a training of "Full Stack Javascript Developer" in February 2023 in the O'Clock school.<br><br>
+                                            It is for this reason that I started a training of "Full Stack Javascript Developer" in February 2023 in the O'Clock school.<br><br>
                                             Curious, creative, autonomous, proactive, dynamic, organized and used to teamwork, I know how to adapt to all situations and work environment.<br><br>
                                             I have always been passionate about the world of technology, and I have already developed many personal projects. I am enthusiastic about the upcoming challenges and discoveries. 
                                                 <br>
@@ -53,7 +53,7 @@
                                     <div class="card-content">
                                         <div class="media">
                                             <div class="media-content">
-                                                <h3>Next training</h3>
+                                                <h3>Current training</h3>
                                                 <h5>Full Stack Javascript Developer</h5>
                                                 <h6>O'CLOCK School<br>2023</h6>
                                             </div>
