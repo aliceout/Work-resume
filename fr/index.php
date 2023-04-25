@@ -40,7 +40,7 @@
                                         <div class="media">
                                             <div class="media-content">
                                                 <h3>PROFIL GITHUB</h3>
-                                                <h5><a href="https://github.com/Advalice" target="_blank">Advalice (Alice OsDel)</a></h5>
+                                                <h5><a href="https://github.com/aliceout" target="_blank">aliceout (Alice OsDel)</a></h5>
                                             </div>
                                             <div class="media-left">
                                                 <figure>
