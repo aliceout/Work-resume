@@ -6,6 +6,7 @@
     </figure>
 
     <h1 id="name">ALICE<br>
+        <span class="name-color">AUSSEL</span><br>
         <span class="name-color">DELAMAIDE</span><br>
     </h1>
 
