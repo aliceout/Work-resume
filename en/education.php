@@ -37,13 +37,11 @@
                 <div class="logo"><img src="../assets/images/oclock.png"></div>
             </div>
         </div>
-            <p>
                 <ul>
-                    <li>Frontend : HTML, CSS, JavaScript, React</li>
-                    <li>Backend : Node.js, PostgreSQL, SequeLize</li>
-                    <li>Specialization : React - Redux</li>
-            </ul>
-            </p></div>
+                    <li>- Frontend : HTML, CSS, JavaScript, React</li>
+                    <li>- Backend : Node.js, PostgreSQL, SequeLize</li>
+                    <li>- Specialization : React - Redux</li>
+            </ul></div>
     </div>
 </div>
 
@@ -57,7 +55,7 @@
                                                 <div class="lieu">Paris-Est Créteil University</div>
                                                 <span class="date">2018 - 2019</span></div>
                                             <div class="media-left">
-                                                <div class="logo"><img src="../assets/images/oclock.png"></div>
+                                                <div class="logo"><img src="../assets/images/upec.png"></div>
                                             </div>
                                         </div>
                                         <div class="content"><p><strong>Option</strong>: Emergency and Rehabilitation<br> Graduated with AB mention</p><br /> <p>Project cycle management, quality monitoring, evaluation and capitalization <br>

@@ -38,13 +38,12 @@
                 <div class="logo"><img src="../assets/images/oclock.png"></div>
             </div>
         </div>
-            <p>
                 <ul>
-                    <li>Frontend : HTML, CSS, JavaScript, React</li>
-                    <li>Backend : Node.js, PostgreSQL, SequeLize</li>
-                    <li>Spécialisation : React - Redux</li>
+                    <li>- Frontend : HTML, CSS, JavaScript, React</li>
+                    <li>- Backend : Node.js, PostgreSQL, SequeLize</li>
+                    <li>- Spécialisation : React - Redux</li>
             </ul>
-            </p></div>
+        </div>
     </div>
 </div>
 
