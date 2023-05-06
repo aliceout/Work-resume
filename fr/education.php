@@ -25,6 +25,53 @@
                                     </div>
                                 </div>
 
+<div class="divider is-info is-light"></div>
+
+<div class="graduation">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <div class="graduationTitle"><h5>Titre professionnel· Développeuse Web et Web mobile - FullStack JavaScript</h5></div>
+                <div class="lieu">Ecole O'Clock</div>
+                <span class="date">2023</span></div>
+            <div class="media-left">
+                <div class="logo"><img src="../assets/images/upec.png"></div>
+            </div>
+        </div>
+        <div class="content">En cours</p>
+            <p>
+                <ul>
+                    <li>Frontend : HTML, CSS, JavaScript, React</li>
+                    <li>Backend : Node.js, PostgreSQL, SequeLize</li>
+                    <li>Spécialisation : React - Redux</li>
+            </ul>
+            </p></div>
+    </div>
+</div>
+
+                                <div class="divider is-info is-light"></div>
+
+                                <div class="graduation">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <div class="graduationTitle"><h5>Master II · Politiques publiques · Action Humanitaire Internationale</h5></div>
+                                                <div class="lieu">Université Paris-Est Créteil</div>
+                                                <span class="date">2018 - 2019</span></div>
+                                            <div class="media-left">
+                                                <div class="logo"><img src="../assets/images/upec.png"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content"><p><strong>Option</strong> : Urgence et réhabilitation<br>
+                                            Diplomée mention AB</p>
+                                            <p>Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation <br>
+                                                Cas pays, mises en situation, conceptions de projets, renforcement et partenariats<br><br>
+                                                <strong>Mémoire de stage I</strong>: <i>"Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée"</i><br>
+                                                <strong>Mémoire de stage II</strong>: <i>"La notion de crise et son utilisation dans la thématique migratoires, d'un outil de mobilisation à l'abus d'un objet devenue politique"</i>
+                                            </p></div>
+                                    </div>
+                                </div>
+
                                 <div class="divider is-info is-light"></div>
 
                                 <div class="graduation">
