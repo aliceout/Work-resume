@@ -24,6 +24,29 @@
                                     </div>
                                 </div>
 
+<div class="divider is-info is-light"></div>
+
+<div class="graduation">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <div class="graduationTitle"><h5>Professionnal title · Web and Mobile Web Developer - FullStack JavaScript</h5></div>
+                <div class="lieu">O'Clock scholl</div>
+                <span class="date">2023 · In progress</span></div>
+            <div class="media-left">
+                <div class="logo"><img src="../assets/images/oclock.png"></div>
+            </div>
+        </div>
+            <p>
+                <ul>
+                    <li>Frontend : HTML, CSS, JavaScript, React</li>
+                    <li>Backend : Node.js, PostgreSQL, SequeLize</li>
+                    <li>Specialization : React - Redux</li>
+            </ul>
+            </p></div>
+    </div>
+</div>
+
                                 <div class="divider is-info is-light"></div>
 
                                 <div class="graduation">
@@ -34,7 +57,7 @@
                                                 <div class="lieu">Paris-Est Créteil University</div>
                                                 <span class="date">2018 - 2019</span></div>
                                             <div class="media-left">
-                                                <div class="logo"><img src="../assets/images/upec.png"></div>
+                                                <div class="logo"><img src="../assets/images/oclock.png"></div>
                                             </div>
                                         </div>
                                         <div class="content"><p><strong>Option</strong>: Emergency and Rehabilitation<br> Graduated with AB mention</p><br /> <p>Project cycle management, quality monitoring, evaluation and capitalization <br>
