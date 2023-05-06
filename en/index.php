@@ -43,7 +43,7 @@
                                             </div>
                                             <div class="media-left">
                                                 <figure>
-                                                    <div class="logo"><img src="../assets/images/github.png" alt="O'Clock"></div>
+                                                    <div class="logo"><img src="../assets/images/github.png" alt="Github"></div>
                                                 </figure>
                                             </div>
                                         </div>

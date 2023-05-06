@@ -31,14 +31,13 @@
     <div class="card-content">
         <div class="media">
             <div class="media-content">
-                <div class="graduationTitle"><h5>Titre professionnel· Développeuse Web et Web mobile - FullStack JavaScript</h5></div>
+                <div class="graduationTitle"><h5>Titre professionnel · Développeuse Web et Web mobile - FullStack JavaScript</h5></div>
                 <div class="lieu">Ecole O'Clock</div>
-                <span class="date">2023</span></div>
+                <span class="date">2023 · En cours</span></div>
             <div class="media-left">
-                <div class="logo"><img src="../assets/images/upec.png"></div>
+                <div class="logo"><img src="../assets/images/oclock.png"></div>
             </div>
         </div>
-        <div class="content">En cours</p>
             <p>
                 <ul>
                     <li>Frontend : HTML, CSS, JavaScript, React</li>
