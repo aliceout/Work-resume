@@ -3,13 +3,13 @@
 }
 
 .dark-mode .logo {
-    display: none;
+    visibility: hidden;  
 }
 
-.transition {
-    transition: all .75s ease-out; 
-}
-
-.transitionSidebar {
+.transition_2 {
     transition: all .75s ease-out;
+}
+
+.transition_3 {
+    transition: all 1.5s ease-out; 
 }
