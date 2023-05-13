@@ -42,11 +42,11 @@ include('../assets/php/header.php');
                                         </div>
                                     </div>
                                     <ul>
-                                        <li>- <strong>Frontend</strong> : Html5 · Css3, Sass/Scss · JavaScript · Typescript · React</li>
-                                        <li>- <strong>Bactend</strong> : Node.js · Express.js · PostgreSQL · SequeLize</li>
-                                        <li>- <strong>Spécialisation</strong> : React - Redux</li><br>
-                                        <li>- <strong>Principes et compétences</strong> : Architecture MVC, Active record, Programmation orientée objet (POO), Modélisation des données (MCD, MLD), Gestion de projet agile, Responsive Web Design</li><br>
-                                        <li>- <strong>Outils et méthodologies</strong> : Git · Insomnia, Postman · Shell, ESlint</li>
+                                        <li><strong>Frontend</strong> : Html5 · Css3 · Sass/Scss · JavaScript · Typescript · React</li>
+                                        <li><strong>Bactend</strong> : Node.js · Express.js · PostgreSQL · SequeLize</li>
+                                        <li><strong>Spécialisation</strong> : React · Redux</li><br>
+                                        <li><strong>Principes et compétences</strong> : Architecture MVC · Active record · Programmation orientée objet (POO) · Modélisation des données (MCD, MLD) · Gestion de projet agile · Responsive Web Design · API Rest</li><br>
+                                        <li><strong>Outils et méthodologies</strong> : Git · Insomnia, Postman · Shell · ESlint</li>
                                     </ul>
                                 </div>
                             </div>

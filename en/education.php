@@ -41,9 +41,11 @@ include('../assets/php/header.php');
                                         </div>
                                     </div>
                                     <ul>
-                                        <li>- Frontend : HTML, CSS, JavaScript, React</li>
-                                        <li>- Backend : Node.js, PostgreSQL, SequeLize</li>
-                                        <li>- Specialization : React - Redux</li>
+                                        <li><strong>Frontend</strong> : Html5 · Css3 · Sass/Scss · JavaScript · Typescript · React</li>
+                                        <li><strong>Bactend</strong> : Node.js · Express.js · PostgreSQL · SequeLize</li>
+                                        <li><strong>Specialization</strong> : React · Redux</li><br>
+                                        <li><strong>Principles and skills</strong> : MVC Architecture · Active record · Object Oriented Programming (OOP) · Data Modeling (MCD, MLD) · Agile Project Management · Responsive Web Design< · Rest API/li><br>
+                                        <li><strong>Tools and methodologies:</strong> : Git · Insomnia, Postman · Shell · ESlint</li>
                                     </ul>
                                 </div>
                             </div>
