@@ -1,15 +1,16 @@
 jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var Reso = document.body.clientWidth;
+  const fixedSidebar = document.getElementById("fixed-sidebar");
+  let alterClass = function() {
+    let Reso = document.body.clientWidth;
     if (Reso < 1216) {
-      $('#fixed-sidebar').addClass('card');
+      fixedSidebar.classList.add("card");
     } else if (Reso >= 1216) {
-      $('#fixed-sidebar').removeClass('card');
+      fixedSidebar.classList.remove("card");
     };
   };
-  $(window).resize(function(){
+  $(window).resize(_.debounce(function(){
     alterClass();
-  });
-  //Fire it when the page first loads:
+  }, 100));
+
   alterClass();
 });
