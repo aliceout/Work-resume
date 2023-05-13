@@ -49,10 +49,11 @@
                                         <strong>Lectures</strong>
                                         <p>Romans étrangers (Moyen-Orient, Afrique, Asie), science-fiction, anticipation, essais politiques, essais universitaires</p><br>
                                         <strong>Musique & spectacles</strong>
-                                        <p>Pratique du piano, création musique électronique, théâtre, concerts, festivals<br></p>
+                                        <p>Pratique du piano, création musique électronique, théâtre, concerts, festivals</p><br>
                                         <strong>Actualité</strong>
                                         <p>Suivi actualité - nationale et internationale - important (journaux, flux rss, veille informationnelle, magazines, presse pure player, films documentaires)</p><br>
                                         <strong>Apprentissage continu</strong>
+                                        <p>Pratique du piano, théâtre, concerts, festivals</p><br>
                                         <p>Suivi de nombreux MOOC (massive open online course), sur des thèmes géopolitique, internationaux, écologique</p><br>
                                     </div>
                                 </div>
