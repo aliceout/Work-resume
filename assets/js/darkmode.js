@@ -1,66 +1,65 @@
-// check for saved 'darkMode' and 'darkModeToggle' in localStorage
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Définition des variables
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
 let darkMode = localStorage.getItem('darkMode');
-
 const darkModeToggle = document.getElementById('darkmode-checkbox');
+const lightElements = document.querySelectorAll(".lightMode-elements");
+const darkElements = document.querySelectorAll(".darkMode-elements");
+const cardElements = document.querySelectorAll(".card");
+const logoElements = document.querySelectorAll(".logo");
+const switchElements = document.querySelectorAll(".switch");
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Fonctions
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
 
-const enableDarkMode = () => {
-    // 1. Add the class to the body & html
-    document.body.classList.add('dark-mode');
-    document.documentElement.classList.add('dark-mode');
-    // 2. Update darkMode in localStorage
-    localStorage.setItem('darkMode', 'enabled');
-    // 3. toggle the checkbox
-    darkModeToggle.setAttribute('checked', true);
-    // 4. Hide light-mode elements
-    for (const element of document.querySelectorAll(".lightMode-elements")) { element.style.display = "none"; }
-    // 5. Show dark-mode elements
-    for (const element of document.querySelectorAll(".darkMode-elements")) { element.style.display = "block"; }
+const setDarkMode = (enable) => {
+    const body = document.body;
+    const html = document.documentElement;
 
-}
-
-const disableDarkMode = () => {
-    // 1. Remove the class from the body & html
-    document.body.classList.remove('dark-mode');
-    document.documentElement.classList.remove('dark-mode');
-    // 2. Update darkMode and toggle in localStorage 
-    localStorage.setItem('darkMode', null);
-    // 3. Hide dark-mode elements
-    for (const element of document.querySelectorAll(".darkMode-elements")) { element.style.display = "none"; }
-    // 4. Show light-mode elements
-    for (const element of document.querySelectorAll(".lightMode-elements")) { element.style.display = "block"; }
-
+    body.classList.toggle('dark-mode', enable);
+    html.classList.toggle('dark-mode', enable);
+    darkElements.forEach(element => element.style.display = enable ? "block" : "none");
+    lightElements.forEach(element => element.style.display = enable ? "none" : "block");
 }
 
 const toggleTransition = () => {
+    console.log("toogle");
     document.body.classList.toggle('transition');
     document.documentElement.classList.toggle('transition');
-    for (const element of document.querySelectorAll(".card")) { element.classList.toggle('transition') }
-    for (const element of document.querySelectorAll(".logo")) { element.classList.toggle('transition') }
-    for (const element of document.querySelectorAll(".switch")) { element.classList.toggle('transitionSidebar') }
+    for (const element of cardElements) { element.classList.add('transition') }
+    for (const element of logoElements) { element.classList.add('transition') }
+    for (const element of switchElements) { element.classList.add('transitionSidebar') }
+
 }
 
-// If the user already visited and enabled darkMode
-// start things off with it on
-if (darkMode === 'enabled') {
-    enableDarkMode();
-}
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Ecouteur d'évènements
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
 
-// When someone clicks the button
+if (darkMode === 'enabled') { setDarkMode(true); }
+
 darkModeToggle.addEventListener('click', () => {
-    // get their darkMode setting
     darkMode = localStorage.getItem('darkMode');
-    console.log(darkMode)
-    // if it not current enabled, enable it
+    setTimeout(toggleTransition, 500);
     if (darkMode !== 'enabled') {
-        toggleTransition();
-        enableDarkMode();
-        setTimeout(toggleTransition, 500);
-        // if it has been enabled, turn it off  
+        localStorage.setItem('darkMode', 'enabled');
+        setDarkMode(true);
     } else {
-        toggleTransition();
-        disableDarkMode();
-        setTimeout(toggleTransition, 500);
+        localStorage.setItem('darkMode', null);
+        setDarkMode(false);
     }
+    toggleTransition()
 });
 
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Sources
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
 // source : https://stackoverflow.com/questions/70570108/keep-toggle-switch-enabled-or-disabled-when-page-is-switched-or-refreshed
