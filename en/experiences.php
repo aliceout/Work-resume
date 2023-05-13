@@ -23,7 +23,7 @@
                                         <div class="media">
                                             <div class="media-content">
                                                 <div class="jobTitle"><h5>DOCTORS OF THE WORLD FRANCE</h5>
-                                                    <div class="lieu">Bangui, <strong>RCA</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
+                                                    <div class="lieu">Bangui, <strong>CAR</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
                                                 <h6 class="position">Logistics Coordinator</h6>
                                                 <div class="date">2021-2022 · 9 months</div>
                                             </div>
@@ -32,7 +32,7 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <p>Emergency responses to the health needs of conflict-affected populations in Central African territory<br><br></p>
+                                            <p>Emergency responses to the health needs of conflict-affected populations in Central African territory<br></p>
                                             <ul>
                                                 <li>
                                                     <p>Management of the capital logistics team, and support of two backcountry bases</p> 
@@ -73,7 +73,7 @@
                                         <div class="media">
                                             <div class="media-content">
                                                 <div class="jobTitle"><h5>DOCTORS OF THE WORLD FRANCE</h5>
-                                                    <div class="lieu">Kalemie, <strong>RD Congo</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
+                                                    <div class="lieu">Kalemie, <strong>DR Congo</strong>&emsp;<i class="fa fa-map-marker-alt"></i></div></div>
                                                 <h6 class="position">Base Logistician</h6>
                                                 <div class="date">2020-2021 · 9 months</div>
                                             </div>
@@ -82,7 +82,7 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <p>Emergency response to the health needs of conflict-affected populations in Tanganyika province<br><br></p>
+                                            <p>Emergency response to the health needs of conflict-affected populations in Tanganyika province<br></p>
                                             <ul>
                                                 <li>
                                                     <p>Supervising and leading a team of a dozen people</p> 
@@ -128,7 +128,7 @@
                                                 <figure class="logo"><img src="../assets/images/mdm2.png"></figure>
                                             </div>
                                         </div>
-                                        <div class="content"><p>Squat and Slum Programs & CASO - Covid-19 Response<br><br></p>
+                                        <div class="content"><p>Squat and Slum Programs & CASO - Covid-19 Response<br></p>
                                             <ul>
                                                 <li>
                                                     <p>Stock management and tracking</p> 
@@ -171,7 +171,7 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <p>Support of the regional direction, in the realization of an exploratory mission on the situation of the migrant people in the Tunisian south (governorates of Medenine and Tataouine), and of a work of analysis of the framework the equal, for the realization of two initial diagnoses on the Tunisian territory</p><br />
+                                            <p>Support of the regional direction, in the realization of an exploratory mission on the situation of the migrant people in the Tunisian south (governorates of Medenine and Tataouine), and of a work of analysis of the framework the equal, for the realization of two initial diagnoses on the Tunisian territory</p><br/>
                                             <ul>
                                                 <li>
                                                     <p>Study on sexual violence and the sexual and reproductive health needs of young people and women with disabilities</p>
@@ -200,7 +200,7 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <p>"Migration"program <br><br></p>
+                                            <p>"Migration"program<br></p>
                                             <ul>
                                                 <li>
                                                     <p>Participation in actions to support capacity building of partners</p>

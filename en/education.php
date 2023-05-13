@@ -65,9 +65,10 @@ include('../assets/php/header.php');
                                         </div>
                                     </div>
                                     <div class="content">
-                                        <p><strong>Option</strong>: Emergency and Rehabilitation<br> Graduated with AB mention</p><br />
+                                        <p><strong>Option</strong>: Emergency and Rehabilitation<br> Graduated with AB mention</p>
                                         <p>Project cycle management, quality monitoring, evaluation and capitalization <br>
-                                            Country cases, scenarios, project designs, strengthening and partnerships<br><br> <strong>Internship thesis I</strong>: <i>"ICTs in the international solidarity sector, reflections on a forced integration"</i><br> <strong>Internship thesis II</strong>: <i>"The notion of crisis and its use in the migration theme, from a mobilization tool to the abuse of an object that has become political"</i>
+                                            Country cases, scenarios, project designs, strengthening and partnerships<br><br>
+                                            <strong>Internship thesis I</strong>: <i>"ICTs in the international solidarity sector, reflections on a forced integration"</i><br> <strong>Internship thesis II</strong>: <i>"The notion of crisis and its use in the migration theme, from a mobilization tool to the abuse of an object that has become political"</i>
                                         </p>
                                     </div>
                                 </div>
