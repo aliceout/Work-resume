@@ -1,20 +1,24 @@
-var sidenav = document.getElementById("navList");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Définition des variables
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
+const sidenav = document.getElementById("navList");                                                     // Définition de la sidenav
+const navBtns = document.getElementById("navBtns");                                                     // Définition du bouton
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    sidenav.classList.add("active");
-    openBtn.classList.remove("active");
-    closeBtn.classList.add("active");
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    sidenav.classList.remove("active");
-    openBtn.classList.add("active");
-    closeBtn.classList.remove("active");
-}
+/**
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+·······  Fonction
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+*/
+navBtns.onclick = (event) => {                                                                         // Fonction d'événement au clic
+    if (event.target.id === "openBtn") {                                                               // Si le bouton d'ouverture est cliqué
+        sidenav.classList.add("active");                                                               // La sidenav est affiché
+        event.target.classList.remove("active");                                                       // Le bouton est affiché
+        closeBtn.classList.add("active");                                                              // Le bouton est masqué
+    } else if (event.target.id === "closeBtn") {                                                       // Si le bouton de femrture est cliqué
+        sidenav.classList.remove("active");                                                            // La sidenav est masqué
+        openBtn.classList.add("active");                                                               // Le bouton est affiché
+        event.target.classList.remove("active");                                                       // Le bouton est masqué
+    }
+};
