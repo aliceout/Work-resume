@@ -9,7 +9,7 @@
 
     <meta name="description" content="Curriculum vitae en ligne" />
 
-    <title>CV · Alice Delamaide</title>
+    <title>CV · Alice Aussel-Delamaide</title>
 
     <!--  Bulma CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
