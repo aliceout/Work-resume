@@ -12,44 +12,51 @@ const router = express.Router();
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
 router.get('/', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
-    res.render("fr/index", {lang})
+    const lang = (!req.params.id) ? "fr" : req.params.id;
+    if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
+    else { res.render("en/index", {lang}) }
+});
+
+router.get('/:id', (req, res) => {
+    const lang = (!req.params.id) ? "fr" : req.params.id;
+    if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
+    else { res.render("en/index", {lang}) }
 });
 
 router.get('/index/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
-    else { res.render("en/index") }
+    else { res.render("en/index", {lang}) }
 });
 
 router.get('/education/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/education", {lang}) }
-    else { res.render("en/education") }
+    else { res.render("en/education", {lang}) }
 });
 
 router.get('/experiences/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/experiences", {lang}) }
-    else { res.render("en/experiences") }
+    else { res.render("en/experiences", {lang}) }
 });
 
 router.get('/volunteering/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/volunteering", {lang}) }
-    else { res.render("en/volunteering") }
+    else { res.render("en/volunteering", {lang}) }
 });
 
 router.get('/personnal/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/personnal", {lang}) }
-    else { res.render("en/personnal") }
+    else { res.render("en/personnal", {lang}) }
 });
 
 router.get('/skills/:id', (req, res) => {
-    const lang = (!req.session.lang) ? "fr" : false - req.session.lang;
+    const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/skills", {lang}) }
-    else { res.render("en/skills") }
+    else { res.render("en/skills", {lang}) }
 })
 
 router.get('/contact/:id', (req, res) => {
