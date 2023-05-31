@@ -11,7 +11,7 @@ const currentURL = document.location.href.replace(/\/$/, "");
 // console.log("currentURL : ", currentURL);
 
 const currentLang = currentURL.substring(currentURL.lastIndexOf("/") + 1);
-// console.log("currentLang : ", currentLang);
+console.log("currentLang : ", currentLang);
 
 currentPage = currentURL.slice(0, -3).substring(currentURL.slice(0, -3).lastIndexOf("/") + 1);
 // console.log("currentPage:", currentPage);
@@ -25,6 +25,7 @@ let baseURL = currentURL.replace(new RegExp(`/(${currentPage}/${currentLang})`),
 ·······  Language switcher
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
+if (currentLang === "en" && langChangeToggle.checked === false) { langChangeToggle.setAttribute('checked', true) }
 const langSwitcher = (targetLang) => {
     if (currentLang !== "fr" && currentLang !== "en") {
         window.location.href = `${baseURL}/${targetLang}`;
@@ -49,10 +50,12 @@ document.getElementById('language-checkbox').addEventListener('click', () => {
     if (currentLang === 'fr' && sessionStorage.getItem('targetLang') === 'fr') {
         sessionStorage.setItem('targetLang', 'en');
         langSwitcher("en");
-    } else {
+    } else if (currentLang === 'en' && sessionStorage.getItem('targetLang') === 'en') {
         sessionStorage.setItem('targetLang', 'fr');
         langSwitcher("fr");
+    } else {
+        sessionStorage.setItem('targetLang', 'en');
+        langSwitcher("en");
     }
 });
 
-if (currentLang === "en" && langChangeToggle.checked === false) { langChangeToggle.setAttribute('checked', true) }
