@@ -3,34 +3,33 @@
 ·······  Définition des variables
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
-const langChangeToggle = document.getElementById('language-checkbox');                                     // Définition du bouton
-const currentURL = document.location.href.replace(/\/$/, "");                                              // Définition de l'URL
-const host = window.location.host;                                                                         // Définition de l'hôte
-const currentPort = location.port;                                                                         // Définition de la port
-const localhostType = (currentPort != "") ? "localhost:" + currentPort : "localhost";                      // Définition de l'hôte
-const domain = (host == localhostType) ? "http://" + localhostType + "/work" : `https://${host}`;          // Définition de la domaine
-const currentPage = currentURL.substring(currentURL.lastIndexOf("/") + 1);                                 // Définition de la page
+const langChangeToggle = document.getElementById('language-checkbox');
 
-if (window.location.hostname === 'localhost') {                                                            // Récupération de la langue actuelle
-    currentLanguage = currentPort !== "" ? currentURL.slice(27, 29) : currentURL.slice(22, 24);            // Enfonction des env de développement
-} else { currentLanguage = currentURL.slice(24, 26); }                                                     // Enfonction des env de production
+const currentURL = document.location.href.replace(/\/$/, "");
+console.log("currentURL : ", currentURL);
 
-const toggleLanguage = (currentLanguage == "fr") ? "en" : "fr";                                            // Définition de la langue inverse
-const langChange = localStorage.getItem('langChange');                                                     // Récupération de l'état de la checkbox'
+const currentLang = currentURL.substring(currentURL.lastIndexOf("/") + 1);
+console.log("currentLang : ", currentLang);
 
-if (currentLanguage == "en") { document.getElementById('language-checkbox').checked = true; };             // Si la langue est anglais
-if (langChange === 'en' && currentLanguage != 'en') { langSwitcher(); };                                   // Si la langue est française
+currentPage = currentURL.slice(0, -3).substring(currentURL.slice(0, -3).lastIndexOf("/") + 1);
+console.log("currentPage:", currentPage);
+
+let baseURL = currentURL.replace(new RegExp(`/(${currentPage}/${currentLang})`), '');
+console.log("baseURL : ", baseURL);
+
 
 /**
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ·······  Language switcher
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
-const langSwitcher = () => {                                                                            // Fonction de changement de langue
-    if (currentPage !== currentLanguage) {                                                              // Si la page est différente de la langue
-        window.location.href = `${domain}/${toggleLanguage}/${currentPage}`;                            // Redirection vers la page
-    } else {                                                                                            // Sinon
-        window.location.href = `${domain}/${toggleLanguage}/index.php`;                                 // Redirection vers la page
+const langSwitcher = (targetLang) => {
+    if (currentLang !== targetLang) {
+        window.location.href = `${baseURL}/${targetLang}`;
+        console.log("destination : ", `${baseURL}/${targetLang}`);
+    } else {
+        window.location.href = `${baseURL}/index/${targetLang}`;
+        console.log("destination : ", `${baseURL}/index/${targetLang}`);
     }
 };
 
@@ -39,24 +38,19 @@ const langSwitcher = () => {                                                    
 ·······  Ecouteur d'évènements
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
-document.getElementById('language-checkbox').addEventListener('click', () => {                          // Définition de l'écouteur
-    if (langChange == 'en') {
-        langSwitcher();                                                                                 // Définition de la langue
-        localStorage.setItem('langChange', 'en');                                                       // LangChange devient enabled
-        langChangeToggle.setAttribute('checked', true);                                                 //  La checkbox est validée
+document.getElementById('language-checkbox').addEventListener('click', () => {
+
+    var targetLang = (!localStorage.getItem('langChange') || localStorage.getItem('langChange' === 'fr')) ? 'fr' : 'en';
+    console.log("targetLang : ",targetLang);
+
+    if (targetLang == 'en') {
+        localStorage.setItem('langChange', 'en');
+        langChangeToggle.setAttribute('checked', true);
+        langSwitcher(targetLang);
 
     } else {
-        langSwitcher();                                                                                 // Définition de la langue
-        localStorage.setItem('langChange', 'fr');                                                       // LangChange devient null
-        langChangeToggle.setAttribute('checked', false);                                                // La checkbox est dévalidée
+        localStorage.setItem('langChange', 'fr');
+        langChangeToggle.setAttribute('checked', false);
+        langSwitcher(targetLang);
     }
 });
-
-/**
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-·······  Sources
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-*/
-// - http://memo-web.fr/categorie-javascript-48/
-// - https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else
-// - https://code.tutsplus.com/tutorials/how-to-change-the-url-in-javascript-redirecting--cms-37323

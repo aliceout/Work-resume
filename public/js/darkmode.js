@@ -27,7 +27,6 @@ const setDarkMode = (enable) => {                                               
 }
 
 const toggleTransition = () => {                                                            // On modifie la valeur de la variable darkMode
-    console.log("toogle");                                                                  // On affiche la valeur de la variable
     document.body.classList.toggle('transition_2');                                           // On ajoute un effet de transition
     document.documentElement.classList.toggle('transition_2');                                // On ajoute un effet de transition
     cardElements.forEach(element => element.classList.toggle('transition_2'));                // On ajoute un effet de transition

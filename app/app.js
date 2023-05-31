@@ -5,24 +5,22 @@
 */
 import dotenv from 'dotenv';                                                  // On récupère les variables d'environnement
 import express from 'express';                                                // On récupère le module Express.js
-import path from "path";
+import cookieParser from "cookie-parser";
+import session from "express-session";
 import helmet from 'helmet';                                                  // On récupère le module helmet
 import cors from 'cors';                                                      // On récupère le module cors
 import expressLayouts from 'express-ejs-layouts';
 
-const env = process.env.NODE_ENV || "development";                            // On récupère le type d'environnement actuel
+import { router } from './router.js';                                         // On récupère les param du routeur
+import { notFound } from './middlewares/index.js';                            // On récupère les middlewares
 
+const env = process.env.NODE_ENV || "development";                            // On récupère le type d'environnement actuel
 if (env === 'development') {                                                  // Si environnement de développement
   var livereload = await import('livereload');                                // On applique le module connect-livereload
   var connectLiveReload = (await import('connect-livereload')).default;       // On applique le module connect-livereload
+} else {                                                                      // Si environnement de production
+  var RateLimit = (await import('express-rate-limit')).default;               // On applique le module connect-livereload
 }
-else {                                                                        // Si environnement de production
-  var RateLimit = (await import('express-rate-limit')).default;       // On applique le module connect-livereload
-}
-
-import { router } from './router.js';                                      // On récupère les param du routeur
-import { notFound } from './middlewares/index.js';                            // On récupère les middlewares
-
 /**
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ·······  Définitions
@@ -53,8 +51,8 @@ app.use(express.static('public'));                                            //
 
 if (env === 'production') {
   var limiter = RateLimit({                                                   // On récupère le module express-rate-limit
-    windowMs: 1 * 60 * 1000,                                                    // OCompteur de temps (requête par minute)
-    max: 20,                                                                    // Nombre maximum de requêtes
+    windowMs: 1 * 60 * 1000,                                                  // OCompteur de temps (requête par minute)
+    max: 20,                                                                  // Nombre maximum de requêtes
   });
 }
 
@@ -71,20 +69,26 @@ app.use(
   })
 );
 
-
 if (env === 'development') {                                                  // Si environnement de dévellopement
   app.use(connectLiveReload());                                               // On applique le module connect-livereload
-}; 
-
-if (env === 'production') {                                                  // Si environnement de production
-app.use(limiter);                                                             // On applique le module express-rate-limit
 };
 
+if (env === 'production') {                                                   // Si environnement de production
+  app.use(limiter);                                                           // On applique le module express-rate-limit
+};
+
+app.use(session({                                                             // On applique le module express-session
+  name: "session-id",
+  secret: "GFrtyjtgy-yretzGEnter", // Secret key,
+  saveUninitialized: false,
+  cookie: {
+  }
+}))
+
 app.use(cors('*'));                                                           // On applique le module cors
-app.use(router);
+app.use(router);                                                              // On applique le module router
 
-app.use("/middlewares", notFound);
-
+app.use("/middlewares", notFound);                                            // On applique les middlewares
 
 // app.use(function (req, res, next) { // 
 //   next(createError(404));
