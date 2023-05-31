@@ -3,19 +3,21 @@
 ·······  Définition des variables
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
+
 const langChangeToggle = document.getElementById('language-checkbox');
+// console.log("bouton : ", langChangeToggle.checked);
 
 const currentURL = document.location.href.replace(/\/$/, "");
-console.log("currentURL : ", currentURL);
+// console.log("currentURL : ", currentURL);
 
 const currentLang = currentURL.substring(currentURL.lastIndexOf("/") + 1);
-console.log("currentLang : ", currentLang);
+// console.log("currentLang : ", currentLang);
 
 currentPage = currentURL.slice(0, -3).substring(currentURL.slice(0, -3).lastIndexOf("/") + 1);
-console.log("currentPage:", currentPage);
+// console.log("currentPage:", currentPage);
 
 let baseURL = currentURL.replace(new RegExp(`/(${currentPage}/${currentLang})`), '');
-console.log("baseURL : ", baseURL);
+// console.log("baseURL : ", baseURL);
 
 
 /**
@@ -24,12 +26,16 @@ console.log("baseURL : ", baseURL);
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */
 const langSwitcher = (targetLang) => {
-    if (currentLang !== targetLang) {
+    if (currentLang !== "fr" && currentLang !== "en") {
         window.location.href = `${baseURL}/${targetLang}`;
-        console.log("destination : ", `${baseURL}/${targetLang}`);
     } else {
-        window.location.href = `${baseURL}/index/${targetLang}`;
-        console.log("destination : ", `${baseURL}/index/${targetLang}`);
+        window.location.href = `${baseURL}/${currentPage}/${targetLang}`;
+    }
+
+    if (targetLang === 'fr') {
+        langChangeToggle.setAttribute('checked', false);
+    } else {
+        langChangeToggle.setAttribute('checked', true);
     }
 };
 
@@ -40,17 +46,13 @@ const langSwitcher = (targetLang) => {
 */
 document.getElementById('language-checkbox').addEventListener('click', () => {
 
-    var targetLang = (!localStorage.getItem('langChange') || localStorage.getItem('langChange' === 'fr')) ? 'fr' : 'en';
-    console.log("targetLang : ",targetLang);
-
-    if (targetLang == 'en') {
-        localStorage.setItem('langChange', 'en');
-        langChangeToggle.setAttribute('checked', true);
-        langSwitcher(targetLang);
-
+    if (currentLang === 'fr' && sessionStorage.getItem('targetLang') === 'fr') {
+        sessionStorage.setItem('targetLang', 'en');
+        langSwitcher("en");
     } else {
-        localStorage.setItem('langChange', 'fr');
-        langChangeToggle.setAttribute('checked', false);
-        langSwitcher(targetLang);
+        sessionStorage.setItem('targetLang', 'fr');
+        langSwitcher("fr");
     }
 });
+
+if (currentLang === "en" && langChangeToggle.checked === false) { langChangeToggle.setAttribute('checked', true) }
