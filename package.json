@@ -1,6 +1,6 @@
 {
-  "name": "currencies_converter_backend",
-  "description": "Backend of Currencies converter",
+  "name": "Online resume",
+  "description": "AliceOsDel Resume",
   "main": "index.js",
   "author": "aliceout",
   "license": "Mozilla Public License Version 2.0",
@@ -14,7 +14,7 @@
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "connect-livereload": "^0.6.1",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "livereload": "^0.9.3",
     "nodemon": "^2.0.22",
     "npm-check-updates": "^16.10.12",
