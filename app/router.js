@@ -17,12 +17,6 @@ router.get('/', (req, res) => {
     else { res.render("en/index", {lang}) }
 });
 
-router.get('/:id', (req, res) => {
-    const lang = (!req.params.id) ? "fr" : req.params.id;
-    if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
-    else { res.render("en/index", {lang}) }
-});
-
 router.get('/index/:id', (req, res) => {
     const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
@@ -57,15 +51,23 @@ router.get('/skills/:id', (req, res) => {
     const lang = (!req.params.id) ? "fr" : req.params.id;
     if (lang == "fr" || lang == "") { res.render("fr/skills", {lang}) }
     else { res.render("en/skills", {lang}) }
-})
+});
 
-router.get('/contact/:id', (req, res) => {
+router.get('/contact', (req, res) => {
     res.redirect("https://join.skype.com/invite/II99wpbBBR78")
 });
 
-router.get('/resume/:id', (req, res) => {
+router.get('/resume', (req, res) => {
     res.redirect("https://cloud.ofanch.me/s/nCnZ5W7AM5adape#pdfviewer")
 });
+
+router.get('/:id', (req, res) => {
+    const lang = (!req.params.id) ? "fr" : req.params.id;
+    if (lang == "fr" || lang == "") { res.render("fr/index", {lang}) }
+    else { res.render("en/index", {lang}) }
+});
+
+
 
 /**
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░

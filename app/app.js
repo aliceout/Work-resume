@@ -5,8 +5,6 @@
 */
 import dotenv from 'dotenv';                                                  // On récupère les variables d'environnement
 import express from 'express';                                                // On récupère le module Express.js
-import cookieParser from "cookie-parser";
-import session from "express-session";
 import helmet from 'helmet';                                                  // On récupère le module helmet
 import cors from 'cors';                                                      // On récupère le module cors
 import expressLayouts from 'express-ejs-layouts';
@@ -77,18 +75,15 @@ if (env === 'production') {                                                   //
   app.use(limiter);                                                           // On applique le module express-rate-limit
 };
 
-app.use(session({                                                             // On applique le module express-session
-  name: "session-id",
-  secret: "GFrtyjtgy-yretzGEnter", // Secret key,
-  saveUninitialized: false,
-  cookie: {
-  }
-}))
-
 app.use(cors('*'));                                                           // On applique le module cors
 app.use(router);                                                              // On applique le module router
 
 app.use("/middlewares", notFound);                                            // On applique les middlewares
+
+
+app.listen(PORT, () => {                                                      // On lance l'application sur le port configuré
+  console.log('\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n-----------------------------------------------------------------------------\nProjet : ' + process.env.PROJECT_NAME + '\nPort : ' + PORT || 'http://localhost:3000');  // On affiche le message de lancement (configuré dans les variables d'environnement) 
+});
 
 // app.use(function (req, res, next) { // 
 //   next(createError(404));
@@ -101,12 +96,3 @@ app.use("/middlewares", notFound);                                            //
 //   res.status(err.status || 500);
 //   res.render("error");
 // });
-
-/**
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-·······  App
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-*/
-app.listen(PORT, () => {// On lance l'application sur le port configuré
-  console.log('\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n-----------------------------------------------------------------------------\nProjet : ' + process.env.PROJECT_NAME + '\nPort : ' + PORT || 'http://localhost:3000');  // On affiche le message de lancement (configuré dans les variables d'environnement) 
-});
