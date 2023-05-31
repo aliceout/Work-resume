@@ -12,24 +12,24 @@ const router = express.Router();                                     // Import d
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 */     
 /// Partie française
-router.get('/', (req, res) => {res.render("fr/index")});
-router.get('/index', (req, res) => {res.render("fr/index")});
-router.get('/education', (req, res) => {res.render("fr/education")});
-router.get('/experiences', (req, res) => {res.render("fr/experiences")});
-router.get('/benevolat', (req, res) => {res.render("fr/benevolat")});
-router.get('/personnal', (req, res) => {res.render("fr/personnal")});
-router.get('/skills', (req, res) => {res.render("fr/skills")});
-router.get('/contact', (req, res) => {res.redirect("https://join.skype.com/invite/II99wpbBBR78")});
-router.get('/resume', (req, res) => {res.redirect("https://cloud.ofanch.me/s/nCnZ5W7AM5adape#pdfviewer")});
+router.get('/:id', (req, res) => {res.render("fr/index")});
+router.get('/index/:id', (req, res) => {res.render("fr/index")});
+router.get('/education/:id', (req, res) => {res.render("fr/education")});
+router.get('/experiences/:id', (req, res) => {res.render("fr/experiences")});
+router.get('/benevolat/:id', (req, res) => {res.render("fr/benevolat")});
+router.get('/personnal/:id', (req, res) => {res.render("fr/personnal")});
+router.get('/skills/:id', (req, res) => {res.render("fr/skills")});
+router.get('/contact/:id', (req, res) => {res.redirect("https://join.skype.com/invite/II99wpbBBR78")});
+router.get('/resume/:id', (req, res) => {res.redirect("https://cloud.ofanch.me/s/nCnZ5W7AM5adape#pdfviewer")});
 
 /// Partie anglaise
-router.get('/', (req, res) => {res.render("en/index")});
-router.get('/index', (req, res) => {res.render("en/index")});
-router.get('/education', (req, res) => {res.render("en/education")});
-router.get('/experiences', (req, res) => {res.render("en/experiences")});
-router.get('/benevolat', (req, res) => {res.render("en/benevolat")});
-router.get('/personnal', (req, res) => {res.render("en/personnal")});
-router.get('/skills', (req, res) => {res.render("en/skills")});
+// router.get('/', (req, res) => {res.render("en/index")});
+// router.get('/index', (req, res) => {res.render("en/index")});
+// router.get('/education', (req, res) => {res.render("en/education")});
+// router.get('/experiences', (req, res) => {res.render("en/experiences")});
+// router.get('/benevolat', (req, res) => {res.render("en/benevolat")});
+// router.get('/personnal', (req, res) => {res.render("en/personnal")});
+// router.get('/skills', (req, res) => {res.render("en/skills")});
 
 /**
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
