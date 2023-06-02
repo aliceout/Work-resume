@@ -5,22 +5,27 @@
     @include mobile {
         display: none;
     }
+
     @include widescreen {
         display: inline-block;
     }
 }
 
+#section {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
 /** ------------------------------------------------------CARD **/
 /** CARD **/
 
-.card 
-{
+.card {
     margin: 2rem auto 2rem auto;
     border: 0.063rem solid var(--gradiant-lev3);
     box-shadow: none;
     background: var(--back-card);
     color: var(--gradiant-lev6);
-    border-radius: .7rem; 
+    border-radius: .7rem;
     font-size: .84rem;
     text-align: justify;
 
@@ -46,24 +51,30 @@
             display: flex;
             justify-content: center;
         }
+
         .label-checkbox {
             font-size: .9rem;
             margin-top: .2rem;
         }
+
         .label-right {
             text-align: left;
         }
-        .label-left { 
+
+        .label-left {
             text-align: right;
         }
     }
+
     @include desktop {
         .label-checkbox {
             margin-top: .2rem;
         }
+
         .label-right {
             text-align: right;
         }
+
         .label-left {
             text-align: left;
         }
@@ -90,11 +101,11 @@
         font-weight: 600;
         color: var(--gradiant-lev6);
         line-height: 1.313rem;
-    }   
+    }
 
     h6 {
         text-transform: uppercase;
-    }  
+    }
 
     img {
         margin: 1rem auto auto 1rem;
@@ -112,7 +123,7 @@
 .card-option {
     margin-top: 0;
     background: var(--background);
-    border:none;
+    border: none;
 }
 
 .top-card {
@@ -127,16 +138,17 @@
     margin-bottom: .5rem;
 }
 
-.job, .graduation {
+.job,
+.graduation {
     .card-content {
         border-radius: 0;
-        padding-top: 0rem ;
-        padding-bottom: 0rem ;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
 
         @include touch {
             padding: .5rem;
-            padding-top: 2rem ;
-            padding-bottom: 1rem ;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
         }
     }
 
@@ -179,6 +191,7 @@
     .lieu {
         margin-top: .25rem;
         margin-bottom: .2rem;
+
         .fa {
             @include touch {
                 display: none;
@@ -224,22 +237,24 @@
 /** GRAPHISME **/
 .has-carousel {
     min-height: 27.5rem;
+
     .carousel {
         min-height: 100%;
     }
 }
 
 .slider-pagination {
-    display: none; 
+    display: none;
 }
 
-.slider-navigation-previous, .slider-navigation-next {
+.slider-navigation-previous,
+.slider-navigation-next {
     background: none;
     border: none;
     box-shadow: none;
 
     svg {
-        color : transparent;
+        color: transparent;
     }
 }
 
@@ -251,9 +266,11 @@
 
     .langTitle {
         margin-bottom: .4rem;
+
         .info {
             margin-right: 1rem;
         }
+
         .seperator {
             margin-left: .5rem;
             margin-right: .5rem;
@@ -277,9 +294,11 @@
 
     .certifList {
         margin-bottom: 1rem;
+
         .certifTitle {
             max-width: 17.5rem;
         }
+
         .logo {
             margin-left: 0.6rem;
             width: 2vw;

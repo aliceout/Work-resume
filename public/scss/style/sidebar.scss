@@ -1,6 +1,8 @@
 #fixed-sidebar {
     text-align: center;
     font-size: .8rem;
+    padding-top: 0;
+    padding-bottom: 0;
 
     #navList, #openBtn, #closeBtn {
         display : none;
@@ -17,7 +19,7 @@
     }
 
     #closeBtn {
-        margin-top: .5rem; 
+        margin-top: .5rem;
     }
 
     #navToggle {
@@ -50,9 +52,9 @@
         position: sticky;   
         display: inline-block;
         vertical-align: top;
-        height: 85vh;
+        height: 100vh;
         overflow-y: auto;
-        top: 1rem;
+        top: 0;
         bottom: 0;
         padding-top: 0;
 
