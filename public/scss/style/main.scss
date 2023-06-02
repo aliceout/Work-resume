@@ -1,14 +1,7 @@
 /** ------------------------------------------------------INDEX**/
 /** INDEX **/
-#index-recent {
-
-    @include mobile {
-        display: none;
-    }
-
-    @include widescreen {
-        display: inline-block;
-    }
+html #section #big-main main { 
+    margin-top: 0;
 }
 
 #section {
@@ -18,7 +11,6 @@
 
 /** ------------------------------------------------------CARD **/
 /** CARD **/
-
 .card {
     margin: 2rem auto 2rem auto;
     border: 0.063rem solid var(--gradiant-lev3);
@@ -28,10 +20,6 @@
     border-radius: .7rem;
     font-size: .84rem;
     text-align: justify;
-
-    @include touch {
-        margin: 0rem auto 1rem auto;
-    }
 
     h3 {
         margin: .5rem auto .5rem 0;
@@ -44,48 +32,6 @@
 
     .label-checkbox {
         font-size: .9rem;
-    }
-
-    @include touch {
-        .categories-columns {
-            display: flex;
-            justify-content: center;
-        }
-
-        .label-checkbox {
-            font-size: .9rem;
-            margin-top: .2rem;
-        }
-
-        .label-right {
-            text-align: left;
-        }
-
-        .label-left {
-            text-align: right;
-        }
-    }
-
-    @include desktop {
-        .label-checkbox {
-            margin-top: .2rem;
-        }
-
-        .label-right {
-            text-align: right;
-        }
-
-        .label-left {
-            text-align: left;
-        }
-    }
-
-    @include widescreen {
-        .column {
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-            padding-left: 0;
-        }
     }
 }
 
@@ -132,8 +78,6 @@
 
 /** -------------------------------------JOBS AND GRADUATIONS **/
 /** JOBS AND GRADUATION **/
-
-
 .card .media:not(:last-child) {
     margin-bottom: .5rem;
 }
@@ -144,12 +88,6 @@
         border-radius: 0;
         padding-top: 0rem;
         padding-bottom: 0rem;
-
-        @include touch {
-            padding: .5rem;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-        }
     }
 
     h5 {
@@ -170,33 +108,21 @@
         display: flex;
         justify-content: space-between;
         max-width: 95%;
-
-        @include touch {
-            display: block;
-        }
     }
 
     .position {
+        text-align: left;
         max-width: 95%;
     }
 
     .logo {
         width: 7vw;
-
-        @include touch {
-            display: none;
-        }
     }
 
     .lieu {
         margin-top: .25rem;
         margin-bottom: .2rem;
 
-        .fa {
-            @include touch {
-                display: none;
-            }
-        }
     }
 
     .date {
@@ -209,11 +135,6 @@
         margin-top: 2vh;
     }
 
-    ul {
-        @include touch {
-            margin-left: 0;
-        }
-    }
 }
 
 .graduation {
@@ -260,7 +181,6 @@
 
 /** -----------------------------------------------------SKILLS**/
 /** SKILLS **/
-
 .skills {
     font-size: .8rem;
 
@@ -308,7 +228,4 @@
     .numSkills {
         line-height: 1.5rem;
     }
-
-
-
 }
