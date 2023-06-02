@@ -1,0 +1,123 @@
+#index-recent {
+    @include mobile {
+        display: none;
+    }
+
+    @include widescreen {
+        display: inline-block;
+    }
+}
+
+/** ------------------------------------------------------CARD **/
+/** CARD **/
+.card {
+    @include touch {
+        margin: 0rem auto 1rem auto;
+    }
+}
+
+.categories-option {
+    @include touch {
+        .categories-columns {
+            display: flex;
+            justify-content: center;
+        }
+
+        .label-checkbox {
+            font-size: .9rem;
+            margin-top: .2rem;
+        }
+
+        .label-right {
+            text-align: left;
+        }
+
+        .label-left {
+            text-align: right;
+        }
+    }
+
+    @include desktop {
+        .label-checkbox {
+            margin-top: .2rem;
+        }
+
+        .label-right {
+            text-align: right;
+        }
+
+        .label-left {
+            text-align: left;
+        }
+    }
+
+    @include widescreen {
+        .column {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            padding-left: 0;
+        }
+    }
+}
+
+/** -------------------------------------JOBS AND GRADUATIONS **/
+/** JOBS AND GRADUATION **/
+.job,
+.graduation {
+    .card-content {
+        @include touch {
+            padding: .5rem;
+        }
+    }
+
+    .jobTitle {
+        @include touch {
+            display: block;
+        }
+    }
+
+    .logo {
+        @include touch {
+            display: none;
+        }
+    }
+
+    .lieu {
+        .fa {
+            @include touch {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        @include touch {
+            margin-left: 0;
+        }
+    }
+}
+
+/** -----------------------------------------------------SKILLS**/
+/** SKILLS **/
+
+#skill-main,
+#personnal-main {
+    @include touch {
+        .columns {
+            flex-direction: column;
+            margin-top: 0.5em;
+        }
+
+        .columns .column {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    @include mobile {
+        .media-left { display: none;
+        }
+        .skills .certifList .certifTitle {
+            max-width: 100%;
+        }
+    }
+}
