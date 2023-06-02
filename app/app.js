@@ -85,14 +85,14 @@ app.listen(PORT, () => {                                                      //
   console.log('\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n-----------------------------------------------------------------------------\nProjet : ' + process.env.PROJECT_NAME + '\nPort : ' + PORT || 'http://localhost:3000');  // On affiche le message de lancement (configuré dans les variables d'environnement) 
 });
 
-// app.use(function (req, res, next) { // 
-//   next(createError(404));
-// });
+app.use(function (req, res, next) { // 
+  next(createError(404));
+});
 
-// app.use(function (err, req, res, next) {
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get("env") === "development" ? err : {};
+app.use(function (err, req, res, next) {
+  res.locals.message = err.message;
+  res.locals.error = req.app.get("env") === "development" ? err : {};
 
-//   res.status(err.status || 500);
-//   res.render("error");
-// });
+  res.status(err.status || 500);
+  res.render("tools/404", { layout: 'layouts/error' }); 
+});
