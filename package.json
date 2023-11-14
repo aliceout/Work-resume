@@ -1,13 +1,13 @@
 {
-  "name": "online-resume",
+  "name": "Online resume",
   "description": "AliceOsDel Resume",
   "main": "index.js",
   "author": "aliceout",
   "license": "Mozilla Public License Version 2.0",
   "type": "module",
   "scripts": {
-    "start": "node ./app/app.js",
-    "dev": "nodemon  ./app/app.js --ext * -e js,ejs ",
+    "start": "export NODE_ENV=production && node ./app/app.js",
+    "dev": "export NODE_ENV=development && nodemon  ./app/app.js --ext * -e js,ejs ",
     "purge": "purgecss -c tools/.purgecss.config.cjs --output public/css/style.css"
   },
   "dependencies": {
