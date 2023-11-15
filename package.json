@@ -1,5 +1,5 @@
 {
-  "name": "Online resume",
+  "name": "resume",
   "description": "AliceOsDel Resume",
   "main": "index.js",
   "author": "aliceout",
@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "start": "export NODE_ENV=production && node ./app/app.js",
-    "dev": "export NODE_ENV=development && nodemon  ./app/app.js --ext * -e js,ejs ",
+    "dev": "nodemon  ./app/app.js --ext * -e js,ejs ",
     "purge": "purgecss -c tools/.purgecss.config.cjs --output public/css/style.css"
   },
   "dependencies": {
