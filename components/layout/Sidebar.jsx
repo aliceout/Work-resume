@@ -9,7 +9,7 @@ export default function Sidebar() {
           alt="Profil picture"
           width={200}
           height={200}
-          className="rounded-xl drop-shadow-lg"
+          className="rounded-full drop-shadow-lg"
         />
       </div>
       <div className="flex flex-col text-center gap-y-2">
