@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
               className="flex flex-col xl:basis-9/12 gap-y-10"
             >
                 <Navbar />
-              <main className="flex flex-col flex-1 p-5 bg-green-200 rounded-lg">
+              <main className="flex flex-col flex-1 p-5 bg-white rounded-lg shadow-lg">
                 <Component {...pageProps} />
               </main>
             </div>
