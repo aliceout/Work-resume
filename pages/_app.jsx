@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
             <Header />
           <div
             id="app"
-            className="flex content-start h-full w-full gap-10 mt-[200px] "
+            className="flex content-start h-full w-full gap-10 mt-[200px] mb-[50px] "
           >
               <Sidebar />
             <div
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
               className="flex flex-col  xl:basis-9/12 gap-y-10"
             >
                 <Navbar />
-              <main className="flex flex-col flex-1 p-6 bg-white rounded-lg shadow-lg">
+              <main className="flex flex-col flex-1 p-12 bg-white rounded-xl shadow-lg">
                 <Component {...pageProps} />
               </main>
             </div>

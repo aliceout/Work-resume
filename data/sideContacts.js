@@ -1,27 +1,27 @@
 module.exports = [
   {
-    name: "Alice",
+    name: "Place",
     icon: "FaHome",
     href: "https://alice.com",
     fieldset: "Télephone",
     value: "+33 6 00 00 00 00",
   },
   {
-    name: "Alice",
+    name: "Tel",
     icon: "MdAddToHomeScreen",
     href: "https://alice.com",
     fieldset: "Télephone",
     value: "+33 6 00 00 00 00",
   },
   {
-    name: "Alice",
+    name: "Github",
     icon: "MdPlace",
     href: "https://alice.com",
     fieldset: "Télephone",
     value: "+33 6 00 00 00 00",
   },
   {
-    name: "Alice",
+    name: "Linkedin",
     icon: "FaHome",
     href: "https://alice.com",
     fieldset: "Télephone",
