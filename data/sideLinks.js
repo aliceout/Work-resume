@@ -5,17 +5,17 @@ module.exports = [
     href: "https://alice.com",
   },
   {
-    name: "Alice",
+    name: "Github",
     icon: "FaHome",
     href: "https://alice.com",
   },
   {
-    name: "Alice",
+    name: "hhkjhk",
     icon: "FaHome",
     href: "https://alice.com",
   },
   {
-    name: "Alice",
+    name: "kjhjkjh",
     icon: "FaHome",
     href: "https://alice.com",
   },

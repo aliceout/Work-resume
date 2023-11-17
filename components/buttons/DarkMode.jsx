@@ -2,7 +2,6 @@ import { BsFillMoonStarsFill, BsTranslate } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
 
 export default function DarkMode({ isDarkMode, setIsDarkMode }) {
-    console.log(isDarkMode);
   return (
     <>
       {isDarkMode ? (

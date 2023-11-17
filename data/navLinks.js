@@ -7,21 +7,21 @@ module.exports = [
   {
     name: "Experiences",
     icon: "FaHome",
-    href: "/works",
+    href: "/jobs",
   },
   {
     name: "Etudes",
     icon: "FaHome",
-    href: "/",
+    href: "/studies",
   },
   {
     name: "Portfolio",
     icon: "FaHome",
-    href: "/",
+    href: "/portfolio",
   },
   {
     name: "Personnel",
     icon: "FaHome",
-    href: "/",
+    href: "/personnal",
   },
 ];
