@@ -1,6 +1,6 @@
 import studiesData from "/data/studies";
 import H1 from "/components/titles/h1";
-import StudyCard from "/components/cards/Study";
+import StudyCard from "/components/cards/StudyCard";
 
 export default function Studies() {
   return (

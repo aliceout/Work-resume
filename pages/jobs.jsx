@@ -1,6 +1,6 @@
 import jobsData from "/data/jobs";
 import H1 from "/components/titles/h1";
-import JobCard from "/components/cards/Job";
+import JobCard from "/components/cards/JobCard";
 
 export default function Jobs() {
   return (
