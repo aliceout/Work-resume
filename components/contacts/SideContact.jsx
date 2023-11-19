@@ -1,14 +1,10 @@
-import * as FaIcons from "react-icons/fa";
-import * as MdIcons from "react-icons/md";
+import { useIcons } from "/utils/context/IconsContext";
 import Link from "next/link";
 
-const allIcons = {
-  ...MdIcons,
-  ...FaIcons,
-};
-
 export default function SideContact({ contact }) {
-  const IconComponent = allIcons[contact.icon];
+  const ReactIcons = useIcons();
+  const IconComponent = ReactIcons[contact.icon];
+
   return (
     <Link
       href={contact.href}
@@ -18,8 +14,10 @@ export default function SideContact({ contact }) {
         <IconComponent alt={contact.name} />
       </div>
       <div>
-        <p className=" text-xs text-tiny font-semibold text-slate-500">{contact.fieldset}</p>
-        <p className="text-slate-900 font-semibold">{contact.value}</p>
+        <p className="text-xs font-semibold text-tiny text-slate-500">
+          {contact.fieldset}
+        </p>
+        <p className="font-semibold text-slate-900">{contact.value}</p>
       </div>
     </Link>
   );
