@@ -3,8 +3,7 @@ import Image from "next/image";
 import ProjectModal from "/components/modals/ProjectModal";
 
 export default function PortfolioCard({ project }) {
-  const color = project.color;
-  const bgColor = project.bgColor;
+ 
 
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -15,27 +14,33 @@ export default function PortfolioCard({ project }) {
         isOpenModal={isOpenModal}
         setIsOpenModal={setIsOpenModal}
       />
-      <div
-        className="rounded-lg p-6 dark:border-[2px] border-[#212425]"
-        style={{ backgroundColor: color }}
-        onClick={() => setIsOpenModal(true)}
-      >
-        <div className="overflow-hidden rounded-lg">
-          <Image
-            className="w-full h-auto transition duration-200 ease-in-out transform rounded-lg cursor-pointer hover:scale-110 "
-            src={project.cover}
-            width={300}
-            height={300}
-            priority
-            alt={project.title}
-          />
+      <div className="px-6 " onClick={() => setIsOpenModal(true)}>
+        <div
+          className="flex flex-col px-6 py-5 rounded-lg gap-y-4 "
+          style={{ backgroundColor: project.cardColor }}
+        >
+          <div
+            className="p-3 overflow-hidden rounded-xl"
+            style={{ backgroundColor: project.borderColor }}
+          >
+            <Image
+              className="w-full h-auto transition duration-200 ease-in-out transform rounded-lg cursor-pointer hover:scale-110 "
+              src={project.cover}
+              width={300}
+              height={300}
+              priority
+              alt={project.title}
+            />
+          </div>
+          <div className="flex flex-col gap-y-1">
+            <p className="text-lg font-medium text-slate-500 ">
+              {project.client}
+            </p>
+            <p className="text-xl font-semibold text-slate-700 ">
+              {project.title}
+            </p>
+          </div>
         </div>
-        <span className="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">
-          {project.tag}
-        </span>
-        <h2 className="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
-          {project.title}
-        </h2>
       </div>
     </>
   );

@@ -6,7 +6,7 @@ module.exports = [
   },
   {
     name: "Experiences",
-    icon: "FaHome",
+    icon: "GrUserWorker",
     href: "/jobs",
   },
   {

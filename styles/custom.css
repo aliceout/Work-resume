@@ -7,11 +7,11 @@
   min-height: 50vh;
 }
 .my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
+  @apply pl-8; /* gutter size */
   background-clip: padding-box;
 }
 
 /* Style your items */
 .my-masonry-grid_column > div {
-  margin-bottom: 30px;
+  @apply mb-8;
 }
