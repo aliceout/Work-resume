@@ -27,5 +27,5 @@ export default function SideContact() {
     );
   });
 
-  return <ul className="flex flex-col justify-center px-4 py-4 divide-y rounded-lg divide-gray-300/60 bg-gray-50 dark:bg-slate-800 ">{contactsList} </ul>
+  return <ul className="flex flex-col justify-center px-4 py-4 divide-y rounded-lg divide-gray-300/60 bg-gray-50/70 dark:bg-slate-800 ">{contactsList} </ul>
 }
