@@ -1,22 +1,29 @@
+import { useTheme } from "next-themes";
 import { BsFillMoonStarsFill, BsTranslate } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
 
-export default function DarkMode({ isDarkMode, setIsDarkMode }) {
+export default function DarkMode() {
+  const { theme, setTheme } = useTheme();
+
   return (
     <>
-      {isDarkMode ? (
+      {theme === "dark" ? (
         <button
           type="button"
-          onClick={() => setIsDarkMode(!isDarkMode)}
-          className="flex bg-slate-900/70 p-2 rounded-full"
+          onClick={() => {
+            setTheme(theme === "light" ? "dark" : "light");
+          }}
+          className="flex p-2 rounded-full bg-slate-900/70"
         >
           <BsFillMoonStarsFill className="text-yellow-400" />
         </button>
       ) : (
         <button
           type="button"
-          onClick={() => setIsDarkMode(!isDarkMode)}
-          className="flex bg-white/70 p-2 rounded-full"
+          onClick={() => {
+            setTheme(theme === "light" ? "dark" : "light");
+          }}
+          className="flex p-2 rounded-full bg-white/70"
         >
           <MdSunny className="text-yellow-400 " />
         </button>

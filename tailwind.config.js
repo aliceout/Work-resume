@@ -11,6 +11,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "light-gradient":
+          "linear-gradient(to right top, #ff7a7a, #fc7aa7, #e485d2, #b897f1, #7aa8ff);",
       },
       fontFamily: {
         satisfy: ['"Satisfy"', "cursive"],
@@ -18,4 +20,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };
