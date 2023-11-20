@@ -1,16 +1,15 @@
-import Image from "next/image";
-import SideLinksData from "/data/sideLinks";
-import SideContactsData from "/data/sideContacts";
+import ThemedImage from "/components/images/ThemedImage";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
 
 export default function Sidebar() {
   return (
     <aside className="flex flex-col justify-start ">
-      <div className="flex flex-col bg-white p-6 rounded-xl shadow-lg xl:basis-3/12 gap-y-6">
+      <div className="sticky top-[130px] flex flex-col p-6 bg-white dark:bg-slate-900/90 shadow-lg rounded-xl xl:basis-3/12 gap-y-6">
         <div className="flex flex-col items-center justify-center -mt-[130px] ">
-          <Image
-            src="/profil-picture/color.jpg"
+          <ThemedImage
+            lightImage="/profil-picture/color.jpg"
+            darkImage="/profil-picture/bw.jpg"
             alt="Profil picture"
             width={200}
             height={200}
@@ -18,19 +17,15 @@ export default function Sidebar() {
           />
         </div>
         <div className="flex flex-col text-center gap-y-2">
-          <p className="text-2xl font-bold text-slate-900">Alice La Malice</p>
-          <p className="text-lg font-medium text-slate-400">Développeuse web</p>
+          <p className="text-2xl font-bold text-slate-900 dark:text-white">
+            Alice La Malice
+          </p>
+          <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-400 dark:bg-gray-800">
+            Développeuse web
+          </p>
         </div>
-        <ul className="flex justify-center gap-x-3">
-          {SideLinksData.map((link) => (
-            <SideLink key={link.name} link={link} />
-          ))}
-        </ul>
-        <ul className="flex flex-col justify-center px-4 py-4 divide-y rounded-lg divide-gray-300/60 bg-gray-50 ">
-          {SideContactsData.map((contact) => (
-            <SideContact key={contact.name} contact={contact} />
-          ))}
-        </ul>
+        <SideLink />
+        <SideContact />
         <div className="flex justify-center">Download CV</div>
       </div>
     </aside>
