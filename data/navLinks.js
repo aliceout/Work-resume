@@ -11,17 +11,17 @@ module.exports = [
   },
   {
     name: "Etudes",
-    icon: "FaHome",
+    icon: "FaUniversity",
     href: "/studies",
   },
   {
     name: "Portfolio",
-    icon: "FaHome",
+    icon: "MdOutlinePhotoLibrary",
     href: "/portfolio",
   },
   {
     name: "Personnel",
-    icon: "FaHome",
+    icon: "PiFlowerTulipFill",
     href: "/personnal",
   },
 ];

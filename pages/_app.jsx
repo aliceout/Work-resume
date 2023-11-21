@@ -6,6 +6,8 @@ import Navbar from "/components/layout/Navbar";
 import AppContext from "/utils/context";
 import "/styles/globals.css";
 import "/styles/custom.css";
+import "/styles/bubble.css";
+import "/styles/markdown.css";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -15,14 +17,15 @@ export default function App({ Component, pageProps }) {
           <Header />
           <div
             id="app"
-            className="flex content-start h-full w-full gap-10 mt-[150px] mb-[50px] "
+            className="flex content-start min-h-max w-full gap-10 mt-[150px]"
           >
             <Sidebar />
-            <div id="panel" className="flex flex-col xl:basis-9/12 gap-y-10">
+            <div id="panel" className="flex flex-col xl:basis-9/12 gap-y-10 ">
               <Navbar />
-              <main className="flex flex-col flex-1 p-12 shadow-lg bg-white/90 dark:bg-slate-900/90 dark:text-gray-300 rounded-xl">
+              <main className="flex flex-col m-auto duration-300 shadow-lg px-9 pb-9 bg-white/90 dark:bg-black/90 dark:text-gray-300 rounded-xl flex-0">
                 <Component {...pageProps} />
               </main>
+              <div className="flex flex-1 h-20 min-h-20"></div>
             </div>
           </div>
         </Container>
