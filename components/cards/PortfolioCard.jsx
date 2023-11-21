@@ -3,8 +3,6 @@ import Image from "next/image";
 import ProjectModal from "/components/modals/ProjectModal";
 
 export default function PortfolioCard({ project }) {
- 
-
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   return (
@@ -16,12 +14,12 @@ export default function PortfolioCard({ project }) {
       />
       <div className="px-6 " onClick={() => setIsOpenModal(true)}>
         <div
-          className="flex flex-col px-6 py-5 rounded-lg gap-y-4 "
-          style={{ backgroundColor: project.cardColor }}
+          className="flex flex-col px-6 py-5 rounded-lg bg-gray-50/70 dark:bg-slate-900 gap-y-4"
+          // style={{ backgroundColor: project.cardColor }}
         >
           <div
-            className="p-3 overflow-hidden rounded-xl"
-            style={{ backgroundColor: project.borderColor }}
+            className="px-16 py-1 overflow-hidden rounded-xl"
+            style={{ backgroundColor: project.borderColor, paddingTop: project.borderY,paddingBottom: project.borderY }}
           >
             <Image
               className="w-full h-auto transition duration-200 ease-in-out transform rounded-lg cursor-pointer hover:scale-110 "
@@ -32,11 +30,11 @@ export default function PortfolioCard({ project }) {
               alt={project.title}
             />
           </div>
-          <div className="flex flex-col gap-y-1">
-            <p className="text-lg font-medium text-slate-500 ">
+          <div className="flex flex-col">
+            <p className="font-medium text-normal text-slate-500 ">
               {project.client}
             </p>
-            <p className="text-xl font-semibold text-slate-700 ">
+            <p className="text-lg font-semibold text-slate-700 ">
               {project.title}
             </p>
           </div>

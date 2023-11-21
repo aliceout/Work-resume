@@ -16,7 +16,7 @@ export default function Portfolio() {
     };
 
   return (
-    <div className="flex flex-col flex-1 w-full h-full text-black bg-white">
+    <div className="flex flex-col flex-1 w-full h-full gap-y-10">
       <H1 text="Portfolio" />
       <Masonry
         breakpointCols={breakpointColumnsObj}

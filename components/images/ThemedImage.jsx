@@ -13,8 +13,7 @@ function ThemedImage({ darkImage, lightImage, alt, width, height, className }) {
       src =  darkImage ;
       break;
     default:
-      src =
-        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+      src = lightImage;
       break;
   }
 

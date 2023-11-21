@@ -7,6 +7,9 @@ import * as FaIcons from "react-icons/fa";
 import * as Io5Icons from "react-icons/io5";
 import * as MdIcons from "react-icons/md";
 import * as SlIcons from "react-icons/sl";
+import * as SiIcons from "react-icons/si";
+import * as CiIcones from "react-icons/ci";
+import * as PiIcons from "react-icons/pi";
 
 const IconsContext = createContext();
 
@@ -22,7 +25,10 @@ export function IconsProvider({ children }) {
     ...FaIcons,
     ...Io5Icons,
     ...MdIcons,
-    ...SlIcons
+    ...SlIcons, 
+    ...SiIcons, 
+    ...CiIcones, 
+    ...PiIcons
   };
 
   return (

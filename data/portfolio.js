@@ -9,7 +9,7 @@ module.exports = [
     url: "https://watizat.app",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!",
-    cover: "/projects/watizat-cover.png",
+    cover: "/projects/watizat-cover.jpg",
     picture: "/projects/watizat-webApp.png",
   },
   {
@@ -27,16 +27,17 @@ module.exports = [
   },
   {
     cardColor: "#fae8e8",
-    borderColor: "#df6668",
-    title: "Watizat webApp",
-    date: "2023 - en cours",
-    client: "Watizat",
-    languages: "React, Redux, Tailwind",
-    url: "https://watizat.app",
+    borderColor: "#1e58b6",
+    borderY: 20,
+    title: "Currencies ceonverter",
+    date: "2023",
+    client: "Projet personnel",
+    languages: "Js Vanilla",
+    url: "https://currencies.aliceout.dev",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!",
-    cover: "/projects/watizat-cover.png",
-    picture: "/projects/watizat-webApp.png",
+    cover: "/projects/currencies-cover.png",
+    picture: "/projects/currencies-project.jpg",
   },
   {
     cardColor: "#fae8e8",
@@ -48,7 +49,7 @@ module.exports = [
     url: "https://watizat.app",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia placeat magnam possimus iusto blanditiis pariatur labore explicabo quo repellat hic dolorum numquam asperiores, voluptatum fugiat reiciendis aspernatur, non, odio aperiam voluptas ex tempora vitae. Dolor, consequatur quidem! Quas magni distinctio dolorum dolore natus, vel numquam accusamus. Nostrum eligendi recusandae qui tempore deserunt!",
-    cover: "/projects/watizat-cover.png",
+    cover: "/projects/watizat-cover.jpg",
     picture: "/projects/watizat-webApp.png",
   },
 ];

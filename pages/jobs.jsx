@@ -3,12 +3,13 @@ import H1 from "/components/titles/h1";
 import JobCard from "/components/cards/JobCard";
 
 export default function Jobs() {
+
   return (
-    <div className="flex flex-col flex-1 w-full h-full text-black bg-white gap-y-6">
+    <div className="flex flex-col flex-1 w-full h-full gap-y-6">
       <H1 text="Experiences" />
-      <section className="flex flex-col gap-y-6">
+      <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
         {jobsData.map((job) => (
-          <JobCard key={job.function} job={job} />
+          <JobCard key={job.title} job={job} />
         ))}
       </section>
     </div>

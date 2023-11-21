@@ -8,7 +8,7 @@ export default function NavLink({ item }) {
   return (
     <Link
       href={item.href}
-      className="flex flex-row items-center justify-center gap-4 p-3 rounded-lg bg-gray-100/80 hover:bg-purple-200 hover:text-white dark:bg-slate-800 dark:text-gray-300 hover:bg-light-gradient"
+      className="flex flex-row items-center justify-center gap-4 p-3 duration-300 rounded-lg bg-gray-100/60 hover:text-slate-500 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-dark-gradient hover:bg-light-gradient"
     >
       <IconComponent />
       <p className="text-xs">{item.name}</p>
