@@ -5,8 +5,8 @@ import SideContact from "/components/contacts/SideContact";
 export default function Sidebar() {
   return (
     <aside className="flex flex-col justify-start ">
-      <div className="sticky flex flex-col p-6 duration-300 shadow-lg top-36 bg-white/80 dark:bg-black/70 rounded-xl xl:basis-3/12 gap-y-5 -pb-36 ">
-        <div className="flex flex-col items-center justify-center -mt-36 ">
+      <div className="sticky flex flex-col p-6 duration-300 shadow-lg top-36 bg-white/80 dark:bg-black/70 rounded-xl xl:basis-3/12 gap-y-5 flex-0 min-h-max">
+        <div className="flex flex-col items-center justify-center -mt-36">
           <ThemedImage
             lightImage="/profil-picture/color.jpg"
             darkImage="/profil-picture/bw.jpg"

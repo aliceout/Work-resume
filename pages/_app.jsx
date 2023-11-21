@@ -17,10 +17,10 @@ export default function App({ Component, pageProps }) {
           <Header />
           <div
             id="app"
-            className="flex content-start min-h-max w-full gap-10 mt-[150px]"
+            className="flex content-start min-h-max w-full gap-10 mt-[180px]  justify-center m-auto"
           >
             <Sidebar />
-            <div id="panel" className="flex flex-col xl:basis-9/12 gap-y-10 ">
+            <div id="panel" className="flex flex-col xl:basis-9/12 gap-y-10">
               <Navbar />
               <main className="flex flex-col m-auto duration-300 shadow-lg px-9 pb-9 bg-white/90 dark:bg-black/90 dark:text-gray-300 rounded-xl flex-0">
                 <Component {...pageProps} />
