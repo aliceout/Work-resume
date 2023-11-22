@@ -1,12 +1,15 @@
-import { createContext } from "react";
+// index.js
 
-import React from 'react';
-import { IconsProvider } from './IconsContext';
+import React from "react";
+import { IconsProvider } from "./IconsContext";
+import { GlobalContextProvider } from "./GlobalContext"; // Importez GlobalContextProvider
 
 function AppProviders({ children }) {
   return (
     <IconsProvider>
+      <GlobalContextProvider>
         {children}
+      </GlobalContextProvider>
     </IconsProvider>
   );
 }

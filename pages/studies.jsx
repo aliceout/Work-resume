@@ -8,7 +8,7 @@ export default function Studies() {
       <H1 text="Formations" />
       <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
         {studiesData.map((study) => (
-          <StudyCard key={study.function} study={study} />
+          <StudyCard key={study.title} study={study} />
         ))}
       </section>
     </div>

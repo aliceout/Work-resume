@@ -2,10 +2,10 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 function ThemedImage({ darkImage, lightImage, alt, width, height, className }) {
-  const { resolvedTheme } = useTheme();
+  const { theme } = useTheme();
   let src;
 
-  switch (resolvedTheme) {
+  switch (theme) {
     case "light":
       src =  lightImage ;
       break;

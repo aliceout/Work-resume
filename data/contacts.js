@@ -5,7 +5,7 @@ module.exports = [
     fieldset: "Element",
     value: "Envoyer un message",
     lightColor: "#15bf90",
-    darkColor: "#0f8a68",
+    mobile: true,
   },
   {
     icon: "FaSkype", // Attention de ne pas laisser d'espace après le nom de l'icone
@@ -13,21 +13,21 @@ module.exports = [
     fieldset: "Skype",
     value: "Appeler via Skype",
     lightColor: "#08b2f1",
-    darkColor: "#056c92",
+    mobile: true,
   },
   {
     icon: "SiProtonmail", // Attention de ne pas laisser d'espace après le nom de l'icone
-    href: "https://alice.com",
+    href: "mailto:contact.disprove112@slmail.me",
     fieldset: "Mail",
     value: "Envoyer un email",
     lightColor: "#6d4aff",
-    darkColor: "#1d0098",
+    mobile: true,
   },
   {
     icon: "MdPlace", // Attention de ne pas laisser d'espace après le nom de l'icone
     fieldset: "Localisation",
     value: "Toulouse (France)",
     lightColor: "#f1bc08",
-    darkColor: "#927205",
+    mobile: false,
   },
 ];

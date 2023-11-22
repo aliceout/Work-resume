@@ -90,7 +90,7 @@ module.exports = [
   },
   {
     company: "Cool-Jet SAS",
-    title: "Chargée d'appui juridique au pôle de la vie citoyenne",
+    title: "Manutentionnaire",
     date: "2006 · 3 mois",
     location: "Orléans, France",
     logo: "/companies/cooljet.png",

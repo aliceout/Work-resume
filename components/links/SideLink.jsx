@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useIcons } from "/utils/context/IconsContext";
-import SideLinksData from "/data/sideLinks";
+import linksData from "/data/links";
 
 export default function SideLink() {
   const ReactIcons = useIcons();
   const { theme } = useTheme();
 
-  const linksList = SideLinksData.map((link) => {
+  const linksList = linksData.map((link) => {
     const IconComponent = ReactIcons[link.icon];
 
     return (
@@ -15,17 +15,20 @@ export default function SideLink() {
         key={link.href}
         href={link.href}
         target="_blank"
-        className="flex flex-row items-center justify-center gap-4 p-3 duration-300 bg-gray-100 rounded-lg dark:bg-gray-900 hover:bg-light-gradient hover:text-white group dark:hover:bg-dark-gradient"
-        style={
-          theme === "dark"
-            ? { color: link.darkColor }
-            : { color: link.lightColor }
-        }
+        className="flex flex-row items-center px-8 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-slate-900 dark:text-gray-100 ring-1 ring-gray-100 dark:ring-slate-800 hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-700/90"
       >
-        <IconComponent className="group-hover:text-white" />
+        <IconComponent
+          className="group-hover:text-white"
+          style={
+            theme === "dark"
+              ? { color: link.darkColor }
+              : { color: link.lightColor }
+          }
+        />
+        <p className="text-slate-500 dark:text-gray-300">{link.name}</p>
       </Link>
     );
   });
 
-  return <ul className="flex justify-center gap-x-3">{linksList}</ul>;
+  return <ul className="flex flex-row justify-center ml-6 gap-x-3 ">{linksList}</ul>;
 }

@@ -1,27 +1,26 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useIcons } from "/utils/context/IconsContext";
-import SideContactsData from "/data/sideContacts";
+import contactsData from "/data/contacts";
 
 export default function SideContact() {
   const ReactIcons = useIcons();
   const { theme } = useTheme();
 
-  const contactsList = SideContactsData.map((contact) => {
+  const contactsList = contactsData.map((contact) => {
     const IconComponent = ReactIcons[contact.icon];
 
     return (
       <div
-        key={contact.href}
-        className="flex items-center justify-start pt-2 mb-2 gap-x-2"
+        key={contact.fieldset}
+        className="flex items-center justify-start pt-2 mb-2 gap-x-2 "
       >
         <div
-          className="flex items-center justify-center w-10 h-10 duration-300 bg-white rounded-lg shadow-md dark:bg-black hover:bg-light-gradient hover:text-white dark:hover:bg-dark-gradient group"
-          style={
-            theme === "dark"
-              ? { color: contact.darkColor }
-              : { color: contact.lightColor }
-          }
+          className="flex items-center justify-center w-10 h-10 duration-300 bg-white rounded-lg shadow-md dark:bg-black hover:text-white group"
+          style={{
+            color: contact.lightColor,
+            backgroundColor: theme === "dark" ? "black" : "white",
+          }}
         >
           <IconComponent alt={contact.fieldset} />
         </div>
@@ -38,9 +37,7 @@ export default function SideContact() {
               {contact.value}
             </Link>
           ) : (
-            <p
-              className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white"
-            >
+            <p className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white">
               {contact.value}
             </p>
           )}
@@ -50,7 +47,7 @@ export default function SideContact() {
   });
 
   return (
-    <ul className="flex flex-col justify-center px-4 py-4 duration-300 divide-y rounded-lg divide-gray-300/60 bg-gray-50/70 dark:bg-gray-900/80 ">
+    <ul className="grid justify-center w-full grid-cols-2 px-2 py-4 mx-auto duration-300 divide-y-0 rounded-lg lg:justify-center lg:px-4 gap-x-3 lg-divide-y md:grid-cols-2 lg:flex lg:flex-col divide-gray-300/60 bg-gray-50/70 dark:bg-gray-900/80">
       {contactsList}
     </ul>
   );

@@ -15,7 +15,7 @@ export default function DarkMode() {
           }}
           className="flex p-2 duration-300 rounded-full bg-slate-900/70"
         >
-          <BsFillMoonStarsFill className="text-yellow-400" />
+          <BsFillMoonStarsFill className="text-yellow-100" />
         </button>
       ) : (
         <button

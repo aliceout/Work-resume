@@ -8,8 +8,8 @@ import { TbListDetails } from "react-icons/tb";
 export default function PortfolioCard({ project }) {
   return (
     <article className="flex flex-row items-center flex-1 w-full gap-x-10">
-      <div className="flex flex-row justify-between w-10/12 overflow-visible transition duration-300 shadow rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
-        <div className="flex flex-col justify-between w-full py-8 pl-10 pr-0 basis-7/12 ">
+      <div className="flex flex-col justify-between transition duration-300 shadow xl:w-10/12 xl:overflow-visible xl:flex-row rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
+        <div className="flex flex-col justify-between w-full px-2 pt-8 pb-4 xl:pr-0 xl:pl-10 xl:py-8 xl:basis-7/12 basis-full">
           <div className="flex flex-col gap-y-1">
             <div className="flex flex-row items-center justify-start gap-x-2">
               <p className="text-xl font-bold text-primary dark:text-secondary">
@@ -22,18 +22,18 @@ export default function PortfolioCard({ project }) {
             <p className="mb-1 text-xs font-semibold text-gray-400 dark:text-gray-400">
               {project.date}
             </p>
-            <p className="text-sm font-medium text-justify text-slate-800 dark:text-gray-300">
+            <div className="text-sm font-medium text-justify text-slate-800 dark:text-gray-300">
               <ReactMarkdown>
                 {project.description.substring(0, 400)}
               </ReactMarkdown>
-            </p>
+            </div>
           </div>
-          <div className="flex flex-row gap-x-4">
+          <div className="flex flex-row justify-center mt-4 gap-x-4 xl:justify-start xl:mt-0">
             {project.url && (
               <Link
                 href={project.url}
                 target="_blank"
-                className="flex flex-row items-center px-8 py-2 text-sm font-bold transition duration-300 bg-white shadow-sm dark:bg-gray-800/90 rounded-xl text-primary dark:text-secondary ring-1 ring-gray-200 dark:ring-black hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-900/90 "
+                className="flex flex-row items-center px-8 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-primary dark:text-secondary ring-1 ring-gray-200 dark:ring-black hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-900/90"
               >
                 <CiSearch />
                 Aperçu
@@ -49,13 +49,14 @@ export default function PortfolioCard({ project }) {
             <Link
               target="_blank"
               href={project.repository}
-              className="flex flex-row items-center px-3 py-2 text-sm font-bold transition duration-300 bg-white shadow-sm dark:bg-gray-800/90 rounded-xl text-slate-900 ring-1 ring-gray-200 dark:ring-black hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-900/90 dark:text-white "
+              className="flex flex-row items-center px-8 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-slate-900 dark:text-gray-100 ring-1 ring-gray-200 dark:ring-black hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-900/90"
             >
               <FaGithub />
+              <p className="text-slate-500 dark:text-gray-300">Github</p>
             </Link>
           </div>
         </div>
-        <div className="flex my-10 -mr-36 drop-shadow-lg rounded-xl">
+        <div className="flex mx-auto md:mb-4 xl:my-10 xl:ml-0 xl:-mr-36 drop-shadow-lg rounded-xl">
           <Image
             src={project.picture}
             width={400}
@@ -69,3 +70,17 @@ export default function PortfolioCard({ project }) {
     </article>
   );
 }
+
+
+
+
+
+// export default function PortfolioCard({ project }) {
+//   return (
+//     <article className="flex flex-row items-center flex-1 w-full gap-x-10">
+
+//       <div className="flex flex-col justify-between transition duration-300 shadow xl:w-10/12 xl:overflow-visible xl:flex-row rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
+
+//         <div className="flex flex-col justify-between w-full px-2 py-8 xl:pr-0 xl:pl-10 lg:basis-7/12 basis-full">
+
+//         <div className="flex my-10 xl:-mr-36 drop-shadow-lg rounded-xl basis-full">
