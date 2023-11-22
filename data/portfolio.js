@@ -15,6 +15,7 @@ module.exports = [
     date: "2019",
     client: "Caritas Maroc",
     languages: "React, Redux, Tailwind",
+    url: "https://migrappi.aliceout.dev",
     repository: "https://github.com/aliceout/Migrappi-frontend",
     description:
       "Reconstruction d'une application de collecte et de traitement des données des personnes exilées accueillies, pour le compte de l'ONG Caritas au Maroc. \n\n Modélisation de l'interface, et construction du front avant passage de relai à un prestataire. ",

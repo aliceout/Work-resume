@@ -20,8 +20,8 @@ module.exports = [
     href: "/portfolio",
   },
   {
-    name: "Personnel",
-    icon: "PiFlowerTulipFill",
-    href: "/personnal",
+    name: "Compétences",
+    icon: "RiRobot2Fill",
+    href: "/skills",
   },
 ];

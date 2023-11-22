@@ -10,6 +10,7 @@ import * as SlIcons from "react-icons/sl";
 import * as SiIcons from "react-icons/si";
 import * as CiIcones from "react-icons/ci";
 import * as PiIcons from "react-icons/pi";
+import * as RiIcons from "react-icons/ri";
 
 const IconsContext = createContext();
 
@@ -25,10 +26,11 @@ export function IconsProvider({ children }) {
     ...FaIcons,
     ...Io5Icons,
     ...MdIcons,
-    ...SlIcons, 
-    ...SiIcons, 
-    ...CiIcones, 
-    ...PiIcons
+    ...SlIcons,
+    ...SiIcons,
+    ...CiIcones,
+    ...PiIcons,
+    ...RiIcons,
   };
 
   return (
