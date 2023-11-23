@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useGlobalContext } from "/utils/context/GlobalContext";
+import { useTranslation } from 'react-i18next'
 import ProfilPicture from "/components/images/ProfilPicture";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
@@ -8,6 +9,7 @@ import { SiProtonmail } from "react-icons/si";
 
 export default function Sidebar() {
   const { setHamburgerMenuIsOpen } = useGlobalContext();
+  const { t } = useTranslation();
 
   return (
     <aside className="w-full mx-auto md:w-4/6 lg:basis-3/12">
@@ -19,7 +21,7 @@ export default function Sidebar() {
               Alice Aussel-Delamaide
             </p>
             <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-500 duration-300">
-              Développeuse web
+              {t("sidebar.fonction")}
             </p>
           </div>
         </div>
