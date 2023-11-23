@@ -14,7 +14,7 @@ module.exports = {
         "light-gradient":
           "linear-gradient(90deg, hsla(186, 33%, 94%, 1) 30%, hsla(184, 42%, 88%, 1) 80%)",
         "dark-gradient":
-          "linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%)",
+          "linear-gradient(90deg, hsla(222, 47%, 11%, 1) 20%, hsla(7, 34%, 28%, 1) 80%)",
       },
       fontFamily: {
         satisfy: ['"Satisfy"', "cursive"],

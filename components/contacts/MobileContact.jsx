@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { useIcons } from "/utils/context/IconsContext";
 import ContactsData from "/data/contacts";
 
 export default function MobileContact() {
   const ReactIcons = useIcons();
-  const { theme } = useTheme();
 
 const contactsList = ContactsData.filter(contact => contact.mobile === true).map(contact => {
   const IconComponent = ReactIcons[contact.icon];

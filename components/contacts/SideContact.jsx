@@ -1,15 +1,17 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
 import contactsData from "/data/contacts";
 
 export default function SideContact() {
   const ReactIcons = useIcons();
   const { theme } = useTheme();
-
+  const { t } = useTranslation("sidebar");
+  
   const contactsList = contactsData.map((contact) => {
     const IconComponent = ReactIcons[contact.icon];
-
+    
     return (
       <div
         key={contact.fieldset}
@@ -34,7 +36,7 @@ export default function SideContact() {
               target="_blank"
               className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white"
             >
-              {contact.value}
+              {t(contact.valueTransKey)}
             </Link>
           ) : (
             <p className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white">

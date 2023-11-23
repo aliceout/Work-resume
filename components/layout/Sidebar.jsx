@@ -9,7 +9,7 @@ import { SiProtonmail } from "react-icons/si";
 
 export default function Sidebar() {
   const { setHamburgerMenuIsOpen } = useGlobalContext();
-  const { t } = useTranslation();
+  const { t } = useTranslation("sidebar");
 
   return (
     <aside className="w-full mx-auto md:w-4/6 lg:basis-3/12">
@@ -21,7 +21,7 @@ export default function Sidebar() {
               Alice Aussel-Delamaide
             </p>
             <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-500 duration-300">
-              {t("sidebar.fonction")}
+              {t("fonction")}
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Sidebar() {
             className="flex flex-row items-center px-6 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-secondary dark:text-primary ring-1 ring-gray-100 dark:ring-slate-800 hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-700/90"
           >
             <IoCloudDownload />
-            Télecharger CV
+            {t("downloadBtn")}
           </Link>
           <button
             type="button"
@@ -44,7 +44,7 @@ export default function Sidebar() {
             className="flex flex-row items-center px-6 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm md:hidden dark:bg-gray-800/90 text-[#6d4aff]  ring-1 ring-gray-100 dark:ring-slate-800 hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-700/90"
           >
             <SiProtonmail />
-            Me contacter
+            {t("contactBtn")}
           </button>
         </div>
       </div>

@@ -3,7 +3,7 @@ module.exports = [
     icon: "SiElement", // Attention de ne pas laisser d'espace après le nom de l'icone
     href: "https://matrix.to/#/@lilioux:matrix.org",
     fieldset: "Element",
-    value: "Envoyer un message",
+    valueTransKey: "contacts.element",
     lightColor: "#15bf90",
     mobile: true,
   },
@@ -11,7 +11,7 @@ module.exports = [
     icon: "FaSkype", // Attention de ne pas laisser d'espace après le nom de l'icone
     href: "https://join.skype.com/invite/II99wpbBBR78",
     fieldset: "Skype",
-    value: "Appeler via Skype",
+    valueTransKey: "contacts.skype",
     lightColor: "#08b2f1",
     mobile: true,
   },
@@ -19,7 +19,7 @@ module.exports = [
     icon: "SiProtonmail", // Attention de ne pas laisser d'espace après le nom de l'icone
     href: "mailto:contact.disprove112@slmail.me",
     fieldset: "Mail",
-    value: "Envoyer un email",
+    valueTransKey: "contacts.email",
     lightColor: "#6d4aff",
     mobile: true,
   },
