@@ -1,14 +1,12 @@
 import { ThemeProvider } from "next-themes";
-import { I18nextProvider } from "react-i18next";
+import { appWithI18Next } from "ni18n";
+import { ni18nConfig } from "/ni18n.config";
+import AppContext from "/utils/context";
 import Container from "/components/layout/Container";
 import Header from "/components/layout/Header";
 import Sidebar from "/components/layout/Sidebar";
 import Navbar from "/components/layout/Navbar";
-import { appWithI18Next } from "ni18n";
-import { ni18nConfig } from "/ni18n.config";
 
-
-import AppContext from "/utils/context";
 import "/styles/global.scss";
 
 const App = ({ Component, pageProps }) => {

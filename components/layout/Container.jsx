@@ -10,7 +10,7 @@ export default function Container({ children }) {
       <Image
         width={3840}
         height={2160}
-        src="/images/background/toto.svg"
+        src="/images/background/bg.svg"
         alt="Description alternative"
         className="absolute -z-[100] bg-white dark:bg-slate-900 object-cover h-screen w-screen duration-300"
       />

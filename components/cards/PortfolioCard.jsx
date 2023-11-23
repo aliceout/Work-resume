@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { useTranslation } from "react-i18next";
+import { filterDataByLanguage } from "/utils/tools/languages";
+
 import { CiSearch } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { TbListDetails } from "react-icons/tb";
 
 export default function PortfolioCard({ project }) {
+  const { t, i18n } = useTranslation("pages");
+  const description = filterDataByLanguage(
+    project.description,
+    i18n.language
+  );
+
   return (
     <article className="flex flex-row items-center flex-1 w-full gap-x-10">
       <div className="flex flex-col justify-between transition duration-300 shadow xl:w-10/12 xl:overflow-visible xl:flex-row rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
@@ -24,7 +32,7 @@ export default function PortfolioCard({ project }) {
             </p>
             <div className="text-sm font-medium text-justify text-slate-800 dark:text-gray-300">
               <ReactMarkdown>
-                {project.description.substring(0, 400)}
+                {description && description.substring(0, 400)}
               </ReactMarkdown>
             </div>
           </div>
@@ -36,7 +44,7 @@ export default function PortfolioCard({ project }) {
                 className="flex flex-row items-center px-8 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-primary dark:text-secondary ring-1 ring-gray-200 dark:ring-black hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-900/90"
               >
                 <CiSearch />
-                Aperçu
+                {t("portfolio.btn.preview")}
               </Link>
             )}
             {/* <button
@@ -70,10 +78,6 @@ export default function PortfolioCard({ project }) {
     </article>
   );
 }
-
-
-
-
 
 // export default function PortfolioCard({ project }) {
 //   return (

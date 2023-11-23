@@ -1,26 +1,26 @@
 module.exports = [
   {
-    name: "Home",
+    nameTransKey: "home",
     icon: "FaHome",
     href: "/",
   },
   {
-    name: "Experiences",
+    nameTransKey: "works",
     icon: "GrUserWorker",
     href: "/jobs",
   },
   {
-    name: "Etudes",
+    nameTransKey: "studies",
     icon: "FaUniversity",
     href: "/studies",
   },
   {
-    name: "Portfolio",
+    nameTransKey: "portfolio",
     icon: "MdOutlinePhotoLibrary",
     href: "/portfolio",
   },
   {
-    name: "Compétences",
+    nameTransKey: "skills",
     icon: "RiRobot2Fill",
     href: "/skills",
   },

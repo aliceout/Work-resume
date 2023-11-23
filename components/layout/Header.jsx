@@ -1,3 +1,4 @@
+import Link from "next/link";
 import DarkModeBtn from "/components/buttons/DarkMode";
 import LanguagesBtn from "/components/buttons/Languages";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,9 +12,9 @@ export default function Header() {
     <>
       {hamburgerMenuIsOpen && <MobilMenu />}
       <header className="flex items-end justify-between mx-6 mt-10 xl:mx-0">
-        <p className="text-4xl dark:text-[#da5758] text-[#73b6be] font-satisfy">
+        <Link href="/" className="text-4xl dark:text-[#da5758] text-[#73b6be] font-satisfy">
           My resume
-        </p>
+        </Link>
         <div className="flex items-center text-xl gap-x-4">
           <DarkModeBtn />
           <LanguagesBtn />
