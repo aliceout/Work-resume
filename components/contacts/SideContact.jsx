@@ -11,7 +11,8 @@ export default function SideContact() {
   
   const contactsList = contactsData.map((contact) => {
     const IconComponent = ReactIcons[contact.icon];
-    
+
+    // Composant qui sera répété
     return (
       <div
         key={contact.fieldset}

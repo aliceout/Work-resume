@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useIcons } from "/utils/context/IconsContext";
-import linksData from "/data/links";
+import linksData from "/data/externalsLinks";
 
 export default function SideLink() {
   const ReactIcons = useIcons();
