@@ -74,11 +74,11 @@ module.exports = [
     en: [
       {
         title: "Bac+2 - Web and Mobile Web Developer - Full-stack JavaScript",
-        location: "Ecole O'Clock",
+        location: "O'Clock School",
         date: "2023",
         description: [
           {
-            text: `**Frontend** : Html5 - Css3 - Sass/Scss - JavaScript - Typescript - React **Bactend** : Node.js - Express.js - PostgreSQL - SequeLize **Specialisation** : React - Redux`,
+            text: `**Frontend** : Html5 - Css3 - Sass/Scss - JavaScript - Typescript - React \n\n **Bactend** : Node.js - Express.js - PostgreSQL - SequeLize \n\n  **Specialization** : React - Redux`,
           },
           {
             text: `**Principles and skills**: MVC Architecture - Active record - Object Oriented Programming (OOP) - Data Modeling (MCD, MLD) - Agile Project Management - Responsive Web Design - API Rest`,
@@ -90,7 +90,7 @@ module.exports = [
       },
       {
         title: "Master II - Public policy - International humanitarian action",
-        location: "Université Paris-Est Créteil",
+        location: "University of Paris-Est Créteil",
         date: "2018 - 2019",
         description: [
           {
@@ -100,30 +100,30 @@ module.exports = [
             text: `Project cycle management, quality monitoring, evaluation and capitalisation Country cases, case studies, project design, strengthening and partnerships`,
           },
           {
-            text: `**Internship thesis I**: "*ICTs in the international solidarity sector, reflections on a forced integration*", }, { \Internship thesis II**: "*The notion of crisis and its use in migration issues, from a mobilisation tool to the abuse of an object that has become political*"`,
+            text: `**Internship thesis I**: "*ICTs in the international solidarity sector, reflections on a forced integration*" \n\n **Internship thesis II**: "*The notion of crisis and its use in migration issues, from a mobilisation tool to the abuse of an object that has become political*"`,
           },
         ],
       },
       {
         title: "Master I - International Relations",
-        location: "Université Lyon III - Jean Moulin",
+        location: "Lyon III - Jean Moulin University",
         date: "2017 - 2018",
         description: [
           {
             text: `Simulation of international crisis management, World cultural areas, Religions and globalisation, European political economy, Comparative foreign policies`,
           },
           {
-            text: `**Mémoire** : "*The externalisation of migration controls in the Sahel. A study of a new tool for an extra-territorial European border management policy`,
+            text: `**Thesis** : "*The externalisation of migration controls in the Sahel. A study of a new tool for an extra-territorial European border management policy*"`,
           },
         ],
       },
       {
-        title: "Licence - droit public",
-        location: "Université Toulouse I - Capitole",
+        title: "Bachelor's degree - public law",
+        location: "Toulouse I - Capitole University",
         date: "2015 - 2017",
         description: [
           {
-            text: `**Mention** : Droit Public : Diplomée mention AB`,
+            text: `**Mention** : Public law : Graduated  mention AB`,
           },
           {
             text: ` Major in administrative law, international law and European law`,
@@ -136,7 +136,7 @@ module.exports = [
         date: "2013 - 2015",
         description: [
           {
-            text: `Diplômee délivré par l'Université Toulouse I Capitole : Diplomé mention B`,
+            text: `Diploma awarded by Toulouse I Capitole University : Graduated  mention B`,
           },
         ],
       },

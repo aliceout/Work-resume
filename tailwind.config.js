@@ -12,9 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "light-gradient":
-          "linear-gradient(90deg, hsla(186, 33%, 94%, 1) 30%, hsla(184, 42%, 88%, 1) 80%)",
+          "linear-gradient(230deg, hsla(186, 33%, 94%, 1) 30%, hsla(184, 42%, 88%, 1) 80%)",
         "dark-gradient":
-          "linear-gradient(90deg, hsla(222, 47%, 11%, 1) 20%, hsla(7, 34%, 28%, 1) 80%)",
+          "linear-gradient(230deg, hsla(222, 47%, 11%, 1) 30%, hsla(358, 43%, 50%, 1) 80%)",
       },
       fontFamily: {
         satisfy: ['"Satisfy"', "cursive"],
