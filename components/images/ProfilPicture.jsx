@@ -5,8 +5,8 @@ export default function ProfilPicture() {
     <>
       <div className="flex flex-col items-center justify-center md:hidden">
         <ThemedImage
-          lightImage="/profil-picture/color.jpg"
-          darkImage="/profil-picture/bw.jpg"
+          lightImage="/images/profil-picture/color.jpg"
+          darkImage="/images/profil-picture/bw.jpg"
           alt="Profil picture"
           width={125}
           height={125}
@@ -15,8 +15,8 @@ export default function ProfilPicture() {
       </div>
       <div className="flex-col items-center justify-center hidden md:flex -mt-36">
         <ThemedImage
-          lightImage="/profil-picture/color.jpg"
-          darkImage="/profil-picture/bw.jpg"
+          lightImage="/images/profil-picture/color.jpg"
+          darkImage="/images/profil-picture/bw.jpg"
           alt="Profil picture"
           width={200}
           height={200}

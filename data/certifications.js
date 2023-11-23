@@ -6,8 +6,8 @@ module.exports = [
     ],
     place: [{ fr: "Institut Bioforce" }, { en: "Bioforce Institute" }],
     date: "2021",
-    logo: "/certifications/bioforce.png",
-    logoDark: "/certifications/bioforce.png",
+    logo: "/images/certifications/bioforce.png",
+    logoDark: "/images/certifications/bioforce.png",
   },
   {
     title: [
@@ -20,8 +20,8 @@ module.exports = [
     ],
     place: [{ fr: "Institut Bioforce" }, { en: "Bioforce Institute" }],
     date: "2021",
-    logo: "/certifications/bioforce.png",
-    logoDark: "/certifications/bioforce.png",
+    logo: "/images/certifications/bioforce.png",
+    logoDark: "/images/certifications/bioforce.png",
   },
   {
     title: [
@@ -37,8 +37,8 @@ module.exports = [
       },
     ],
     date: "2020",
-    logo: "/certifications/iehi.png",
-    logoDark: "/certifications/iehi.png",
+    logo: "/images/certifications/iehi.png",
+    logoDark: "/images/certifications/iehi.png",
   },
   {
     title: [
@@ -50,8 +50,8 @@ module.exports = [
       { en: "Lyon III Jean Moulin University" },
     ],
     date: "2020",
-    logo: "/certifications/lyon3.png",
-    logoDark: "/certifications/lyon3_bw.png",
+    logo: "/images/certifications/lyon3.png",
+    logoDark: "/images/certifications/lyon3_bw.png",
   },
   {
     title: [
@@ -64,7 +64,7 @@ module.exports = [
     ],
     date: "2020",
     description: "Score : 675",
-    logo: "/certifications/pix.png",
-    logoDark: "/certifications/pix.png",
+    logo: "/images/certifications/pix.png",
+    logoDark: "/images/certifications/pix.png",
   },
 ];

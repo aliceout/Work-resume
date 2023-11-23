@@ -20,7 +20,7 @@ export default function PortfolioCard({ project }) {
                 {project.title}
               </p>
               <p className="text-xl font-medium text-black/80 dark:text-gray-300">
-                ({project.client})
+                {filterDataByLanguage(project.client, i18n.language)}
               </p>
             </div>
             <p className="mb-1 text-xs font-semibold text-gray-400 dark:text-gray-400">
@@ -65,14 +65,14 @@ export default function PortfolioCard({ project }) {
             </Link>
           </div>
         </div>
-        <div className="flex mx-auto md:mb-4 xl:my-10 xl:ml-0 xl:-mr-36 drop-shadow-lg rounded-xl">
+        <div className="flex mx-auto md:mb-4 xl:my-10 xl:ml-5 xl:-mr-80 drop-shadow-lg rounded-xl">
           <Image
             src={project.picture}
             width={400}
-            height={700}
+            height={300}
             priority
             alt={project.title}
-            className="scale-100 rounded-xl"
+            className="w-8/12 h-auto scale-100 rounded-xl "
           />
         </div>
       </div>
@@ -80,12 +80,3 @@ export default function PortfolioCard({ project }) {
   );
 }
 
-// export default function PortfolioCard({ project }) {
-//   return (
-//     <article className="flex flex-row items-center flex-1 w-full gap-x-10">
-
-//       <div className="flex flex-col justify-between transition duration-300 shadow xl:w-10/12 xl:overflow-visible xl:flex-row rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
-
-//         <div className="flex flex-col justify-between w-full px-2 py-8 xl:pr-0 xl:pl-10 lg:basis-7/12 basis-full">
-
-//         <div className="flex my-10 xl:-mr-36 drop-shadow-lg rounded-xl basis-full">
