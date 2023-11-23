@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import { useTranslation } from "react-i18next";
 import { filterDataByLanguage } from "/utils/tools/languages";
 import Image from "next/image";
-import H2 from "/components/titles/h2";
+import H2 from "/components/titles/H2";
 import certifications from "/data/certifications";
 
 export default function Certifications() {

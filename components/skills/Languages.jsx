@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { filterDataByLanguage } from "/utils/tools/languages";
-import H2 from "/components/titles/h2";
+import H2 from "/components/titles/H2";
 import languages from "/data/languages";
 
 export default function Languages() {
