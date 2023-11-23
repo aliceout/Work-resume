@@ -22,8 +22,6 @@ export default function DarkMode() {
 
     // Appelez la fonction checkTheme au chargement de la page
     checkTheme();
-    console.log("mode", mode);
-    console.log("theme", theme);
 
     return () => {
       // Nettoyez le listener lorsque le composant est démonté
@@ -31,7 +29,7 @@ export default function DarkMode() {
         .matchMedia("(prefers-color-scheme: dark)")
         .removeEventListener("change", checkTheme);
     };
-  }, []);
+  }, [setTheme]);
 
   return (
     <>
