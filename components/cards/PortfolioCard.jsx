@@ -65,14 +65,14 @@ export default function PortfolioCard({ project }) {
             </Link>
           </div>
         </div>
-        <div className="flex mx-auto md:mb-4 xl:my-10 xl:ml-5 xl:-mr-80 drop-shadow-lg rounded-xl">
+        <div className="flex mx-auto md:mb-4 xl:my-10 xl:ml-5 xl:-mr-36 drop-shadow-lg rounded-xl">
           <Image
             src={project.picture}
             width={400}
             height={300}
             priority
             alt={project.title}
-            className="w-8/12 h-auto scale-100 rounded-xl "
+            className="w-full h-auto scale-100 rounded-xl "
           />
         </div>
       </div>
