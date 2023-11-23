@@ -11,6 +11,7 @@ import Navbar from "/components/layout/Navbar";
 import "/styles/global.scss";
 
 const App = ({ Component, pageProps }) => {
+
   return (
     <>
       <Head>

@@ -6,7 +6,7 @@ module.exports = [
         location: "Banqui, RCA",
         date: "2021- 2022 · 9 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
         bullets:
@@ -17,7 +17,7 @@ module.exports = [
         location: "Kalemie, RD Congo",
         date: "2020- 2021 · 9 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
         bullets:
@@ -28,7 +28,7 @@ module.exports = [
         location: "Marseille, France",
         date: "2020 · 3 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
         bullets:
@@ -39,7 +39,7 @@ module.exports = [
         location: "Tunis, Tunisie",
         date: "2019 · 6 mois",
         company: "Humanité & Inclusion",
-        logo: "/companies/hi.png",
+        logo: "/images/companies/hi.png",
         description:
           "Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien",
         bullets:
@@ -50,7 +50,7 @@ module.exports = [
         title: "Chargée d'appui à la coordination de programme",
         date: "2018-2019 · 8 mois",
         location: "Rabat, Maroc",
-        logo: "/companies/caritas.png",
+        logo: "/images/companies/caritas.png",
         description: 'Programme "Migration"',
         bullets: ` -  Participation à des actions d'appui au renforcement des capacités des partenaires \n\n - Appui au suivi de projets (cadre logique, budget, fiches de postes, rapports) \n\n - Refonte d'un outil de recueil de données. (définition des besoins, élaboration d'un cahier des charges, interface, OpenData, sécurisation, fonctionnalités) \n\n - Conception d’un plan de communication et d’une nouvelle charte graphique, et accompagnement à la "numérisation" de certains process \n\n - Rédaction et mise en page de supports de sensibilisation, de notes d'actualités \n\n - Animation réunion, team building`,
       },
@@ -59,7 +59,7 @@ module.exports = [
         title: "Chargée d'appui juridique au pôle de la vie citoyenne",
         date: "2015 · 2 mois (stage)",
         location: "Olivet, France",
-        logo: "/companies/olivet.png",
+        logo: "/images/companies/olivet.png",
         description:
           "Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques",
       },
@@ -68,7 +68,7 @@ module.exports = [
         title: "Vendeuse et préparatrice en chocolaterie",
         date: "2014 · 6 mois",
         location: "Toulouse, France",
-        logo: "/companies/choco.png",
+        logo: "/images/companies/choco.png",
         description:
           "Accueil et conseil client, vente et encaissement, mise en rayon et respect rotation des produits, réception et préparation de commandes, suivi de l’état des stocks, production des produits.",
       },
@@ -77,7 +77,7 @@ module.exports = [
         title: "Responsable adjointe de service de transport",
         date: "2009-2012 · 3 ans",
         location: "Orléans, France",
-        logo: "/companies/geodis.png",
+        logo: "/images/companies/geodis.png",
         description:
           "Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques",
       },
@@ -86,7 +86,7 @@ module.exports = [
         title: "Agent d'exploitation des transports",
         date: "2006-2009 · 3 ans",
         location: "Orléans, France",
-        logo: "/companies/cooljet.png",
+        logo: "/images/companies/cooljet.png",
         description:
           "Enregistrement et saisie des flux de départ, traitement réclamations, suivi et optimisation des process, dispatching tournées, coordination inter-services",
       },
@@ -95,7 +95,7 @@ module.exports = [
         title: "Manutentionnaire",
         date: "2006 · 3 mois",
         location: "Orléans, France",
-        logo: "/companies/cooljet.png",
+        logo: "/images/companies/cooljet.png",
         description:
           "Réception et comptabilisation des marchandises, contrôle qualité et tri des produits, reconditionnement des marchandises.",
       },
@@ -106,7 +106,7 @@ module.exports = [
         location: "Banqui, RCA",
         date: "2021- 2022 - 9 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
         bullets:
@@ -117,7 +117,7 @@ module.exports = [
         location: "Kalemie, RD Congo",
         date: "2020- 2021 - 9 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
         bullets:
@@ -128,7 +128,7 @@ module.exports = [
         location: "Marseille, France",
         date: "2020 - 3 mois",
         company: "Médecins du Monde France",
-        logo: "/companies/mdm.png",
+        logo: "/images/companies/mdm.png",
         description:
           "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
         bullets:
@@ -139,7 +139,7 @@ module.exports = [
         location: "Tunis, Tunisia",
         date: "2019 - 6 mois",
         company: "Humanité & Inclusion",
-        logo: "/companies/hi.png",
+        logo: "/images/companies/hi.png",
         description:
           "Support for the regional directorate, in carrying out an exploratory mission on the situation of migrant people in southern Tunisia (Medenine and Tataouine governorates), and work on analysing the equal framework, for carrying out two initial diagnoses on the Tunisian territory",
         bullets:
@@ -150,7 +150,7 @@ module.exports = [
         title: "Programme coordination support officer",
         date: "2018-2019 - 8 months",
         location: "Rabat, Morocco",
-        logo: "/companies/caritas.png",
+        logo: "/images/companies/caritas.png",
         description: "Migration Programme",
         bullets: ` - Participation in actions to support the capacity building of partners \n\n - Support for project monitoring (logical framework, budget, job descriptions, reports) \n\n - Redesign of a data collection tool. (defining needs, drawing up specifications, interface, OpenData, security, functionalities) \nDesigning a communication plan and a new graphic charter, and assisting with the "digitisation" of certain processes \nWriting and layout of awareness-raising materials, news notes \nFacilitating meetings, team building`,
       },
@@ -159,7 +159,7 @@ module.exports = [
         title: "Legal support officer at the civic life centre",
         date: "2015 - 2 mois (stage)",
         location: "Olivet, France",
-        logo: "/companies/olivet.png",
+        logo: "/images/companies/olivet.png",
         description:
           "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
       },
@@ -168,7 +168,7 @@ module.exports = [
         title: "Chocolate shop assistant",
         date: "2014 - 6 mois",
         location: "Toulouse, France",
-        logo: "/companies/choco.png",
+        logo: "/images/companies/choco.png",
         description:
           "Welcoming and advising customers, selling and cashing, stocking shelves and respecting product rotation, receiving and preparing orders, monitoring stock levels, producing products.",
       },
@@ -177,7 +177,7 @@ module.exports = [
         title: "Assistant Transport Service Manager",
         date: "2009-2012 - 3 years",
         location: "Orléans, France",
-        logo: "/companies/geodis.png",
+        logo: "/images/companies/geodis.png",
         description:
           "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
       },
@@ -186,7 +186,7 @@ module.exports = [
         title: "Transport Operations Officer",
         date: "2006-2009 - 3 ans",
         location: "Orléans, France",
-        logo: "/companies/cooljet.png",
+        logo: "/images/companies/cooljet.png",
         description:
           "Registering and entering departure flows, handling complaints, monitoring and optimising processes, dispatching rounds, inter-departmental coordination",
       },
@@ -195,7 +195,7 @@ module.exports = [
         title: "Material handler",
         date: "2006 - 3 mois",
         location: "Orléans, France",
-        logo: "/companies/cooljet.png",
+        logo: "/images/companies/cooljet.png",
         description:
           "Receiving and accounting for goods, quality control and sorting of products, repackaging of goods.",
       },
