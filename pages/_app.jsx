@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import { appWithI18Next } from "ni18n";
 import { ni18nConfig } from "/ni18n.config";
@@ -11,8 +12,23 @@ import "/styles/global.scss";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <AppContext>
-      <ThemeProvider attribute="class">
+    <>
+      <Head>
+        <meta name="description" content="Resume | aliceout" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="keywords"
+          content=" cv, portfolio, react nextjs portfolio, resume"
+        />
+        <meta name="ibthemes" content="ATFN" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+        <title>Resume | Alice Aussel-Delamaide</title>
+      </Head>
+      <AppContext>
+        <ThemeProvider attribute="class">
           <Container>
             <Header />
             <div
@@ -32,9 +48,10 @@ const App = ({ Component, pageProps }) => {
               </div>
             </div>
           </Container>
-      </ThemeProvider>
-    </AppContext>
+        </ThemeProvider>
+      </AppContext>
+    </>
   );
-}
+};
 
- export default appWithI18Next(App, ni18nConfig);
+export default appWithI18Next(App, ni18nConfig);
