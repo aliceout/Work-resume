@@ -9,10 +9,6 @@ import { FaGithub } from "react-icons/fa";
 
 export default function PortfolioCard({ project }) {
   const { t, i18n } = useTranslation("pages");
-  const description = filterDataByLanguage(
-    project.description,
-    i18n.language
-  );
 
   return (
     <article className="flex flex-row items-center flex-1 w-full gap-x-10">
@@ -32,7 +28,12 @@ export default function PortfolioCard({ project }) {
             </p>
             <div className="text-sm font-medium text-justify text-slate-800 dark:text-gray-300">
               <ReactMarkdown>
-                {description && description.substring(0, 400)}
+                {filterDataByLanguage(project.description, i18n.language)
+                  .length > 0 &&
+                  filterDataByLanguage(
+                    project.description,
+                    i18n.language
+                  ).substring(0, 400)}
               </ReactMarkdown>
             </div>
           </div>
