@@ -1,0 +1,31 @@
+{
+    "sidebar" : {
+        "fonction" : "Web developer",
+        "contacts" : {
+            "element" : "Send a message",
+            "skype" : "Call via Skype",
+            "email" : "Send an email"
+        },
+        "downloadBtn" : "Download CV",
+        "contactBtn" : "Me contacter"
+    },
+    "index" : {
+        "h1" : "In two words"
+    },
+    "works" : {    
+        "h1" : "Experiences" 
+
+    },
+    "studies" : {
+        "h1" : "Training"
+        
+    },
+    "portfolio" : {
+        "h1" : "Portfolio"
+        
+    },
+    "skills" : {
+        "h1" : "Skills"
+        
+    }
+}
