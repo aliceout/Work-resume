@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
 import ContactsData from "/data/contacts";
 
 export default function MobileContact() {
   const ReactIcons = useIcons();
+  const { t } = useTranslation(["sidebar", "mobileMenu"]);
 
 const contactsList = ContactsData.filter(contact => contact.mobile === true).map(contact => {
   const IconComponent = ReactIcons[contact.icon];
 
-  // Composant qui sera itéré
+  // Composant qui sera répété
   return (
     <div
       key={contact.fieldset}
@@ -32,7 +34,7 @@ const contactsList = ContactsData.filter(contact => contact.mobile === true).map
             target="_blank"
             className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white"
           >
-            {contact.value}
+            {t(contact.valueTransKey, { ns: "sidebar" })}
           </Link>
         ) : (
           <p className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white">
@@ -47,7 +49,7 @@ const contactsList = ContactsData.filter(contact => contact.mobile === true).map
   // Véritable return du composant
   return (
     <div className="flex flex-col px-4 duration-300 gap-y-2 max-w-max">
-      <p className="px-3 font-semibold ">Me contacter</p>
+      <p className="px-3 font-semibold ">{t("contactMe", { ns: "mobileMenu" })}</p>
       {contactsList}
     </div>
   );

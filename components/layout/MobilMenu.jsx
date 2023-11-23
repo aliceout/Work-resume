@@ -20,7 +20,7 @@ export default function MobilMenu() {
             onClick={() => setHamburgerMenuIsOpen(false)}
           />
         </div>
-        <MobileLink setHamburgerMenuIsOpen={setHamburgerMenuIsOpen} />
+        <MobileLink />
         <MobileContact />
       </div>
     </div>
