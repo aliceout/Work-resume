@@ -30,5 +30,5 @@ export default function SideLink() {
     );
   });
 
-  return <ul className="flex flex-row justify-center ml-6 gap-x-3 ">{linksList}</ul>;
+  return <div className="flex flex-row justify-center ml-6 gap-x-3 ">{linksList}</div>;
 }

@@ -13,7 +13,7 @@ export default function StudyCard({ study }) {
           <p>{study.location}</p>
         </div>
 
-        <div className="flex flex-col text-sm">
+        <div className="flex flex-col text-sm lg:w-10/12">
           {study.description.map((item, index) => (
             <ReactMarkdown key={index} className={"mt-4"}>
               {item.text}
