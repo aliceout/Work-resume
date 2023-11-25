@@ -14,7 +14,7 @@ export default function SideContact() {
 
     // Composant qui sera répété
     return (
-      <div
+      <li
         key={contact.fieldset}
         className="flex items-center justify-start pt-2 mb-2 gap-x-2 "
       >
@@ -25,7 +25,7 @@ export default function SideContact() {
             backgroundColor: theme === "dark" ? "black" : "white",
           }}
         >
-          <IconComponent alt={contact.fieldset} />
+          <IconComponent alt={contact.fieldset} aria-label={contact.fieldset} />
         </div>
         <div>
           <p className="text-xs font-semibold text-tiny text-slate-500 dark:text-gray-400">
@@ -45,7 +45,7 @@ export default function SideContact() {
             </p>
           )}
         </div>
-      </div>
+      </li>
     );
   });
 

@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
 
 export default function DarkMode() {
   const { theme, setTheme } = useTheme();
-  const [mode, setMode] = useState();
+  const { t } = useTranslation("buttons");
 
   useEffect(() => {
     const checkTheme = () => {
@@ -42,6 +43,7 @@ export default function DarkMode() {
           className="flex p-2 duration-300 rounded-full bg-slate-900/70"
         >
           <BsFillMoonStarsFill className="text-yellow-100" />
+          <span class="sr-only">{t("lightMode")}</span>
         </button>
       ) : (
         <button
@@ -52,6 +54,7 @@ export default function DarkMode() {
           className="flex p-2 duration-300 bg-white rounded-full"
         >
           <MdSunny className="text-yellow-400 " />
+          <span class="sr-only">{t("darkMode")}</span>
         </button>
       )}
     </>

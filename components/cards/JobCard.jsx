@@ -11,12 +11,12 @@ export default function JobCard({ job }) {
       <div className="flex flex-col w-full gap-y-5">
         <div className="flex flex-row justify-between w-full gap-x-10">
           <div className="flex flex-col w-full dark:md:basis-full basis-7/12 md:basis-9/12 dark:lg:basis-10/12">
-            <p className="text-xl font-bold text-slate-800 dark:text-slate-100">
+            <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">
               {job.company}
-            </p>
-            <p className="font-semibold text-primary dark:text-secondary">
+            </h3>
+            <h4 className="font-semibold text-primary dark:text-secondary">
               {job.title}
-            </p>
+            </h4>
             <div className="flex flex-col justify-between mt-1 md:items-center md:flex-row">
               <p className="text-sm">{job.date}</p>
               <div className="flex flex-row-reverse items-center justify-end text-xs md:flex-row gap-x-2 md:justify-center">
@@ -42,7 +42,7 @@ export default function JobCard({ job }) {
             </div>
           )}
         </div>
-        <div className="flex flex-col text-sm text-justify dark:text-gray-200 gap-y-2 lg:w-10/12">
+        <div className="flex flex-col text-sm dark:text-gray-200 gap-y-2 lg:w-10/12">
           <ReactMarkdown>{job.description}</ReactMarkdown>
           {job.bullets && (
             <ReactMarkdown className="markdown-jobs">
