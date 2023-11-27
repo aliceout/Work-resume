@@ -5,25 +5,27 @@ import languages from "/data/languages";
 
 export default function Languages() {
   const { t, i18n } = useTranslation("pages");
+  const currentLanguage = i18n.language || "fr";
+
 
   const langs = languages.map((lang) => {
     return (
       <div
-        key={filterDataByLanguage(lang.title, i18n.language)}
-        class="flex flex-col"
+        key={filterDataByLanguage(lang.title, currentLanguage)}
+        className="flex flex-col"
       >
-        <div class="flex items-center justify-start my-2 gap-x-2   text-sm ">
-          <p class="text-slate-700 dark:text-slate-300">
-            {filterDataByLanguage(lang.title, i18n.language)}
+        <div className="flex items-center justify-start my-2 text-sm gap-x-2 ">
+          <p className="text-slate-700 dark:text-slate-300">
+            {filterDataByLanguage(lang.title, currentLanguage)}
           </p>
-          <p class="text-slate-700 dark:text-slate-200">|</p>
-          <p class="text-slate-500 dark:text-slate-200 font-semibold">
-            {filterDataByLanguage(lang.level, i18n.language)}
+          <p className="text-slate-700 dark:text-slate-200">|</p>
+          <p className="font-semibold text-slate-500 dark:text-slate-200">
+            {filterDataByLanguage(lang.level, currentLanguage)}
           </p>
         </div>
-        <div class="w-full h-1.5 bg-blue-200 rounded-full">
+        <div className="w-full h-1.5 bg-blue-200 rounded-full">
           <div
-            class="h-full text-center text-xs text-white bg-sky-600 rounded-full"
+            className="h-full text-xs text-center text-white rounded-full bg-sky-600"
             style={{ width: lang.progress }}
           ></div>
         </div>

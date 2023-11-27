@@ -8,18 +8,19 @@ import certifications from "/data/certifications";
 export default function Certifications() {
   const { theme } = useTheme();
   const { t, i18n } = useTranslation("pages");
+  const currentLanguage = i18n.language || "fr";
 
   const certifs = certifications.map((certif) => {
 
     return (
       <div
-        key={filterDataByLanguage(certif.title, i18n.language)}
+        key={filterDataByLanguage(certif.title, currentLanguage)}
         className="flex flex-row items-center gap-x-4"
       >
         <div className="overflow-hidden h-[75px] w-auto aspect-square flex items-center justify-center basis-3/12">
           <Image
             src={theme === "dark" ? certif.logoDark : certif.logo}
-            alt={filterDataByLanguage(certif.title, i18n.language)}
+            alt={filterDataByLanguage(certif.title, currentLanguage)}
             width={70}
             height={70}
             className="w-auto max-h-[75px] "
@@ -27,10 +28,10 @@ export default function Certifications() {
         </div>
         <div className="flex flex-col text-sm basis-9/12">
           <p className="font-semibold text-slate-700 dark:text-slate-100">
-            {filterDataByLanguage(certif.title, i18n.language)}
+            {filterDataByLanguage(certif.title, currentLanguage)}
           </p>
           <p className="italic font-medium text-slate-600 dark:text-slate-300">
-            {filterDataByLanguage(certif.place, i18n.language)}
+            {filterDataByLanguage(certif.place, currentLanguage)}
           </p>
           <p className="font-tiny text-slate-500 dark:text-slate-400">
             {certif.date}
