@@ -9,7 +9,8 @@
     "h1": "Formations"
   },
   "portfolio": {
-    "h1": "Portfolio",
+    "h1": "Derniers projets",
+    "message": "Pour voir l'ensemble du portfolio, cliquez ici",
     "btn" : {
       "preview" : "Aperçu"
     }

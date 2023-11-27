@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BsTranslate } from "react-icons/bs";
 import { CircleFlag } from "react-circle-flags";
@@ -16,15 +16,23 @@ export default function LanguagesSwitcher() {
       title: "French",
       value: "fr",
       flag: "fr",
-      srOnlyTransKey : "fr"
+      srOnlyTransKey: "fr",
     },
     {
       title: "English",
       value: "en",
       flag: "uk",
-      srOnlyTransKey : "en"
+      srOnlyTransKey: "en",
     },
-  ];
+  ]; 
+  
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setFlagsMenuIsOpen(false);
+    }, 5000);
+
+    return () => clearTimeout(timeout);
+  }, [flagsMenuIsOpen]);
 
   return (
     <>
@@ -34,7 +42,7 @@ export default function LanguagesSwitcher() {
         onClick={() => setFlagsMenuIsOpen(!flagsMenuIsOpen)}
       >
         <BsTranslate className="" />
-        <span class="sr-only">{t("translate")}</span>
+        <span className="sr-only">{t("translate")}</span>
       </button>
       <div
         className={`relative inline-flex flex-col top-14 -left-10 gap-y-4 transition duration-400 transform ease-in z-20 ${
@@ -54,7 +62,7 @@ export default function LanguagesSwitcher() {
                 changeLanguage(language.value);
               }}
             />
-            <span class="sr-only">{t(language.srOnlyTransKey)}</span>
+            <span className="sr-only">{t(language.srOnlyTransKey)}</span>
           </div>
         ))}
       </div>
