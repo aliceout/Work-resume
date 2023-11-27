@@ -1,62 +1,57 @@
+import dynamic from "next/dynamic";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
-import { useTranslation } from "react-i18next";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { MdSunny } from "react-icons/md";
+const BsFillMoonStarsFill = dynamic(
+  () => import("react-icons/bs").then((module) => module.BsFillMoonStarsFill),
+  { ssr: false }
+);
+const MdSunny = dynamic(
+  () => import("react-icons/md").then((module) => module.MdSunny),
+  { ssr: false }
+);
 
 export default function DarkMode() {
   const { theme, setTheme } = useTheme();
-  const { t } = useTranslation("buttons");
 
   useEffect(() => {
-    const checkTheme = () => {
-      const colorScheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-      setTheme(colorScheme);
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleChange = (e) => {
+      setTheme(e.matches ? "dark" : "light");
     };
 
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", checkTheme);
+    darkThemeMq.addEventListener("change", handleChange);
 
-    // Appelez la fonction checkTheme au chargement de la page
-    checkTheme();
+    // Appelez la fonction handleChange au chargement de la page
+    handleChange(darkThemeMq);
 
     return () => {
       // Nettoyez le listener lorsque le composant est démonté
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .removeEventListener("change", checkTheme);
+      darkThemeMq.removeEventListener("change", handleChange);
     };
   }, [setTheme]);
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <>
+    <button
+      type="button"
+      onClick={toggleTheme}
+      className="flex p-2 duration-300 bg-white rounded-full dark:bg-slate-900/70"
+    >
       {theme === "dark" ? (
-        <button
-          type="button"
-          onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
-          }}
-          className="flex p-2 duration-300 rounded-full bg-slate-900/70"
-        >
+        <>
           <BsFillMoonStarsFill className="text-yellow-100" />
-          <span className="sr-only">{t("lightMode")}</span>
-        </button>
+          {/* <span className="sr-only">DarkMode</span> */}
+        </>
       ) : (
-        <button
-          type="button"
-          onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
-          }}
-          className="flex p-2 duration-300 bg-white rounded-full"
-        >
-          <MdSunny className="text-yellow-400 " />
-          <span className="sr-only">{t("darkMode")}</span>
-        </button>
+        <>
+          <MdSunny className="text-yellow-400" />
+          {/* <span className="sr-only">LightMode</span> */}
+        </>
       )}
-    </>
+    </button>
   );
 }
