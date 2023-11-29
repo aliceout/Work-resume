@@ -10,7 +10,7 @@
   },
   "portfolio": {
     "h1": "Derniers projets",
-    "message": "Pour voir l'ensemble du portfolio, cliquez ici",
+    "message": "Pour voir plus en détails l'ensemble du portfolio, cliquez ici",
     "btn" : {
       "preview" : "Aperçu"
     }
