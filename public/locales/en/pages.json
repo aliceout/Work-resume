@@ -1,0 +1,27 @@
+{
+  "home": {
+    "h1": "In few words"
+  },
+  "works": {
+    "h1": "Work experiences "
+  },
+  "studies": {
+    "h1": "Studies"
+  },
+  "portfolio": {
+    "h1": "Last projects",
+    "message": "For a more detailed view of the entire portfolio, click here",
+    "btn" : {
+      "preview" : "Preview"
+    }
+  },
+  "skills": {
+    "h1": "Skills",
+    "certifications": {
+      "h2": "Certifications"
+    },
+    "languages": {
+      "h2": "Languages levels"
+    }
+  }
+}

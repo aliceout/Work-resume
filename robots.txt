@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /assets/images
-Disallow: /*.js$
-Disallow: /*.scss$
-Disallow: /*.sass$
-Sitemap: https://aliceosdel.work/sitemap.xml
