@@ -15,17 +15,19 @@ export default function PortfolioCard({ project }) {
       <div className="flex flex-col justify-between transition duration-300 shadow xl:w-10/12 xl:overflow-visible xl:flex-row rounded-xl bg-gray-50/40 dark:bg-slate-900/80">
         <div className="flex flex-col justify-between w-full px-2 pt-8 pb-4 xl:pr-0 xl:pl-10 xl:py-8 xl:basis-10/12 basis-full">
           <div className="flex flex-col gap-y-1">
-            <div className="flex flex-row items-center justify-start gap-x-2">
+            <div className="flex flex-col items-start justify-center gap-x-2">
               <p className="text-xl font-bold text-primary dark:text-secondary">
                 {project.title}
               </p>
-              <p className="text-xl font-medium text-black/80 dark:text-gray-300">
-                {filterDataByLanguage(project.client, i18n.language)}
-              </p>
+              <div className="flex flex-row items-center justify-between w-full">
+                <p className="text-lg font-medium text-black/80 dark:text-gray-300">
+                  {filterDataByLanguage(project.client, i18n.language)}
+                </p>
+                <p className="text-xs font-semibold text-gray-400 dark:text-gray-400">
+                  {project.date}
+                </p>
+              </div>
             </div>
-            <p className="mb-1 text-xs font-semibold text-gray-400 dark:text-gray-400">
-              {project.date}
-            </p>
             <div className="text-sm font-medium text-justify text-slate-800 dark:text-gray-300">
               <ReactMarkdown>
                 {filterDataByLanguage(project.description, i18n.language)
@@ -79,4 +81,3 @@ export default function PortfolioCard({ project }) {
     </article>
   );
 }
-

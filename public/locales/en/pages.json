@@ -10,7 +10,7 @@
   },
   "portfolio": {
     "h1": "Last projects",
-    "message": "To see the entire portfolio, click here",
+    "message": "For a more detailed view of the entire portfolio, click here",
     "btn" : {
       "preview" : "Preview"
     }
