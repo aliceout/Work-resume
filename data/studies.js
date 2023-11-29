@@ -30,7 +30,7 @@ module.exports = [
             text: `Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation \n\n Cas pays, mises en situation, conceptions de projets, renforcement et partenariats`,
           },
           {
-            text: `**Mémoire de stage I**: "*Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée*" \n\n **Mémoire de stage II**: "*La notion de crise et son utilisation dans la thématique migratoires, d'un outil de mobilisation à l'abus d'un objet devenue politique*"`,
+            text: `**Mémoire de stage I**: "*Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée*" \n\n **Mémoire de stage II**: "*La notion de crise et son utilisation dans la thématique migratoire, d'un outil de mobilisation à l'abus d'un objet devenu politique*"`,
           },
         ],
       },
@@ -66,7 +66,7 @@ module.exports = [
         date: "2013 - 2015",
         description: [
           {
-            text: `Diplômee délivré par l'Université Toulouse I Capitole \n\n Diplomé mention B`,
+            text: `Diplomée délivré par l'Université Toulouse I Capitole \n\n Diplomée mention B`,
           },
         ],
       },

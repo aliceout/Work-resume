@@ -10,7 +10,7 @@ module.exports = [
         description:
           "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
         bullets:
-          " - Encadrement de l’équipe logistique capitale, et appui de deux bases en arrière- pays \n\n - Gestion d'équipe (environ 25 personnes), animation des équipes, embauches de personnels, écritures de fiches de postes \n\n - Supervision et appui logistique des projets \n\n - Définition des stratégies et planification des activités logistiques \n\n - Appui technique à un projet de Clinique mobile en réponse d'urgence \n\n - Supervision de la mise en œuvre matérielle des procédures de sécurité, participation aux cellules de crises \n\n - Supervision des flux d'approvisionnements nationaux, et des opérations de dédouanement \n\n - Supervision des réhabilitations et constructions des centres de santé \n\n - Travail de représentation et de réseau (RLH, ClusterLog, ONG)",
+          " - Encadrement de l’équipe logistique en capitale, et appui de deux bases en province \n\n - Gestion et animation d'équipes (environ 25 personnes), supervision de processus RH (rectrutements, évaluations, formations), écriture de fiches de postes \n\n - Supervision et appui logistique des projets \n\n - Définition des stratégies et planification des activités logistiques \n\n - Appui technique à un projet de Clinique mobile dans un contexte de réponse d'urgence \n\n - Supervision de la mise en œuvre matérielle des procédures de sécurité, participation aux cellules de crises \n\n - Supervision des flux d'approvisionnements nationaux, et des opérations de dédouanement \n\n - Supervision des réhabilitations et constructions des centres de santé \n\n - Travail de représentation et de réseau (RLH, ClusterLog, ONG)",
       },
       {
         title: "Logisticienne base",
@@ -21,7 +21,7 @@ module.exports = [
         description:
           "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
         bullets:
-          " - Encadrement et animation d'une équipe d'une douzaine de personnes \n\n - Supervision des tâches d'approvisionnement, transport et stockage des intrants programmes sur la province \n\n - Suivi et gestion des parcs automobile, des communications et du parc informatique \n\n - Ouverture d'une sous- base dans le cadre d'une réponse d'urgence, et participation à l'élaboration et au lancement d'une réponse rapide \n\n - Participation à la définition des construction de projet et écriture et suivi des budgets \n\n - Veille sécuritaire, analyse et suivi de la sécurité de la base, des déplacements et des équipes, participation à l'écriture des protocoles \n\n - Animation des processus de recrutement, d'évaluations et de définitions des besoins RH \n\n - Supervision des réhabilitations et constructions des centres de santé \n\n - Formation des équipes (Excel, Word, gestion des stocks, procédures d'achat, etc...)",
+          " - Encadrement et animation d'une équipe d'une douzaine de personnes \n\n - Supervision des tâches d'approvisionnement, transport et stockage des intrants liés aux programmes sur la province \n\n - Suivi et gestion des parcs automobiles, des communications et du parc informatique \n\n - Ouverture d'une sous- base dans le cadre d'une réponse d'urgence, et participation à l'élaboration et au lancement d'une réponse rapide \n\n - Participation à la définition des constructions de projets, écritures et suivis des budgets \n\n - Veille sécuritaire, analyse et suivi de la sécurité de la base, des déplacements des équipes, participation à l'écriture des protocoles, et réalisation des audits \n\n - Animation des processus de recrutement, d'évaluations et de définitions des besoins RH \n\n - Supervision des réhabilitations et constructions des centres de santé \n\n - Formation des équipes (Excel, Word, gestion des stocks, procédures d'achat, etc...)",
       },
       {
         title: "Logisticienne",
@@ -30,9 +30,9 @@ module.exports = [
         company: "Médecins du Monde France",
         logo: "/images/companies/mdm.png",
         description:
-          "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
+          "Réponses d'urgence en contexte de Covid19, au sein des squats et bidonvilles",
         bullets:
-          " - Gestion et suivi de stock \n\n - Gestion des EPI Covid19 (stock, commande, préparation, suivi) \n\n - Approvisionnement \n\n - Préparation distribution et intervention \n\n - Travail de mise à niveau du parc informatique \n\n - Création et mise à niveau protocoles (sorties, stock, achat) \n\n - Accompagnement à évaluation de la sécurité",
+          " - Gestion et suivi de stocks \n\n - Gestion des EPI Covid19 (stocks, commandes, préparation, suivi) \n\n - Approvisionnements \n\n - Préparation distributions et interventions \n\n - Travail de mise à niveau du parc informatique \n\n - Création et mise à niveau des protocoles (sorties, stocks, achats) \n\n - Accompagnement à l'évaluation de la sécurité",
       },
       {
         title: "Chargée d'appui juridique aux études et diagnostics",
@@ -41,9 +41,9 @@ module.exports = [
         company: "Humanité & Inclusion",
         logo: "/images/companies/hi.png",
         description:
-          "Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre l'égal, pour la réalisation de deux diagnostics initiaux sur le teritoire tunisien",
+          "Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre légal, pour la réalisation de deux diagnostics initiaux sur le territoire tunisien",
         bullets:
-          " - Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap \n\n + Etudes sur les conditions de séjour, d'accueil et d'accés aux services de droit commun, des personnes migrantes",
+          " - Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap \n\n + Etude sur les conditions de séjour, d'accueil et d'accès aux services de droit commun, des personnes migrantes",
       },
       {
         company: "Caritas au Maroc",
@@ -52,7 +52,7 @@ module.exports = [
         location: "Rabat, Maroc",
         logo: "/images/companies/caritas.png",
         description: 'Programme "Migration"',
-        bullets: ` -  Participation à des actions d'appui au renforcement des capacités des partenaires \n\n - Appui au suivi de projets (cadre logique, budget, fiches de postes, rapports) \n\n - Refonte d'un outil de recueil de données. (définition des besoins, élaboration d'un cahier des charges, interface, OpenData, sécurisation, fonctionnalités) \n\n - Conception d’un plan de communication et d’une nouvelle charte graphique, et accompagnement à la "numérisation" de certains process \n\n - Rédaction et mise en page de supports de sensibilisation, de notes d'actualités \n\n - Animation réunion, team building`,
+        bullets: ` -  Participation à des actions d'appui au renforcement des capacités des partenaires \n\n - Appui au suivi de projets (cadres logiques, budgets, fiches de postes, rapports) \n\n - Refonte d'un outil de recueil de données. (définition des besoins, élaboration du cahier des charges, interface, questions ethiques, sécurisation, fonctionnalités) \n\n - Conception d’un plan de communication et d’une nouvelle charte graphique, et accompagnement à la "numérisation" de certains process \n\n - Rédaction et mise en page de supports de sensibilisation, de notes d'actualités \n\n - Animation de réunions, team building`,
       },
       {
         company: "Commune d'Olivet",
@@ -79,7 +79,7 @@ module.exports = [
         location: "Orléans, France",
         logo: "/images/companies/geodis.png",
         description:
-          "Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques",
+          "Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service",
       },
       {
         company: "Cool-Jet SAS",
@@ -110,7 +110,7 @@ module.exports = [
         description:
           "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
         bullets:
-          " - Supervision of the capital logistics team, and support for two bases in the hinterland - Team management (around 25 people), leading teams, recruiting staff, writing job descriptions - Supervision and logistical support for projects - Definition of strategies and planning of logistical activities - Technical support for a mobile clinic project as part of the emergency response - Supervision of the physical implementation of security procedures, participation in crisis units - Supervision of national supply flows and customs clearance operations - Supervision of the rehabilitation and construction of health centres - Representation and networking (RLH, ClusterLog, NGOs)",
+          "- Supervision of the logistics team in the capital, and support for two bases in the provinces \n\n - Management and leadership of teams (around 25 people), supervision of HR processes (recruitment, appraisals, training), writing of job descriptions \n\n - Supervision and logistical support for projects \n\n - Definition of strategies and planning of logistical activities \n\n - Technical support for a mobile clinic project in an emergency response context \n\n - Supervision of the material implementation of security procedures, Supervision of national supply flows, and customs clearance operations Supervision of rehabilitation and construction of health centers Representation and networking (RLH, ClusterLog, NGOs)",
       },
       {
         title: "Logisticienne base",
