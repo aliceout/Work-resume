@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-10">
       <H1 text={t("portfolio.h1")} />
-      <section className="flex items-center justify-between w-10/12 p-5 pl-10 shadow rounded-xl bg-gray-50/40 dark:bg-slate-900/80 ">
+      <section className="flex items-center justify-between w-full p-5 pl-10 shadow xl:w-10/12 rounded-xl bg-gray-50/40 dark:bg-slate-900/80 ">
         {t("portfolio.message")}{" "}
         <Link
           href={"https://aliceout.dev"}
