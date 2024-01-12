@@ -14,8 +14,7 @@ export function GlobalContextProvider({ children }) {
     const currentUrl = window.location.href;
     console.log(currentUrl);
     setIsAliceOut(
-      currentUrl.includes("aliceout.work") ||
-        currentUrl.includes("aliceosdel.work")
+      currentUrl.includes("aliceout.work")
     );
   }, []);
 
