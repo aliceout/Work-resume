@@ -9,7 +9,6 @@ import { SiProtonmail } from "react-icons/si";
 
 export default function Sidebar() {
   const { setHamburgerMenuIsOpen, isAliceOut } = useGlobalContext();
-  console.log("isAliceOut", isAliceOut);
   const { t } = useTranslation("sidebar");
 
   return (
