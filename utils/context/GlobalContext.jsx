@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
+
 // Créez un contexte pour GlobalContext
 export const GlobalContext = createContext();
 
@@ -11,6 +12,7 @@ export function GlobalContextProvider({ children }) {
   useEffect(() => {
     // Vérifiez si l'URL contient "aliceosdel.work" ou "aliceout.work"
     const currentUrl = window.location.href;
+    console.log(currentUrl);
     setIsAliceOut(
       currentUrl.includes("aliceout.work") ||
         currentUrl.includes("aliceosdel.work")
