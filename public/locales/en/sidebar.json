@@ -1,5 +1,6 @@
 {
-  "fonction": "Web developer",
+  "fonctionDev": "Web developer",
+  "fonctionAsso": "Coordinator / Project Manager",
   "contacts": {
     "element": "Send a message",
     "skype": "Call via Skype",

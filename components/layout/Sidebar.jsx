@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useGlobalContext } from "/utils/context/GlobalContext";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
+import { isAliceOut } from "/utils/context/GlobalContext";
 import ProfilPicture from "/components/images/ProfilPicture";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
@@ -21,7 +22,7 @@ export default function Sidebar() {
               Alice Aussel-Delamaide
             </p>
             <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-500 duration-300">
-              {t("fonction")}
+              {isAliceOut ? t("fonctionDev") : t("fonctionAsso")}
             </p>
           </div>
         </div>
@@ -31,13 +32,18 @@ export default function Sidebar() {
         </span>
         <div className="flex flex-row justify-center gap-x-3">
           <Link
-            href="https://cloud.ofanch.me/s/nCnZ5W7AM5adape#pdfviewer"
+            href={
+              isAliceOut
+                ? "https://cloud.ofanch.me/s/LTJxDL4f2x7NKQA#pdfviewer"
+                : "https://cloud.ofanch.me/s/jsGojkbiArWqSjo#pdfviewer"
+            }
             target="_blank"
             className="flex flex-row items-center px-6 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-secondary dark:text-primary ring-1 ring-gray-100 dark:ring-slate-800 hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-700/90"
           >
             <IoCloudDownload />
             {t("downloadBtn")}
           </Link>
+
           <button
             type="button"
             onClick={() => setHamburgerMenuIsOpen(true)}
