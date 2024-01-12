@@ -6,6 +6,7 @@ import aboutMeData from "/data/aboutMe";
 
 export default function AboutMe() {
   const { isAliceOut } = useGlobalContext();
+  console.log("isAliceOut", isAliceOut);
 
   const { i18n } = useTranslation();
 

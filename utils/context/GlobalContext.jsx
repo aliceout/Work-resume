@@ -12,11 +12,12 @@ export function GlobalContextProvider({ children }) {
   useEffect(() => {
     // Vérifiez si l'URL contient "aliceosdel.work" ou "aliceout.work"
     const currentUrl = window.location.href;
-    console.log(currentUrl);
+    console.log("currentUrl", currentUrl);
     setIsAliceOut(
       currentUrl.includes("aliceout.work")
     );
   }, []);
+  console.log("isAliceOut", isAliceOut);
 
   // Fournissez la valeur du contexte avec les données nécessaires
   const contextValue = {
