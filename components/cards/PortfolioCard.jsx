@@ -74,7 +74,7 @@ export default function PortfolioCard({ project }) {
             height={300}
             priority
             alt={project.title}
-            className="w-full h-auto scale-100 rounded-xl "
+            className="w-full h-auto scale-100 rounded-xl dark:brightness-75 dark:hover:brightness-100"
           />
         </div>
       </div>
