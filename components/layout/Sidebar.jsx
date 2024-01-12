@@ -34,7 +34,7 @@ export default function Sidebar() {
             href={
               isAliceOut
                 ? "https://cloud.ofanch.me/s/LTJxDL4f2x7NKQA#pdfviewer"
-                : "https://cloud.ofanch.me/s/jsGojkbiArWqSjo#pdfviewer"
+                : "https://cloud.ofanch.me/s/aamefjnddR8sfxp#pdfviewer"
             }
             target="_blank"
             className="flex flex-row items-center px-6 py-2 text-sm font-bold transition duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-800/90 text-secondary dark:text-primary ring-1 ring-gray-100 dark:ring-slate-800 hover:bg-gray-50/80 gap-x-2 dark:hover:bg-gray-700/90"
