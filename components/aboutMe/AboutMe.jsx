@@ -1,10 +1,12 @@
-import { isAliceOut } from "/utils/context/GlobalContext";
+import { useGlobalContext } from "/utils/context/GlobalContext";
 import ReactMarkdown from "react-markdown";
 import { useTranslation } from "react-i18next";
 import { filterDataByLanguage } from "/utils/tools/languages";
 import aboutMeData from "/data/aboutMe";
 
 export default function AboutMe() {
+  const { isAliceOut } = useGlobalContext();
+
   const { i18n } = useTranslation();
 
   // Get the data for the current language
