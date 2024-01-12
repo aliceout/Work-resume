@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import { useTranslation } from "react-i18next";
-import { isAliceOut } from "/utils/context/GlobalContext";
 import ProfilPicture from "/components/images/ProfilPicture";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
@@ -9,7 +8,7 @@ import { IoCloudDownload } from "react-icons/io5";
 import { SiProtonmail } from "react-icons/si";
 
 export default function Sidebar() {
-  const { setHamburgerMenuIsOpen } = useGlobalContext();
+  const { setHamburgerMenuIsOpen, isAliceOut } = useGlobalContext();
   const { t } = useTranslation("sidebar");
 
   return (
