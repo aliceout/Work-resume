@@ -21,6 +21,7 @@ export function GlobalContextProvider({ children }) {
   const contextValue = {
     hamburgerMenuIsOpen,
     setHamburgerMenuIsOpen,
+    isAliceOut,
     setIsAliceOut,
   };
 
