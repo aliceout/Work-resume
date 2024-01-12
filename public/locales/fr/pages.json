@@ -8,11 +8,14 @@
   "studies": {
     "h1": "Formations"
   },
+  "volunteering": {
+    "h1": "Bénevolat"
+  },
   "portfolio": {
     "h1": "Derniers projets",
-    "message": "Pour voir plus en détails l'ensemble du portfolio, cliquez ici",
-    "btn" : {
-      "preview" : "Aperçu"
+    "message": "Pour voir plus en détails l'ensemble du portfolio, cliquez sur le bouton",
+    "btn": {
+      "preview": "Aperçu"
     }
   },
   "skills": {

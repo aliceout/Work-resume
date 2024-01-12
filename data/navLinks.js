@@ -15,6 +15,11 @@ module.exports = [
     href: "/studies",
   },
   {
+    nameTransKey: "volunteering",
+    icon: "FaHandsHelping",
+    href: "/volunteering",
+  },
+  {
     nameTransKey: "portfolio",
     icon: "MdOutlinePhotoLibrary",
     href: "/portfolio",
