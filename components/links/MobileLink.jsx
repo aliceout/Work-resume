@@ -7,12 +7,17 @@ import { useGlobalContext } from "/utils/context/GlobalContext";
 
 export default function MobileLink() {
   const { t } = useTranslation(["navbar", "mobileMenu"]);
+  const { setHamburgerMenuIsOpen, isAliceOut } = useGlobalContext();
 
-  const { setHamburgerMenuIsOpen } = useGlobalContext();
+  
+
+  const filteredLinks = isAliceOut
+    ? linksData
+    : linksData.filter((link) => link.name !== "Github");
 
   const ReactIcons = useIcons();
 
-  const navLinks = linksData.map((item) => {
+  const navLinks = filteredLinks.map((item) => {
     const IconComponent = ReactIcons[item.icon];
     return (
       <Link

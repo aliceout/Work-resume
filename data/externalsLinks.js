@@ -11,7 +11,6 @@ module.exports = [
     icon: "FaLinkedinIn", // Attention de pas laisser d'espace après le nom de l'icone
     lightColor: "#009ef0",
     darkColor: "#0084c9",
-
     href: "https://linkedin.com/in/aliceOsdel",
   },
 ];
