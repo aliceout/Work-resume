@@ -1,13 +1,19 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { useGlobalContext } from "/utils/context/GlobalContext";
 import { useIcons } from "/utils/context/IconsContext";
 import linksData from "/data/externalsLinks";
 
 export default function SideLink() {
+    const { isAliceOut } = useGlobalContext();
   const ReactIcons = useIcons();
   const { theme } = useTheme();
 
-  const linksList = linksData.map((link) => {
+  const filteredLinks = isAliceOut
+    ? linksData
+    : linksData.filter((link) => link.name !== "Github");
+  
+  const linksList = filteredLinks.map((link) => {
     const IconComponent = ReactIcons[link.icon];
 
     return (

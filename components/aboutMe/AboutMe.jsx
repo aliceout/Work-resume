@@ -12,7 +12,7 @@ export default function AboutMe() {
   const currentLanguageData = filterDataByLanguage(aboutMeData, i18n.language);
 
   return (
-    <div className="flex flex-col text-justify gap-y-3">
+    <div className="flex flex-col px-4 text-justify gap-y-3">
       {currentLanguageData.map((item, index) => {
         const content = isAliceOut ? item.dev : item.asso;
         // Vérifiez si le contenu n'est pas vide avant de rendre ReactMarkdown
