@@ -135,7 +135,7 @@ module.exports = [
           "- Supervision of the logistics team in the capital, and support for two bases in the provinces \n\n - Management and leadership of teams (around 25 people), supervision of HR processes (recruitment, appraisals, training), writing of job descriptions \n\n - Supervision and logistical support for projects \n\n - Definition of strategies and planning of logistical activities \n\n - Technical support for a mobile clinic project in an emergency response context \n\n - Supervision of the material implementation of security procedures, Supervision of national supply flows, and customs clearance operations Supervision of rehabilitation and construction of health centers Representation and networking (RLH, ClusterLog, NGOs)",
       },
       {
-        title: "Logisticienne base",
+        title: "Logistics manager",
         location: "Kalemie, RD Congo",
         date: "2020- 2021 - 9 mois",
         company: "Médecins du Monde France",
@@ -146,7 +146,7 @@ module.exports = [
           " - Supervising and leading a team of a dozen people - Supervising the supply, transport and storage of programme inputs in the province - Monitoring and managing the vehicle, communications and IT fleets - Opening a sub-base as part of an emergency response, and taking part in drawing up and launching a rapid response - Taking part in defining project construction and writing and monitoring budgets - Monitoring security, analysis and monitoring of the security of the base, travel and teams, participation in the drafting of protocols - Coordination of recruitment processes, evaluations and definition of HR needs - Supervision of the rehabilitation and construction of health centres - Training of teams (Excel, Word, stock management, purchasing procedures, etc.), and participation in the drafting of budgets. ..)",
       },
       {
-        title: "Logisticienne",
+        title: "Logistics manager",
         location: "Marseille, France",
         date: "2020 - 3 mois",
         company: "Médecins du Monde France",
