@@ -3,6 +3,17 @@ module.exports = [
     fr: [
       {
         title: "Coordinatrice Logistique",
+        location: "Kyiv, Ukraine",
+        date: "2024 · En cours",
+        company: "Action Contre la Faim France",
+        logo: "/images/companies/acf.png",
+        description:
+          "Réponse mustisectorielle de soutient aux populations et aux services publics affectés par le conflit issu de l'invasion de 2022",
+        bullets:
+          " - Encadrement de l’équipe logistique en capitale, et appui de 4 (puis 2) bases en province \n\n - Gestion et animation d'équipes (environ 15 personnes) \n\n - Formation et accompagnement sur des nationalisations de postes \n\n - Travail d'accompagnement logistique auprès des partenaires locaux \n\n - Supervision de processus RH (rectrutements, évaluations, formations) \n\n - Supervision et appui logistique des projets \n\n - Définition des stratégies et planification des activités logistiques \n\n - Supervision des flux d'approvisionnements nationaux, et des opérations de dédouanement"
+      },
+      {
+        title: "Coordinatrice Logistique",
         location: "Banqui, RCA",
         date: "2021- 2022 · 9 mois",
         company: "Médecins du Monde France",
@@ -101,6 +112,17 @@ module.exports = [
       },
     ],
     en: [
+      {
+        title: "Logistics Head of Department",
+        location: "Kyiv, Ukraine",
+        date: "2024 · In progress",
+        company: "Action Against Hunger France",
+        logo: "/images/companies/acf.png",
+        description:
+          "Mustisectoral response to support populations and public services affected by the conflict resulting from the 2022 invasion",
+        bullets:
+          "- Supervision of the logistics team in the capital, and support for 4 (then 2) bases in the provinces \n - Management and leadership of teams (around 15 people) \n\n - Training and support for nationalization of posts \n\n - Logistical support for local partners  \n\n - Supervision of HR processes (recruitment, appraisals, Supervision and logistical support of projects \n\n - Definition of strategies and planning of logistical activities \n\n - Supervision of national supply flows and customs clearance operations"
+      },
       {
         title: "Logistics Coordinator",
         location: "Banqui, RCA",

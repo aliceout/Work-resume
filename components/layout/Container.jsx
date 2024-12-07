@@ -16,7 +16,7 @@ export default function Container({ children }) {
       />
       <div
         id="container"
-        className="flex flex-col h-full w-full bg-transparent min-w-screen md:w-[900px] lg:w-[1200px] xl:w-[1300px] mx-auto  select-none"
+        className="flex flex-col h-full w-full bg-transparent min-w-screen md:w-[900px] lg:w-[1200px] xl:w-[1300px] mx-auto"
       >
         {children}
       </div>
