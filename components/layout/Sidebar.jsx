@@ -18,7 +18,7 @@ export default function Sidebar() {
           <ProfilPicture />
           <div className="flex flex-col w-6/12 text-center md:w-full gap-y-1">
             <p className="text-2xl font-bold duration-300 text-slate-900 dark:text-white">
-              Alice Aussel-Delamaide
+              Alice Aussel Delamaide
             </p>
             <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-500 duration-300">
               {isAliceOut ? t("fonctionDev") : t("fonctionAsso")}

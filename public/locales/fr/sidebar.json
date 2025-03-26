@@ -2,7 +2,7 @@
   "fonctionDev": "Développeuse web",
   "fonctionAsso": "Coordinatrice de la solidarité internationale",
   "contacts": {
-    "element": "Envoyer un message",
+    "signal": "Envoyer un message",
     "skype": "Appeler via Skype",
     "email": "Envoyer un email"
   },

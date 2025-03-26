@@ -1,10 +1,10 @@
 module.exports = [
   {
-    icon: "SiElement", // Attention de ne pas laisser d'espace après le nom de l'icone
-    href: "https://matrix.to/#/@lilioux:matrix.org",
-    fieldset: "Element",
-    valueTransKey: "contacts.element",
-    lightColor: "#15bf90",
+    icon: "SiSignal", // Attention de ne pas laisser d'espace après le nom de l'icone
+    href: "https://signal.me/#eu/wMlejo08QxOk1jA2q1O2B2RodrX3tqpLjvLOJ8cyF72Mb2QFf5hBe51luuCvgpbP",
+    fieldset: "Signal",
+    valueTransKey: "contacts.signal",
+    lightColor: "#2b6bed",
     mobile: true,
   },
   {
@@ -26,7 +26,7 @@ module.exports = [
   {
     icon: "MdPlace", // Attention de ne pas laisser d'espace après le nom de l'icone
     fieldset: "Localisation",
-    value: "Toulouse (France)",
+    value: "Kyiv (Ukraine)",
     lightColor: "#f1bc08",
     mobile: false,
   },
