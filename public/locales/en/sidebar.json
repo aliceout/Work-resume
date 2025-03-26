@@ -2,7 +2,7 @@
   "fonctionDev": "Web developer",
   "fonctionAsso": "International solidarity coordinator",
   "contacts": {
-    "element": "Send a message",
+    "signal": "Send a message",
     "skype": "Call via Skype",
     "email": "Send an email"
   },
