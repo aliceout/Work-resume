@@ -10,10 +10,10 @@ module.exports = [
   {
     title: [{ fr: "Anglais" }, { en: "English" }],
     level: [
-      { fr: "B1+ · CECRL - TOEIC : 695 / 990" },
-      { en: "B1+ · CEFRL - TOEIC : 695 / 990" },
+      { fr: "B2 · CECRL - TOEIC : 810 / 990" },
+      { en: "B2 · CEFRL - TOEIC : 810 / 990" },
     ],
-    progress: "50%",
+    progress: "67%",
   },
   {
     title: [{ fr: "Arabe moderne", en: "Modern Arabic" }],
