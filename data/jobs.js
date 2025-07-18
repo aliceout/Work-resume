@@ -1,11 +1,22 @@
 module.exports = [
   {
     fr: [
+    {
+        title: "Responsable des Opérations",
+        location: "Antananarivo, Madagascar",
+        date: "2025 · En cours",
+        company: "Humanité & Inclusion",
+        logo: "/images/companies/hi.png",
+        description:
+          "Atlas Logistique - Projet de logistique humanitaire axé sur l’accès, l’analyse territoriale et le renforcement de capacités dans un contexte multi-risques.",
+        bullets:
+          "- Coordination stratégique et opérationnelle du projet Atlas Logistique à Madagascar \n\n - Mise en œuvre de l’outil IVL (Indicateur de Vulnérabilité Logistique) et transfert au BNGRC \n\n - Formation et renforcement de capacités des acteurs humanitaires, étatiques et privés \n\n - Appui aux mécanismes de coordination logistique (BNGRC, PHSP, PAM, clusters…) \n\n - Identification et supervision de diagnostics d’accès dans les zones enclavées \n\n - Représentation, développement de partenariats et positionnement externe de HI en logistique humanitaire \n\n - Management d’équipe et planification opérationnelle dans un contexte de contraintes d’accès et de risques cycloniques"
+      },
       {
         title: "Responsable logistique pays",
         location: "Kyiv, Ukraine",
-        date: "2025 · En cours",
-        company: "Handicap International",
+        date: "2025 · 6 mois",
+        company: "Humanité & Inclusion",
         logo: "/images/companies/hi.png",
         description:
           "Réponse à l'invasion mondiale de 2022 \n\n Missions de protection, d'inclusion, de réhabilitation et de réduction de la violence armée",
@@ -60,7 +71,7 @@ module.exports = [
         title: "Chargée d'appui juridique aux études et diagnostics",
         location: "Tunis, Tunisie",
         date: "2019 · 6 mois",
-        company: "Handicap International",
+        company: "Humanité & Inclusion",
         logo: "/images/companies/hi.png",
         description:
           "Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre légal, pour la réalisation de deux diagnostics initiaux sur le territoire tunisien",
@@ -124,10 +135,21 @@ module.exports = [
     ],
     en: [
       {
+        title: "Operations Manager",
+        location: "Antananarivo, Madagascar",
+        date: "2025 · In progress",
+        company: "Humanity & Inclusion",
+        logo: "/images/companies/hi.png",
+        description:
+          "Atlas Logistique - Humanitarian logistics project focused on access, analysis and capacity building in a multi-risk environment.",
+        bullets:
+          "- Strategic and operational coordination of Atlas Logistique in Madagascar \n\n - Implementation of the IVL tool (Logistics Vulnerability Index) and transfer to the national disaster agency (BNGRC) \n\n - Training and capacity building for humanitarian, governmental and private actors \n\n - Support for logistics coordination mechanisms (BNGRC, PHSP, WFP, clusters...) \n\n - Identification and supervision of access diagnostics in remote areas \n\n - Representation, partnership development, and external positioning of HI in humanitarian logistics \n\n - Team management and operational planning in a context of logistical constraints and cyclonic risks"
+      },
+      {
         title: "Country Logistics Manager",
         location: "Kyiv, Ukraine",
-        date: "2025 · In progress",
-        company: "Handicap International",
+        date: "2025 · 6 months",
+        company: "Humanity & Inclusion",
         logo: "/images/companies/hi.png",
         description:
           "Response to the full-scale invasion of 2022 \n\n Protection, inclusion, rehabilitation and armed violence reduction missions",
@@ -182,7 +204,7 @@ module.exports = [
         title: "Legal support for studies and diagnostics",
         location: "Tunis, Tunisia",
         date: "2019 - 6 mois",
-        company: "Handicap International",
+        company: "Humanity & Inclusion",
         logo: "/images/companies/hi.png",
         description:
           "Support for the regional directorate, in carrying out an exploratory mission on the situation of migrant people in southern Tunisia (Medenine and Tataouine governorates), and work on analysing the equal framework, for carrying out two initial diagnoses on the Tunisian territory",

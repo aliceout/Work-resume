@@ -12,11 +12,7 @@
     "h1": "Bénevolat"
   },
   "portfolio": {
-    "h1": "Derniers projets",
-    "message": "Pour voir plus en détails l'ensemble du portfolio, cliquez sur le bouton",
-    "btn": {
-      "preview": "Aperçu"
-    }
+    "h1": "Derniers projets"
   },
   "skills": {
     "h1": "Compétences",

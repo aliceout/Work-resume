@@ -3,7 +3,7 @@
   "fonctionAsso": "International solidarity coordinator",
   "contacts": {
     "signal": "Send a message",
-    "skype": "Call via Skype",
+    "teams": "Call via Teams",
     "email": "Send an email"
   },
   "downloadBtn": "Download CV",
