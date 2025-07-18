@@ -11,7 +11,6 @@ module.exports = [
       },
     ],
     languages: "React, Redux, Tailwind",
-    url: "https://watizat.app",
     repository: "https://github.com/Watizat/web_app",
     description: [
       {
@@ -35,7 +34,6 @@ module.exports = [
       },
     ],
     languages: "PHP, Bootstrap",
-    url: "https://migrappi.aliceout.dev",
     repository: "https://github.com/aliceout/Migrappi-frontend",
     description: [
       {
@@ -59,7 +57,6 @@ module.exports = [
       },
     ],
     languages: "React, NextJS, React Context, Tailwind, ",
-    url: "https://aliceout.work",
     repository: "https://github.com/aliceout/Work-resume",
     description: [
       {
@@ -83,7 +80,6 @@ module.exports = [
       },
     ],
     languages: "Js Vanilla",
-    url: "https://currencies.aliceout.dev",
     repository: "https://github.com/aliceout/Currencies-converter",
     description: [
       {
@@ -107,7 +103,6 @@ module.exports = [
       },
     ],
     languages: "React, Tailwind",
-    url: "https://todolist.aliceout.dev",
     repository: "https://github.com/aliceout/TodoList",
     description: [
       {

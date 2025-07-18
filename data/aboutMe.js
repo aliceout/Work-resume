@@ -14,7 +14,7 @@ module.exports = [
         asso: "En France, j’ai été très investie dans le milieu associatif sur les questions d’exil (maraudes, accueil, accompagnement, plaidoyer), et j’ai fait des politiques migratoires le terrain principal de mes recherches à l’université.",
       },
       {
-        asso: "À l’international, j’ai occupé des postes à responsabilités en Afrique Centrale, au Maghreb et en Ukraine, sur des programmes mêlant santé, exil, logistique humanitaire et coordination de projet. J’ai aussi mené des missions d’exploration, de développement de projets, de sensibilisation et de plaidoyer.",
+        asso: "À l’international, j’ai occupé des postes à responsabilités en Afrique Centrale, au Maghreb, à Madagascar et en Ukraine, sur des programmes mêlant santé, exil, logistique humanitaire et coordination de projet. J’ai aussi mené des missions d’exploration, de développement de projets, de sensibilisation et de plaidoyer.",
       },
       {
         asso: "Engagée depuis longtemps sur les questions de genre, mon expérience personnelle et mon parcours queer nourrissent ma pratique professionnelle. Je souhaite aujourd’hui renforcer cette articulation entre genre et exil dans mes engagements, et poursuivre mon évolution vers des postes mêlant coordination, réflexion politique, et action concrète.",
@@ -36,7 +36,7 @@ module.exports = [
         asso: "In France, I was very involved in the voluntary sector on issues of exile (outreach, reception, support, advocacy), and I made migration policy the main focus of my research at university.",
       },
       {
-        asso: "Internationally, I have held positions of responsibility in Central Africa, North Africa and Ukraine, on programs combining health, exile, humanitarian logistics and project coordination. I have also carried out missions involving exploration, project development, awareness-raising and advocacy.",
+        asso: "Internationally, I have held positions of responsibility in Central Africa, North Africa, Madagascar and Ukraine, on programs combining health, exile, humanitarian logistics and project coordination. I have also carried out missions involving exploration, project development, awareness-raising and advocacy.",
       },
       {
         asso: "Having been involved in gender issues for a long time, my personal experience and my queer background inform my professional practice. I now wish to strengthen this link between gender and exile in my commitments, and to continue my development towards positions combining coordination, political reflection and concrete action.",

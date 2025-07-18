@@ -12,11 +12,7 @@
     "h1": "Volunteering"
   },
   "portfolio": {
-    "h1": "Last projects",
-    "message": "For a more detailed view of the entire portfolio, click on a button",
-    "btn": {
-      "preview": "Preview"
-    }
+    "h1": "Last projects"
   },
   "skills": {
     "h1": "Skills",
