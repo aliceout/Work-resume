@@ -1,30 +1,23 @@
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import ReactMarkdown from "react-markdown";
 import { useTranslation } from "react-i18next";
-import { filterDataByLanguage } from "/utils/tools/languages";
-import aboutMeData from "/data/aboutMe";
 
 export default function AboutMe() {
   const { isAliceOut } = useGlobalContext();
-  const { i18n } = useTranslation();
-
-  // Get the data for the current language
-  const currentLanguageData = filterDataByLanguage(aboutMeData, i18n.language);
+  const { t } = useTranslation("content/home");
+  const key = isAliceOut ? "about.dev" : "about.asso";
+  const rawParagraphs = t(key, { returnObjects: true });
+  const paragraphs = Array.isArray(rawParagraphs) ? rawParagraphs : [];
 
   return (
     <div className="flex flex-col px-4 text-justify gap-y-3">
-      {currentLanguageData.map((item, index) => {
-        const content = isAliceOut ? item.dev : item.asso;
-        // Vérifiez si le contenu n'est pas vide avant de rendre ReactMarkdown
-        if (content && content.trim().length > 0) {
-          return (
-            <ReactMarkdown key={index} className="my-2 text-sm">
-              {content}
-            </ReactMarkdown>
-          );
-        }
-        return null; // Retournez null pour les éléments à ne pas afficher
-      })}
+      {paragraphs
+        .filter((content) => typeof content === "string" && content.trim().length > 0)
+        .map((content, index) => (
+          <ReactMarkdown key={index} className="my-2 text-sm">
+            {content}
+          </ReactMarkdown>
+        ))}
     </div>
   );
 }

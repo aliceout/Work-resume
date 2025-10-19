@@ -1,0 +1,61 @@
+{
+  "certifications": [
+    {
+      "title": "Conception et pilotage d'un projet humanitaire",
+      "place": "Institut Bioforce",
+      "date": "2021",
+      "description": null,
+      "logo": "/images/certifications/bioforce.png",
+      "logoDark": "/images/certifications/bioforce.png"
+    },
+    {
+      "title": "Recherche de fonds et gestion de contrat de financement avec les bailleurs",
+      "place": "Institut Bioforce",
+      "date": "2021",
+      "description": null,
+      "logo": "/images/certifications/bioforce.png",
+      "logoDark": "/images/certifications/bioforce.png"
+    },
+    {
+      "title": "Négociation & médiation humanitaire",
+      "place": "Institut d'Études Humanitaires Internationales Université Aix-Marseille",
+      "date": "2020",
+      "description": null,
+      "logo": "/images/certifications/iehi.png",
+      "logoDark": "/images/certifications/iehi.png"
+    },
+    {
+      "title": "Initiation en langue et cultures arabe",
+      "place": "Université Lyon III Jean Moulin",
+      "date": "2020",
+      "description": null,
+      "logo": "/images/certifications/lyon3.png",
+      "logoDark": "/images/certifications/lyon3_bw.png"
+    },
+    {
+      "title": "Certificat informatique PIX",
+      "place": "Université Lyon III Jean Moulin",
+      "date": "2020",
+      "description": "Score : 675",
+      "logo": "/images/certifications/pix.png",
+      "logoDark": "/images/certifications/pix.png"
+    }
+  ],
+  "languages": [
+    {
+      "title": "Français",
+      "level": "C2 · CECRL - Langue maternelle",
+      "progress": "100%"
+    },
+    {
+      "title": "Anglais",
+      "level": "B2 · CECRL - TOEIC : 810 / 990",
+      "progress": "67%"
+    },
+    {
+      "title": "Arabe moderne",
+      "level": "A1 · CECRL - Utilisatrice débutante",
+      "progress": "15%"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "certifications": [
+    {
+      "title": "Designing and managing a humanitarian project",
+      "place": "Bioforce Institute",
+      "date": "2021",
+      "description": null,
+      "logo": "/images/certifications/bioforce.png",
+      "logoDark": "/images/certifications/bioforce.png"
+    },
+    {
+      "title": "Fundraising and management of financing contracts with donors",
+      "place": "Bioforce Institute",
+      "date": "2021",
+      "description": null,
+      "logo": "/images/certifications/bioforce.png",
+      "logoDark": "/images/certifications/bioforce.png"
+    },
+    {
+      "title": "Négociation & médiation humanitaire",
+      "place": "Institute of International Humanitarian Studies Aix-Marseille University",
+      "date": "2020",
+      "description": null,
+      "logo": "/images/certifications/iehi.png",
+      "logoDark": "/images/certifications/iehi.png"
+    },
+    {
+      "title": "Introduction to Arabic language and culture",
+      "place": "Lyon III Jean Moulin University",
+      "date": "2020",
+      "description": null,
+      "logo": "/images/certifications/lyon3.png",
+      "logoDark": "/images/certifications/lyon3_bw.png"
+    },
+    {
+      "title": "PIX computer certificate",
+      "place": "Lyon III Jean Moulin University",
+      "date": "2020",
+      "description": "Score : 675",
+      "logo": "/images/certifications/pix.png",
+      "logoDark": "/images/certifications/pix.png"
+    }
+  ],
+  "languages": [
+    {
+      "title": "French",
+      "level": "C2 · CEFRL - Native language",
+      "progress": "100%"
+    },
+    {
+      "title": "English",
+      "level": "B2 · CEFRL - TOEIC : 810 / 990",
+      "progress": "67%"
+    },
+    {
+      "title": "Modern Arabic",
+      "level": "A1 · CEFRL - Language beginner",
+      "progress": "15%"
+    }
+  ]
+}

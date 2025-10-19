@@ -2,17 +2,19 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import { useIcons } from "/utils/context/IconsContext";
-import linksData from "/data/externalsLinks";
+import externalLinks from "../../public/shared/external-links.json";
 
 export default function SideLink() {
-    const { isAliceOut } = useGlobalContext();
+  const { isAliceOut } = useGlobalContext();
   const ReactIcons = useIcons();
   const { theme } = useTheme();
 
+  const links = (externalLinks.items || []).filter(Boolean);
+
   const filteredLinks = isAliceOut
-    ? linksData
-    : linksData.filter((link) => link.name !== "Github");
-  
+    ? links
+    : links.filter((link) => link.name !== "Github");
+
   const linksList = filteredLinks.map((link) => {
     const IconComponent = ReactIcons[link.icon];
 
@@ -36,5 +38,9 @@ export default function SideLink() {
     );
   });
 
-  return <div className="flex flex-row justify-center ml-6 gap-x-3 ">{linksList}</div>;
+  return (
+    <div className="flex flex-row justify-center ml-6 gap-x-3 ">
+      {linksList}
+    </div>
+  );
 }

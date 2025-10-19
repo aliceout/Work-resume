@@ -10,7 +10,9 @@
     "dev": "next dev",
     "build": "cross-env NEXT_TELEMETRY_DISABLED=1 next build --no-lint",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:translations": "node utils/scripts/check-translations.js",
+    "verify": "npm run lint && npm run check:translations"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",

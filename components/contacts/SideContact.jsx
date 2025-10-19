@@ -2,14 +2,15 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
-import contactsData from "/data/contacts";
+import contactsData from "../../public/shared/contacts.json";
 
 export default function SideContact() {
   const ReactIcons = useIcons();
   const { theme } = useTheme();
   const { t } = useTranslation("sidebar");
-  
-  const contactsList = contactsData.map((contact) => {
+  const contacts = contactsData.items || [];
+
+  const contactsList = contacts.map((contact) => {
     const IconComponent = ReactIcons[contact.icon];
 
     // Composant qui sera répété

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "location": "Toulouse, France",
+      "date": "2022- 2024",
+      "company": "Watizat",
+      "logo": "/images/companies/watizat.png",
+      "description": "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
+      "bullets": "- Helping to write and update the Toulouse local group's guide listing services for exiles \n\n - Project manager for the development of a complete web application for data collection, processing and consultation"
+    },
+    {
+      "location": "Marseille, Toulouse, France",
+      "date": "2019- 2024",
+      "company": "Médecins du Monde France",
+      "logo": "/images/companies/mdm.png",
+      "description": "Migrations frontières transalpines\" (Marseille) & \"Actions mobiles\" (Toulouse) programs",
+      "bullets": "- Support tasks in Human Resources (drafting of mission profiles, organization chart, database management), Logistics (stock management, vehicle fleet management), Finance (budget monitoring, tracking of volunteer expenses) and IT (implementation of collaborative tools)\" \n\n - Participation in a COPIL redefining missions within a program"
+    },
+    {
+      "location": "Toulouse, Lyon, France",
+      "date": "2015-2023",
+      "company": "La Cimade",
+      "logo": "/images/companies/cimade.png",
+      "description": "Association providing legal assistance and information to exiled persons",
+      "bullets": "- Participation in rights access hotlines \n\n - Advocacy with members of parliament in the context of the \"asylum and immigration\" law \n\n - Development of communication media \n\n - Development and layout of regional activity reports and the Migrant'scène festival \n\n - Organization of and participation in awareness-raising actions and advocacy \n\n - Support for the overhaul and reorganization of the role and missions of the local branch's \"IS, awareness-raising and advocacy\" unit \n\n - Internal support activity on digital tools"
+    }
+  ]
+}
