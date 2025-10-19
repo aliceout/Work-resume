@@ -1,71 +1,40 @@
-import { useState, useEffect } from "react";
+﻿import { useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { BsTranslate } from "react-icons/bs";
 import { CircleFlag } from "react-circle-flags";
 
 export default function LanguagesSwitcher() {
-  const [flagsMenuIsOpen, setFlagsMenuIsOpen] = useState(false);
-  const { t, i18n } = useTranslation("buttons");
+  const { i18n } = useTranslation();
 
-  const changeLanguage = async (lng) => {
-    await i18n.changeLanguage(lng); // i18n.changeLanguage retourne une Promise
-  };
+  const languages = useMemo(
+    () => [
+      { value: "fr", flag: "fr", next: "en" },
+      { value: "en", flag: "uk", next: "fr" },
+    ],
+    []
+  );
 
-  const languages = [
-    {
-      title: "French",
-      value: "fr",
-      flag: "fr",
-      srOnlyTransKey: "fr",
-    },
-    {
-      title: "English",
-      value: "en",
-      flag: "uk",
-      srOnlyTransKey: "en",
-    },
-  ]; 
-  
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setFlagsMenuIsOpen(false);
-    }, 5000);
+  const current = languages.find((language) => language.value === i18n.language);
+  const fallback = languages[0];
+  const activeLanguage = current || fallback;
 
-    return () => clearTimeout(timeout);
-  }, [flagsMenuIsOpen]);
+  const nextLanguage =
+    languages.find((language) => language.value === activeLanguage.next) || fallback;
+
+  const handleToggle = useCallback(async () => {
+    await i18n.changeLanguage(nextLanguage.value);
+  }, [i18n, nextLanguage.value]);
+
+  const nextLabel = nextLanguage.value === "fr" ? "Fran\u00E7ais" : "English";
+  const ariaLabel = "Switch language to " + nextLabel;
 
   return (
-    <>
-      <button
-        type="button"
-        className="flex p-2 duration-300 bg-white rounded-full cursor-pointer dark:bg-slate-900/90 dark:text-white"
-        onClick={() => setFlagsMenuIsOpen(!flagsMenuIsOpen)}
-      >
-        <BsTranslate className="" />
-        <span className="sr-only">{t("translate")}</span>
-      </button>
-      <div
-        className={`relative inline-flex flex-col top-14 -left-10 gap-y-4 transition duration-400 transform ease-in z-20 ${
-          flagsMenuIsOpen ? "opacity-100" : "opacity-0"
-        } `}
-      >
-        {languages.map((language) => (
-          <div
-            key={language.title}
-            className="h-5 transition transform rounded-full cursor-pointer hover:opacity-70 duration-400 "
-          >
-            <CircleFlag
-              countryCode={language.flag}
-              className="h-5 "
-              onClick={() => {
-                setFlagsMenuIsOpen(false);
-                changeLanguage(language.value);
-              }}
-            />
-            <span className="sr-only">{t(language.srOnlyTransKey)}</span>
-          </div>
-        ))}
-      </div>
-    </>
+    <button
+      type="button"
+      onClick={handleToggle}
+      className="flex items-center justify-center w-9 h-9 transition duration-300 bg-white rounded-full dark:bg-slate-900/90"
+      aria-label={ariaLabel}
+    >
+      <CircleFlag countryCode={activeLanguage.flag} className="h-5" />
+    </button>
   );
 }
