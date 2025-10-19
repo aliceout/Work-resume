@@ -12,7 +12,10 @@
     "h1": "Volunteering"
   },
   "portfolio": {
-    "h1": "Last projects"
+    "h1": "Last projects",
+    "btn": {
+      "preview": "View online"
+    }
   },
   "skills": {
     "h1": "Skills",
