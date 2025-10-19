@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-
 import H1 from "/components/titles/h1";
 import VolunterCard from "/components/cards/VolunterCard";
+import { getSectionContent } from "/utils/content";
 
 export default function Volunteering() {
-  const { t } = useTranslation("pages");
-  const { t: tContent } = useTranslation("content/volunteering");
-  const rawVolunteering = tContent("items", { returnObjects: true });
-  const volunteering = Array.isArray(rawVolunteering) ? rawVolunteering : [];
+  const { t, i18n } = useTranslation("pages");
+  const volunteeringContent = getSectionContent("volunteering", i18n.language);
+  const volunteering = volunteeringContent?.items || [];
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
@@ -20,3 +19,4 @@ export default function Volunteering() {
     </div>
   );
 }
+
