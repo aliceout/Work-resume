@@ -2,17 +2,13 @@ import { useTheme } from "next-themes";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import H2 from "/components/titles/H2";
+import { getSectionContent } from "/utils/content";
 
 export default function Certifications() {
   const { theme } = useTheme();
-  const { t } = useTranslation("pages");
-  const { t: tContent } = useTranslation("content/skills");
-  const rawCertifications = tContent("certifications", {
-    returnObjects: true,
-  });
-  const certifications = Array.isArray(rawCertifications)
-    ? rawCertifications
-    : [];
+  const { t, i18n } = useTranslation("pages");
+  const skillsContent = getSectionContent("skills", i18n.language);
+  const certifications = skillsContent?.certifications || [];
 
   const certifs = certifications.map((certif) => (
     <div
@@ -56,3 +52,4 @@ export default function Certifications() {
     </div>
   );
 }
+

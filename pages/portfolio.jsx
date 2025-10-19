@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
 import H1 from "/components/titles/h1";
 import PortfolioCard from "/components/cards/PortfolioCard";
+import { getSectionContent } from "/utils/content";
 
 export default function Portfolio() {
-  const { t } = useTranslation("pages");
-  const { t: tContent } = useTranslation("content/portfolio");
-  const rawProjects = tContent("projects", { returnObjects: true });
-  const projects = Array.isArray(rawProjects) ? rawProjects : [];
+  const { t, i18n } = useTranslation("pages");
+  const portfolioContent = getSectionContent("portfolio", i18n.language);
+  const projects = portfolioContent?.projects || [];
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-10">
@@ -19,3 +19,4 @@ export default function Portfolio() {
     </div>
   );
 }
+

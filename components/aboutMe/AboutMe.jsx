@@ -1,13 +1,14 @@
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import ReactMarkdown from "react-markdown";
 import { useTranslation } from "react-i18next";
+import { getSectionContent } from "/utils/content";
 
 export default function AboutMe() {
   const { isAliceOut } = useGlobalContext();
-  const { t } = useTranslation("content/home");
-  const key = isAliceOut ? "about.dev" : "about.asso";
-  const rawParagraphs = t(key, { returnObjects: true });
-  const paragraphs = Array.isArray(rawParagraphs) ? rawParagraphs : [];
+  const { i18n } = useTranslation();
+  const homeContent = getSectionContent("home", i18n.language);
+  const key = isAliceOut ? "dev" : "asso";
+  const paragraphs = homeContent?.about?.[key] || [];
 
   return (
     <div className="flex flex-col px-4 text-justify gap-y-3">

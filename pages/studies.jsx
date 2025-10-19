@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-
 import H1 from "/components/titles/h1";
 import StudyCard from "/components/cards/StudyCard";
+import { getSectionContent } from "/utils/content";
 
 export default function Studies() {
-  const { t } = useTranslation("pages");
-  const { t: tContent } = useTranslation("content/studies");
-  const rawStudies = tContent("items", { returnObjects: true });
-  const studies = Array.isArray(rawStudies) ? rawStudies : [];
+  const { t, i18n } = useTranslation("pages");
+  const studiesContent = getSectionContent("studies", i18n.language);
+  const studies = studiesContent?.items || [];
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
@@ -20,3 +19,4 @@ export default function Studies() {
     </div>
   );
 }
+

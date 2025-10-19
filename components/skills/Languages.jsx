@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import H2 from "/components/titles/H2";
+import { getSectionContent } from "/utils/content";
 
 export default function Languages() {
-  const { t } = useTranslation("pages");
-  const { t: tContent } = useTranslation("content/skills");
-  const rawLanguages = tContent("languages", { returnObjects: true });
-  const languages = Array.isArray(rawLanguages) ? rawLanguages : [];
+  const { t, i18n } = useTranslation("pages");
+  const skillsContent = getSectionContent("skills", i18n.language);
+  const languages = skillsContent?.languages || [];
 
   const langs = languages.map((lang) => (
     <div key={`${lang.title}-${lang.progress}`} className="flex flex-col">
@@ -34,3 +34,4 @@ export default function Languages() {
     </div>
   );
 }
+
