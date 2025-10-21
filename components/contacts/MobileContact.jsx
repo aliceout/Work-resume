@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 import contactsData from "../../public/shared/contacts.json";
 
 export default function MobileContact() {
   const ReactIcons = useIcons();
-  const { t } = useTranslation(["sidebar", "mobileMenu"]);
+  const { t: tSidebar } = useStaticTranslation("sidebar");
+  const { t: tMobileMenu } = useStaticTranslation("mobileMenu");
   const contacts = (contactsData.items || []).filter(
     (contact) => contact.mobile === true
   );
@@ -36,7 +37,7 @@ export default function MobileContact() {
               target="_blank"
               className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white"
             >
-              {t(contact.valueTransKey, { ns: "sidebar" })}
+              {tSidebar(contact.valueTransKey)}
             </Link>
           ) : (
             <p className="text-sm font-semibold text-slate-900 dark:text-gray-100 group-hover:text-white">
@@ -51,7 +52,7 @@ export default function MobileContact() {
   return (
     <div className="flex flex-col px-4 duration-300 gap-y-2 max-w-max">
       <p className="px-3 font-semibold ">
-        {t("contactMe", { ns: "mobileMenu" })}
+        {tMobileMenu("contactMe")}
       </p>
       {contactsList}
     </div>

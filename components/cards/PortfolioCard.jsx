@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import { useTranslation } from "react-i18next";
 
 import { CiSearch } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function PortfolioCard({ project }) {
-  const { t } = useTranslation("pages");
+  const { t } = useStaticTranslation("pages");
   const description = project.description || "";
   const excerpt = description.substring(0, 400);
 

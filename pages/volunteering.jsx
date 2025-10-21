@@ -1,10 +1,10 @@
-import { useTranslation } from "react-i18next";
 import H1 from "/components/titles/h1";
 import VolunterCard from "/components/cards/VolunterCard";
 import { getSectionContent } from "/utils/content";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Volunteering() {
-  const { t, i18n } = useTranslation("pages");
+  const { t, i18n } = useStaticTranslation("pages");
   const volunteeringContent = getSectionContent("volunteering", i18n.language);
   const volunteering = volunteeringContent?.items || [];
 

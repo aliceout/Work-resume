@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { useGlobalContext } from "/utils/context/GlobalContext";
-import { useTranslation } from "react-i18next";
 import ProfilPicture from "/components/images/ProfilPicture";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
 import { IoCloudDownload } from "react-icons/io5";
 import { SiProtonmail } from "react-icons/si";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Sidebar() {
   const { setHamburgerMenuIsOpen, isAliceOut } = useGlobalContext();
-  const { t } = useTranslation("sidebar");
+  const { t } = useStaticTranslation("sidebar");
 
   return (
     <aside className="w-full mx-auto md:w-4/6 lg:basis-3/12">
