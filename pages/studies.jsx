@@ -1,11 +1,10 @@
 import H1 from "/components/titles/h1";
 import StudyCard from "/components/cards/StudyCard";
-import { useSectionContent } from "/utils/content";
+import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Studies() {
-  const { t, i18n } = useStaticTranslation("pages");
-  const studiesContent = useSectionContent("studies", i18n.language);
+export default function Studies({ studiesContent }) {
+  const { t } = useStaticTranslation("pages");
   const studies = studiesContent?.items || [];
 
   return (
@@ -18,5 +17,15 @@ export default function Studies() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  const studiesContent = await getSectionContent("studies", locale);
+
+  return {
+    props: {
+      studiesContent,
+    },
+  };
 }
 
