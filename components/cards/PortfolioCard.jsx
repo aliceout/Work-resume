@@ -4,10 +4,11 @@ import { createPortal } from "react-dom";
 import ReactMarkdown from "react-markdown";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-import { CiSearch } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
-import { IoClose } from "react-icons/io5";
+import { BsSearch as CiSearch } from "@react-icons/all-files/bs/BsSearch";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { HiOutlineChevronLeft } from "@react-icons/all-files/hi/HiOutlineChevronLeft";
+import { HiOutlineChevronRight } from "@react-icons/all-files/hi/HiOutlineChevronRight";
+import { IoClose } from "@react-icons/all-files/io5/IoClose";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function PortfolioCard({ project }) {

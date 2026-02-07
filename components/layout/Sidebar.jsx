@@ -3,8 +3,8 @@ import { useGlobalContext } from "/utils/context/GlobalContext";
 import ProfilPicture from "/components/images/ProfilPicture";
 import SideLink from "/components/links/SideLink";
 import SideContact from "/components/contacts/SideContact";
-import { IoCloudDownload } from "react-icons/io5";
-import { SiProtonmail } from "react-icons/si";
+import { IoCloudDownload } from "@react-icons/all-files/io5/IoCloudDownload";
+import { SiProtonmail } from "@react-icons/all-files/si/SiProtonmail";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Sidebar() {

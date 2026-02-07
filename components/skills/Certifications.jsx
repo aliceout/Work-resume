@@ -1,13 +1,13 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import H2 from "/components/titles/H2";
-import { getSectionContent } from "/utils/content";
+import { useSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Certifications() {
   const { theme } = useTheme();
   const { t, i18n } = useStaticTranslation("pages");
-  const skillsContent = getSectionContent("skills", i18n.language);
+  const skillsContent = useSectionContent("skills", i18n.language);
   const certifications = skillsContent?.certifications || [];
 
   const certifs = certifications.map((certif) => (

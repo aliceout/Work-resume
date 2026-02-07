@@ -1,4 +1,4 @@
-import ReactMarkdown from "react-markdown";
+﻿import ReactMarkdown from "react-markdown";
 
 export default function StudyCard({ study }) {
   return (
@@ -15,7 +15,7 @@ export default function StudyCard({ study }) {
 
         <div className="flex flex-col text-sm lg:w-10/12">
           {study.description.map((item, index) => (
-            <ReactMarkdown key={index} className={"mt-4"}>
+            <ReactMarkdown key={index} className="mt-4">
               {item.text}
             </ReactMarkdown>
           ))}

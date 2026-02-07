@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DarkModeBtn from "/components/buttons/DarkMode";
 import LanguagesBtn from "/components/buttons/Languages";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import MobilMenu from "/components/layout/MobilMenu";
 
@@ -18,10 +18,16 @@ export default function Header() {
         <div className="flex items-center text-xl gap-x-4">
           <DarkModeBtn />
           <LanguagesBtn />
-          <GiHamburgerMenu
+          <button
+            type="button"
             className="text-gray-400 md:hidden"
             onClick={() => setHamburgerMenuIsOpen(!hamburgerMenuIsOpen)}
-          />
+            aria-label="Open menu"
+            aria-expanded={hamburgerMenuIsOpen}
+            aria-controls="mobile-menu"
+          >
+            <GiHamburgerMenu />
+          </button>
         </div>
       </header>
     </>

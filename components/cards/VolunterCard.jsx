@@ -1,18 +1,16 @@
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import ReactMarkdown from "react-markdown";
-import { MdOutlinePlace } from "react-icons/md";
+import { MdPlace as MdOutlinePlace } from "@react-icons/all-files/md/MdPlace";
 import { formatBullets } from "/utils/content/formatBullets";
 
 export default function VolunterCard({ job }) {
-  const { theme } = useTheme();
   const bullets = formatBullets(job.bullets);
 
   return (
     <article className="flex w-full p-4">
       <div className="flex flex-col w-full gap-y-5">
         <div className="flex flex-row justify-between w-full gap-x-10">
-          <div className="flex flex-col w-fullbasis-7/12 md:basis-9/12 ">
+          <div className="flex flex-col basis-7/12 md:basis-9/12 ">
             <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">
               {job.company}
             </h3>
@@ -30,11 +28,6 @@ export default function VolunterCard({ job }) {
               alt={job.company}
               width={450}
               height={300}
-              style={{
-                width: "100% !important",
-                position: "relative !important",
-                height: "unset !important",
-              }}
               className="w-full h-auto rounded-lg dark:brightness-75 "
             />
           </div>

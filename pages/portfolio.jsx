@@ -1,11 +1,11 @@
 import H1 from "/components/titles/h1";
 import PortfolioCard from "/components/cards/PortfolioCard";
-import { getSectionContent } from "/utils/content";
+import { useSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Portfolio() {
   const { t, i18n } = useStaticTranslation("pages");
-  const portfolioContent = getSectionContent("portfolio", i18n.language);
+  const portfolioContent = useSectionContent("portfolio", i18n.language);
   const projects = portfolioContent?.projects || [];
 
   return (

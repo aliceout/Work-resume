@@ -1,10 +1,10 @@
 import H2 from "/components/titles/H2";
-import { getSectionContent } from "/utils/content";
+import { useSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Languages() {
   const { t, i18n } = useStaticTranslation("pages");
-  const skillsContent = getSectionContent("skills", i18n.language);
+  const skillsContent = useSectionContent("skills", i18n.language);
   const languages = skillsContent?.languages || [];
 
   const langs = languages.map((lang) => (
