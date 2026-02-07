@@ -2,9 +2,11 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import ReactMarkdown from "react-markdown";
 import { MdOutlinePlace } from "react-icons/md";
+import { formatBullets } from "/utils/content/formatBullets";
 
 export default function VolunterCard({ job }) {
   const { theme } = useTheme();
+  const bullets = formatBullets(job.bullets);
 
   return (
     <article className="flex w-full p-4">
@@ -39,10 +41,15 @@ export default function VolunterCard({ job }) {
         </div>
         <div className="flex flex-col text-sm dark:text-gray-200 gap-y-2 lg:w-10/12">
           <ReactMarkdown>{job.description}</ReactMarkdown>
-          {job.bullets && (
-            <ReactMarkdown className="markdown-jobs">
-              {job.bullets}
-            </ReactMarkdown>
+          {bullets?.kind === "markdown" && (
+            <ReactMarkdown className="markdown-jobs">{bullets.value}</ReactMarkdown>
+          )}
+          {bullets?.kind === "list" && bullets.items.length > 0 && (
+            <ul className="markdown-jobs">
+              {bullets.items.map((item, index) => (
+                <li key={`${job.company}-${job.date}-${index}`}>{item}</li>
+              ))}
+            </ul>
           )}
         </div>
       </div>
