@@ -1,11 +1,10 @@
 import H1 from "/components/titles/h1";
 import PortfolioCard from "/components/cards/PortfolioCard";
-import { useSectionContent } from "/utils/content";
+import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Portfolio() {
-  const { t, i18n } = useStaticTranslation("pages");
-  const portfolioContent = useSectionContent("portfolio", i18n.language);
+export default function Portfolio({ portfolioContent }) {
+  const { t } = useStaticTranslation("pages");
   const projects = portfolioContent?.projects || [];
 
   return (
@@ -18,5 +17,15 @@ export default function Portfolio() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  const portfolioContent = await getSectionContent("portfolio", locale);
+
+  return {
+    props: {
+      portfolioContent,
+    },
+  };
 }
 

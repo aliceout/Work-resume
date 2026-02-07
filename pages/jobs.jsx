@@ -1,12 +1,11 @@
 
 import H1 from "/components/titles/h1";
 import JobCard from "/components/cards/JobCard";
-import { useSectionContent } from "/utils/content";
+import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Jobs() {
-  const { t, i18n } = useStaticTranslation("pages");
-  const jobsContent = useSectionContent("jobs", i18n.language);
+export default function Jobs({ jobsContent }) {
+  const { t } = useStaticTranslation("pages");
   const jobs = jobsContent?.items || [];
 
   return (
@@ -19,5 +18,15 @@ export default function Jobs() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  const jobsContent = await getSectionContent("jobs", locale);
+
+  return {
+    props: {
+      jobsContent,
+    },
+  };
 }
 

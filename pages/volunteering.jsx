@@ -1,11 +1,10 @@
 import H1 from "/components/titles/h1";
 import VolunterCard from "/components/cards/VolunterCard";
-import { useSectionContent } from "/utils/content";
+import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Volunteering() {
-  const { t, i18n } = useStaticTranslation("pages");
-  const volunteeringContent = useSectionContent("volunteering", i18n.language);
+export default function Volunteering({ volunteeringContent }) {
+  const { t } = useStaticTranslation("pages");
   const volunteering = volunteeringContent?.items || [];
 
   return (
@@ -18,5 +17,15 @@ export default function Volunteering() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  const volunteeringContent = await getSectionContent("volunteering", locale);
+
+  return {
+    props: {
+      volunteeringContent,
+    },
+  };
 }
 

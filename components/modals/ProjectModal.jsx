@@ -1,34 +1,26 @@
 import Image from "next/image";
-import ModalBase from "/components/Modals//ModalBase";
-import { useIcons } from "/utils/context/IconsContext";
+import { IoClose } from "@react-icons/all-files/io5/IoClose";
+import { FaRegCalendarAlt } from "@react-icons/all-files/fa/FaRegCalendarAlt";
+import { FaRegUser } from "@react-icons/all-files/fa/FaRegUser";
+import { GrOverview } from "@react-icons/all-files/gr/GrOverview";
+import { IoCodeSlash } from "@react-icons/all-files/io5/IoCodeSlash";
+import ModalBase from "/components/modals/ModalBase";
 
 function removeHttps(url) {
-  return url.replace("https://", "");
+  if (!url) {
+    return "-";
+  }
+
+  return url.replace(/^https?:\/\//, "");
 }
 
 export default function ProjectModal({ project, isOpenModal, setIsOpenModal }) {
-  const ReactIcons = useIcons();
-  const SlClose = ReactIcons["SlClose"];
-
   const tableItems = [
-    { icon: "BsPersonCircle", title: "Client :", value: project.client },
-    { icon: "FaRegCalendarAlt", title: "Période :", value: project.date },
-    { icon: "IoIosCode", title: "Langages :", value: project.languages },
-    { icon: "GrOverview", title: "Aperçu :", value: removeHttps(project.url) },
+    { icon: FaRegUser, title: "Client :", value: project.client },
+    { icon: FaRegCalendarAlt, title: "Periode :", value: project.date },
+    { icon: IoCodeSlash, title: "Langages :", value: project.languages },
+    { icon: GrOverview, title: "Apercu :", value: removeHttps(project.url) },
   ];
-
-  const table = tableItems.map((item) => {
-    const IconComponent = ReactIcons[item.icon];
-    return (
-      <li key={item.title} className="flex items-center gap-x-3">
-        <IconComponent className="text-lg font-semibold text-slate-900" />
-        <span className="flex font-medium">
-          {item.title} &nbsp;
-          <span className="font-semibold">{item.value}</span>
-        </span>
-      </li>
-    );
-  });
 
   return (
     <ModalBase isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}>
@@ -37,8 +29,9 @@ export default function ProjectModal({ project, isOpenModal, setIsOpenModal }) {
           type="button"
           onClick={() => setIsOpenModal(false)}
           className="duration-200 hover:rotate-45 focus:outline-none"
+          aria-label="Close modal"
         >
-          <SlClose className="" />
+          <IoClose />
         </button>
       </span>
       <div className="flex flex-col flex-1 p-4 gap-y-6">
@@ -48,7 +41,19 @@ export default function ProjectModal({ project, isOpenModal, setIsOpenModal }) {
           </p>
         </div>
         <ul className="grid grid-cols-2 gap-2 text-lg text-slate-900">
-          {table}
+          {tableItems.map((item) => {
+            const IconComponent = item.icon;
+
+            return (
+              <li key={item.title} className="flex items-center gap-x-3">
+                <IconComponent className="text-lg font-semibold text-slate-900" />
+                <span className="flex font-medium">
+                  {item.title} &nbsp;
+                  <span className="font-semibold">{item.value || "-"}</span>
+                </span>
+              </li>
+            );
+          })}
         </ul>
         <div>
           <p className="text-slate-900">{project.description}</p>
