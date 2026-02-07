@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "title": "Master's degree, Gender Studies",
+      "location": "University of Angers",
+      "date": "Jul 2025 - On-going",
+      "description": [
+        {
+          "text": "Critical and intersectional analysis of gender relations, discrimination, and inclusion policies (LGBTQIA+, feminism, minorities). Research tools, project management, advocacy, and social change."
+        }
+      ]
+    },
+    {
       "title": "Bac+2 - Web and Mobile Web Developer - Full-stack JavaScript",
       "location": "O'Clock School",
       "date": "2023",
