@@ -2,11 +2,17 @@ import dynamic from "next/dynamic";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 const BsFillMoonStarsFill = dynamic(
-  () => import("react-icons/bs").then((module) => module.BsFillMoonStarsFill),
+  () =>
+    import("@react-icons/all-files/bs/BsMoon").then(
+      (module) => module.BsMoon
+    ),
   { ssr: false }
 );
 const MdSunny = dynamic(
-  () => import("react-icons/md").then((module) => module.MdSunny),
+  () =>
+    import("@react-icons/all-files/md/MdWbSunny").then(
+      (module) => module.MdWbSunny
+    ),
   { ssr: false }
 );
 

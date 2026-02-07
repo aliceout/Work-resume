@@ -1,46 +1,8 @@
-import homeFR from "../../public/locales/fr/content/home.json";
-import homeEN from "../../public/locales/en/content/home.json";
-import jobsFR from "../../public/locales/fr/content/jobs.json";
-import jobsEN from "../../public/locales/en/content/jobs.json";
-import portfolioFR from "../../public/locales/fr/content/portfolio.json";
-import portfolioEN from "../../public/locales/en/content/portfolio.json";
-import skillsFR from "../../public/locales/fr/content/skills.json";
-import skillsEN from "../../public/locales/en/content/skills.json";
-import studiesFR from "../../public/locales/fr/content/studies.json";
-import studiesEN from "../../public/locales/en/content/studies.json";
-import volunteeringFR from "../../public/locales/fr/content/volunteering.json";
-import volunteeringEN from "../../public/locales/en/content/volunteering.json";
+import { useEffect, useMemo, useState } from "react";
 
 const DEFAULT_LOCALE = "fr";
-
-const CONTENT_BY_SECTION = {
-  home: {
-    fr: homeFR,
-    en: homeEN,
-  },
-  jobs: {
-    fr: jobsFR,
-    en: jobsEN,
-  },
-  portfolio: {
-    fr: portfolioFR,
-    en: portfolioEN,
-  },
-  skills: {
-    fr: skillsFR,
-    en: skillsEN,
-  },
-  studies: {
-    fr: studiesFR,
-    en: studiesEN,
-  },
-  volunteering: {
-    fr: volunteeringFR,
-    en: volunteeringEN,
-  },
-};
-
 const SUPPORTED_LOCALES = ["fr", "en"];
+const contentCache = new Map();
 
 const normaliseLocale = (locale) => {
   if (!locale) {
@@ -51,13 +13,68 @@ const normaliseLocale = (locale) => {
   return SUPPORTED_LOCALES.includes(base) ? base : DEFAULT_LOCALE;
 };
 
-export const getSectionContent = (section, locale) => {
-  const language = normaliseLocale(locale);
-  const sectionContent = CONTENT_BY_SECTION[section];
+const buildContentUrl = (section, locale) => `/locales/${locale}/content/${section}.json`;
 
-  if (!sectionContent) {
-    return null;
+const fetchContent = async (section, locale) => {
+  const cacheKey = `${locale}:${section}`;
+  const cached = contentCache.get(cacheKey);
+  if (cached) {
+    return cached;
   }
 
-  return sectionContent[language] || sectionContent[DEFAULT_LOCALE] || null;
+  const request = fetch(buildContentUrl(section, locale)).then(async (response) => {
+    if (!response.ok) {
+      throw new Error(`Unable to load content for ${cacheKey}`);
+    }
+
+    return response.json();
+  });
+
+  contentCache.set(cacheKey, request);
+  return request;
+};
+
+export const useSectionContent = (section, locale) => {
+  const language = useMemo(() => normaliseLocale(locale), [locale]);
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const load = async () => {
+      try {
+        const data = await fetchContent(section, language);
+        if (!cancelled) {
+          setContent(data);
+        }
+        return;
+      } catch (error) {
+        if (language === DEFAULT_LOCALE) {
+          if (!cancelled) {
+            setContent(null);
+          }
+          return;
+        }
+      }
+
+      try {
+        const fallbackData = await fetchContent(section, DEFAULT_LOCALE);
+        if (!cancelled) {
+          setContent(fallbackData);
+        }
+      } catch {
+        if (!cancelled) {
+          setContent(null);
+        }
+      }
+    };
+
+    load();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [section, language]);
+
+  return content;
 };
