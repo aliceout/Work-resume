@@ -6,7 +6,10 @@
       "company": "Watizat",
       "logo": "/images/companies/watizat.png",
       "description": "Guide d'informations multilingue à destination des personnes exilées",
-      "bullets": " - Aide à la rédaction et la mise à jour du guide du groupe local de Toulouse listant les services à destination des personnes exilées \n\n - Cheffe du projet du dévellopement et développeuse d’une application web complète de collecte, traitement et consultation des données"
+      "bullets": [
+        "Aide à la rédaction et la mise à jour du guide du groupe local de Toulouse listant les services à destination des personnes exilées",
+        "Cheffe du projet du dévellopement et développeuse d’une application web complète de collecte, traitement et consultation des données"
+      ]
     },
     {
       "location": "Marseille, Toulouse, France",
@@ -14,7 +17,10 @@
       "company": "Médecins du Monde",
       "logo": "/images/companies/mdm.png",
       "description": "Programmes “Migrations frontières transalpines” (Marseille) & “Actions mobiles” (Toulouse)",
-      "bullets": " - Tâches de support en Ressources humaines (rédaction de profils de mission, organigramme, tenue base de données), Logistique (gestion de stock, gestion parc véhicules) Finances (suivi budgétaire, suivi des frais bénevoles) et informatique (Mise en oeuvre d’outils collaboratifs) \n\n - Participation à un COPIL de redéfinition des missions au sein d'un programme"
+      "bullets": [
+        "Tâches de support en Ressources humaines (rédaction de profils de mission, organigramme, tenue base de données), Logistique (gestion de stock, gestion parc véhicules) Finances (suivi budgétaire, suivi des frais bénevoles) et informatique (Mise en oeuvre d’outils collaboratifs)",
+        "Participation à un COPIL de redéfinition des missions au sein d'un programme"
+      ]
     },
     {
       "location": "Toulouse, Lyon, France",
@@ -22,7 +28,15 @@
       "company": "La Cimade",
       "logo": "/images/companies/cimade.png",
       "description": "Association d'assistance et d'information juridique auprès des personnes exilées",
-      "bullets": " - Participation à des permanences d’accès aux droits \n\n - Plaidoyer auprès de parlementaires dans cadre loi « asile et immigration » \n\n - Élaboration de supports de communication \n\n - Élaboration et mise en page des rapports d’activités régionaux et du festival Migrant’scène \n\n - Organisation et participation à des actions de sensibilisation, et plaidoyer \n\n - Accompagnement à la refonte et réorganisation rôle et missions du pôle “SI, sensibilisation, et plaidoyer” de l'antenne locale \n\n - Activité de supports interne sur les outils numériques"
+      "bullets": [
+        "Participation à des permanences d’accès aux droits",
+        "Plaidoyer auprès de parlementaires dans cadre loi « asile et immigration »",
+        "Élaboration de supports de communication",
+        "Élaboration et mise en page des rapports d’activités régionaux et du festival Migrant’scène",
+        "Organisation et participation à des actions de sensibilisation, et plaidoyer",
+        "Accompagnement à la refonte et réorganisation rôle et missions du pôle “SI, sensibilisation, et plaidoyer” de l'antenne locale",
+        "Activité de supports interne sur les outils numériques"
+      ]
     }
   ]
 }
