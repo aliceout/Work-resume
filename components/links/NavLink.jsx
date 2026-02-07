@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function NavLink({ item }) {
-  const { t } = useTranslation("navbar");
+  const { t } = useStaticTranslation("navbar");
   const ReactIcons = useIcons();
   const IconComponent = ReactIcons[item.icon];
 

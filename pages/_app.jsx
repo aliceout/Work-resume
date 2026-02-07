@@ -1,7 +1,5 @@
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
-import { appWithI18Next } from "ni18n";
-import { ni18nConfig } from "/ni18n.config";
 import AppContext from "/utils/context";
 import Container from "/components/layout/Container";
 import Header from "/components/layout/Header";
@@ -11,7 +9,6 @@ import Navbar from "/components/layout/Navbar";
 import "/styles/global.scss";
 
 const App = ({ Component, pageProps }) => {
-
   return (
     <>
       <Head>
@@ -55,4 +52,4 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-export default appWithI18Next(App, ni18nConfig);
+export default App;

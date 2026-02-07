@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
 import H2 from "/components/titles/H2";
 import { getSectionContent } from "/utils/content";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Languages() {
-  const { t, i18n } = useTranslation("pages");
+  const { t, i18n } = useStaticTranslation("pages");
   const skillsContent = getSectionContent("skills", i18n.language);
   const languages = skillsContent?.languages || [];
 

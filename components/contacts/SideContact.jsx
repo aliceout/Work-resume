@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useTranslation } from "react-i18next";
 import { useIcons } from "/utils/context/IconsContext";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 import contactsData from "../../public/shared/contacts.json";
 
 export default function SideContact() {
   const ReactIcons = useIcons();
   const { theme } = useTheme();
-  const { t } = useTranslation("sidebar");
+  const { t } = useStaticTranslation("sidebar");
   const contacts = contactsData.items || [];
 
   const contactsList = contacts.map((contact) => {

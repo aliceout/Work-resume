@@ -1,10 +1,10 @@
-import { useTranslation } from "react-i18next";
 import H1 from "/components/titles/h1";
 import StudyCard from "/components/cards/StudyCard";
 import { getSectionContent } from "/utils/content";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Studies() {
-  const { t, i18n } = useTranslation("pages");
+  const { t, i18n } = useStaticTranslation("pages");
   const studiesContent = getSectionContent("studies", i18n.language);
   const studies = studiesContent?.items || [];
 
