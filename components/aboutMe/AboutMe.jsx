@@ -1,11 +1,11 @@
 import { useGlobalContext } from "/utils/context/GlobalContext";
 import ReactMarkdown from "react-markdown";
-import { useTranslation } from "react-i18next";
 import { getSectionContent } from "/utils/content";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function AboutMe() {
   const { isAliceOut } = useGlobalContext();
-  const { i18n } = useTranslation();
+  const { i18n } = useStaticTranslation();
   const homeContent = getSectionContent("home", i18n.language);
   const key = isAliceOut ? "dev" : "asso";
   const paragraphs = homeContent?.about?.[key] || [];

@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 
 import { useIcons } from "/utils/context/IconsContext";
 import { useGlobalContext } from "/utils/context/GlobalContext";
+import { useStaticTranslation } from "/utils/translations/useTranslations";
 import navLinksData from "../../public/shared/nav-links.json";
 
 export default function MobileLink() {
-  const { t } = useTranslation(["navbar", "mobileMenu"]);
   const { setHamburgerMenuIsOpen } = useGlobalContext();
+  const { t: tNavbar } = useStaticTranslation("navbar");
+  const { t: tMobileMenu } = useStaticTranslation("mobileMenu");
   const ReactIcons = useIcons();
   const navLinks = navLinksData.items || [];
 
@@ -22,7 +23,7 @@ export default function MobileLink() {
       >
         <IconComponent />
         <p className="text-sm font-semibold text-slate-600">
-          {t(item.nameTransKey, { ns: "navbar" })}
+          {tNavbar(item.nameTransKey)}
         </p>
       </Link>
     );
@@ -31,7 +32,7 @@ export default function MobileLink() {
   return (
     <div className="flex flex-col px-4 duration-300 gap-y-1 max-w-max">
       <p className="px-3 font-semibold ">
-        {t("links", { ns: "mobileMenu" })}
+        {tMobileMenu("links")}
       </p>
       {navLinksElements}
     </div>
