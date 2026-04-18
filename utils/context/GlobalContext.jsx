@@ -1,27 +1,24 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useSyncExternalStore } from "react";
 
-// Créez un contexte pour GlobalContext
 export const GlobalContext = createContext();
 
-// Créez un composant fournisseur qui utilisera le contexte
+const subscribe = () => () => {};
+const getIsAliceOutSnapshot = () =>
+  window.location.href.includes("aliceout.work");
+const getIsAliceOutServerSnapshot = () => false;
+
 export function GlobalContextProvider({ children }) {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
-  const [isAliceOut, setIsAliceOut] = useState(false);
+  const isAliceOut = useSyncExternalStore(
+    subscribe,
+    getIsAliceOutSnapshot,
+    getIsAliceOutServerSnapshot
+  );
 
-  useEffect(() => {
-    // Vérifiez si l'URL contient "aliceosdel.work" ou "aliceout.work"
-    const currentUrl = window.location.href;
-    setIsAliceOut(
-      currentUrl.includes("aliceout.work")
-    );
-  }, []);
-
-  // Fournissez la valeur du contexte avec les données nécessaires
   const contextValue = {
     hamburgerMenuIsOpen,
     setHamburgerMenuIsOpen,
     isAliceOut,
-    setIsAliceOut,
   };
 
   return (

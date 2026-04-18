@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { createPortal } from "react-dom";
 import ReactMarkdown from "react-markdown";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
 import { BsSearch as CiSearch } from "@react-icons/all-files/bs/BsSearch";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
@@ -134,6 +134,10 @@ export default function PortfolioCard({ project }) {
   );
 }
 
+const subscribeNoop = () => () => {};
+const getMountedSnapshot = () => true;
+const getMountedServerSnapshot = () => false;
+
 function ImageCarouselModal({
   images,
   activeIndex,
@@ -142,7 +146,11 @@ function ImageCarouselModal({
   onNext,
   title,
 }) {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    subscribeNoop,
+    getMountedSnapshot,
+    getMountedServerSnapshot
+  );
   const [isVisible, setIsVisible] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const ANIMATION_DURATION = 220;
@@ -155,10 +163,6 @@ function ImageCarouselModal({
     setIsClosing(true);
     setIsVisible(false);
   }, [isClosing]);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     if (!mounted) {
