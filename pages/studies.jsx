@@ -1,5 +1,6 @@
 import H1 from "/components/titles/h1";
 import StudyCard from "/components/cards/StudyCard";
+import PageSeo from "/components/seo/PageSeo";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
@@ -9,6 +10,11 @@ export default function Studies({ studiesContent }) {
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+      <PageSeo
+        title={t("studies.seo.title")}
+        description={t("studies.seo.description")}
+        path="/studies"
+      />
       <H1 text={t("studies.h1")} />
       <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
         {studies.map((study) => (

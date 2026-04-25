@@ -1,6 +1,7 @@
 
 import H1 from "/components/titles/h1";
 import JobCard from "/components/cards/JobCard";
+import PageSeo from "/components/seo/PageSeo";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
@@ -10,6 +11,11 @@ export default function Jobs({ jobsContent }) {
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+      <PageSeo
+        title={t("works.seo.title")}
+        description={t("works.seo.description")}
+        path="/jobs"
+      />
       <H1 text={t("works.h1")} />
       <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
         {jobs.map((job) => (
