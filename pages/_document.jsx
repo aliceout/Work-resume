@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+export default function Document(props) {
+  const lang = props.__NEXT_DATA__?.locale || "fr";
   return (
-    <Html lang="fr">
+    <Html lang={lang}>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

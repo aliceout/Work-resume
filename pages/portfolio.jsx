@@ -1,5 +1,6 @@
 import H1 from "/components/titles/h1";
 import PortfolioCard from "/components/cards/PortfolioCard";
+import PageSeo from "/components/seo/PageSeo";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
@@ -9,6 +10,11 @@ export default function Portfolio({ portfolioContent }) {
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-10">
+      <PageSeo
+        title={t("portfolio.seo.title")}
+        description={t("portfolio.seo.description")}
+        path="/portfolio"
+      />
       <H1 text={t("portfolio.h1")} />
       <section className="flex flex-col gap-y-10 dark:divide-gray-400">
         {projects.map((project) => (

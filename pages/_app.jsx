@@ -12,18 +12,11 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <meta name="description" content="Resume | aliceout" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="keywords"
-          content=" cv, portfolio, react nextjs portfolio, resume"
-        />
-        <meta name="ibthemes" content="ATFN" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <title>Resume | Alice Aussel-Delamaide</title>
       </Head>
       <AppContext>
         <ThemeProvider attribute="class">

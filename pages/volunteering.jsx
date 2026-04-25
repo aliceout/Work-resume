@@ -1,5 +1,6 @@
 import H1 from "/components/titles/h1";
 import VolunterCard from "/components/cards/VolunterCard";
+import PageSeo from "/components/seo/PageSeo";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
@@ -9,6 +10,11 @@ export default function Volunteering({ volunteeringContent }) {
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+      <PageSeo
+        title={t("volunteering.seo.title")}
+        description={t("volunteering.seo.description")}
+        path="/volunteering"
+      />
       <H1 text={t("volunteering.h1")} />
       <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
         {volunteering.map((job) => (

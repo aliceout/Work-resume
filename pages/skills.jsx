@@ -1,6 +1,7 @@
 import H1 from "/components/titles/h1";
 import Certifications from "/components/skills/Certifications";
 import Languages from "/components/skills/Languages";
+import PageSeo from "/components/seo/PageSeo";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
@@ -9,6 +10,11 @@ export default function Skills({ skillsContent }) {
 
   return (
     <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+      <PageSeo
+        title={t("skills.seo.title")}
+        description={t("skills.seo.description")}
+        path="/skills"
+      />
       <H1 text={t("skills.h1")} />
       <Certifications skillsContent={skillsContent} />
       <Languages skillsContent={skillsContent} />

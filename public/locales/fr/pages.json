@@ -1,20 +1,41 @@
 {
   "home": {
-    "h1": "En deux mots"
+    "h1": "En deux mots",
+    "seo": {
+      "title": "Alice Aussel Delamaide — Coordinatrice solidarité internationale",
+      "description": "Portfolio d'Alice Aussel Delamaide, coordinatrice solidarité internationale. Parcours en ONG, exil, plaidoyer, coordination de programmes humanitaires en Afrique, Maghreb et Ukraine.",
+      "jobTitle": "Coordinatrice de la solidarité internationale"
+    }
   },
   "works": {
-    "h1": "Experiences professionelles "
+    "h1": "Experiences professionelles ",
+    "seo": {
+      "title": "Expériences professionnelles — Alice Aussel Delamaide",
+      "description": "Postes à responsabilités en ONG : coordination de programmes humanitaires en Afrique Centrale, Maghreb, Madagascar et Ukraine, sur les enjeux d'exil, santé et logistique."
+    }
   },
   "studies": {
-    "h1": "Formations"
+    "h1": "Formations",
+    "seo": {
+      "title": "Formations — Alice Aussel Delamaide",
+      "description": "Formations universitaires en droit et relations internationales, et certifications professionnelles d'Alice Aussel Delamaide."
+    }
   },
   "volunteering": {
-    "h1": "Bénevolat"
+    "h1": "Bénevolat",
+    "seo": {
+      "title": "Bénévolat et engagement — Alice Aussel Delamaide",
+      "description": "Engagements associatifs sur les questions d'exil, accueil, plaidoyer et politiques migratoires en France et à l'international."
+    }
   },
   "portfolio": {
     "h1": "Derniers projets",
     "btn": {
       "preview": "Voir en ligne"
+    },
+    "seo": {
+      "title": "Projets et missions — Alice Aussel Delamaide",
+      "description": "Sélection de projets et missions menées en coordination humanitaire, plaidoyer et développement de programmes."
     }
   },
   "skills": {
@@ -24,6 +45,10 @@
     },
     "languages": {
       "h2": "Niveau linguistique"
+    },
+    "seo": {
+      "title": "Compétences et langues — Alice Aussel Delamaide",
+      "description": "Compétences professionnelles, certifications et niveaux linguistiques d'Alice Aussel Delamaide, coordinatrice solidarité internationale."
     }
   }
 }
