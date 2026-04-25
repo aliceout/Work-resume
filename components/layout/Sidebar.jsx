@@ -8,7 +8,7 @@ import { SiProtonmail } from "@react-icons/all-files/si/SiProtonmail";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
 export default function Sidebar() {
-  const { setHamburgerMenuIsOpen, isAliceOut } = useGlobalContext();
+  const { setHamburgerMenuIsOpen } = useGlobalContext();
   const { t } = useStaticTranslation("sidebar");
 
   return (
@@ -21,7 +21,7 @@ export default function Sidebar() {
               Alice Aussel Delamaide
             </p>
             <p className="py-1.5 text-lg font-medium rounded-lg text-slate-400 dark:text-gray-500 duration-300">
-              {isAliceOut ? t("fonctionDev") : t("fonctionAsso")}
+              {t("fonction")}
             </p>
           </div>
         </div>

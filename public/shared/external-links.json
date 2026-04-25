@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "name": "Github",
-      "icon": "FaGithub",
-      "lightColor": "#000000",
-      "darkColor": "#ffffff",
-      "href": "https://github.com/aliceout"
-    },
-    {
       "name": "Linkedin",
       "icon": "FaLinkedinIn",
       "lightColor": "#009ef0",

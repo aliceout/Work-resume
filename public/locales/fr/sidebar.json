@@ -1,6 +1,5 @@
 {
-  "fonctionDev": "Développeuse web",
-  "fonctionAsso": "Coordinatrice de la solidarité internationale",
+  "fonction": "Coordinatrice de la solidarité internationale",
   "contacts": {
     "signal": "Envoyer un message",
     "teams": "Appeler via Teams",
