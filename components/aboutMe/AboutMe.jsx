@@ -1,10 +1,7 @@
-import { useGlobalContext } from "/utils/context/GlobalContext";
 import ReactMarkdown from "react-markdown";
 
 export default function AboutMe({ homeContent }) {
-  const { isAliceOut } = useGlobalContext();
-  const key = isAliceOut ? "dev" : "asso";
-  const paragraphs = homeContent?.about?.[key] || [];
+  const paragraphs = homeContent?.about || [];
 
   return (
     <div className="flex flex-col px-4 text-justify gap-y-3">

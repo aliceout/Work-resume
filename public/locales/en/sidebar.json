@@ -1,6 +1,5 @@
 {
-  "fonctionDev": "Web developer",
-  "fonctionAsso": "International solidarity coordinator",
+  "fonction": "International solidarity coordinator",
   "contacts": {
     "signal": "Send a message",
     "teams": "Call via Teams",
