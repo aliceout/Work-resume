@@ -7,7 +7,7 @@
       "languages": "React, Redux, Tailwind",
       "repository": "https://github.com/Watizat/web_app",
       "url": null,
-      "description": "Projet de numérisation des guides de l'association Watizat. L'application permet de consulter les guides, de les filtrer par catégorise, et d'éditer les données (back-office). Les guides sont également géolocalisés sur une carte. L'application est responsive et fonctionne sur desktop, mobile et tablette",
+      "description": "Projet de numérisation des guides de l'association Watizat. L'application permet de consulter les guides, de les filtrer par catégories, et d'éditer les données (back-office). Les guides sont également géolocalisés sur une carte, et l'interface est pleinement responsive (desktop, mobile, tablette).",
       "picture": "/images/projects/watizat.png"
     },
     {
@@ -37,7 +37,7 @@
       "languages": "Js Vanilla",
       "repository": "https://github.com/aliceout/Currencies-converter",
       "url": null,
-      "description": "Application de conversion et d'affichage d'historique des cours de changes.L'application est responsive et fonctionne sur desktop, mobile et tablette",
+      "description": "Application de conversion et d'affichage d'historique des cours de change.",
       "picture": "/images/projects/currencies.png"
     },
     {
