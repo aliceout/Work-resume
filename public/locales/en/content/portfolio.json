@@ -8,7 +8,11 @@
       "repository": "https://github.com/Watizat/web_app",
       "url": null,
       "description": "Project to digitise the Watizat association's guides. The application allows you to consult the guides, filter them by category, and edit the data (backoffice). The guides are also geolocated on a map. The application is responsive and works on mobile phones and tablets",
-      "picture": "/images/projects/watizat.png"
+      "picture": "/images/projects/watizat.png",
+      "themes": [
+        "migration",
+        "dev"
+      ]
     },
     {
       "title": "Migrappi",
@@ -18,7 +22,11 @@
       "repository": "https://github.com/aliceout/Migrappi-frontend",
       "url": null,
       "description": "Reconstruction of an application for collecting and processing data on exiled persons received, on behalf of the NGO Caritas in Morocco. \n Modelling the interface and building the front end before handing over to a service provider",
-      "picture": "/images/projects/migrappi.jpg"
+      "picture": "/images/projects/migrappi.jpg",
+      "themes": [
+        "migration",
+        "dev"
+      ]
     },
     {
       "title": "My resume",
@@ -28,7 +36,10 @@
       "repository": "https://github.com/aliceout/Work-resume",
       "url": null,
       "description": "Rebuilding my CV online, as an alternative to Linkedin, and portfolio of different projects",
-      "picture": "/images/projects/resume.png"
+      "picture": "/images/projects/resume.png",
+      "themes": [
+        "dev"
+      ]
     },
     {
       "title": "Currencies converter",
@@ -38,7 +49,10 @@
       "repository": "https://github.com/aliceout/Currencies-converter",
       "url": null,
       "description": "Conversion and historical exchange rate display application. The application is responsive and works on desktop, mobile and tablet devices",
-      "picture": "/images/projects/currencies.png"
+      "picture": "/images/projects/currencies.png",
+      "themes": [
+        "dev"
+      ]
     },
     {
       "title": "Todolist",
@@ -48,7 +62,10 @@
       "repository": "https://github.com/aliceout/TodoList",
       "url": null,
       "description": "Building a to-do list management application. The application is responsive and works on mobile and tablet devices",
-      "picture": "/images/projects/todolist.png"
+      "picture": "/images/projects/todolist.png",
+      "themes": [
+        "dev"
+      ]
     }
   ]
 }

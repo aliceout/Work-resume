@@ -1,5 +1,12 @@
 {
   "fonction": "International solidarity coordinator",
+  "status": "Location: Madagascar",
+  "sectionsLabel": "Sections",
+  "accueil": "Home",
+  "experiences": "Experience",
+  "formations": "Education",
+  "benevolat": "Volunteering",
+  "portfolio": "Web projects",
   "contacts": {
     "signal": "Send a message",
     "teams": "Call via Teams",

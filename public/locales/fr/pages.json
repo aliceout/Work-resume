@@ -1,6 +1,15 @@
 {
   "home": {
     "h1": "En deux mots",
+    "hero": {
+      "label": "Accueil",
+      "title": "En deux",
+      "em": "mots."
+    },
+    "aboutLabel": "À propos",
+    "themesLabel": "Mes terrains · thématiques",
+    "themesHint": "— cliquez pour explorer",
+    "currentLabel": "En ce moment",
     "seo": {
       "title": "Alice Aussel Delamaide — Coordinatrice solidarité internationale",
       "description": "Portfolio d'Alice Aussel Delamaide, coordinatrice solidarité internationale. Parcours en ONG, exil, plaidoyer, coordination de programmes humanitaires en Afrique, Maghreb et Ukraine.",
@@ -9,6 +18,13 @@
   },
   "works": {
     "h1": "Experiences professionelles ",
+    "hero": {
+      "label": "Expériences",
+      "title": "Parcours",
+      "em": "terrain.",
+      "lede": "De la France à l'Ukraine, en passant par l'Afrique Centrale, le Maghreb et Madagascar — coordination, logistique et plaidoyer."
+    },
+    "nowLabel": "en cours",
     "seo": {
       "title": "Expériences professionnelles — Alice Aussel Delamaide",
       "description": "Postes à responsabilités en ONG : coordination de programmes humanitaires en Afrique Centrale, Maghreb, Madagascar et Ukraine, sur les enjeux d'exil, santé et logistique."
@@ -16,6 +32,12 @@
   },
   "studies": {
     "h1": "Formations",
+    "hero": {
+      "label": "Formations",
+      "title": "Études &",
+      "em": "diplômes.",
+      "lede": "Du droit public aux politiques migratoires, du développement web aux études de genre — un parcours pluridisciplinaire."
+    },
     "seo": {
       "title": "Formations — Alice Aussel Delamaide",
       "description": "Formations universitaires en droit et relations internationales, et certifications professionnelles d'Alice Aussel Delamaide."
@@ -23,6 +45,12 @@
   },
   "volunteering": {
     "h1": "Bénevolat",
+    "hero": {
+      "label": "Bénévolat",
+      "title": "Engagements &",
+      "em": "militance.",
+      "lede": "Dix ans d'engagement associatif autour de l'exil, du droit et du plaidoyer — en parallèle des missions professionnelles."
+    },
     "seo": {
       "title": "Bénévolat et engagement — Alice Aussel Delamaide",
       "description": "Engagements associatifs sur les questions d'exil, accueil, plaidoyer et politiques migratoires en France et à l'international."
@@ -30,6 +58,12 @@
   },
   "portfolio": {
     "h1": "Derniers projets",
+    "hero": {
+      "label": "Projets web",
+      "title": "Derniers",
+      "em": "projets.",
+      "lede": "Applications, outils internes, projets perso, bénévolat web et graphisme — un croisement entre solidarité, données et design."
+    },
     "btn": {
       "preview": "Voir en ligne"
     },
@@ -38,17 +72,17 @@
       "description": "Sélection de projets et missions menées en coordination humanitaire, plaidoyer et développement de programmes."
     }
   },
-  "skills": {
-    "h1": "Compétences",
-    "certifications": {
-      "h2": "Certifications"
-    },
-    "languages": {
-      "h2": "Niveau linguistique"
-    },
+  "themes": {
+    "backToHome": "← Retour à l'accueil",
+    "themeLabel": "Thème",
+    "experiencesSection": "Expériences",
+    "studiesSection": "Formations",
+    "volunteeringSection": "Bénévolat",
+    "portfolioSection": "Projets",
+    "empty": "Aucun contenu lié à ce thème pour l'instant.",
     "seo": {
-      "title": "Compétences et langues — Alice Aussel Delamaide",
-      "description": "Compétences professionnelles, certifications et niveaux linguistiques d'Alice Aussel Delamaide, coordinatrice solidarité internationale."
+      "title": "Thème — Alice Aussel Delamaide",
+      "description": "Parcours filtré par axe thématique : migration, logistique humanitaire, genre, développement."
     }
   }
 }

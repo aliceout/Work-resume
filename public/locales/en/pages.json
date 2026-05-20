@@ -1,6 +1,15 @@
 {
   "home": {
     "h1": "In few words",
+    "hero": {
+      "label": "Home",
+      "title": "In a few",
+      "em": "words."
+    },
+    "aboutLabel": "About",
+    "themesLabel": "My fields · themes",
+    "themesHint": "— click to explore",
+    "currentLabel": "Right now",
     "seo": {
       "title": "Alice Aussel Delamaide — International solidarity coordinator",
       "description": "Portfolio of Alice Aussel Delamaide, international solidarity coordinator. Career in NGOs, migration, advocacy, and humanitarian program coordination in Africa, North Africa and Ukraine.",
@@ -9,6 +18,13 @@
   },
   "works": {
     "h1": "Work experiences ",
+    "hero": {
+      "label": "Experience",
+      "title": "Field",
+      "em": "journey.",
+      "lede": "From France to Ukraine, through Central Africa, North Africa and Madagascar — coordination, logistics and advocacy."
+    },
+    "nowLabel": "current",
     "seo": {
       "title": "Work experience — Alice Aussel Delamaide",
       "description": "Positions of responsibility in NGOs: humanitarian program coordination in Central Africa, North Africa, Madagascar and Ukraine on migration, health and logistics."
@@ -16,6 +32,12 @@
   },
   "studies": {
     "h1": "Studies",
+    "hero": {
+      "label": "Education",
+      "title": "Studies &",
+      "em": "degrees.",
+      "lede": "From public law to migration policies, from web development to gender studies — a multidisciplinary path."
+    },
     "seo": {
       "title": "Studies — Alice Aussel Delamaide",
       "description": "University training in law and international relations, and professional certifications of Alice Aussel Delamaide."
@@ -23,6 +45,12 @@
   },
   "volunteering": {
     "h1": "Volunteering",
+    "hero": {
+      "label": "Volunteering",
+      "title": "Engagement &",
+      "em": "activism.",
+      "lede": "Ten years of associative engagement around exile, rights and advocacy — alongside professional missions."
+    },
     "seo": {
       "title": "Volunteering and engagement — Alice Aussel Delamaide",
       "description": "Voluntary commitments on migration, reception, advocacy and migration policy issues in France and internationally."
@@ -30,6 +58,12 @@
   },
   "portfolio": {
     "h1": "Last projects",
+    "hero": {
+      "label": "Web projects",
+      "title": "Recent",
+      "em": "projects.",
+      "lede": "Applications, internal tools, personal projects, web volunteering and graphic design — at the intersection of solidarity, data and design."
+    },
     "btn": {
       "preview": "View online"
     },
@@ -38,17 +72,17 @@
       "description": "Selected projects and missions in humanitarian coordination, advocacy and program development."
     }
   },
-  "skills": {
-    "h1": "Skills",
-    "certifications": {
-      "h2": "Certifications"
-    },
-    "languages": {
-      "h2": "Languages levels"
-    },
+  "themes": {
+    "backToHome": "← Back to home",
+    "themeLabel": "Theme",
+    "experiencesSection": "Experience",
+    "studiesSection": "Education",
+    "volunteeringSection": "Volunteering",
+    "portfolioSection": "Projects",
+    "empty": "No content linked to this theme yet.",
     "seo": {
-      "title": "Skills and languages — Alice Aussel Delamaide",
-      "description": "Professional skills, certifications and language levels of Alice Aussel Delamaide, international solidarity coordinator."
+      "title": "Theme — Alice Aussel Delamaide",
+      "description": "Career filtered by thematic axis: migration, humanitarian logistics, gender, development."
     }
   }
 }

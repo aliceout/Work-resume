@@ -9,6 +9,10 @@
       "bullets": [
         "Helping to write and update the Toulouse local group's guide listing services for exiles",
         "Project manager for the development of a complete web application for data collection, processing and consultation"
+      ],
+      "themes": [
+        "migration",
+        "dev"
       ]
     },
     {
@@ -20,6 +24,10 @@
       "bullets": [
         "Support tasks in Human Resources (drafting of mission profiles, organization chart, database management), Logistics (stock management, vehicle fleet management), Finance (budget monitoring, tracking of volunteer expenses) and IT (implementation of collaborative tools)\"",
         "Participation in a COPIL redefining missions within a program"
+      ],
+      "themes": [
+        "migration",
+        "logistique"
       ]
     },
     {
@@ -36,6 +44,9 @@
         "Organization of and participation in awareness-raising actions and advocacy",
         "Support for the overhaul and reorganization of the role and missions of the local branch's \"IS, awareness-raising and advocacy\" unit",
         "Internal support activity on digital tools"
+      ],
+      "themes": [
+        "migration"
       ]
     }
   ]

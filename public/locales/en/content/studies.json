@@ -8,6 +8,9 @@
         {
           "text": "Critical and intersectional analysis of gender relations, discrimination, and inclusion policies (LGBTQIA+, feminism, minorities). Research tools, project management, advocacy, and social change."
         }
+      ],
+      "themes": [
+        "genre"
       ]
     },
     {
@@ -24,6 +27,9 @@
         {
           "text": "**Tools and methodologies**: Git - Insomnia, Postman - Shell - ESlint"
         }
+      ],
+      "themes": [
+        "dev"
       ]
     },
     {
@@ -40,6 +46,10 @@
         {
           "text": "**Internship thesis I**: \"*ICTs in the international solidarity sector, reflections on a forced integration*\" \n **Internship thesis II**: \"*The notion of crisis and its use in migration issues, from a mobilisation tool to the abuse of an object that has become political*\""
         }
+      ],
+      "themes": [
+        "migration",
+        "logistique"
       ]
     },
     {
@@ -53,6 +63,9 @@
         {
           "text": "**Thesis** : \"*The externalisation of migration controls in the Sahel. A study of a new tool for an extra-territorial European border management policy*\""
         }
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -66,6 +79,9 @@
         {
           "text": " Major in administrative law, international law and European law"
         }
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -76,6 +92,9 @@
         {
           "text": "Diploma awarded by Toulouse I Capitole University : Graduated  mention B"
         }
+      ],
+      "themes": [
+        "migration"
       ]
     }
   ]

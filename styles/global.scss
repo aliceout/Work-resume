@@ -2,35 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "bubble";
-@import "markdown";
+@import "proto";
 
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Surfaces */
+  --bg: #ffffff;
+  --bg-tint: #f6f5f1;
+  --bg-tint-2: #efeee9;
+  --bg-card: #ffffff;
+
+  /* Ink (texte) */
+  --ink: #16171a;
+  --ink-2: #43454c;
+  --ink-3: #898a8e;
+  --ink-4: #c2c1bd;
+
+  /* Lignes */
+  --line: #e8e6dd;
+  --line-d: #d6d3c7;
+
+  /* 8 accents — soft + deep */
+  --azur: #c8def8;
+  --azur-d: #2b6fd1;
+  --rouge: #f6c8c4;
+  --rouge-d: #d23a3a;
+  --mousse: #cee6c2;
+  --mousse-d: #4a9248;
+  --indigo: #d5cffa;
+  --indigo-d: #5a4dd6;
+  --magenta: #f4c8e3;
+  --magenta-d: #c7298b;
+  --lagune: #b9e3dc;
+  --lagune-d: #1e9684;
+  --soleil: #f7e3a6;
+  --soleil-d: #c89512;
+  --prune: #ecc5d3;
+  --prune-d: #b32d62;
+
+  /* Aliases sémantiques du proto */
+  --slate: var(--azur);
+  --slate-d: var(--azur-d);
+  --terra: var(--magenta);
+  --terra-d: var(--magenta-d);
+  --steel: var(--indigo);
+  --steel-d: var(--indigo-d);
+  --plum: var(--prune);
+  --plum-d: var(--prune-d);
+  --corail: var(--rouge);
+  --corail-d: var(--rouge-d);
+  --terre: var(--magenta);
+  --terre-d: var(--magenta-d);
+  --ocre: var(--soleil);
+  --ocre-d: var(--soleil-d);
+
+  --accent: var(--azur);
+  --accent-d: var(--azur-d);
+
+  /* Bleu dédié pour les noms d'organisation (université / ONG) */
+  --org-color: #4a6688;
+
+  /* Typo (les classes Tailwind font/sans|tight|serif|mono pointent dessus) */
+  --font-serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans-tight: "Inter Tight", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Bandes — densité par défaut (override possible via [data-density]) */
+  --band-py: 28px;
+  --band-px: 56px;
+  --section-gap: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-density="compact"] {
+  --band-py: 20px;
+  --band-px: 44px;
+}
+[data-density="spacious"] {
+  --band-py: 44px;
+  --band-px: 72px;
+}
+
+[data-theme="dark"] {
+  --bg: #0e0f12;
+  --bg-tint: #14161b;
+  --bg-tint-2: #181a20;
+  --bg-card: #161820;
+  --ink: #ebecef;
+  --ink-2: #b0b1b8;
+  --ink-3: #74757c;
+  --ink-4: #43444a;
+  --line: #22242a;
+  --line-d: #2c2e35;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  @apply text-slate-700;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.005em;
+  overflow-x: hidden;
 }

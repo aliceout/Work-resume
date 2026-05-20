@@ -8,6 +8,9 @@
         {
           "text": "Analyse critique et intersectionnelle des rapports de genre, des discriminations et des politiques d'inclusion (LGBTQIA+, féminisme, minorités). Outils de recherche, gestion de projet, plaidoyer et transformation sociale."
         }
+      ],
+      "themes": [
+        "genre"
       ]
     },
     {
@@ -24,6 +27,9 @@
         {
           "text": "**Outils et méthodologies** : Git · Insomnia, Postman · Shell · ESlint"
         }
+      ],
+      "themes": [
+        "dev"
       ]
     },
     {
@@ -40,6 +46,10 @@
         {
           "text": "**Mémoire de stage I**: \"*Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée*\" \n **Mémoire de stage II**: \"*La notion de crise et son utilisation dans la thématique migratoire, d'un outil de mobilisation à l'abus d'un objet devenu politique*\""
         }
+      ],
+      "themes": [
+        "migration",
+        "logistique"
       ]
     },
     {
@@ -53,6 +63,9 @@
         {
           "text": "**Mémoire** : \"*L’externalisation des contrôles migratoires au Sahel. Étude sur un nouvel outil d’une politique européenne extra territorialisée de gestion des frontières*\""
         }
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -66,6 +79,9 @@
         {
           "text": " Dominante en droit administratif, droit international et droit européen"
         }
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -76,6 +92,9 @@
         {
           "text": "Diplomée délivré par l'Université Toulouse I Capitole \n Diplomée mention B"
         }
+      ],
+      "themes": [
+        "migration"
       ]
     }
   ]

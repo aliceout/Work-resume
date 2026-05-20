@@ -8,7 +8,11 @@
       "repository": "https://github.com/Watizat/web_app",
       "url": null,
       "description": "Projet de numérisation des guides de l'association Watizat. L'application permet de consulter les guides, de les filtrer par catégorise, et d'éditer les données (back-office). Les guides sont également géolocalisés sur une carte. L'application est responsive et fonctionne sur desktop, mobile et tablette",
-      "picture": "/images/projects/watizat.png"
+      "picture": "/images/projects/watizat.png",
+      "themes": [
+        "migration",
+        "dev"
+      ]
     },
     {
       "title": "Migrappi",
@@ -18,7 +22,11 @@
       "repository": "https://github.com/aliceout/Migrappi-frontend",
       "url": null,
       "description": "Reconstruction d'une application de collecte et de traitement des données des personnes exilées accueillies, pour le compte de l'ONG Caritas au Maroc. \n Modélisation de l'interface, et construction du front avant passage de relai à un prestataire",
-      "picture": "/images/projects/migrappi.jpg"
+      "picture": "/images/projects/migrappi.jpg",
+      "themes": [
+        "migration",
+        "dev"
+      ]
     },
     {
       "title": "My resume",
@@ -28,7 +36,10 @@
       "repository": "https://github.com/aliceout/Work-resume",
       "url": null,
       "description": "Reconstruction de mon cv en ligne, comme alternative à Linkedin et portfolio des différents projets",
-      "picture": "/images/projects/resume.png"
+      "picture": "/images/projects/resume.png",
+      "themes": [
+        "dev"
+      ]
     },
     {
       "title": "Currencies converter",
@@ -38,7 +49,10 @@
       "repository": "https://github.com/aliceout/Currencies-converter",
       "url": null,
       "description": "Application de conversion et d'affichage d'historique des cours de changes.L'application est responsive et fonctionne sur desktop, mobile et tablette",
-      "picture": "/images/projects/currencies.png"
+      "picture": "/images/projects/currencies.png",
+      "themes": [
+        "dev"
+      ]
     },
     {
       "title": "Todolist",
@@ -48,7 +62,10 @@
       "repository": "https://github.com/aliceout/TodoList",
       "url": null,
       "description": "Construction d'une application de gestion de liste de tâches. L'application est responsive et fonctionne sur mobile et tablette",
-      "picture": "/images/projects/todolist.png"
+      "picture": "/images/projects/todolist.png",
+      "themes": [
+        "dev"
+      ]
     }
   ]
 }

@@ -1,37 +1,59 @@
-import H1 from "/components/titles/h1";
-import StudyCard from "/components/cards/StudyCard";
 import PageSeo from "/components/seo/PageSeo";
+import PageContainer from "/components/proto/PageContainer";
+import PageHero from "/components/proto/PageHero";
+import TLEntry from "/components/proto/TLEntry";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Studies({ studiesContent }) {
+const buildThemesMeta = (themesItems) =>
+  (themesItems || []).reduce((acc, t) => {
+    acc[t.id] = t;
+    return acc;
+  }, {});
+
+const studyToBullets = (study) =>
+  (study.description || [])
+    .map((d) => d?.text)
+    .filter((text) => typeof text === "string" && text.trim().length > 0);
+
+export default function Studies({ studiesContent, themesContent }) {
   const { t } = useStaticTranslation("pages");
   const studies = studiesContent?.items || [];
+  const themesMeta = buildThemesMeta(themesContent?.items);
 
   return (
-    <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+    <PageContainer section="formations">
       <PageSeo
         title={t("studies.seo.title")}
         description={t("studies.seo.description")}
         path="/studies"
       />
-      <H1 text={t("studies.h1")} />
-      <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
-        {studies.map((study) => (
-          <StudyCard key={`${study.title}-${study.date}`} study={study} />
-        ))}
-      </section>
-    </div>
+      <PageHero section="formations" namespace="studies" />
+      {studies.map((study, i) => (
+        <TLEntry
+          key={`${study.title}-${study.date}-${i}`}
+          date={study.date}
+          title={study.title}
+          org={study.location}
+          bullets={studyToBullets(study)}
+          themes={study.themes}
+          themesMeta={themesMeta}
+        />
+      ))}
+    </PageContainer>
   );
 }
 
 export async function getStaticProps({ locale }) {
-  const studiesContent = await getSectionContent("studies", locale);
+  const [studiesContent, themesContent] = await Promise.all([
+    getSectionContent("studies", locale),
+    getSectionContent("themes", locale),
+  ]);
 
   return {
     props: {
       studiesContent,
+      themesContent,
     },
   };
 }
-

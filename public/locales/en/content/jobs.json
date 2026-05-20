@@ -13,7 +13,11 @@
         "Definition and supervision of the implementation of strategic guidelines",
         "Design, development, and drafting of new projects",
         "Management of institutional partnerships and inter-NGO coordination"
-      ]
+      ],
+      "themes": [
+        "logistique"
+      ],
+      "current": true
     },
     {
       "title": "Country Logistics Manager",
@@ -30,6 +34,9 @@
         "Supervision and logistics support to projects",
         "Definition of logistics strategies and activity planning",
         "Supervision of national supply flows and customs clearance operations"
+      ],
+      "themes": [
+        "logistique"
       ]
     },
     {
@@ -48,6 +55,9 @@
         "Supervision and logistics support to projects",
         "Definition of logistics strategies and activity planning",
         "Supervision of national supply flows and customs clearance operations"
+      ],
+      "themes": [
+        "logistique"
       ]
     },
     {
@@ -67,6 +77,9 @@
         "Supervision of national supply flows and customs clearance operations",
         "Supervision of health center rehabilitation and construction works",
         "Representation and networking (RLH, ClusterLog, NGOs)"
+      ],
+      "themes": [
+        "logistique"
       ]
     },
     {
@@ -86,6 +99,9 @@
         "Coordination of recruitment processes, evaluations and definition of HR needs",
         "Supervision of the rehabilitation and construction of health centres",
         "Training of teams (Excel, Word, stock management, purchasing procedures, etc.), and participation in the drafting of budgets. ..)"
+      ],
+      "themes": [
+        "logistique"
       ]
     },
     {
@@ -103,6 +119,10 @@
         "Travail de mise à niveau du parc informatique",
         "Création et mise à niveau protocoles (sorties, stock, achat)",
         "Accompagnement à évaluation de la sécurité"
+      ],
+      "themes": [
+        "migration",
+        "logistique"
       ]
     },
     {
@@ -115,6 +135,9 @@
       "bullets": [
         "Study on sexual violence and the sexual and reproductive health needs of young people and women with disabilities",
         "Study on the conditions of residence, reception and access to mainstream services for migrants"
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -131,6 +154,9 @@
         "Design of a communication plan and a new graphic charter, and support for digitizing selected processes",
         "Writing and layout of awareness materials and news briefs",
         "Facilitation of meetings and team-building activities"
+      ],
+      "themes": [
+        "migration"
       ]
     },
     {
@@ -139,7 +165,8 @@
       "date": "2015 - 2 mois (internship)",
       "location": "Olivet, France",
       "logo": "/images/companies/olivet.png",
-      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases"
+      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
+      "themes": []
     },
     {
       "company": "La compagnie du Chocolat",
@@ -147,7 +174,8 @@
       "date": "2014 - 6 mois",
       "location": "Toulouse, France",
       "logo": "/images/companies/choco.png",
-      "description": "Welcoming and advising customers, selling and cashing, stocking shelves and respecting product rotation, receiving and preparing orders, monitoring stock levels, producing products."
+      "description": "Welcoming and advising customers, selling and cashing, stocking shelves and respecting product rotation, receiving and preparing orders, monitoring stock levels, producing products.",
+      "themes": []
     },
     {
       "company": "Géodis Calberson",
@@ -155,7 +183,10 @@
       "date": "2009-2012 - 3 years",
       "location": "Orléans, France",
       "logo": "/images/companies/geodis.png",
-      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases"
+      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
+      "themes": [
+        "logistique"
+      ]
     },
     {
       "company": "Cool-Jet SAS",
@@ -163,7 +194,10 @@
       "date": "2006-2009 - 3 ans",
       "location": "Orléans, France",
       "logo": "/images/companies/cooljet.png",
-      "description": "Registering and entering departure flows, handling complaints, monitoring and optimising processes, dispatching rounds, inter-departmental coordination"
+      "description": "Registering and entering departure flows, handling complaints, monitoring and optimising processes, dispatching rounds, inter-departmental coordination",
+      "themes": [
+        "logistique"
+      ]
     },
     {
       "company": "Cool-Jet SAS",
@@ -171,7 +205,10 @@
       "date": "2006 - 3 mois",
       "location": "Orléans, France",
       "logo": "/images/companies/cooljet.png",
-      "description": "Receiving and accounting for goods, quality control and sorting of products, repackaging of goods."
+      "description": "Receiving and accounting for goods, quality control and sorting of products, repackaging of goods.",
+      "themes": [
+        "logistique"
+      ]
     }
   ]
 }

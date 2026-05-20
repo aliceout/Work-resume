@@ -1,37 +1,73 @@
-import H1 from "/components/titles/h1";
-import PortfolioCard from "/components/cards/PortfolioCard";
 import PageSeo from "/components/seo/PageSeo";
+import Band from "/components/proto/Band";
+import PageContainer from "/components/proto/PageContainer";
+import PageHero from "/components/proto/PageHero";
+import ProjCard from "/components/proto/ProjCard";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Portfolio({ portfolioContent }) {
+const buildThemesMeta = (themesItems) =>
+  (themesItems || []).reduce((acc, t) => {
+    acc[t.id] = t;
+    return acc;
+  }, {});
+
+const adaptProject = (project) => ({
+  title: project.title,
+  org: project.client,
+  year: project.date,
+  desc: project.description,
+  repo: project.repository,
+  themes: project.themes,
+  picture: project.picture,
+});
+
+const yearOf = (date) => {
+  const m = (date || "").match(/\d{4}/);
+  return m ? parseInt(m[0], 10) : 0;
+};
+
+const sortByDateDesc = (a, b) => yearOf(b.date) - yearOf(a.date);
+
+export default function Portfolio({ portfolioContent, themesContent }) {
   const { t } = useStaticTranslation("pages");
-  const projects = portfolioContent?.projects || [];
+  const projects = [...(portfolioContent?.projects || [])].sort(sortByDateDesc);
+  const themesMeta = buildThemesMeta(themesContent?.items);
 
   return (
-    <div className="flex flex-col flex-1 w-full h-full gap-y-10">
+    <PageContainer section="portfolio">
       <PageSeo
         title={t("portfolio.seo.title")}
         description={t("portfolio.seo.description")}
         path="/portfolio"
       />
-      <H1 text={t("portfolio.h1")} />
-      <section className="flex flex-col gap-y-10 dark:divide-gray-400">
-        {projects.map((project) => (
-          <PortfolioCard key={project.title} project={project} />
-        ))}
-      </section>
-    </div>
+      <PageHero section="portfolio" namespace="portfolio" />
+      <Band className="!py-0">
+        <div className="flex flex-col">
+          {projects.map((project, i) => (
+            <ProjCard
+              key={project.title}
+              project={adaptProject(project)}
+              index={i}
+              themesMeta={themesMeta}
+            />
+          ))}
+        </div>
+      </Band>
+    </PageContainer>
   );
 }
 
 export async function getStaticProps({ locale }) {
-  const portfolioContent = await getSectionContent("portfolio", locale);
+  const [portfolioContent, themesContent] = await Promise.all([
+    getSectionContent("portfolio", locale),
+    getSectionContent("themes", locale),
+  ]);
 
   return {
     props: {
       portfolioContent,
+      themesContent,
     },
   };
 }
-

@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Payload Admin · Aperçu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #f8f8f7;
+    --panel: #ffffff;
+    --line: #e7e6e2;
+    --line-2: #efeeea;
+    --ink: #16171a;
+    --ink-2: #4a4a4f;
+    --ink-3: #888890;
+    --ink-4: #c4c3bf;
+    --brand: #2a2a2e;
+    --accent: #346df1;
+    --accent-soft: #e6efff;
+    --ok: #2c8f5a;
+    --warn: #b87a1a;
+    --rose: #b8536c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+  button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; }
+
+  /* Banner */
+  .banner {
+    background: #16171a; color: #f8f8f7;
+    padding: 8px 18px; font-size: 12px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid #2a2a2e;
+  }
+  .banner .left { display: flex; align-items: center; gap: 12px; }
+  .banner .badge {
+    background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 4px;
+    font-family: "JetBrains Mono", monospace; font-size: 10px; letter-spacing: 0.04em;
+  }
+  .banner a { color: #9ca3af; text-decoration: none; font-size: 11px; }
+  .banner a:hover { color: #fff; }
+
+  /* App grid */
+  .app { display: grid; grid-template-columns: 260px 1fr; height: calc(100vh - 36px); }
+
+  /* Sidebar */
+  .side {
+    background: var(--panel);
+    border-right: 1px solid var(--line);
+    padding: 18px 14px 14px;
+    display: flex; flex-direction: column;
+    overflow-y: auto;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 6px 16px;
+    border-bottom: 1px solid var(--line-2);
+    margin-bottom: 12px;
+  }
+  .brand .logo {
+    width: 28px; height: 28px; border-radius: 7px;
+    background: var(--ink); color: #fff;
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .brand .name { font-weight: 600; font-size: 14px; letter-spacing: -0.005em; }
+  .brand .name small { display: block; font-size: 10.5px; color: var(--ink-3); font-weight: 400; letter-spacing: 0; }
+
+  .nav-grp {
+    font-size: 10.5px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--ink-3);
+    padding: 10px 8px 4px;
+  }
+  .nav a {
+    display: flex; align-items: center; gap: 9px;
+    padding: 7px 8px; border-radius: 6px;
+    color: var(--ink-2); text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .nav a:hover { background: var(--bg); color: var(--ink); }
+  .nav a.active { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+  .nav a .ic {
+    width: 14px; height: 14px;
+    color: var(--ink-3);
+  }
+  .nav a.active .ic { color: var(--accent); }
+  .nav a .ct {
+    margin-left: auto;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    color: var(--ink-3);
+    background: var(--bg);
+    padding: 1px 6px; border-radius: 100px;
+  }
+  .nav a.active .ct { background: rgba(52,109,241,0.12); color: var(--accent); }
+
+  .side-foot {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--line-2);
+    font-size: 11px; color: var(--ink-3);
+    display: flex; align-items: center; gap: 8px;
+    padding-left: 8px;
+  }
+  .side-foot .av {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: linear-gradient(135deg, #dde7f3, #f5d2cc);
+    display: grid; place-items: center;
+    font-weight: 600; color: var(--ink); font-size: 10px;
+  }
+
+  /* Main */
+  .main {
+    overflow-y: auto;
+    padding: 22px 28px;
+    background: var(--bg);
+  }
+  .crumbs {
+    display: flex; align-items: center; gap: 6px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; color: var(--ink-3);
+    margin-bottom: 14px;
+  }
+  .crumbs b { color: var(--ink); font-weight: 500; font-family: "Inter", sans-serif; }
+  .pg-title {
+    display: flex; align-items: end; justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+  .pg-title h1 { font-size: 24px; font-weight: 600; letter-spacing: -0.015em; margin: 0; }
+  .pg-title .sub { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+  .pg-title .actions { display: flex; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 13px; border-radius: 7px;
+    font-size: 13px; font-weight: 500;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--ink);
+  }
+  .btn:hover { background: var(--bg); }
+  .btn.primary {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+  }
+  .btn.primary:hover { background: #2a5fd4; }
+
+  /* Toolbar */
+  .toolbar {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 14px;
+  }
+  .toolbar .field {
+    flex: 1;
+    display: flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: var(--bg);
+    color: var(--ink-3);
+    font-size: 13px;
+  }
+  .toolbar .pill {
+    font-size: 11px; padding: 4px 9px;
+    border-radius: 100px;
+    background: var(--bg); color: var(--ink-2);
+    border: 1px solid var(--line);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .toolbar .pill .x { color: var(--ink-4); }
+  .toolbar .pill.active { background: var(--accent-soft); color: var(--accent); border-color: rgba(52,109,241,0.3); }
+
+  /* Table */
+  .table {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .table table { width: 100%; border-collapse: collapse; }
+  .table th {
+    text-align: left;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .table td {
+    padding: 14px;
+    border-bottom: 1px solid var(--line-2);
+    font-size: 13px;
+    color: var(--ink-2);
+    vertical-align: middle;
+  }
+  .table tr:last-child td { border-bottom: 0; }
+  .table tr:hover td { background: #fafaf9; }
+  .table .title { color: var(--ink); font-weight: 500; }
+  .table .checkbox { width: 22px; }
+  .table .checkbox input { accent-color: var(--accent); }
+  .pill-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 3px 9px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .pill-tag .dot { width: 6px; height: 6px; border-radius: 50%; }
+  .pill-tag.corail  { background: #fff0eb; color: #b54a3a;  } .pill-tag.corail .dot  { background: #c47266; }
+  .pill-tag.mousse  { background: #f0f3e5; color: #4d6232;  } .pill-tag.mousse .dot  { background: #7a8d54; }
+  .pill-tag.prune   { background: #fae9ee; color: #802f4a;  } .pill-tag.prune .dot   { background: #9a3f5a; }
+  .pill-tag.lagune  { background: #e3efec; color: #355a52;  } .pill-tag.lagune .dot  { background: #588a7e; }
+  .pill-tag.azur    { background: #e7eef9; color: #2f5a8c;  } .pill-tag.azur .dot    { background: #5d83b0; }
+  .pill-tag.terre   { background: #fbe7d7; color: #8b4825;  } .pill-tag.terre .dot   { background: #c97a52; }
+  .pill-tag.indigo  { background: #ebe7f6; color: #4d4391;  } .pill-tag.indigo .dot  { background: #6e62a8; }
+  .pill-tag.ocre    { background: #f5ecd0; color: #6e591a;  } .pill-tag.ocre .dot    { background: #a88838; }
+
+  .badge-current {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #e3f4ea; color: #266e44;
+    font-size: 11px; font-weight: 500;
+    padding: 3px 9px; border-radius: 100px;
+  }
+  .badge-current::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: #34a96b;
+  }
+
+  .table .date {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-2);
+  }
+  .table .row-action {
+    color: var(--ink-3);
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .table .row-action:hover { color: var(--ink); background: var(--bg); }
+
+  /* Footer (pagination) */
+  .table-foot {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px;
+    background: var(--bg);
+    font-size: 12px;
+    color: var(--ink-3);
+    border-top: 1px solid var(--line);
+  }
+  .table-foot .pages { display: flex; gap: 4px; align-items: center; }
+  .table-foot .pages button {
+    width: 26px; height: 26px;
+    border-radius: 5px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    font-size: 12px;
+    color: var(--ink-2);
+  }
+  .table-foot .pages button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .table-foot .pages .ellipsis { padding: 0 4px; color: var(--ink-4); }
+
+  /* Edit view */
+  .edit-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 18px;
+    align-items: start;
+  }
+  .form {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+  }
+  .form .group { margin-bottom: 18px; }
+  .form label {
+    display: block; font-size: 12px; font-weight: 500; color: var(--ink-2);
+    margin-bottom: 6px;
+  }
+  .form label .req { color: var(--rose); margin-left: 3px; }
+  .form .input, .form .textarea, .form .select {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 9px 12px;
+    font: inherit;
+    color: var(--ink);
+    background: #fff;
+  }
+  .form .input:focus, .form .textarea:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+  .form .textarea { resize: vertical; min-height: 86px; }
+  .form .hint { font-size: 11.5px; color: var(--ink-3); margin-top: 4px; }
+  .form .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .form .checkbox-row { display: flex; align-items: center; gap: 8px; padding: 8px 0; }
+  .form .checkbox-row input { accent-color: var(--accent); }
+
+  .multi {
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 6px;
+    background: #fff;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    align-items: center;
+  }
+  .multi .pill-tag { padding: 4px 10px; font-size: 11px; cursor: default; }
+  .multi .pill-tag .x { margin-left: 4px; color: currentColor; opacity: 0.6; }
+  .multi input { flex: 1; border: 0; outline: 0; padding: 4px 6px; font: inherit; min-width: 60px; }
+
+  .array {
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .array .item {
+    display: grid; grid-template-columns: 22px 1fr 24px;
+    gap: 10px; align-items: center;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line-2);
+  }
+  .array .item:last-child { border-bottom: 0; }
+  .array .item .ix {
+    font-family: "JetBrains Mono", monospace; font-size: 10px;
+    color: var(--ink-3);
+  }
+  .array .item .input { padding: 7px 10px; }
+  .array .item .drag { color: var(--ink-4); cursor: grab; text-align: center; }
+  .array .add {
+    display: block; width: 100%;
+    text-align: center; padding: 9px;
+    color: var(--accent); font-size: 12.5px; font-weight: 500;
+    border-top: 1px solid var(--line-2);
+    background: var(--bg);
+  }
+
+  /* Right column: meta / save panel */
+  .meta {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 18px 14px;
+    display: flex; flex-direction: column;
+    gap: 12px;
+  }
+  .meta .save-btn {
+    display: flex; align-items: center; justify-content: center;
+    background: var(--accent); color: #fff;
+    padding: 10px; border-radius: 7px;
+    font-weight: 500; font-size: 13px;
+  }
+  .meta h4 {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-3); margin: 0; font-weight: 600;
+  }
+  .meta .kv { display: grid; grid-template-columns: 100px 1fr; gap: 6px; font-size: 12px; }
+  .meta .kv dt { color: var(--ink-3); }
+  .meta .kv dd { margin: 0; color: var(--ink); }
+  .meta .status-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #e3f4ea; color: #266e44;
+    font-size: 11px; font-weight: 500;
+    padding: 4px 10px; border-radius: 100px;
+    width: max-content;
+  }
+  .meta .status-pill::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%; background: #34a96b;
+  }
+
+  /* Floating tab switcher */
+  .view-switch {
+    position: fixed;
+    bottom: 18px; right: 18px;
+    background: var(--ink); color: #fff;
+    border-radius: 100px;
+    padding: 4px;
+    display: flex; gap: 2px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    z-index: 50;
+  }
+  .view-switch button {
+    padding: 8px 16px;
+    border-radius: 100px;
+    color: rgba(255,255,255,0.55);
+    font-size: 12px; font-weight: 500;
+  }
+  .view-switch button.active { background: #fff; color: var(--ink); }
+
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* SVG icons inline */
+  .ic { display: inline-block; vertical-align: middle; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <div class="left">
+    <span class="badge">DEV · Aperçu maquette</span>
+    <span>Payload v3 · alice-cv-back</span>
+  </div>
+  <div>Aperçu visuel — non interactif. Lance <code style="color:#fff">npm run dev</code> pour la vraie admin sur <code style="color:#fff">/admin</code>.</div>
+</div>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="side">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div class="name">Alice CV<small>alice-cv-back</small></div>
+    </div>
+
+    <div class="nav-grp">Collections</div>
+    <div class="nav">
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        Thèmes <span class="ct">4</span>
+      </a>
+      <a id="nav-exp" class="active">
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+        Expériences <span class="ct">8</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        Formations <span class="ct">6</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg>
+        Bénévolat <span class="ct">3</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m21 16-5-5-8 8"/></svg>
+        Projets <span class="ct">5</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>
+        Certifications <span class="ct">5</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+        Media <span class="ct">12</span>
+      </a>
+      <a>
+        <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="7" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
+        Users <span class="ct">1</span>
+      </a>
+    </div>
+
+    <div class="nav-grp">Globals</div>
+    <div class="nav">
+      <a><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3-7 8-7s8 3 8 7"/></svg> Profile</a>
+      <a><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg> About</a>
+      <a><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> En ce moment</a>
+      <a><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.7 15.7l2.8 2.8"/></svg> Compétences</a>
+      <a><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg> Contacts</a>
+    </div>
+
+    <div class="side-foot">
+      <div class="av">AA</div>
+      <div>alice@example.com<br/><span style="color:var(--ink-4)">Administrateur</span></div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- ===== VIEW: LIST ===== -->
+    <div class="view active" id="view-list">
+      <div class="crumbs"><span>Collections</span> <span>›</span> <b>Expériences</b></div>
+
+      <div class="pg-title">
+        <div>
+          <h1>Expériences</h1>
+          <div class="sub">8 entrées · triées par date de début (plus récent en premier)</div>
+        </div>
+        <div class="actions">
+          <button class="btn">
+            <svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg>
+            Filtres
+          </button>
+          <button class="btn primary">
+            <svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg>
+            Nouvelle expérience
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="field">
+          <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          Rechercher dans organisation, rôle, lieu…
+        </div>
+        <span class="pill active">Thème · Coord. & logistique <span class="x">×</span></span>
+        <span class="pill">En cours uniquement</span>
+        <span class="pill">+ Ajouter un filtre</span>
+      </div>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th class="checkbox"><input type="checkbox"/></th>
+              <th>Rôle</th>
+              <th>Organisation</th>
+              <th>Lieu</th>
+              <th>Période</th>
+              <th>Thèmes</th>
+              <th>État</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Responsable des Opérations</td>
+              <td>Humanité &amp; Inclusion</td>
+              <td>Antananarivo, Madagascar</td>
+              <td class="date">2025 — en cours</td>
+              <td><span class="pill-tag mousse"><span class="dot"></span>Coord. & logistique</span></td>
+              <td><span class="badge-current">en cours</span></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Responsable logistique pays</td>
+              <td>Humanité &amp; Inclusion</td>
+              <td>Kyiv, Ukraine</td>
+              <td class="date">2025 · 6 mois</td>
+              <td><span class="pill-tag mousse"><span class="dot"></span>Coord. & logistique</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Responsable de département logistique</td>
+              <td>Action Contre la Faim</td>
+              <td>Kyiv, Ukraine</td>
+              <td class="date">2024 — 2025</td>
+              <td><span class="pill-tag mousse"><span class="dot"></span>Coord. & logistique</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Coordinatrice Logistique nationale</td>
+              <td>Médecins du Monde</td>
+              <td>Bangui, RCA</td>
+              <td class="date">2021 — 2022</td>
+              <td><span class="pill-tag mousse"><span class="dot"></span>Coord. & logistique</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Responsable logistique régionale</td>
+              <td>Médecins du Monde</td>
+              <td>Kalemie, RD Congo</td>
+              <td class="date">2020 — 2021</td>
+              <td><span class="pill-tag mousse"><span class="dot"></span>Coord. & logistique</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Logisticienne projet</td>
+              <td>Médecins du Monde</td>
+              <td>Marseille, France</td>
+              <td class="date">2020 · 3 mois</td>
+              <td>
+                <span class="pill-tag corail"><span class="dot"></span>Migration</span>
+                <span class="pill-tag mousse"><span class="dot"></span>Coord. & log.</span>
+              </td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Chargée d'appui juridique</td>
+              <td>Humanité &amp; Inclusion</td>
+              <td>Tunis, Tunisie</td>
+              <td class="date">2019 · 6 mois</td>
+              <td><span class="pill-tag corail"><span class="dot"></span>Migration</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox"/></td>
+              <td class="title">Chargée d'appui à la coordination</td>
+              <td>Caritas Maroc</td>
+              <td>Rabat, Maroc</td>
+              <td class="date">2018 — 2019</td>
+              <td><span class="pill-tag corail"><span class="dot"></span>Migration</span></td>
+              <td></td>
+              <td><button class="row-action">⋯</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-foot">
+          <div>8 entrées · page 1 / 1</div>
+          <div class="pages">
+            <button>‹</button>
+            <button class="active">1</button>
+            <button>›</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIEW: EDIT ===== -->
+    <div class="view" id="view-edit">
+      <div class="crumbs"><span>Collections</span> <span>›</span> <a style="color:inherit">Expériences</a> <span>›</span> <b>Responsable des Opérations</b></div>
+
+      <div class="pg-title">
+        <div>
+          <h1>Responsable des Opérations</h1>
+          <div class="sub">Humanité &amp; Inclusion · Antananarivo, Madagascar</div>
+        </div>
+        <div class="actions">
+          <button class="btn">Aperçu sur le site →</button>
+          <button class="btn primary">Sauvegarder</button>
+        </div>
+      </div>
+
+      <div class="edit-grid">
+
+        <div class="form">
+          <div class="group">
+            <label>Organisation <span class="req">*</span></label>
+            <input class="input" value="Humanité & Inclusion"/>
+          </div>
+
+          <div class="group">
+            <label>Rôle <span class="req">*</span></label>
+            <input class="input" value="Responsable des Opérations"/>
+          </div>
+
+          <div class="group">
+            <div class="row">
+              <div>
+                <label>Date début</label>
+                <input class="input" type="date" value="2025-04-01"/>
+              </div>
+              <div>
+                <label>Date fin</label>
+                <input class="input" type="date" value=""/>
+              </div>
+              <div>
+                <label>&nbsp;</label>
+                <div class="checkbox-row">
+                  <input type="checkbox" checked id="cur"/>
+                  <label for="cur" style="margin:0;cursor:pointer">Poste actuel</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group">
+            <label>Libellé date (affichage)</label>
+            <input class="input" value="2025 — en cours"/>
+            <div class="hint">Texte libre affiché sur le site (override du formatage auto)</div>
+          </div>
+
+          <div class="group">
+            <label>Lieu</label>
+            <input class="input" value="Antananarivo, Madagascar"/>
+          </div>
+
+          <div class="group">
+            <label>Thèmes</label>
+            <div class="multi">
+              <span class="pill-tag mousse"><span class="dot"></span>Coordination & logistique<span class="x">×</span></span>
+              <input placeholder="Ajouter un thème…"/>
+            </div>
+            <div class="hint">1 ou plusieurs thèmes transversaux — utilisé pour la page Thèmes</div>
+          </div>
+
+          <div class="group">
+            <label>Description</label>
+            <textarea class="textarea">Projet d'appui logistique humanitaire axé sur l'accès, l'analyse et le renforcement des capacités dans un environnement multi-risques.</textarea>
+          </div>
+
+          <div class="group">
+            <label>Tâches / responsabilités</label>
+            <div class="array">
+              <div class="item">
+                <span class="drag">⋮⋮</span>
+                <input class="input" value="Coordination et pilotage d'un projet de préparation aux urgences"/>
+                <span style="color:var(--ink-4);text-align:center">✕</span>
+              </div>
+              <div class="item">
+                <span class="drag">⋮⋮</span>
+                <input class="input" value="Planification opérationnelle, suivi budgétaire, analyse de performance"/>
+                <span style="color:var(--ink-4);text-align:center">✕</span>
+              </div>
+              <div class="item">
+                <span class="drag">⋮⋮</span>
+                <input class="input" value="Conception, développement et rédaction de nouveaux projets"/>
+                <span style="color:var(--ink-4);text-align:center">✕</span>
+              </div>
+              <div class="item">
+                <span class="drag">⋮⋮</span>
+                <input class="input" value="Gestion des partenariats institutionnels et coordination inter-ONG"/>
+                <span style="color:var(--ink-4);text-align:center">✕</span>
+              </div>
+              <button class="add">+ Ajouter une tâche</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="meta">
+          <button class="save-btn">Sauvegarder</button>
+
+          <div>
+            <h4>Statut</h4>
+            <div class="status-pill" style="margin-top:6px">Publié</div>
+          </div>
+
+          <div>
+            <h4>Métadonnées</h4>
+            <dl class="kv" style="margin-top:6px">
+              <dt>ID</dt><dd style="font-family:'JetBrains Mono',monospace;font-size:11px">68fa…3c1d</dd>
+              <dt>Créé</dt><dd>15 mai 2026</dd>
+              <dt>Modifié</dt><dd>il y a 4 min</dd>
+              <dt>Auteur</dt><dd>alice</dd>
+            </dl>
+          </div>
+
+          <div>
+            <h4>API</h4>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;background:var(--bg);padding:8px 10px;border-radius:6px;color:var(--ink-2);word-break:break-all;margin-top:6px">
+              GET /api/experiences/68fa3c1d
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="view-switch">
+  <button id="btn-list" class="active">Liste</button>
+  <button id="btn-edit">Édition</button>
+</div>
+
+<script>
+  const vl = document.getElementById('view-list');
+  const ve = document.getElementById('view-edit');
+  const bl = document.getElementById('btn-list');
+  const be = document.getElementById('btn-edit');
+  bl.onclick = () => { vl.classList.add('active'); ve.classList.remove('active'); bl.classList.add('active'); be.classList.remove('active'); };
+  be.onclick = () => { ve.classList.add('active'); vl.classList.remove('active'); be.classList.add('active'); bl.classList.remove('active'); };
+</script>
+
+</body>
+</html>

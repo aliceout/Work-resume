@@ -1,9 +1,3 @@
-import buttonsFR from "../../public/locales/fr/buttons.json";
-import buttonsEN from "../../public/locales/en/buttons.json";
-import mobileMenuFR from "../../public/locales/fr/mobileMenu.json";
-import mobileMenuEN from "../../public/locales/en/mobileMenu.json";
-import navbarFR from "../../public/locales/fr/navbar.json";
-import navbarEN from "../../public/locales/en/navbar.json";
 import pagesFR from "../../public/locales/fr/pages.json";
 import pagesEN from "../../public/locales/en/pages.json";
 import sidebarFR from "../../public/locales/fr/sidebar.json";
@@ -13,18 +7,6 @@ const DEFAULT_LOCALE = "fr";
 const SUPPORTED_LOCALES = ["fr", "en"];
 
 const TRANSLATIONS_BY_NAMESPACE = {
-  buttons: {
-    fr: buttonsFR,
-    en: buttonsEN,
-  },
-  mobileMenu: {
-    fr: mobileMenuFR,
-    en: mobileMenuEN,
-  },
-  navbar: {
-    fr: navbarFR,
-    en: navbarEN,
-  },
   pages: {
     fr: pagesFR,
     en: pagesEN,
@@ -141,4 +123,3 @@ export const translationsConfig = {
   normaliseLocale,
   getNamespaceDictionary,
 };
-

@@ -1,37 +1,55 @@
-import H1 from "/components/titles/h1";
-import VolunterCard from "/components/cards/VolunterCard";
 import PageSeo from "/components/seo/PageSeo";
+import PageContainer from "/components/proto/PageContainer";
+import PageHero from "/components/proto/PageHero";
+import TLEntry from "/components/proto/TLEntry";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Volunteering({ volunteeringContent }) {
+const buildThemesMeta = (themesItems) =>
+  (themesItems || []).reduce((acc, t) => {
+    acc[t.id] = t;
+    return acc;
+  }, {});
+
+export default function Volunteering({ volunteeringContent, themesContent }) {
   const { t } = useStaticTranslation("pages");
   const volunteering = volunteeringContent?.items || [];
+  const themesMeta = buildThemesMeta(themesContent?.items);
 
   return (
-    <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+    <PageContainer section="benevolat">
       <PageSeo
         title={t("volunteering.seo.title")}
         description={t("volunteering.seo.description")}
         path="/volunteering"
       />
-      <H1 text={t("volunteering.h1")} />
-      <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
-        {volunteering.map((job) => (
-          <VolunterCard key={`${job.company}-${job.date}`} job={job} />
-        ))}
-      </section>
-    </div>
+      <PageHero section="benevolat" namespace="volunteering" />
+      {volunteering.map((item, i) => (
+        <TLEntry
+          key={`${item.company}-${item.date}-${i}`}
+          date={item.date}
+          title={item.company}
+          desc={item.description}
+          bullets={item.bullets}
+          themes={item.themes}
+          themesMeta={themesMeta}
+          side={item.location}
+        />
+      ))}
+    </PageContainer>
   );
 }
 
 export async function getStaticProps({ locale }) {
-  const volunteeringContent = await getSectionContent("volunteering", locale);
+  const [volunteeringContent, themesContent] = await Promise.all([
+    getSectionContent("volunteering", locale),
+    getSectionContent("themes", locale),
+  ]);
 
   return {
     props: {
       volunteeringContent,
+      themesContent,
     },
   };
 }
-

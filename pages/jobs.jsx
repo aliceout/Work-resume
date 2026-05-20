@@ -1,38 +1,59 @@
-
-import H1 from "/components/titles/h1";
-import JobCard from "/components/cards/JobCard";
 import PageSeo from "/components/seo/PageSeo";
+import PageContainer from "/components/proto/PageContainer";
+import PageHero from "/components/proto/PageHero";
+import TLEntry from "/components/proto/TLEntry";
 import { getSectionContent } from "/utils/content";
 import { useStaticTranslation } from "/utils/translations/useTranslations";
 
-export default function Jobs({ jobsContent }) {
+const buildThemesMeta = (themesItems) =>
+  (themesItems || []).reduce((acc, t) => {
+    acc[t.id] = t;
+    return acc;
+  }, {});
+
+export default function Jobs({ jobsContent, themesContent }) {
   const { t } = useStaticTranslation("pages");
   const jobs = jobsContent?.items || [];
+  const themesMeta = buildThemesMeta(themesContent?.items);
+  const nowLabel = t("works.nowLabel");
 
   return (
-    <div className="flex flex-col flex-1 w-full h-full gap-y-6">
+    <PageContainer section="experiences">
       <PageSeo
         title={t("works.seo.title")}
         description={t("works.seo.description")}
         path="/jobs"
       />
-      <H1 text={t("works.h1")} />
-      <section className="flex flex-col divide-y divide-gray-300 gap-y-3 dark:divide-gray-400">
-        {jobs.map((job) => (
-          <JobCard key={`${job.company}-${job.date}`} job={job} />
-        ))}
-      </section>
-    </div>
+      <PageHero section="experiences" namespace="works" />
+      {jobs.map((job, i) => (
+        <TLEntry
+          key={`${job.company}-${job.date}-${i}`}
+          date={job.date}
+          current={job.current}
+          title={job.title}
+          org={job.company}
+          desc={job.description}
+          bullets={job.bullets}
+          themes={job.themes}
+          themesMeta={themesMeta}
+          side={job.location}
+          nowLabel={nowLabel}
+        />
+      ))}
+    </PageContainer>
   );
 }
 
 export async function getStaticProps({ locale }) {
-  const jobsContent = await getSectionContent("jobs", locale);
+  const [jobsContent, themesContent] = await Promise.all([
+    getSectionContent("jobs", locale),
+    getSectionContent("themes", locale),
+  ]);
 
   return {
     props: {
       jobsContent,
+      themesContent,
     },
   };
 }
-

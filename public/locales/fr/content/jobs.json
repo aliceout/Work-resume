@@ -6,6 +6,10 @@
       "date": "2025 · En cours",
       "company": "Humanité & Inclusion",
       "logo": "/images/companies/hi.png",
+      "themes": [
+        "logistique"
+      ],
+      "current": true,
       "description": "Projet d'appui logistique humanitaire axé sur l'accès, l'analyse et le renforcement des capacités dans un environnement multi-risques.",
       "bullets": [
         "Coordination et pilotage d'un projet de préparation aux urgences",
@@ -21,6 +25,9 @@
       "date": "2025 · 6 mois",
       "company": "Humanité & Inclusion",
       "logo": "/images/companies/hi.png",
+      "themes": [
+        "logistique"
+      ],
       "description": "Réponse à l'invasion mondiale de 2022 \n Missions de protection, d'inclusion, de réhabilitation et de réduction de la violence armée",
       "bullets": [
         "Gestion de l'équipe logistique dans la capitale et sur 3 sites (62 personnes, 8 en direct)",
@@ -38,6 +45,9 @@
       "date": "2024 - 2025 · 10 mois",
       "company": "Action Contre la Faim France",
       "logo": "/images/companies/acf.png",
+      "themes": [
+        "logistique"
+      ],
       "description": "Réponse mustisectorielle de soutient aux populations et aux services publics affectés par le conflit issu de l'invasion de 2022",
       "bullets": [
         "Encadrement de l’équipe logistique en capitale, et appui de 4 (puis 2) bases en province",
@@ -56,6 +66,9 @@
       "date": "2021- 2022 · 9 mois",
       "company": "Médecins du Monde France",
       "logo": "/images/companies/mdm.png",
+      "themes": [
+        "logistique"
+      ],
       "description": "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
       "bullets": [
         "Encadrement de l’équipe logistique en capitale, et appui de deux bases en province",
@@ -75,6 +88,9 @@
       "date": "2020- 2021 · 9 mois",
       "company": "Médecins du Monde France",
       "logo": "/images/companies/mdm.png",
+      "themes": [
+        "logistique"
+      ],
       "description": "Réponses d'urgence aux besoins de santé des populations affectées par le conflit sur le territoire centrafricain",
       "bullets": [
         "Encadrement et animation d'une équipe d'une douzaine de personnes",
@@ -94,6 +110,10 @@
       "date": "2020 · 3 mois",
       "company": "Médecins du Monde France",
       "logo": "/images/companies/mdm.png",
+      "themes": [
+        "migration",
+        "logistique"
+      ],
       "description": "Réponses d'urgence en contexte de Covid19, au sein des squats et bidonvilles",
       "bullets": [
         "Gestion et suivi de stocks",
@@ -111,10 +131,13 @@
       "date": "2019 · 6 mois",
       "company": "Humanité & Inclusion",
       "logo": "/images/companies/hi.png",
+      "themes": [
+        "migration"
+      ],
       "description": "Appui de la direction régionale, dans la réalisation d'une mission exploratoire sur la situation des personnes migrantes dans le sud tunisien (gouvernorats de Medenine et Tataouine), et d'un travail d'analyse du cadre légal, pour la réalisation de deux diagnostics initiaux sur le territoire tunisien",
       "bullets": [
-        "Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap",
-        "Etude sur les conditions de séjour, d'accueil et d'accès aux services de droit commun, des personnes migrantes"
+        "Etude sur les violences sexuelles et les besoins en santé sexuelle et reproductive des jeunes et femmes en situation de handicap",
+        "Etude sur les conditions de séjour, d'accueil et d'accès aux services de droit commun, des personnes migrantes"
       ]
     },
     {
@@ -123,6 +146,9 @@
       "date": "2018-2019 · 8 mois",
       "location": "Rabat, Maroc",
       "logo": "/images/companies/caritas.png",
+      "themes": [
+        "migration"
+      ],
       "description": "Programme \"Migration\"",
       "bullets": [
         "Participation à des actions d'appui au renforcement des capacités des partenaires",
@@ -139,7 +165,8 @@
       "date": "2015 · 2 mois (stage)",
       "location": "Olivet, France",
       "logo": "/images/companies/olivet.png",
-      "description": "Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques"
+      "themes": [],
+      "description": "Accompagnement et soutien à la mise en place de procédure de refonte des accueils des publics. Etudes juridiques de la faisabilité de projets sur partenariat et baux emphytéotiques"
     },
     {
       "company": "La compagnie du Chocolat",
@@ -147,6 +174,7 @@
       "date": "2014 · 6 mois",
       "location": "Toulouse, France",
       "logo": "/images/companies/choco.png",
+      "themes": [],
       "description": "Accueil et conseil client, vente et encaissement, mise en rayon et respect rotation des produits, réception et préparation de commandes, suivi de l’état des stocks, production des produits."
     },
     {
@@ -155,7 +183,10 @@
       "date": "2009-2012 · 3 ans",
       "location": "Orléans, France",
       "logo": "/images/companies/geodis.png",
-      "description": "Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service"
+      "themes": [
+        "logistique"
+      ],
+      "description": "Elaboration plannings chauffeurs, coordination et supervision d’équipe (~15 personnes), adaptation entre demandes clients et exploitation des ressources, actions de formation à l'attention des collaborateurs, organisation et optimisation ressources d’exploitation, contrôle et optimisation productivité, remplacement responsable service"
     },
     {
       "company": "Cool-Jet SAS",
@@ -163,7 +194,10 @@
       "date": "2006-2009 · 3 ans",
       "location": "Orléans, France",
       "logo": "/images/companies/cooljet.png",
-      "description": "Enregistrement et saisie des flux de départ, traitement réclamations, suivi et optimisation des process, dispatching tournées, coordination inter-services"
+      "themes": [
+        "logistique"
+      ],
+      "description": "Enregistrement et saisie des flux de départ, traitement réclamations, suivi et optimisation des process, dispatching tournées, coordination inter-services"
     },
     {
       "company": "Cool-Jet SAS",
@@ -171,6 +205,9 @@
       "date": "2006 · 3 mois",
       "location": "Orléans, France",
       "logo": "/images/companies/cooljet.png",
+      "themes": [
+        "logistique"
+      ],
       "description": "Réception et comptabilisation des marchandises, contrôle qualité et tri des produits, reconditionnement des marchandises."
     }
   ]
