@@ -29,4 +29,7 @@ RUN npm install -g serve@14
 COPY --from=builder /app/dist ./dist
 
 EXPOSE 3000
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# NOTE: no -s/--single flag — that's SPA mode (fallback all 404s to
+# /index.html). Astro produces multi-page static files; we want serve
+# to do its standard directory-index lookup (/fr/ → /fr/index.html).
+CMD ["serve", "-l", "3000", "dist"]
