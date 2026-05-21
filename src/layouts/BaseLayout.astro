@@ -74,15 +74,24 @@ const personSchema = withPersonSchema
 
     <script is:inline>
       (function () {
-        try {
-          const stored = localStorage.getItem("theme");
-          const prefersDark =
-            window.matchMedia &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches;
-          const theme = stored || (prefersDark ? "dark" : "light");
-          document.documentElement.setAttribute("data-theme", theme);
-        } catch (_) {
-          /* no-op */
+        const applyTheme = () => {
+          try {
+            const stored = localStorage.getItem("theme");
+            const prefersDark =
+              window.matchMedia &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = stored || (prefersDark ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+          } catch (_) {
+            /* no-op */
+          }
+        };
+        applyTheme();
+        // Re-apply after each ClientRouter (View Transitions) navigation —
+        // Astro may reset <html data-theme> when swapping documents.
+        if (!window.__themeApplyBound) {
+          window.__themeApplyBound = true;
+          document.addEventListener("astro:after-swap", applyTheme);
         }
       })();
     </script>
