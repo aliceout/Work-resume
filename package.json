@@ -28,5 +28,11 @@
   },
   "devDependencies": {
     "lighthouse": "^13.3.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
