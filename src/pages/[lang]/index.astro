@@ -5,11 +5,12 @@ import Band from "../../components/Band.astro";
 import PageHero from "../../components/PageHero.astro";
 import ThemeCard from "../../components/ThemeCard.astro";
 import CarnetCard from "../../components/CarnetCard.astro";
-import Icon from "../../components/Icon.astro";
+import CurrentEntryCard from "../../components/CurrentEntryCard.astro";
 import { useTranslation } from "../../utils/i18n.js";
 import { getSectionContent } from "../../utils/content.js";
 import { fetchLatestCarnetPost } from "../../utils/carnet.js";
 import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+import { siteConfig } from "../../config.js";
 
 export async function getStaticPaths() {
   return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
@@ -18,15 +19,21 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const { t } = useTranslation(["pages", "common"], lang);
 
-const [homeContent, themesData, jobsData, carnetPost] = await Promise.all([
-  getSectionContent("home", lang),
-  getSectionContent("themes", lang),
-  getSectionContent("jobs", lang),
-  fetchLatestCarnetPost(t("carnetRssUrl")),
-]);
+const [homeContent, themesData, jobsData, studiesData, carnetPost] =
+  await Promise.all([
+    getSectionContent("home", lang),
+    getSectionContent("themes", lang),
+    getSectionContent("jobs", lang),
+    getSectionContent("studies", lang),
+    siteConfig.showCarnet
+      ? fetchLatestCarnetPost(t("carnetRssUrl"))
+      : Promise.resolve(null),
+  ]);
 
 const themes = themesData?.items || [];
-const currentJob = (jobsData?.items || []).find((j: any) => j.current) || null;
+const currentJob = (jobsData?.items || []).find((j: any) => j.home) || null;
+const currentStudy =
+  (studiesData?.items || []).find((s: any) => s.home) || null;
 ---
 
 <BaseLayout
@@ -66,39 +73,29 @@ const currentJob = (jobsData?.items || []).find((j: any) => j.current) || null;
     {currentJob && (
       <Band>
         <div class="proto-now">
-          <a
+          <CurrentEntryCard
             href={`/${lang}/jobs/`}
-            class="proto-info-card"
-            style="--c: var(--magenta-d);"
-          >
-            <div class="proto-info-head">
-              <span class="proto-dot" />
-              <span class="proto-info-label">{t("home.currentLabel")}</span>
-              <span class="proto-card-arr">→</span>
-            </div>
-            <div class="proto-info-body">
-              <div class="proto-info-text">
-                <h3 class="proto-info-title">{currentJob.title}</h3>
-                <div class="proto-info-org">{currentJob.company}</div>
-                <div class="proto-info-meta proto-info-meta-loc">
-                  <Icon name="pin" size={11} />
-                  <span>{currentJob.location}</span>
-                </div>
-                <div class="proto-info-meta">{currentJob.date}</div>
-              </div>
-              {currentJob.logo && (
-                <img
-                  src={currentJob.logo}
-                  alt=""
-                  class="proto-info-logo"
-                  loading="lazy"
-                  width="96"
-                  height="96"
-                />
-              )}
-            </div>
-          </a>
-          <CarnetCard post={carnetPost} locale={lang} />
+            label={t("current.job.label")}
+            color="var(--accent-d)"
+            title={currentJob.title}
+            org={currentJob.company}
+            location={currentJob.location}
+            date={currentJob.date}
+            logo={currentJob.logo}
+          />
+          {siteConfig.showCarnet ? (
+            <CarnetCard post={carnetPost} locale={lang} />
+          ) : currentStudy ? (
+            <CurrentEntryCard
+              href={`/${lang}/studies/`}
+              label={t("current.study.label")}
+              color="var(--indigo-d)"
+              title={currentStudy.title}
+              org={currentStudy.location}
+              date={currentStudy.date}
+              logo={currentStudy.logo}
+            />
+          ) : null}
         </div>
       </Band>
     )}

@@ -1,0 +1,56 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  href: string;
+  label: string;
+  color: string;
+  title?: string;
+  org?: string;
+  location?: string;
+  date?: string;
+  logo?: string;
+}
+
+const {
+  href,
+  label,
+  color,
+  title,
+  org,
+  location,
+  date,
+  logo,
+} = Astro.props;
+---
+
+<a href={href} class="proto-info-card" style={`--c: ${color};`}>
+  <div class="proto-info-head">
+    <span class="proto-dot" />
+    <span class="proto-info-label">{label}</span>
+    <span class="proto-card-arr">→</span>
+  </div>
+  <div class="proto-info-body">
+    <div class="proto-info-text">
+      <h3 class="proto-info-title">{title}</h3>
+      {org && <div class="proto-info-org">{org}</div>}
+      {location && (
+        <div class="proto-info-meta proto-info-meta-loc">
+          <Icon name="pin" size={11} />
+          <span>{location}</span>
+        </div>
+      )}
+      {date && <div class="proto-info-meta">{date}</div>}
+    </div>
+    {logo && (
+      <img
+        src={logo}
+        alt=""
+        class="proto-info-logo"
+        loading="lazy"
+        width="96"
+        height="96"
+      />
+    )}
+  </div>
+</a>

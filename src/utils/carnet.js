@@ -37,7 +37,7 @@ export const fetchLatestCarnetPost = async (rssUrl) => {
     return {
       title,
       link,
-      pubDate: pubDate ? new Date(pubDate).toISOString() : null,
+      pubDate: pubDate ? new Date(pubDate).toISOString() : undefined,
       description: description
         ? description.replace(/<[^>]+>/g, "").trim().slice(0, 200)
         : "",

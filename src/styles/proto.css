@@ -169,6 +169,7 @@ a.proto-info-card {
   align-items: center;
   gap: 10px;
   margin-bottom: 4px;
+  min-height: 22px;
 }
 .proto-info-card .proto-info-head .proto-dot {
   width: 8px;
@@ -205,10 +206,11 @@ a.proto-info-card {
   font-size: 14px;
   margin-left: auto;
 }
-.proto-info-card-carnet .proto-info-title {
+.proto-info-card.proto-info-card-carnet .proto-info-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
+  font-size: 15px;
 }
 .proto-info-card .proto-info-title {
   font-family: var(--font-sans-tight);
@@ -257,10 +259,9 @@ a.proto-info-card {
 }
 .proto-info-card .proto-info-body {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  margin-top: 4px;
 }
 .proto-info-card .proto-info-text {
   flex: 1;
@@ -272,6 +273,7 @@ a.proto-info-card {
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 8px;
+  margin-right: 22px;
 }
 
 /* ============================================================
@@ -280,7 +282,7 @@ a.proto-info-card {
 .proto-entry {
   display: grid;
   grid-template-columns: 130px 1fr auto;
-  gap: 24px;
+  gap: 12px;
   align-items: start;
 }
 .proto-entry .proto-date {
@@ -496,7 +498,7 @@ a.proto-info-card {
 .proto-proj {
   display: grid;
   grid-template-columns: 130px 1.6fr 1fr;
-  gap: 24px;
+  gap: 12px;
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
   background: transparent;

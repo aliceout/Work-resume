@@ -1,20 +1,6 @@
 {
   "items": [
     {
-      "location": "Antananarivo, Madagascar",
-      "date": "2025- 2026",
-      "company": "Queer Place",
-      "description": "Stage de Master I Études sur le genre",
-      "bullets": [
-        "Observation et diagnostic organisationnel",
-        "Appui stratégique et opérationnel",
-        "Recherche de financements et structuration",
-        "Communication, plaidoyer et sensibilisation"
-      ],
-      "themes": ["genre"],
-      "logo": "/images/companies/queerplace.png"
-    },
-    {
       "location": "Lyon, France",
       "date": "2025- en cours",
       "company": "2 Mains de Femme",

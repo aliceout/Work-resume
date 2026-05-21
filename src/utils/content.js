@@ -8,14 +8,21 @@ const normalise = (locale) => {
 };
 
 // Eager import all locale content JSON at build time
-const modules = import.meta.glob("../data/locales/*/content/*.json", {
-  eager: true,
-  import: "default",
-});
+const modules = /** @type {Record<string, any>} */ (
+  import.meta.glob("../data/locales/*/content/*.json", {
+    eager: true,
+    import: "default",
+  })
+);
 
 const keyFor = (locale, section) =>
   `../data/locales/${locale}/content/${section}.json`;
 
+/**
+ * @param {string} section
+ * @param {string} locale
+ * @returns {Promise<any>}
+ */
 export const getSectionContent = async (section, locale) => {
   const lang = normalise(locale);
   const primary = modules[keyFor(lang, section)];
