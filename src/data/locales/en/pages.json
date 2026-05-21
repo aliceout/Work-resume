@@ -1,6 +1,6 @@
 {
   "home": {
-    "h1": "In few words",
+    "h1": "In a few words",
     "hero": {
       "label": "Home",
       "title": "In a few",
@@ -11,22 +11,22 @@
     "themesHint": "— click to explore",
     "seo": {
       "title": "Alice Aussel Delamaide — International solidarity coordinator",
-      "description": "Portfolio of Alice Aussel Delamaide, international solidarity coordinator. Career in NGOs, migration, advocacy, and humanitarian program coordination in Africa, North Africa and Ukraine.",
+      "description": "Portfolio of Alice Aussel Delamaide, international solidarity coordinator. NGO career on exile and advocacy, humanitarian programme coordination in Africa, North Africa and Ukraine.",
       "jobTitle": "International solidarity coordinator"
     }
   },
   "works": {
-    "h1": "Work experiences ",
+    "h1": "Work experience",
     "hero": {
       "label": "Experience",
-      "title": "Field",
+      "title": "Professional",
       "em": "journey.",
-      "lede": "From France to Ukraine, through Central Africa, North Africa and Madagascar — coordination, logistics and advocacy."
+      "lede": "From France to Madagascar, through Central Africa, Ukraine and North Africa — coordination, logistics and advocacy."
     },
     "nowLabel": "current",
     "seo": {
       "title": "Work experience — Alice Aussel Delamaide",
-      "description": "Positions of responsibility in NGOs: humanitarian program coordination in Central Africa, North Africa, Madagascar and Ukraine on migration, health and logistics."
+      "description": "Positions of responsibility in NGOs: humanitarian programme coordination in Central Africa, North Africa, Madagascar and Ukraine, on exile, health and logistics."
     }
   },
   "studies": {
@@ -52,14 +52,14 @@
     },
     "seo": {
       "title": "Volunteering and engagement — Alice Aussel Delamaide",
-      "description": "Voluntary commitments on migration, reception, advocacy and migration policy issues in France and internationally."
+      "description": "Associative engagement on exile, reception, advocacy and migration policy issues, in France and internationally."
     }
   },
   "portfolio": {
-    "h1": "Last projects",
+    "h1": "Digital projects",
     "hero": {
-      "label": "Web projects",
-      "title": "Recent",
+      "label": "Digital projects",
+      "title": "Digital",
       "em": "projects.",
       "lede": "Applications, internal tools, personal projects, web volunteering and graphic design — at the intersection of solidarity, data and design."
     },
@@ -68,7 +68,7 @@
     },
     "seo": {
       "title": "Projects and missions — Alice Aussel Delamaide",
-      "description": "Selected projects and missions in humanitarian coordination, advocacy and program development."
+      "description": "Selected projects and missions in humanitarian coordination, advocacy and programme development."
     }
   },
   "themes": {
@@ -81,7 +81,7 @@
     "empty": "No content linked to this theme yet.",
     "seo": {
       "title": "Theme — Alice Aussel Delamaide",
-      "description": "Career filtered by thematic axis: migration, humanitarian logistics, gender, development."
+      "description": "Career filtered by thematic axis: migration, humanitarian coordination, gender, development."
     }
   }
 }

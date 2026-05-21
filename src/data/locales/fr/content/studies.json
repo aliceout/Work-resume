@@ -3,7 +3,7 @@
     {
       "title": "Master I et II · Études de genre",
       "location": "Université d'Angers",
-      "date": "2025 - 2027 - En cours",
+      "date": "2025 - 2027 · En cours",
       "home": true,
       "description": [
         {
@@ -13,18 +13,18 @@
       "themes": ["genre"]
     },
     {
-      "title": "Bac+2 · Développeuse Web et Web mobile - Full-stack JavaScript",
-      "location": "Ecole O'Clock",
+      "title": "Bac+2 · Développeuse web et web mobile · Full-stack JavaScript",
+      "location": "École O'Clock",
       "date": "2023",
       "description": [
         {
-          "text": "**Frontend** : Html5 · Css3 · Sass/Scss · JavaScript · Typescript · React \n **Bactend** : Node.js · Express.js · PostgreSQL · SequeLize \n **Spécialisation** : React · Redux"
+          "text": "**Frontend** : HTML5 · CSS3 · Sass/SCSS · JavaScript · TypeScript · React \n **Backend** : Node.js · Express.js · PostgreSQL · Sequelize \n **Spécialisation** : React · Redux"
         },
         {
-          "text": "**Principes et compétences** : Architecture MVC · Active record · Programmation orientée objet (POO) · Modélisation des données (MCD, MLD) · Gestion de projet agile · Responsive Web Design · API Rest"
+          "text": "**Principes et compétences** : Architecture MVC · Active Record · Programmation orientée objet (POO) · Modélisation des données (MCD, MLD) · Gestion de projet agile · Responsive Web Design · API REST"
         },
         {
-          "text": "**Outils et méthodologies** : Git · Insomnia, Postman · Shell · ESlint"
+          "text": "**Outils et méthodologies** : Git · Insomnia, Postman · Shell · ESLint"
         }
       ],
       "themes": ["dev"]
@@ -35,52 +35,52 @@
       "date": "2018 - 2019",
       "description": [
         {
-          "text": "**Option** : Urgence et réhabilitation \n Diplomée mention AB"
+          "text": "**Option** : Urgence et réhabilitation \n Diplômée mention AB"
         },
         {
           "text": "Gestion de cycles de projets, monitoring qualité, évaluation et capitalisation \n Cas pays, mises en situation, conceptions de projets, renforcement et partenariats"
         },
         {
-          "text": "**Mémoire de stage I**: \"*Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée*\" \n **Mémoire de stage II**: \"*La notion de crise et son utilisation dans la thématique migratoire, d'un outil de mobilisation à l'abus d'un objet devenu politique*\""
+          "text": "**Mémoire de stage I** : « *Les TIC dans le secteur de la solidarité internationale, réflexions sur une intégration à marche forcée* » \n **Mémoire de stage II** : « *La notion de crise et son utilisation dans la thématique migratoire, d'un outil de mobilisation à l'abus d'un objet devenu politique* »"
         }
       ],
       "themes": ["migration", "humanitaire"]
     },
     {
-      "title": "Master I · Relations Internationales",
+      "title": "Master I · Relations internationales",
       "location": "Université Lyon III · Jean Moulin",
       "date": "2017 - 2018",
       "description": [
         {
-          "text": "Simulation de gestion de crise internationale, Aires culturelles mondiales \n Religions et mondialisation, Economie politique européenne, Politiques étrangères comparées"
+          "text": "Simulation de gestion de crise internationale, aires culturelles mondiales \n Religions et mondialisation, économie politique européenne, politiques étrangères comparées"
         },
         {
-          "text": "**Mémoire** : \"*L’externalisation des contrôles migratoires au Sahel. Étude sur un nouvel outil d’une politique européenne extra territorialisée de gestion des frontières*\""
+          "text": "**Mémoire** : « *L'externalisation des contrôles migratoires au Sahel. Étude sur un nouvel outil d'une politique européenne extra-territorialisée de gestion des frontières* »"
         }
       ],
       "themes": ["migration", "humanitaire"]
     },
     {
-      "title": "Licence · droit public",
+      "title": "Licence · Droit public",
       "location": "Université Toulouse I · Capitole",
       "date": "2015 - 2017",
       "description": [
         {
-          "text": "**Mention** : Droit Public \n Diplomée mention AB"
+          "text": "**Mention** : Droit public \n Diplômée mention AB"
         },
         {
-          "text": " Dominante en droit administratif, droit international et droit européen"
+          "text": "Dominante en droit administratif, droit international et droit européen"
         }
       ],
       "themes": ["migration"]
     },
     {
       "title": "Capacité en droit",
-      "location": "Ipst · Cnam",
+      "location": "IPST · CNAM",
       "date": "2013 - 2015",
       "description": [
         {
-          "text": "Diplomée délivré par l'Université Toulouse I Capitole \n Diplomée mention B"
+          "text": "Diplôme délivré par l'Université Toulouse I · Capitole \n Diplômée mention B"
         }
       ]
     }

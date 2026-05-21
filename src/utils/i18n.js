@@ -4,11 +4,12 @@ import sidebarFR from "../data/locales/fr/sidebar.json";
 import sidebarEN from "../data/locales/en/sidebar.json";
 import commonFR from "../data/locales/fr/common.json";
 import commonEN from "../data/locales/en/common.json";
+import site from "../data/site.json";
 
 const TRANSLATIONS = {
   pages: { fr: pagesFR, en: pagesEN },
   sidebar: { fr: sidebarFR, en: sidebarEN },
-  common: { fr: commonFR, en: commonEN },
+  common: { fr: { ...site, ...commonFR }, en: { ...site, ...commonEN } },
 };
 
 const SUPPORTED_LOCALES = ["fr", "en"];

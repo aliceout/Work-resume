@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AppShell from "../../components/AppShell.astro";
-import Band from "../../components/Band.astro";
 import PageContainer from "../../components/PageContainer.astro";
 import PageHero from "../../components/PageHero.astro";
 import ProjCard from "../../components/ProjCard.astro";
@@ -56,17 +55,13 @@ const adaptProject = (project: any) => ({
   <AppShell lang={lang}>
     <PageContainer section="portfolio">
       <PageHero section="portfolio" namespace="portfolio" />
-      <Band class="!py-0">
-        <div class="flex flex-col">
-          {projects.map((project: any) => (
-            <ProjCard
-              project={adaptProject(project)}
-              themesMeta={themesMeta}
-              lang={lang}
-            />
-          ))}
-        </div>
-      </Band>
+      {projects.map((project: any) => (
+        <ProjCard
+          project={adaptProject(project)}
+          themesMeta={themesMeta}
+          lang={lang}
+        />
+      ))}
     </PageContainer>
     <ProjectImageModal />
   </AppShell>

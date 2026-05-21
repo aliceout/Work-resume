@@ -26,3 +26,7 @@ pnpm-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+
+# Lighthouse reports
+*.report.html
+*.report.json

@@ -11,22 +11,22 @@
     "themesHint": "— cliquez pour explorer",
     "seo": {
       "title": "Alice Aussel Delamaide — Coordinatrice solidarité internationale",
-      "description": "Portfolio d'Alice Aussel Delamaide, coordinatrice solidarité internationale. Parcours en ONG, exil, plaidoyer, coordination de programmes humanitaires en Afrique, Maghreb et Ukraine.",
+      "description": "Portfolio d'Alice Aussel Delamaide, coordinatrice en solidarité internationale. Parcours en ONG sur les questions d'exil et de plaidoyer, coordination de programmes humanitaires en Afrique, au Maghreb et en Ukraine.",
       "jobTitle": "Coordinatrice de la solidarité internationale"
     }
   },
   "works": {
-    "h1": "Experiences professionelles ",
+    "h1": "Expériences professionnelles",
     "hero": {
       "label": "Expériences",
       "title": "Parcours",
-      "em": "professionel.",
+      "em": "professionnel.",
       "lede": "De la France à Madagascar, en passant par l'Afrique Centrale, l'Ukraine et le Maghreb — coordination, logistique et plaidoyer."
     },
     "nowLabel": "en cours",
     "seo": {
       "title": "Expériences professionnelles — Alice Aussel Delamaide",
-      "description": "Postes à responsabilités en ONG : coordination de programmes humanitaires en Afrique Centrale, Maghreb, Madagascar et Ukraine, sur les enjeux d'exil, santé et logistique."
+      "description": "Postes à responsabilités en ONG : coordination de programmes humanitaires en Afrique Centrale, au Maghreb, à Madagascar et en Ukraine, sur les enjeux d'exil, de santé et de logistique."
     }
   },
   "studies": {
@@ -43,7 +43,7 @@
     }
   },
   "volunteering": {
-    "h1": "Bénevolat",
+    "h1": "Bénévolat",
     "hero": {
       "label": "Bénévolat",
       "title": "Engagements &",
@@ -52,7 +52,7 @@
     },
     "seo": {
       "title": "Bénévolat et engagement — Alice Aussel Delamaide",
-      "description": "Engagements associatifs sur les questions d'exil, accueil, plaidoyer et politiques migratoires en France et à l'international."
+      "description": "Engagements associatifs sur les questions d'exil, d'accueil, de plaidoyer et de politiques migratoires, en France et à l'international."
     }
   },
   "portfolio": {
@@ -81,7 +81,7 @@
     "empty": "Aucun contenu lié à ce thème pour l'instant.",
     "seo": {
       "title": "Thème — Alice Aussel Delamaide",
-      "description": "Parcours filtré par axe thématique : migration, logistique humanitaire, genre, développement."
+      "description": "Parcours filtré par axe thématique : migration, coordination humanitaire, genre, développement."
     }
   }
 }

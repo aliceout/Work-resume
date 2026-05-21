@@ -1,7 +1,15 @@
 ---
+import { Image, getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Band from "./Band.astro";
 import Icon from "./Icon.astro";
 import ThemeTags from "./ThemeTags.astro";
 import { useTranslation } from "../utils/i18n.js";
+
+const projectImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/projects/*.{png,jpg,jpeg,webp}",
+  { eager: true }
+);
 
 interface Theme {
   id: string;
@@ -52,8 +60,22 @@ const parseDate = (d?: string) => {
 const { yr, rest } = parseDate(project.year);
 const hasTags = (project.themes || []).length > 0;
 const hasRepo = !!project.repo;
+
+const pictureMeta: ImageMetadata | undefined = project.picture
+  ? projectImages[`../assets/projects/${project.picture.split("/").pop()}`]?.default
+  : undefined;
+
+const fullImage = pictureMeta
+  ? await getImage({
+      src: pictureMeta,
+      width: 1600,
+      format: "webp",
+      quality: 82,
+    })
+  : null;
 ---
 
+<Band>
 <article class="proto-proj">
   <div class="proto-date">
     <div class="proto-yr">{yr}</div>
@@ -83,16 +105,24 @@ const hasRepo = !!project.repo;
       </div>
     )}
   </div>
-  {project.picture ? (
+  {pictureMeta && fullImage ? (
     <button
       type="button"
       class="proto-thumb proto-thumb-img"
       data-proj-thumb
-      data-src={project.picture}
+      data-src={fullImage.src}
       data-title={project.title}
       aria-label={`Agrandir l'image du projet ${project.title || ""}`}
     >
-      <img src={project.picture} alt={project.title || ""} loading="lazy" />
+      <Image
+        src={pictureMeta}
+        alt={project.title || ""}
+        width={640}
+        densities={[1, 2]}
+        format="webp"
+        quality={78}
+        loading="lazy"
+      />
     </button>
   ) : (
     <div class="proto-thumb">
@@ -113,3 +143,4 @@ const hasRepo = !!project.repo;
     </div>
   )}
 </article>
+</Band>

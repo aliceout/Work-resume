@@ -1,213 +1,220 @@
 {
   "items": [
     {
-      "title": "Operations Manager",
+      "title": "Head of Operations",
       "location": "Antananarivo, Madagascar",
       "date": "2025 · In progress",
       "company": "Humanity & Inclusion",
-      "description": "Humanitarian logistics support project focused on access, analysis and capacity building in a multi-risk environment.",
-      "bullets": [
-        "Coordination and management of an emergency preparedness project",
-        "Operational planning, budget monitoring, performance analysis, and donor reporting",
-        "Definition and supervision of the implementation of strategic guidelines",
-        "Design, development, and drafting of new projects",
-        "Management of institutional partnerships and inter-NGO coordination"
-      ],
       "themes": [
         "humanitaire"
       ],
       "home": true,
+      "description": "Coordination and management of several pooled humanitarian logistics projects",
+      "bullets": [
+        "Steering two parallel projects: emergency preparedness (South) and emergency response to Cyclone Gezani (East Coast)",
+        "Direct management of a multidisciplinary team spread across three offices, including project managers and a field coordinator (20+ staff)",
+        "Strategic and operational planning, budget oversight, performance analysis and donor reporting (budget: €750k)",
+        "Consortium coordination, institutional partnerships and representation in inter-NGO mechanisms",
+        "Development of new projects and drafting of funding proposals, building and recruiting a full team"
+      ],
       "logo": "/images/companies/hi.png"
+    },
+    {
+      "title": "Visiting lecturer",
+      "location": "Fontainebleau, France",
+      "date": "Since 2025",
+      "company": "Institut d'Études Politiques de Fontainebleau",
+      "themes": ["genre", "humanitaire"],
+      "bullets": [
+        "\"Human Rights\" course: module on LGBTQIA+ rights, history and international issues",
+        "\"Humanitarian Action\" course: session on logistics and humanitarian field action"
+      ],
+      "logo": "/images/companies/iep.png"
     },
     {
       "title": "Country Logistics Manager",
       "location": "Kyiv, Ukraine",
       "date": "2025 · 6 months",
       "company": "Humanity & Inclusion",
-      "description": "Response to the full-scale invasion of 2022 \n Protection, inclusion, rehabilitation and armed violence reduction missions",
+      "themes": [
+        "humanitaire"
+      ],
+      "description": "Response to the full-scale invasion of 2022 \n Protection, inclusion, rehabilitation and armed violence reduction activities",
       "bullets": [
-        "Management of the logistics team in the capital and across 3 sites (62 people, including 8 direct reports)",
-        "Training and support for position nationalization",
+        "Management of the logistics team in the capital and across three sites (62 staff, 8 direct reports)",
+        "Training and support for position nationalisation",
         "Logistics support for local partners",
         "Supervision of HR processes (recruitment, appraisals, training)",
         "Supervision and logistics support to projects",
         "Definition of logistics strategies and activity planning",
         "Supervision of national supply flows and customs clearance operations"
-      ],
-      "themes": [
-        "humanitaire"
       ],
       "logo": "/images/companies/hi.png"
     },
     {
-      "title": "Logistics Head of Department",
+      "title": "Head of Logistics Department",
       "location": "Kyiv, Ukraine",
       "date": "2024 - 2025 · 10 months",
       "company": "Action Against Hunger France",
-      "description": "Mustisectoral response to support populations and public services affected by the conflict resulting from the full-scale 2022 invasion",
+      "themes": [
+        "humanitaire"
+      ],
+      "description": "Multisectoral response supporting populations and public services affected by the conflict stemming from the 2022 invasion",
       "bullets": [
-        "Supervision of the logistics team in the capital, and support to 4 (then 2) provincial bases",
-        "Team management and leadership (around 15 people)",
-        "Training and support for position nationalization",
+        "Management of the logistics team in the capital and support to four (then two) provincial bases",
+        "Team management and leadership (around 15 staff)",
+        "Training and support for position nationalisation",
         "Logistics support for local partners",
         "Supervision of HR processes (recruitment, appraisals, training)",
         "Supervision and logistics support to projects",
         "Definition of logistics strategies and activity planning",
         "Supervision of national supply flows and customs clearance operations"
-      ],
-      "themes": [
-        "humanitaire"
       ],
       "logo": "/images/companies/acf.png"
     },
     {
-      "title": "Country Logistics Coordinator",
-      "location": "Banqui, RCA",
-      "date": "2021- 2022 - 9 mois",
+      "title": "National Logistics Coordinator",
+      "location": "Bangui, CAR",
+      "date": "2021 - 2022 · 9 months",
       "company": "Médecins du Monde France",
-      "description": "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
+      "themes": [
+        "humanitaire"
+      ],
+      "description": "Emergency responses to the health needs of populations affected by the conflict in the Central African Republic",
       "bullets": [
-        "Supervision of the logistics team in the capital, and support to two provincial bases",
-        "Team management and leadership (around 25 people), supervision of HR processes (recruitment, appraisals, training), and drafting of job descriptions",
+        "Management of the logistics team in the capital and support to two provincial bases",
+        "Team management (around 25 staff), HR supervision (recruitment, appraisals, training) and drafting of job descriptions",
         "Supervision and logistics support to projects",
         "Definition of logistics strategies and activity planning",
         "Technical support to a mobile clinic project in an emergency response context",
-        "Supervision of the operational implementation of security procedures, and participation in crisis cells",
+        "Supervision of the operational implementation of security procedures and participation in crisis cells",
         "Supervision of national supply flows and customs clearance operations",
-        "Supervision of health center rehabilitation and construction works",
+        "Supervision of health centre rehabilitation and construction works",
         "Representation and networking (RLH, ClusterLog, NGOs)"
       ],
-      "themes": [
-        "humanitaire"
-      ],
       "logo": "/images/companies/mdm.png"
     },
     {
-      "title": "Area Logistics Manager",
-      "location": "Kalemie, RD Congo",
-      "date": "2020- 2021 - 9 mois",
+      "title": "Regional Logistics Manager",
+      "location": "Kalemie, DR Congo",
+      "date": "2020 - 2021 · 9 months",
       "company": "Médecins du Monde France",
-      "description": "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
+      "themes": [
+        "humanitaire"
+      ],
+      "description": "Emergency responses to the health needs of populations affected by the conflict in eastern DR Congo",
       "bullets": [
-        "Supervising and leading a team of a dozen people",
-        "Supervising the supply, transport and storage of programme inputs in the province",
-        "Monitoring and managing the vehicle, communications and IT fleets",
-        "Opening a sub-base as part of an emergency response, and taking part in drawing up and launching a rapid response",
-        "Taking part in defining project construction and writing and monitoring budgets",
-        "Monitoring security, analysis and monitoring of the security of the base, travel and teams, participation in the drafting of protocols",
-        "Coordination of recruitment processes, evaluations and definition of HR needs",
+        "Management and leadership of a team (around a dozen staff)",
+        "Supervision of supply, transport and storage of programme inputs across the province",
+        "Monitoring and management of the vehicle, telecoms and IT fleets",
+        "Opening of a sub-base as part of an emergency response, participation in designing and launching a rapid response",
+        "Participation in project design, budget drafting and monitoring",
+        "Security watch and monitoring (base, travel), drafting of protocols and audits",
+        "Steering HR processes (recruitment, appraisals, needs assessment)",
         "Supervision of the rehabilitation and construction of health centres",
-        "Training of teams (Excel, Word, stock management, purchasing procedures, etc.), and participation in the drafting of budgets. ..)"
-      ],
-      "themes": [
-        "humanitaire"
+        "Training of teams (Excel, Word, stock management, purchasing procedures, etc.)"
       ],
       "logo": "/images/companies/mdm.png"
     },
     {
-      "title": "Project Logistics Manager",
+      "title": "Project Logistician",
       "location": "Marseille, France",
-      "date": "2020 - 3 mois",
+      "date": "2020 · 3 months",
       "company": "Médecins du Monde France",
-      "description": "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
-      "bullets": [
-        "Gestion et suivi de stock",
-        "Gestion des EPI Covid19 (stock, commande, préparation, suivi)",
-        "Approvisionnement",
-        "Préparation distribution et intervention",
-        "Travail de mise à niveau du parc informatique",
-        "Création et mise à niveau protocoles (sorties, stock, achat)",
-        "Accompagnement à évaluation de la sécurité"
+      "themes": [
+        "humanitaire"
       ],
+      "description": "Emergency responses in the context of Covid-19, in squats and slums",
+      "bullets": [
+        "Stock management and monitoring",
+        "Management of Covid-19 PPE (stocks, orders, preparation, monitoring)",
+        "Supply monitoring",
+        "Preparation of distributions and interventions",
+        "Upgrade of the IT fleet",
+        "Creation and update of protocols (outings, stocks, purchases)",
+        "Support for security assessment"
+      ],
+      "logo": "/images/companies/mdm.png"
+    },
+    {
+      "title": "Legal Support Officer for Studies and Diagnostics",
+      "location": "Tunis, Tunisia",
+      "date": "2019 · 6 months",
+      "company": "Humanity & Inclusion",
       "themes": [
         "migration",
         "humanitaire"
       ],
-      "logo": "/images/companies/mdm.png"
-    },
-    {
-      "title": "Legal support for studies and diagnostics",
-      "location": "Tunis, Tunisia",
-      "date": "2019 - 6 mois",
-      "company": "Humanity & Inclusion",
-      "description": "Support for the regional directorate, in carrying out an exploratory mission on the situation of migrant people in southern Tunisia (Medenine and Tataouine governorates), and work on analysing the equal framework, for carrying out two initial diagnoses on the Tunisian territory",
+      "description": "Support to the regional management on an exploratory mission on the situation of migrant people in southern Tunisia (Medenine and Tataouine governorates), and analysis of the legal framework for two initial diagnoses on Tunisian territory",
       "bullets": [
         "Study on sexual violence and the sexual and reproductive health needs of young people and women with disabilities",
-        "Study on the conditions of residence, reception and access to mainstream services for migrants"
-      ],
-      "themes": [
-        "migration"
+        "Study on the conditions of residence, reception and access to mainstream services for migrant people"
       ],
       "logo": "/images/companies/hi.png"
     },
     {
-      "company": "Caritas au Maroc",
-      "title": "Programme coordination support officer",
-      "date": "2018-2019 - 8 months",
+      "company": "Caritas Morocco",
+      "title": "Programme Coordination Support Officer",
+      "date": "2018 - 2019 · 8 months",
       "location": "Rabat, Morocco",
-      "description": "Migration Program",
-      "bullets": [
-        "Participation in actions supporting partners' capacity strengthening",
-        "Support for project monitoring (logical frameworks, budgets, job descriptions, reports)",
-        "Redesign of a data collection tool (needs definition, specifications, interface, ethics, security, features)",
-        "Design of a communication plan and a new graphic charter, and support for digitizing selected processes",
-        "Writing and layout of awareness materials and news briefs",
-        "Facilitation of meetings and team-building activities"
-      ],
       "themes": [
-        "migration"
+        "migration",
+        "humanitaire"
+      ],
+      "description": "\"Migration\" programme",
+      "bullets": [
+        "Participation in actions supporting partners' capacity building",
+        "Project monitoring support (logical frameworks, budgets, job descriptions, reports)",
+        "Redesign of a data collection tool (needs definition, specifications, interface, ethics, security, features)",
+        "Design of a communication plan and a new graphic identity, support for the \"digitisation\" of selected processes",
+        "Writing and layout of awareness-raising materials and news briefs",
+        "Facilitation of meetings and team-building"
       ],
       "logo": "/images/companies/caritas.png"
     },
     {
       "company": "Commune d'Olivet",
-      "title": "Legal support officer at the civic life centre",
-      "date": "2015 - 2 mois (internship)",
+      "title": "Legal Support Officer at the civic life centre",
+      "date": "2015 · 2 months (internship)",
       "location": "Olivet, France",
-      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
       "themes": [],
+      "description": "Support to the implementation of procedures redesigning public reception. Legal studies on the feasibility of partnership projects and long leases",
       "logo": "/images/companies/olivet.png"
     },
     {
       "company": "La compagnie du Chocolat",
       "title": "Chocolate shop assistant",
-      "date": "2014 - 6 mois",
+      "date": "2014 · 6 months",
       "location": "Toulouse, France",
-      "description": "Welcoming and advising customers, selling and cashing, stocking shelves and respecting product rotation, receiving and preparing orders, monitoring stock levels, producing products.",
       "themes": [],
+      "description": "Welcoming and advising customers, selling and cashing, stocking shelves and product rotation, receiving and preparing orders, monitoring stock levels, production.",
       "logo": "/images/companies/choco.png"
     },
     {
       "company": "Géodis Calberson",
-      "title": "Deputy Transport Manager",
-      "date": "2009-2012 - 3 years",
+      "title": "Deputy Transport Service Manager",
+      "date": "2009 - 2012 · 3 years",
       "location": "Orléans, France",
-      "description": "Accompaniment and support in setting up procedures to overhaul public reception areas. Legal studies of the feasibility of partnership projects and long leases",
-      "themes": [
-        "humanitaire"
-      ],
+      "themes": [],
+      "description": "Drafting of driver schedules, coordination and supervision of a team (~15 staff), matching customer demand to resource use, training initiatives for staff, organisation and optimisation of operational resources, productivity control and optimisation, deputising for the service manager",
       "logo": "/images/companies/geodis.png"
     },
     {
       "company": "Cool-Jet SAS",
       "title": "Transport Operations Officer",
-      "date": "2006-2009 - 3 ans",
+      "date": "2006 - 2009 · 3 years",
       "location": "Orléans, France",
-      "description": "Registering and entering departure flows, handling complaints, monitoring and optimising processes, dispatching rounds, inter-departmental coordination",
-      "themes": [
-        "humanitaire"
-      ],
+      "themes": [],
+      "description": "Registering and entering departure flows, handling complaints, monitoring and optimising processes, dispatching rounds, cross-departmental coordination",
       "logo": "/images/companies/cooljet.png"
     },
     {
       "company": "Cool-Jet SAS",
-      "title": "Material handler",
-      "date": "2006 - 3 mois",
+      "title": "Warehouse handler",
+      "date": "2006 · 3 months",
       "location": "Orléans, France",
+      "themes": [],
       "description": "Receiving and accounting for goods, quality control and sorting of products, repackaging of goods.",
-      "themes": [
-        "humanitaire"
-      ],
       "logo": "/images/companies/cooljet.png"
     }
   ]

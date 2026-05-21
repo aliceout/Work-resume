@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Icon from "./Icon.astro";
 import {
   buildNavItems,
@@ -7,6 +8,7 @@ import {
 } from "../utils/nav.js";
 import { useTranslation } from "../utils/i18n.js";
 import { siteConfig } from "../config.js";
+import profilePhoto from "../assets/profile.jpg";
 
 interface Props {
   lang?: string;
@@ -25,26 +27,71 @@ const contacts = [
 ];
 ---
 
+{/* Topbar mobile — visible uniquement sous lg */}
+<header class="proto-topbar lg:hidden fixed top-0 left-0 right-0 z-30 flex items-center gap-3 px-4 py-3 backdrop-blur-md border-b border-line bg-[color-mix(in_srgb,var(--bg)_85%,transparent)]">
+  <Image
+    src={profilePhoto}
+    alt={t("firstName")}
+    width={40}
+    height={40}
+    densities={[1, 2]}
+    format="webp"
+    quality={80}
+    loading="eager"
+    class="rounded-full object-cover w-10 h-10 shrink-0 ring-1 ring-line"
+  />
+  <div class="flex-1 min-w-0">
+    <div class="font-tight font-medium text-[14px] leading-tight text-ink truncate">
+      {t("firstName")} {t("lastName")}
+    </div>
+    <div class="font-serif italic text-[11.5px] leading-tight text-ink-3 truncate mt-0.5">
+      {t("fonction")}
+    </div>
+  </div>
+  <button
+    type="button"
+    data-sidebar-toggle
+    aria-label="Menu"
+    aria-expanded="false"
+    aria-controls="proto-sidebar"
+    class="w-10 h-10 grid place-items-center rounded-[10px] border border-line text-ink-2 hover:text-ink hover:bg-surface-tint transition-colors"
+  >
+    <span data-sidebar-icon-open><Icon name="menu" size={20} /></span>
+    <span data-sidebar-icon-close class="hidden"><Icon name="close" size={20} /></span>
+  </button>
+</header>
+
+{/* Backdrop : visible quand le drawer est ouvert (mobile uniquement) */}
+<div
+  data-sidebar-backdrop
+  aria-hidden="true"
+  class="proto-sidebar-backdrop lg:hidden fixed inset-0 z-30 bg-black/45 opacity-0 pointer-events-none transition-opacity"
+></div>
+
+{/* Sidebar : drawer mobile (slide-in) + fixed desktop */}
 <aside
-  class="flex flex-col w-full lg:w-[268px] lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:pt-7 lg:pb-3.5 lg:px-[22px] gap-y-[18px] backdrop-blur-md border-r border-line bg-[color-mix(in_srgb,var(--bg)_55%,transparent)] z-10"
+  id="proto-sidebar"
+  data-sidebar
+  class="proto-sidebar fixed top-0 left-0 h-[100dvh] lg:h-screen w-[284px] lg:w-[268px] pt-5 pb-6 lg:pt-7 lg:pb-3.5 px-5 lg:px-[22px] gap-y-[18px] flex flex-col backdrop-blur-md border-r border-line bg-[color-mix(in_srgb,var(--bg)_92%,transparent)] z-40 -translate-x-full lg:translate-x-0 transition-transform duration-200 overflow-y-auto"
 >
+  {/* Identité */}
   <div class="flex flex-col gap-[14px] px-1 py-0.5">
-    <img
-      src="/images/profil-picture/color.jpg"
+    <Image
+      src={profilePhoto}
       alt={t("firstName")}
-      width="98"
-      height="98"
+      width={98}
+      height={98}
+      densities={[1, 2]}
+      format="webp"
+      quality={80}
+      loading="eager"
       class="self-start rounded-full object-cover w-[98px] h-[98px] shrink-0 ring-1 ring-line shadow-[0_6px_18px_rgba(0,0,0,0.06)]"
     />
     <div class="flex flex-col">
-      <div
-        class="font-tight font-medium text-[20px] leading-[1.1] tracking-[-0.02em] text-ink"
-      >
+      <div class="font-tight font-medium text-[20px] leading-[1.1] tracking-[-0.02em] text-ink">
         {t("firstName")}<br />{t("lastName")}
       </div>
-      <div
-        class="font-serif italic text-[14px] leading-[1.35] text-ink-3 mt-1.5"
-      >
+      <div class="font-serif italic text-[14px] leading-[1.35] text-ink-3 mt-1.5">
         {t("fonction")}
       </div>
     </div>
@@ -124,3 +171,72 @@ const contacts = [
     ))}
   </div>
 </aside>
+
+{/* Toggle logic — event delegation, survit aux navigations ClientRouter */}
+<script is:inline>
+  (function () {
+    if (window.__sidebarBound) return;
+    window.__sidebarBound = true;
+
+    const setOpen = (open) => {
+      const aside = document.querySelector("[data-sidebar]");
+      const backdrop = document.querySelector("[data-sidebar-backdrop]");
+      const toggle = document.querySelector("[data-sidebar-toggle]");
+      if (!aside || !backdrop || !toggle) return;
+
+      const iconOpen = toggle.querySelector("[data-sidebar-icon-open]");
+      const iconClose = toggle.querySelector("[data-sidebar-icon-close]");
+
+      if (open) {
+        aside.classList.remove("-translate-x-full");
+        aside.classList.add("translate-x-0");
+        backdrop.classList.remove("opacity-0", "pointer-events-none");
+        backdrop.classList.add("opacity-100");
+        toggle.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+        if (iconOpen) iconOpen.classList.add("hidden");
+        if (iconClose) iconClose.classList.remove("hidden");
+      } else {
+        aside.classList.add("-translate-x-full");
+        aside.classList.remove("translate-x-0");
+        backdrop.classList.add("opacity-0", "pointer-events-none");
+        backdrop.classList.remove("opacity-100");
+        toggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+        if (iconOpen) iconOpen.classList.remove("hidden");
+        if (iconClose) iconClose.classList.add("hidden");
+      }
+    };
+
+    const isOpen = () => {
+      const toggle = document.querySelector("[data-sidebar-toggle]");
+      return toggle?.getAttribute("aria-expanded") === "true";
+    };
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest) return;
+      if (e.target.closest("[data-sidebar-toggle]")) {
+        setOpen(!isOpen());
+        return;
+      }
+      if (e.target.closest("[data-sidebar-backdrop]")) {
+        setOpen(false);
+        return;
+      }
+      // Cliquer sur un lien à l'intérieur de la sidebar la referme
+      const aside = document.querySelector("[data-sidebar]");
+      if (aside && aside.contains(e.target) && e.target.closest("a")) {
+        if (window.innerWidth < 1024) setOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && isOpen()) setOpen(false);
+    });
+
+    // À chaque navigation ClientRouter, on referme la sidebar
+    document.addEventListener("astro:after-swap", function () {
+      setOpen(false);
+    });
+  })();
+</script>

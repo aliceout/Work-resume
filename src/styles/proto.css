@@ -328,6 +328,7 @@ a.proto-info-card {
   font-family: var(--font-mono);
   font-size: 10.5px;
   color: var(--ink-3);
+  display: none;
 }
 .proto-entry .proto-desc {
   font-size: 14px;
@@ -345,18 +346,20 @@ a.proto-info-card {
 }
 .proto-entry ul li {
   position: relative;
-  padding-left: 18px;
+  padding-left: 16px;
   font-size: 14px;
   line-height: 1.4;
   color: var(--ink-2);
 }
 .proto-entry ul li::before {
-  content: "—";
+  content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--ink-4);
-  line-height: 1.55;
+  left: 4px;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ink-4);
 }
 .proto-entry .proto-tag-right {
   display: flex;
@@ -499,13 +502,8 @@ a.proto-info-card {
   display: grid;
   grid-template-columns: 130px 1.6fr 1fr;
   gap: 12px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--line);
   background: transparent;
   align-items: start;
-}
-.proto-proj:last-child {
-  border-bottom: 0;
 }
 .proto-proj .proto-date {
   display: flex;
@@ -741,4 +739,160 @@ body.proto-modal-open .proto-util-corner {
 }
 .proto-cv-btn:hover svg {
   transform: translateY(2px);
+}
+
+/* ============================================================
+   Mobile (≤ 1023px) — restructure & densify
+   ============================================================ */
+@media (max-width: 1023px) {
+  /* Bands : padding latéral divisé par 2 sur mobile */
+  .proto-band {
+    padding: 20px 28px;
+  }
+
+  /* Hero : font-size fluide, plus de marges démesurées */
+  .proto-hero h1 {
+    font-size: clamp(32px, 9vw, 48px);
+  }
+  .proto-hero .proto-lede {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  /* "About compact" : justifié avec césure pour éviter les gros trous */
+  .proto-about-compact p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+  .proto-about-compact p::first-letter {
+    font-size: 40px;
+    padding: 4px 8px 0 0;
+  }
+
+  /* Now (cards "En ce moment" + "Carnet") : empilées */
+  .proto-now {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Timeline entry : single column, location sous l'org, pas de logo */
+  .proto-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .proto-entry .proto-date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+    padding-top: 0;
+  }
+  .proto-entry .proto-date .proto-yr {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .proto-entry .proto-body {
+    min-width: 0;
+  }
+  .proto-entry .proto-tag-right {
+    display: none;
+  }
+  .proto-entry .proto-org-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 6px;
+  }
+  .proto-entry .proto-org-line .proto-loc {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .proto-entry .proto-body h3 {
+    font-size: 16.5px;
+  }
+  .proto-entry ul li,
+  .proto-entry .proto-desc {
+    font-size: 13.5px;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  /* Project (portfolio) : image en haut, puis date + body */
+  .proto-proj {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .proto-proj .proto-thumb {
+    order: -1;
+    width: 100%;
+    justify-self: stretch;
+  }
+  .proto-proj .proto-date {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+  }
+  .proto-proj .proto-date .proto-yr {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .proto-proj .proto-date .proto-github-tag {
+    margin-top: 0;
+  }
+  .proto-proj .proto-proj-body h4 {
+    font-size: 18px;
+  }
+  .proto-proj .proto-proj-body p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    font-size: 13px;
+  }
+
+  /* Info card (En ce moment / Carnet) : padding réduit, logo plus petit */
+  .proto-info-card {
+    padding: 14px 14px;
+  }
+  .proto-info-card .proto-info-logo {
+    width: 72px;
+    height: 72px;
+    margin-right: 0;
+  }
+  .proto-info-card .proto-info-body {
+    gap: 12px;
+  }
+
+  /* Theme cards : reste en 1 col (grid en index.astro gère md:grid-cols-2) */
+
+  /* Section header : padding réduit */
+  .proto-section-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  /* Modal : padding réduit (déjà bon avec vw, juste close button accessible) */
+  .proto-modal-close {
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+}
+
+/* ============================================================
+   Mobile très petit (≤ 480px) — micro-ajustements
+   ============================================================ */
+@media (max-width: 480px) {
+  .proto-band {
+    padding: 16px 20px;
+  }
+  .proto-info-card .proto-info-logo {
+    width: 56px;
+    height: 56px;
+  }
 }

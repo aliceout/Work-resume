@@ -13,7 +13,7 @@
       "id": "humanitaire",
       "num": "02",
       "name": "Coordination humanitaire",
-      "sub": "projets, partenariats, logistiques humanitaire",
+      "sub": "projets, partenariats, logistique humanitaire",
       "colorVar": "mousse",
       "colorDeep": "var(--mousse-d)",
       "colorSoft": "var(--mousse)"
@@ -31,7 +31,7 @@
       "id": "dev",
       "num": "04",
       "name": "Développement web",
-      "sub": "React, Node, Astro, NextJs, AdminSys, et SI",
+      "sub": "React, Node, Astro, administration système et SI",
       "colorVar": "lagune",
       "colorDeep": "var(--lagune-d)",
       "colorSoft": "var(--lagune)"

@@ -1,15 +1,4 @@
 {
-  "name": "Alice Aussel Delamaide",
-  "firstName": "Alice",
-  "lastName": "Aussel Delamaide",
-  "cvUrlFr": "https://cloud.alyss.cc/s/pbHLqQa3gnK2Lrp",
-  "cvUrlEn": "https://cloud.alyss.cc/s/pbHLqQa3gnK2Lrp",
-  "carnetUrl": "https://carnet.aliceosdel.org/",
-  "carnetRssUrl": "https://carnet.aliceosdel.org/rss.xml",
-  "linkedinUrl": "https://www.linkedin.com/in/TODO",
-  "mailUrl": "mailto:TODO@example.com",
-  "signalUrl": "https://signal.me/#eu/TODO",
-  "teamsUrl": "https://teams.microsoft.com/l/chat/0/0?users=TODO",
   "carnet": {
     "label": "Research notebook",
     "subLabel": "(latest post)",
@@ -20,8 +9,7 @@
       "label": "Right now"
     },
     "study": {
-      "label": "Right now"
+      "label": "Current studies"
     }
-  },
-  "githubLabel": "GitHub"
+  }
 }

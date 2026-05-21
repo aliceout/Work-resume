@@ -1,52 +1,92 @@
 {
   "items": [
     {
-      "location": "Toulouse, France",
-      "date": "2022- 2024",
-      "company": "Watizat",
-      "description": "Emergency responses to the health needs of populations affected by the conflict on Central African territory",
+      "location": "Lyon, France",
+      "date": "2025 · In progress",
+      "company": "2 Mains de Femme",
+      "description": "Design and development of the association's website",
       "bullets": [
-        "Helping to write and update the Toulouse local group's guide listing services for exiles",
-        "Project manager for the development of a complete web application for data collection, processing and consultation"
+        "Redesign of the association's website",
+        "Technical maintenance and team support"
       ],
-      "themes": [
-        "migration",
-        "dev"
-      ],
-      "logo": "/images/companies/watizat.png"
+      "themes": ["genre", "dev"],
+      "logo": "/images/companies/2mains.png"
     },
     {
-      "location": "Marseille, Toulouse, France",
-      "date": "2019- 2024",
-      "company": "Médecins du Monde France",
-      "description": "Migrations frontières transalpines\" (Marseille) & \"Actions mobiles\" (Toulouse) programs",
+      "location": "Toulouse, France",
+      "date": "2023 - 2024",
+      "company": "Médecins du Monde",
+      "description": "\"Mobile actions\" programme",
       "bullets": [
-        "Support tasks in Human Resources (drafting of mission profiles, organization chart, database management), Logistics (stock management, vehicle fleet management), Finance (budget monitoring, tracking of volunteer expenses) and IT (implementation of collaborative tools)\"",
-        "Participation in a COPIL redefining missions within a program"
+        "Setting up and facilitating a steering committee: framework, roadmaps, redefinition of the programme's missions",
+        "Solidarity outreach with vulnerable groups"
       ],
-      "themes": [
-        "migration",
-        "humanitaire"
-      ],
+      "themes": ["migration"],
       "logo": "/images/companies/mdm.png"
     },
     {
-      "location": "Toulouse, Lyon, France",
-      "date": "2015-2023",
-      "company": "La Cimade",
-      "description": "Association providing legal assistance and information to exiled persons",
+      "location": "Toulouse, France",
+      "date": "2022 - 2024",
+      "company": "Watizat",
+      "description": "Multilingual information guide for exiled people",
       "bullets": [
-        "Participation in rights access hotlines",
+        "Writing and updating the local guide (Toulouse) listing services for exiled people",
+        "Project manager and developer of a full web application for data collection, processing and consultation"
+      ],
+      "themes": ["migration", "dev"],
+      "logo": "/images/companies/watizat.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2022 - 2023",
+      "company": "La Cimade",
+      "description": "Association providing legal assistance and information to exiled people",
+      "bullets": [
+        "Participation in legal aid drop-in sessions",
+        "Organising and taking part in awareness-raising actions"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/cimade.png"
+    },
+    {
+      "location": "Marseille, France",
+      "date": "2019 - 2020",
+      "company": "Médecins du Monde",
+      "description": "\"Trans-alpine border migrations\" programme",
+      "bullets": [
+        "Cross-functional support: HR (profiles, organisation chart, database), logistics (stocks, vehicle fleet), finance (budget monitoring and volunteer expenses), IT (collaborative tools)",
+        "Solidarity outreach with exiled people at the Montgenèvre pass (Briançon)"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/mdm.png"
+    },
+    {
+      "location": "Lyon, France",
+      "date": "2017 - 2018",
+      "company": "La Cimade",
+      "description": "Association providing legal assistance and information to exiled people",
+      "bullets": [
+        "Participation in legal aid drop-in sessions",
         "Advocacy with members of parliament in the context of the \"asylum and immigration\" law",
-        "Development of communication media",
-        "Development and layout of regional activity reports and the Migrant'scène festival",
-        "Organization of and participation in awareness-raising actions and advocacy",
-        "Support for the overhaul and reorganization of the role and missions of the local branch's \"IS, awareness-raising and advocacy\" unit",
-        "Internal support activity on digital tools"
+        "Production of communication materials",
+        "Production and layout of regional activity reports and of the Migrant'scène festival",
+        "Support for the overhaul and reorganisation of the local branch's \"IS, awareness-raising and advocacy\" unit",
+        "Internal support on digital tools"
       ],
-      "themes": [
-        "migration"
+      "themes": ["migration"],
+      "logo": "/images/companies/cimade.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2015 - 2017",
+      "company": "La Cimade",
+      "description": "Association providing legal assistance and information to exiled people",
+      "bullets": [
+        "Participation in legal aid drop-in sessions",
+        "Production of communication materials",
+        "Production and layout of regional activity reports and of the Migrant'scène festival"
       ],
+      "themes": ["migration"],
       "logo": "/images/companies/cimade.png"
     }
   ]

@@ -12,8 +12,8 @@
     {
       "id": "humanitaire",
       "num": "02",
-      "name": "Coordination & humanitarian logistics",
-      "sub": "programmes, teams, supply chain, partnerships",
+      "name": "Humanitarian coordination",
+      "sub": "projects, partnerships, humanitarian logistics",
       "colorVar": "mousse",
       "colorDeep": "var(--mousse-d)",
       "colorSoft": "var(--mousse)"
@@ -30,8 +30,8 @@
     {
       "id": "dev",
       "num": "04",
-      "name": "Software development",
-      "sub": "React, Node, internal tools & IT",
+      "name": "Web development",
+      "sub": "React, Node, Astro, system administration & IT",
       "colorVar": "lagune",
       "colorDeep": "var(--lagune-d)",
       "colorSoft": "var(--lagune)"

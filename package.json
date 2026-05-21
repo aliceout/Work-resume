@@ -8,11 +8,13 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview --host",
+    "astro": "astro",
+    "audit": "lighthouse http://localhost:4321 --view --preset=desktop",
+    "audit:mobile": "lighthouse http://localhost:4321 --view"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
@@ -23,5 +25,8 @@
     "astro-icon": "^1.1.5",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "lighthouse": "^13.3.0"
   }
 }

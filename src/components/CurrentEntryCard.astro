@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import Icon from "./Icon.astro";
 
 interface Props {
@@ -22,6 +24,15 @@ const {
   date,
   logo,
 } = Astro.props;
+
+const companyLogos = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/companies/*.{png,jpg,jpeg,webp}",
+  { eager: true }
+);
+
+const logoMeta: ImageMetadata | undefined = logo
+  ? companyLogos[`../assets/companies/${logo.split("/").pop()}`]?.default
+  : undefined;
 ---
 
 <a href={href} class="proto-info-card" style={`--c: ${color};`}>
@@ -42,14 +53,16 @@ const {
       )}
       {date && <div class="proto-info-meta">{date}</div>}
     </div>
-    {logo && (
-      <img
-        src={logo}
+    {logoMeta && (
+      <Image
+        src={logoMeta}
         alt=""
-        class="proto-info-logo"
+        width={96}
+        densities={[1, 2]}
+        format="webp"
+        quality={80}
         loading="lazy"
-        width="96"
-        height="96"
+        class="proto-info-logo"
       />
     )}
   </div>
