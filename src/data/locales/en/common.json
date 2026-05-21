@@ -1,0 +1,16 @@
+{
+  "name": "Alice Aussel Delamaide",
+  "firstName": "Alice",
+  "lastName": "Aussel Delamaide",
+  "photoAlt": "Alice Aussel Delamaide",
+  "cvUrlFr": "https://cloud.alyss.cc/s/pbHLqQa3gnK2Lrp",
+  "cvUrlEn": "https://cloud.alyss.cc/s/pbHLqQa3gnK2Lrp",
+  "carnetUrl": "https://carnet.aliceosdel.org/",
+  "carnetRssUrl": "https://carnet.aliceosdel.org/rss.xml",
+  "carnet": {
+    "label": "Research notebook",
+    "subLabel": "(latest post)",
+    "cta": "Read →"
+  },
+  "githubLabel": "GitHub"
+}

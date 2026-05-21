@@ -1,0 +1,52 @@
+---
+import Icon from "./Icon.astro";
+import { useTranslation } from "../utils/i18n.js";
+
+interface Props {
+  post?: {
+    title?: string;
+    link?: string;
+    pubDate?: string;
+    description?: string;
+  } | null;
+  locale?: string;
+}
+
+const { post, locale = "fr" } = Astro.props;
+const { t } = useTranslation("common", locale);
+
+const formatDate = (dateStr?: string | null) => {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(locale === "en" ? "en-GB" : "fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+};
+
+const dateLabel = post ? formatDate(post.pubDate) : "";
+---
+
+{post && (
+  <a
+    href={post.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="proto-info-card proto-info-card-carnet"
+    style="--c: var(--prune-d);"
+  >
+    <div class="proto-info-head">
+      <span class="proto-dot" />
+      <span class="proto-info-label">
+        {t("carnet.label")}
+        <span class="proto-info-label-sub">{t("carnet.subLabel")}</span>
+      </span>
+      <Icon name="external" size={11} />
+    </div>
+    <h3 class="proto-info-title">{post.title}</h3>
+    {dateLabel && <div class="proto-info-meta">{dateLabel}</div>}
+    <span class="proto-info-cta">{t("carnet.cta")}</span>
+  </a>
+)}

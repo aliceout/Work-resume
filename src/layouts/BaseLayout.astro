@@ -1,0 +1,94 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import { useTranslation } from "../utils/i18n.js";
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+  path?: string;
+  jobTitle?: string;
+  withPersonSchema?: boolean;
+}
+
+const {
+  lang = "fr",
+  title,
+  description = "",
+  path = "/",
+  jobTitle = "",
+  withPersonSchema = false,
+} = Astro.props;
+
+const { t } = useTranslation("common", lang);
+const personName = t("name");
+const resolvedTitle = title || personName;
+
+const siteUrl = Astro.site ? Astro.site.toString().replace(/\/$/, "") : "";
+const canonical = `${siteUrl}${path}`;
+
+const personSchema = withPersonSchema
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: personName,
+      jobTitle,
+      description,
+      url: canonical,
+    }
+  : null;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{resolvedTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@300;400;500;600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" />
+
+    <ClientRouter />
+
+    {
+      personSchema && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(personSchema)}
+        />
+      )
+    }
+
+    <script is:inline>
+      (function () {
+        try {
+          const stored = localStorage.getItem("theme");
+          const prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (_) {
+          /* no-op */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

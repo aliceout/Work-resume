@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import PageContainer from "../../components/PageContainer.astro";
+import PageHero from "../../components/PageHero.astro";
+import TLEntry from "../../components/TLEntry.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [volunteeringContent, themesContent] = await Promise.all([
+  getSectionContent("volunteering", lang),
+  getSectionContent("themes", lang),
+]);
+
+const volunteering = volunteeringContent?.items || [];
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("volunteering.seo.title")}
+  description={t("volunteering.seo.description")}
+  path={`/${lang}/volunteering`}
+>
+  <AppShell lang={lang}>
+    <PageContainer section="benevolat">
+      <PageHero section="benevolat" namespace="volunteering" />
+      {volunteering.map((item: any) => (
+        <TLEntry
+          date={item.date}
+          title={item.company}
+          desc={item.description}
+          bullets={item.bullets}
+          themes={item.themes}
+          themesMeta={themesMeta}
+          side={item.location}
+          logo={item.logo}
+        />
+      ))}
+    </PageContainer>
+  </AppShell>
+</BaseLayout>

@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import PageContainer from "../../components/PageContainer.astro";
+import PageHero from "../../components/PageHero.astro";
+import TLEntry from "../../components/TLEntry.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [studiesContent, themesContent] = await Promise.all([
+  getSectionContent("studies", lang),
+  getSectionContent("themes", lang),
+]);
+
+const studies = studiesContent?.items || [];
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+
+const studyToBullets = (study: any) =>
+  (study.description || [])
+    .map((d: any) => d?.text)
+    .filter((tt: any) => typeof tt === "string" && tt.trim().length > 0);
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("studies.seo.title")}
+  description={t("studies.seo.description")}
+  path={`/${lang}/studies`}
+>
+  <AppShell lang={lang}>
+    <PageContainer section="formations">
+      <PageHero section="formations" namespace="studies" />
+      {studies.map((study: any) => (
+        <TLEntry
+          date={study.date}
+          title={study.title}
+          org={study.location}
+          bullets={studyToBullets(study)}
+          themes={study.themes}
+          themesMeta={themesMeta}
+        />
+      ))}
+    </PageContainer>
+  </AppShell>
+</BaseLayout>

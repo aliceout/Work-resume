@@ -1,0 +1,17 @@
+---
+import { colorForSection } from "../utils/nav.js";
+
+interface Props {
+  section?: string;
+}
+
+const { section } = Astro.props;
+const c = section ? colorForSection(section) : null;
+const style = c
+  ? `--page-c: ${c.deep}; --page-c-soft: ${c.soft};`
+  : undefined;
+---
+
+<div style={style}>
+  <slot />
+</div>

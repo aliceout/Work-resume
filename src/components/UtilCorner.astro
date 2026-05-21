@@ -1,0 +1,60 @@
+---
+import Icon from "./Icon.astro";
+import { swapLocaleInPath } from "../utils/nav.js";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "fr" } = Astro.props;
+const nextLocale = lang === "fr" ? "en" : "fr";
+const switchHref = swapLocaleInPath(Astro.url.pathname, nextLocale);
+---
+
+<div
+  class="proto-util-corner fixed top-[22px] right-[26px] z-50 flex items-center gap-1 backdrop-blur-sm border border-line rounded-full p-1 shadow-[0_1px_3px_rgba(0,0,0,0.02),0_6px_18px_rgba(0,0,0,0.04)] bg-surface-card"
+>
+  <button
+    type="button"
+    data-theme-toggle
+    title="Toggle theme"
+    class="w-8 h-8 grid place-items-center rounded-full text-ink-2 hover:text-ink hover:bg-surface-tint transition-colors"
+  >
+    <span class="util-icon-light"><Icon name="moon" size={14} /></span>
+    <span class="util-icon-dark"><Icon name="sun" size={14} /></span>
+  </button>
+  <a
+    href={switchHref}
+    title={`Switch to ${nextLocale.toUpperCase()}`}
+    class="w-8 h-8 grid place-items-center rounded-full text-[10px] font-mono font-semibold text-ink-2 hover:text-ink hover:bg-surface-tint transition-colors uppercase"
+  >
+    {lang}
+  </a>
+</div>
+
+<style is:global>
+  [data-theme="light"] .util-icon-dark,
+  :root:not([data-theme="dark"]) .util-icon-dark {
+    display: none;
+  }
+  [data-theme="dark"] .util-icon-light {
+    display: none;
+  }
+</style>
+
+<script is:inline>
+  // Event delegation — survit aux navigations ClientRouter
+  if (!window.__themeToggleBound) {
+    window.__themeToggleBound = true;
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest || !e.target.closest("[data-theme-toggle]")) return;
+      const root = document.documentElement;
+      const current = root.getAttribute("data-theme") || "light";
+      const next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (_) {}
+    });
+  }
+</script>

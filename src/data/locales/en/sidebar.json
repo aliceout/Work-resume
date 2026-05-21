@@ -1,0 +1,18 @@
+{
+  "fonction": "International solidarity coordinator",
+  "status": "Location: Madagascar",
+  "sectionsLabel": "Sections",
+  "accueil": "Home",
+  "experiences": "Experience",
+  "formations": "Education",
+  "benevolat": "Volunteering",
+  "portfolio": "Web projects",
+  "externesLabel": "External",
+  "carnetNavLabel": "Research notebook",
+  "contacts": {
+    "signal": "Send a message",
+    "teams": "Call via Teams",
+    "email": "Send an email"
+  },
+  "downloadBtn": "Download CV"
+}

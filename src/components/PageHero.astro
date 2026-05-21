@@ -1,0 +1,21 @@
+---
+import HeroBand from "./HeroBand.astro";
+import { useTranslation } from "../utils/i18n.js";
+
+interface Props {
+  section: string;
+  namespace: string;
+  ledeOverride?: string;
+}
+
+const { section, namespace, ledeOverride } = Astro.props;
+const { t } = useTranslation("pages", Astro.currentLocale);
+---
+
+<HeroBand
+  section={section}
+  label={t(`${namespace}.hero.label`)}
+  title={t(`${namespace}.hero.title`)}
+  em={t(`${namespace}.hero.em`)}
+  lede={ledeOverride ?? t(`${namespace}.hero.lede`)}
+/>

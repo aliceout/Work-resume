@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import Band from "../../components/Band.astro";
+import PageContainer from "../../components/PageContainer.astro";
+import PageHero from "../../components/PageHero.astro";
+import ProjCard from "../../components/ProjCard.astro";
+import ProjectImageModal from "../../components/ProjectImageModal.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [portfolioContent, themesContent] = await Promise.all([
+  getSectionContent("portfolio", lang),
+  getSectionContent("themes", lang),
+]);
+
+const yearOf = (date: string | undefined) => {
+  const m = (date || "").match(/\d{4}/);
+  return m ? parseInt(m[0], 10) : 0;
+};
+
+const projects = [...(portfolioContent?.projects || [])].sort(
+  (a: any, b: any) => yearOf(b.date) - yearOf(a.date),
+);
+
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+
+const adaptProject = (project: any) => ({
+  title: project.title,
+  org: project.client,
+  year: project.date,
+  desc: project.description,
+  repo: project.repository,
+  themes: project.themes,
+  picture: project.picture,
+});
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("portfolio.seo.title")}
+  description={t("portfolio.seo.description")}
+  path={`/${lang}/portfolio`}
+>
+  <AppShell lang={lang}>
+    <PageContainer section="portfolio">
+      <PageHero section="portfolio" namespace="portfolio" />
+      <Band class="!py-0">
+        <div class="flex flex-col">
+          {projects.map((project: any) => (
+            <ProjCard
+              project={adaptProject(project)}
+              themesMeta={themesMeta}
+              lang={lang}
+            />
+          ))}
+        </div>
+      </Band>
+    </PageContainer>
+    <ProjectImageModal />
+  </AppShell>
+</BaseLayout>

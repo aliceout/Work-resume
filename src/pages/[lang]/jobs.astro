@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import PageContainer from "../../components/PageContainer.astro";
+import PageHero from "../../components/PageHero.astro";
+import TLEntry from "../../components/TLEntry.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [jobsContent, themesContent] = await Promise.all([
+  getSectionContent("jobs", lang),
+  getSectionContent("themes", lang),
+]);
+
+const jobs = jobsContent?.items || [];
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("works.seo.title")}
+  description={t("works.seo.description")}
+  path={`/${lang}/jobs`}
+>
+  <AppShell lang={lang}>
+    <PageContainer section="experiences">
+      <PageHero section="experiences" namespace="works" />
+      {jobs.map((job: any) => (
+        <TLEntry
+          date={job.date}
+          title={job.title}
+          org={job.company}
+          desc={job.description}
+          bullets={job.bullets}
+          themes={job.themes}
+          themesMeta={themesMeta}
+          side={job.location}
+          logo={job.logo}
+        />
+      ))}
+    </PageContainer>
+  </AppShell>
+</BaseLayout>

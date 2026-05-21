@@ -1,0 +1,121 @@
+---
+import Icon from "./Icon.astro";
+import {
+  buildNavItems,
+  colorForSection,
+  sectionFromPath,
+} from "../utils/nav.js";
+import { useTranslation } from "../utils/i18n.js";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "fr" } = Astro.props;
+const { t } = useTranslation(["sidebar", "common"], lang);
+const current = sectionFromPath(Astro.url.pathname);
+const navItems = buildNavItems(lang);
+
+const contacts = [
+  { service: "linkedin", icon: "linkedin", title: "LinkedIn" },
+  { service: "mail", icon: "mail", title: t("contacts.email") },
+  { service: "signal", icon: "signal", title: t("contacts.signal") },
+  { service: "teams", icon: "teams", title: t("contacts.teams") },
+];
+---
+
+<aside
+  class="flex flex-col w-full lg:w-[268px] lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:pt-7 lg:pb-3.5 lg:px-[22px] gap-y-[18px] backdrop-blur-md border-r border-line bg-[color-mix(in_srgb,var(--bg)_55%,transparent)] z-10"
+>
+  <div class="flex flex-col gap-[14px] px-1 py-0.5">
+    <img
+      src="/images/profil-picture/color.jpg"
+      alt={t("photoAlt")}
+      width="84"
+      height="84"
+      class="rounded-full object-cover w-[84px] h-[84px] shrink-0 ring-1 ring-line shadow-[0_6px_18px_rgba(0,0,0,0.06)]"
+    />
+    <div class="flex flex-col">
+      <div
+        class="font-tight font-medium text-[18px] leading-[1.1] tracking-[-0.02em] text-ink"
+      >
+        {t("firstName")}<br />{t("lastName")}
+      </div>
+      <div
+        class="font-serif italic text-[13px] leading-[1.35] text-ink-3 mt-1.5"
+      >
+        {t("fonction")}
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2 px-3 text-ink-2 text-[12px] font-medium">
+    <Icon name="pin" size={13} />
+    {t("status")}
+  </div>
+
+  <nav class="flex flex-col gap-px">
+    <div class="text-[10px] tracking-[0.12em] uppercase text-ink-3 pt-1 pb-0 px-3">
+      {t("sectionsLabel")}
+    </div>
+    {navItems.map((it, i) => {
+      const isActive = current === it.id;
+      const c = colorForSection(it.id);
+      return (
+        <a
+          href={it.href}
+          data-active={isActive}
+          class="group flex items-center gap-3 px-3 py-1.5 rounded-[10px] text-[13.5px] font-medium text-ink-2 hover:bg-surface-tint hover:text-ink data-[active=true]:bg-surface-tint data-[active=true]:text-ink transition-colors"
+          style={`--c: ${c.deep};`}
+        >
+          <span class="proto-nav-dot" data-active={isActive} />
+          <span class="flex-1">{t(it.labelKey, it.labelKey)}</span>
+          <span class="font-mono text-[10px] text-ink-4">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+        </a>
+      );
+    })}
+  </nav>
+
+  <nav class="flex flex-col gap-px">
+    <div class="text-[10px] tracking-[0.12em] uppercase text-ink-3 pt-1 pb-0 px-3">
+      {t("externesLabel")}
+    </div>
+    <a
+      href={t("carnetUrl")}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center gap-3 px-3 py-1.5 rounded-[10px] text-[13.5px] font-medium text-ink-2 hover:bg-surface-tint hover:text-ink transition-colors"
+      style="--c: var(--prune-d);"
+    >
+      <span class="proto-nav-dot" />
+      <span class="flex-1">{t("carnetNavLabel")}</span>
+      <Icon name="external" size={12} class="text-ink-4" />
+    </a>
+    <a
+      href={lang === "en" ? t("cvUrlEn") : t("cvUrlFr")}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center gap-3 px-3 py-1.5 rounded-[10px] text-[13.5px] font-medium text-ink-2 hover:bg-surface-tint hover:text-ink transition-colors"
+      style="--c: var(--mousse-d);"
+    >
+      <span class="proto-nav-dot" />
+      <span class="flex-1">{t("downloadBtn")}</span>
+      <Icon name="download" size={12} class="text-ink-4" />
+    </a>
+  </nav>
+
+  <div class="mt-auto flex gap-1 pt-[14px]">
+    {contacts.map(({ service, icon, title }) => (
+      <button
+        type="button"
+        title={title}
+        data-service={service}
+        class="proto-contact-btn flex-1 h-8 rounded-[9px] border border-line grid place-items-center transition-colors"
+      >
+        <Icon name={icon} size={16} />
+      </button>
+    ))}
+  </div>
+</aside>

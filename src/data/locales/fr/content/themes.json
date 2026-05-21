@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "migration",
+      "num": "01",
+      "name": "Migration, droits & exil",
+      "sub": "politiques publiques, accueil, plaidoyer",
+      "colorVar": "corail",
+      "colorDeep": "var(--corail-d)",
+      "colorSoft": "var(--corail)"
+    },
+    {
+      "id": "humanitaire",
+      "num": "02",
+      "name": "Coordination humanitaire",
+      "sub": "projets, partenariats, logistiques humanitaire",
+      "colorVar": "mousse",
+      "colorDeep": "var(--mousse-d)",
+      "colorSoft": "var(--mousse)"
+    },
+    {
+      "id": "genre",
+      "num": "03",
+      "name": "Genre & intersectionnalité",
+      "sub": "féminisme, queer, recherche universitaire",
+      "colorVar": "prune",
+      "colorDeep": "var(--prune-d)",
+      "colorSoft": "var(--prune)"
+    },
+    {
+      "id": "dev",
+      "num": "04",
+      "name": "Développement web",
+      "sub": "React, Node, Astro, NextJs, AdminSys, et SI",
+      "colorVar": "lagune",
+      "colorDeep": "var(--lagune-d)",
+      "colorSoft": "var(--lagune)"
+    }
+  ]
+}

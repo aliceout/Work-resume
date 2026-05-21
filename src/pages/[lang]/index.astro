@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import Band from "../../components/Band.astro";
+import PageHero from "../../components/PageHero.astro";
+import ThemeCard from "../../components/ThemeCard.astro";
+import CarnetCard from "../../components/CarnetCard.astro";
+import Icon from "../../components/Icon.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { fetchLatestCarnetPost } from "../../utils/carnet.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation(["pages", "common"], lang);
+
+const [homeContent, themesData, jobsData, carnetPost] = await Promise.all([
+  getSectionContent("home", lang),
+  getSectionContent("themes", lang),
+  getSectionContent("jobs", lang),
+  fetchLatestCarnetPost(t("carnetRssUrl")),
+]);
+
+const themes = themesData?.items || [];
+const currentJob = (jobsData?.items || []).find((j: any) => j.current) || null;
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("home.seo.title")}
+  description={t("home.seo.description")}
+  path={`/${lang}/`}
+  jobTitle={t("home.seo.jobTitle")}
+  withPersonSchema={true}
+>
+  <AppShell lang={lang}>
+    <PageHero
+      section="accueil"
+      namespace="home"
+      ledeOverride={homeContent?.lede}
+    />
+
+    {homeContent?.about_summary && (
+      <Band class="proto-about-compact">
+        <h3 class="proto-band-h">{t("home.aboutLabel")}</h3>
+        <p>{homeContent.about_summary}</p>
+      </Band>
+    )}
+
+    {themes && themes.length > 0 && (
+      <Band>
+        <h2 class="proto-band-h">
+          {t("home.themesLabel")}
+          <span class="proto-hint">{t("home.themesHint")}</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {themes.map((theme: any) => <ThemeCard theme={theme} lang={lang} />)}
+        </div>
+      </Band>
+    )}
+
+    {currentJob && (
+      <Band>
+        <div class="proto-now">
+          <a
+            href={`/${lang}/jobs/`}
+            class="proto-info-card"
+            style="--c: var(--magenta-d);"
+          >
+            <div class="proto-info-head">
+              <span class="proto-dot" />
+              <span class="proto-info-label">{t("home.currentLabel")}</span>
+              <span class="proto-card-arr">→</span>
+            </div>
+            <div class="proto-info-body">
+              <div class="proto-info-text">
+                <h3 class="proto-info-title">{currentJob.title}</h3>
+                <div class="proto-info-org">{currentJob.company}</div>
+                <div class="proto-info-meta proto-info-meta-loc">
+                  <Icon name="pin" size={11} />
+                  <span>{currentJob.location}</span>
+                </div>
+                <div class="proto-info-meta">{currentJob.date}</div>
+              </div>
+              {currentJob.logo && (
+                <img
+                  src={currentJob.logo}
+                  alt=""
+                  class="proto-info-logo"
+                  loading="lazy"
+                  width="96"
+                  height="96"
+                />
+              )}
+            </div>
+          </a>
+          <CarnetCard post={carnetPost} locale={lang} />
+        </div>
+      </Band>
+    )}
+  </AppShell>
+</BaseLayout>

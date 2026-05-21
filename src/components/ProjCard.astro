@@ -1,0 +1,115 @@
+---
+import Icon from "./Icon.astro";
+import ThemeTags from "./ThemeTags.astro";
+import { useTranslation } from "../utils/i18n.js";
+
+interface Theme {
+  id: string;
+  name: string;
+  colorDeep: string;
+  colorSoft: string;
+}
+
+interface Project {
+  title?: string;
+  org?: string;
+  year?: string;
+  desc?: string;
+  repo?: string;
+  themes?: string[];
+  picture?: string;
+}
+
+interface Props {
+  project: Project;
+  themesMeta?: Record<string, Theme>;
+  lang?: string;
+}
+
+const { project, themesMeta = {}, lang = "fr" } = Astro.props;
+const { t } = useTranslation("common", lang);
+
+const parseDate = (d?: string) => {
+  if (!d) return { yr: "", rest: "" };
+  const yearsMatch = d.match(/(\d{4})(?:\s*[-–]\s*(\d{4}))?/);
+  if (!yearsMatch) return { yr: "", rest: d.trim() };
+
+  const yr = yearsMatch[2]
+    ? `${yearsMatch[1]} - ${yearsMatch[2]}`
+    : yearsMatch[1];
+
+  const rest = d
+    .replace(yearsMatch[0], "")
+    .trim()
+    .replace(/^[-–·\s]+/, "")
+    .replace(/[-–·\s]+$/, "")
+    .replace(/\s+[-–·]\s+/g, " · ")
+    .trim();
+
+  return { yr, rest };
+};
+
+const { yr, rest } = parseDate(project.year);
+const hasTags = (project.themes || []).length > 0;
+const hasRepo = !!project.repo;
+---
+
+<article class="proto-proj">
+  <div class="proto-date">
+    <div class="proto-yr">{yr}</div>
+    {rest && <div>{rest}</div>}
+    {hasRepo && (
+      <a
+        href={project.repo}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="proto-github-tag"
+      >
+        <Icon name="github" size={12} /> {t("githubLabel")}
+      </a>
+    )}
+  </div>
+  <div class="proto-proj-body">
+    <h4>{project.title}</h4>
+    {project.org && (
+      <div class="proto-org">
+        <span>{project.org}</span>
+      </div>
+    )}
+    {project.desc && <p>{project.desc}</p>}
+    {hasTags && (
+      <div class="proto-proj-actions">
+        <ThemeTags themes={project.themes} themesMeta={themesMeta} />
+      </div>
+    )}
+  </div>
+  {project.picture ? (
+    <button
+      type="button"
+      class="proto-thumb proto-thumb-img"
+      data-proj-thumb
+      data-src={project.picture}
+      data-title={project.title}
+      aria-label={`Agrandir l'image du projet ${project.title || ""}`}
+    >
+      <img src={project.picture} alt={project.title || ""} loading="lazy" />
+    </button>
+  ) : (
+    <div class="proto-thumb">
+      <svg
+        viewBox="0 0 200 100"
+        fill="none"
+        stroke="var(--slate-d)"
+        stroke-width="1.2"
+        opacity="0.7"
+        width="70%"
+      >
+        <rect x="12" y="10" width="176" height="80" rx="6" />
+        <line x1="24" y1="28" x2="100" y2="28" />
+        <line x1="24" y1="42" x2="140" y2="42" />
+        <line x1="24" y1="56" x2="80" y2="56" />
+        <rect x="24" y="70" width="44" height="10" rx="2" />
+      </svg>
+    </div>
+  )}
+</article>

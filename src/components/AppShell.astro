@@ -1,0 +1,24 @@
+---
+import Sidebar from "./Sidebar.astro";
+import UtilCorner from "./UtilCorner.astro";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "fr" } = Astro.props;
+---
+
+<div class="proto-shell relative min-h-screen text-ink bg-surface font-sans">
+  <div aria-hidden class="proto-blob proto-blob-azur" />
+  <div aria-hidden class="proto-blob proto-blob-corail" />
+
+  <div class="relative z-10 flex flex-col lg:flex-row">
+    <Sidebar lang={lang} />
+    <main class="flex-1 lg:ml-[268px] min-h-screen">
+      <slot />
+    </main>
+  </div>
+
+  <UtilCorner lang={lang} />
+</div>

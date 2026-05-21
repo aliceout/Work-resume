@@ -1,0 +1,33 @@
+---
+import Band from "./Band.astro";
+import { colorForSection } from "../utils/nav.js";
+
+interface Props {
+  section?: string;
+  label?: string;
+  title?: string;
+  em?: string;
+  lede?: string;
+  class?: string;
+}
+
+const { section, label, title, em, lede, class: className = "" } = Astro.props;
+const c = section ? colorForSection(section) : null;
+const style = c
+  ? `--page-c: ${c.deep}; --page-c-soft: ${c.soft};`
+  : undefined;
+---
+
+<Band class={`proto-hero ${className}`} style={style}>
+  {label && <div class="proto-hero-pill">{label}</div>}
+  <h1>
+    {title}
+    {em && (
+      <>
+        {" "}
+        <em>{em}</em>
+      </>
+    )}
+  </h1>
+  {lede && <p class="proto-lede">{lede}</p>}
+</Band>
