@@ -4,10 +4,10 @@ import AppShell from "../../../components/AppShell.astro";
 import Band from "../../../components/Band.astro";
 import TLEntry from "../../../components/TLEntry.astro";
 import ProjCard from "../../../components/ProjCard.astro";
-import ProjectImageModal from "../../../components/ProjectImageModal.astro";
 import { useTranslation } from "../../../utils/i18n.js";
 import { getSectionContent } from "../../../utils/content.js";
 import { SUPPORTED_LOCALES } from "../../../utils/nav.js";
+import { adaptProject } from "../../../utils/projects.js";
 
 export async function getStaticPaths() {
   const themesFR = await getSectionContent("themes", "fr");
@@ -29,13 +29,13 @@ const [
   jobsContent,
   studiesContent,
   volunteeringContent,
-  portfolioContent,
+  projectsContent,
 ] = await Promise.all([
   getSectionContent("themes", lang),
   getSectionContent("jobs", lang),
   getSectionContent("studies", lang),
   getSectionContent("volunteering", lang),
-  getSectionContent("portfolio", lang),
+  getSectionContent("projects", lang),
 ]);
 
 const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
@@ -51,22 +51,12 @@ const matches = (item: any) =>
 const experiences = (jobsContent?.items || []).filter(matches);
 const studies = (studiesContent?.items || []).filter(matches);
 const volunteering = (volunteeringContent?.items || []).filter(matches);
-const projects = (portfolioContent?.projects || []).filter(matches);
+const projects = (projectsContent?.projects || []).filter(matches);
 
 const studyToBullets = (study: any) =>
   (study.description || [])
     .map((d: any) => d?.text)
     .filter((tt: any) => typeof tt === "string" && tt.trim().length > 0);
-
-const adaptProject = (project: any) => ({
-  title: project.title,
-  org: project.client,
-  year: project.date,
-  desc: project.description,
-  repo: project.repository,
-  themes: project.themes,
-  picture: project.picture,
-});
 
 const heroStyle = theme
   ? `--page-c: ${theme.colorDeep}; --page-c-soft: ${theme.colorSoft};`
@@ -130,6 +120,7 @@ const heroStyle = theme
                 themesMeta={themesMeta}
                 side={job.location}
                 logo={job.logo}
+                lang={lang}
               />
             ))}
           </>
@@ -183,21 +174,17 @@ const heroStyle = theme
           <>
             <Band class="proto-section-header">
               <h2 class="proto-band-h">
-                {t("themes.portfolioSection")}{" "}
+                {t("themes.projetsSection")}{" "}
                 <span class="proto-hint">{projects.length}</span>
               </h2>
             </Band>
-            <Band class="!py-0">
-              <div class="flex flex-col">
-                {projects.map((p: any) => (
-                  <ProjCard
-                    project={adaptProject(p)}
-                    themesMeta={themesMeta}
-                    lang={lang}
-                  />
-                ))}
-              </div>
-            </Band>
+            {projects.map((p: any) => (
+              <ProjCard
+                project={adaptProject(p)}
+                themesMeta={themesMeta}
+                lang={lang}
+              />
+            ))}
           </>
         )}
 
@@ -212,6 +199,5 @@ const heroStyle = theme
         )}
       </div>
     )}
-    <ProjectImageModal />
   </AppShell>
 </BaseLayout>

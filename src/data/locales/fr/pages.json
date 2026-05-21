@@ -11,7 +11,7 @@
     "themesHint": "— cliquez pour explorer",
     "seo": {
       "title": "Alice Aussel Delamaide — Coordinatrice solidarité internationale",
-      "description": "Portfolio d'Alice Aussel Delamaide, coordinatrice en solidarité internationale. Parcours en ONG sur les questions d'exil et de plaidoyer, coordination de programmes humanitaires en Afrique, au Maghreb et en Ukraine.",
+      "description": "Site personnel d'Alice Aussel Delamaide, coordinatrice en solidarité internationale. Parcours en ONG sur les questions d'exil et de plaidoyer, coordination de programmes humanitaires en Afrique, au Maghreb et en Ukraine.",
       "jobTitle": "Coordinatrice de la solidarité internationale"
     }
   },
@@ -55,7 +55,7 @@
       "description": "Engagements associatifs sur les questions d'exil, d'accueil, de plaidoyer et de politiques migratoires, en France et à l'international."
     }
   },
-  "portfolio": {
+  "projets": {
     "h1": "Projets numériques",
     "hero": {
       "label": "Projets numériques",
@@ -77,7 +77,7 @@
     "experiencesSection": "Expériences",
     "studiesSection": "Formations",
     "volunteeringSection": "Bénévolat",
-    "portfolioSection": "Projets",
+    "projetsSection": "Projets numériques",
     "empty": "Aucun contenu lié à ce thème pour l'instant.",
     "seo": {
       "title": "Thème — Alice Aussel Delamaide",

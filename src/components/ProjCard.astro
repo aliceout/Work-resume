@@ -23,9 +23,9 @@ interface Project {
   org?: string;
   year?: string;
   desc?: string;
-  repo?: string;
+  repo?: string | null;
   themes?: string[];
-  picture?: string;
+  pictures?: string[];
 }
 
 interface Props {
@@ -57,22 +57,35 @@ const parseDate = (d?: string) => {
   return { yr, rest };
 };
 
+const resolvePicture = (file: string): ImageMetadata | undefined => {
+  const name = file.split("/").pop();
+  return projectImages[`../assets/projects/${name}`]?.default;
+};
+
 const { yr, rest } = parseDate(project.year);
 const hasTags = (project.themes || []).length > 0;
 const hasRepo = !!project.repo;
 
-const pictureMeta: ImageMetadata | undefined = project.picture
-  ? projectImages[`../assets/projects/${project.picture.split("/").pop()}`]?.default
-  : undefined;
+const pictures = (project.pictures || [])
+  .map((p) => resolvePicture(p))
+  .filter((p): p is ImageMetadata => !!p);
 
-const fullImage = pictureMeta
-  ? await getImage({
-      src: pictureMeta,
+const thumbMeta = pictures[0];
+
+const fullImageUrls: string[] = await Promise.all(
+  pictures.map(async (pic) => {
+    const img = await getImage({
+      src: pic,
       width: 1600,
       format: "webp",
       quality: 82,
-    })
-  : null;
+    });
+    return img.src;
+  })
+);
+
+const galleryData = JSON.stringify(fullImageUrls);
+const hasMultiple = fullImageUrls.length > 1;
 ---
 
 <Band>
@@ -101,21 +114,21 @@ const fullImage = pictureMeta
     {project.desc && <p>{project.desc}</p>}
     {hasTags && (
       <div class="proto-proj-actions">
-        <ThemeTags themes={project.themes} themesMeta={themesMeta} />
+        <ThemeTags themes={project.themes} themesMeta={themesMeta} lang={lang} />
       </div>
     )}
   </div>
-  {pictureMeta && fullImage ? (
+  {thumbMeta ? (
     <button
       type="button"
       class="proto-thumb proto-thumb-img"
       data-proj-thumb
-      data-src={fullImage.src}
+      data-pictures={galleryData}
       data-title={project.title}
       aria-label={`Agrandir l'image du projet ${project.title || ""}`}
     >
       <Image
-        src={pictureMeta}
+        src={thumbMeta}
         alt={project.title || ""}
         width={640}
         densities={[1, 2]}
@@ -123,6 +136,11 @@ const fullImage = pictureMeta
         quality={78}
         loading="lazy"
       />
+      {hasMultiple && (
+        <span class="proto-thumb-count" aria-hidden="true">
+          {fullImageUrls.length}
+        </span>
+      )}
     </button>
   ) : (
     <div class="proto-thumb">

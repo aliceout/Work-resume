@@ -11,7 +11,7 @@
     "themesHint": "— click to explore",
     "seo": {
       "title": "Alice Aussel Delamaide — International solidarity coordinator",
-      "description": "Portfolio of Alice Aussel Delamaide, international solidarity coordinator. NGO career on exile and advocacy, humanitarian programme coordination in Africa, North Africa and Ukraine.",
+      "description": "Personal site of Alice Aussel Delamaide, international solidarity coordinator. NGO career on exile and advocacy, humanitarian programme coordination in Africa, North Africa and Ukraine.",
       "jobTitle": "International solidarity coordinator"
     }
   },
@@ -55,7 +55,7 @@
       "description": "Associative engagement on exile, reception, advocacy and migration policy issues, in France and internationally."
     }
   },
-  "portfolio": {
+  "projets": {
     "h1": "Digital projects",
     "hero": {
       "label": "Digital projects",
@@ -77,7 +77,7 @@
     "experiencesSection": "Experience",
     "studiesSection": "Education",
     "volunteeringSection": "Volunteering",
-    "portfolioSection": "Projects",
+    "projetsSection": "Digital projects",
     "empty": "No content linked to this theme yet.",
     "seo": {
       "title": "Theme — Alice Aussel Delamaide",

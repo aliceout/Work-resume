@@ -9,9 +9,10 @@ interface Theme {
 interface Props {
   themes?: string[];
   themesMeta?: Record<string, Theme>;
+  lang?: string;
 }
 
-const { themes = [], themesMeta = {} } = Astro.props;
+const { themes = [], themesMeta = {}, lang = "fr" } = Astro.props;
 const visible = themes
   .map((id) => themesMeta[id])
   .filter((t): t is Theme => !!t);
@@ -20,13 +21,14 @@ const visible = themes
 {visible.length > 0 && (
   <div class="proto-theme-tags">
     {visible.map((t) => (
-      <span
+      <a
+        href={`/${lang}/themes/${t.id}`}
         class="proto-theme-tag"
         style={`--c: ${t.colorDeep}; --c-soft: ${t.colorSoft};`}
       >
         <span class="proto-dot" />
         {t.name}
-      </span>
+      </a>
     ))}
   </div>
 )}

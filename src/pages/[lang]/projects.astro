@@ -4,10 +4,10 @@ import AppShell from "../../components/AppShell.astro";
 import PageContainer from "../../components/PageContainer.astro";
 import PageHero from "../../components/PageHero.astro";
 import ProjCard from "../../components/ProjCard.astro";
-import ProjectImageModal from "../../components/ProjectImageModal.astro";
 import { useTranslation } from "../../utils/i18n.js";
 import { getSectionContent } from "../../utils/content.js";
 import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+import { adaptProject } from "../../utils/projects.js";
 
 export async function getStaticPaths() {
   return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
@@ -16,8 +16,8 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const { t } = useTranslation("pages", lang);
 
-const [portfolioContent, themesContent] = await Promise.all([
-  getSectionContent("portfolio", lang),
+const [projectsContent, themesContent] = await Promise.all([
+  getSectionContent("projects", lang),
   getSectionContent("themes", lang),
 ]);
 
@@ -26,7 +26,7 @@ const yearOf = (date: string | undefined) => {
   return m ? parseInt(m[0], 10) : 0;
 };
 
-const projects = [...(portfolioContent?.projects || [])].sort(
+const projects = [...(projectsContent?.projects || [])].sort(
   (a: any, b: any) => yearOf(b.date) - yearOf(a.date),
 );
 
@@ -35,26 +35,17 @@ const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
   return acc;
 }, {});
 
-const adaptProject = (project: any) => ({
-  title: project.title,
-  org: project.client,
-  year: project.date,
-  desc: project.description,
-  repo: project.repository,
-  themes: project.themes,
-  picture: project.picture,
-});
 ---
 
 <BaseLayout
   lang={lang}
-  title={t("portfolio.seo.title")}
-  description={t("portfolio.seo.description")}
-  path={`/${lang}/portfolio`}
+  title={t("projets.seo.title")}
+  description={t("projets.seo.description")}
+  path={`/${lang}/projects`}
 >
   <AppShell lang={lang}>
-    <PageContainer section="portfolio">
-      <PageHero section="portfolio" namespace="portfolio" />
+    <PageContainer section="projets">
+      <PageHero section="projets" namespace="projets" />
       {projects.map((project: any) => (
         <ProjCard
           project={adaptProject(project)}
@@ -63,6 +54,5 @@ const adaptProject = (project: any) => ({
         />
       ))}
     </PageContainer>
-    <ProjectImageModal />
   </AppShell>
 </BaseLayout>

@@ -34,6 +34,7 @@ interface Props {
   themes?: string[];
   themesMeta?: Record<string, Theme>;
   logo?: string;
+  lang?: string;
 }
 
 const {
@@ -47,6 +48,7 @@ const {
   themes,
   themesMeta,
   logo,
+  lang = "fr",
 } = Astro.props;
 
 const parseDate = (d?: string) => {
@@ -105,7 +107,7 @@ const logoMeta = resolveLogo(logo);
           ))}
         </ul>
       )}
-      <ThemeTags themes={themes} themesMeta={themesMeta} />
+      <ThemeTags themes={themes} themesMeta={themesMeta} lang={lang} />
     </div>
     {(side || logoMeta) && (
       <div class="proto-tag-right">

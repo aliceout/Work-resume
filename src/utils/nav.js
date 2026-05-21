@@ -6,7 +6,7 @@ const ROUTES = [
   { id: "experiences", path: "jobs", labelKey: "experiences" },
   { id: "formations", path: "studies", labelKey: "formations" },
   { id: "benevolat", path: "volunteering", labelKey: "benevolat" },
-  { id: "portfolio", path: "portfolio", labelKey: "portfolio" },
+  { id: "projets", path: "projects", labelKey: "projets" },
 ];
 
 export const buildNavItems = (lang = DEFAULT_LOCALE) =>
@@ -21,7 +21,7 @@ export const SECTION_COLORS = {
   experiences: { soft: "var(--magenta)", deep: "var(--magenta-d)" },
   formations: { soft: "var(--indigo)", deep: "var(--indigo-d)" },
   benevolat: { soft: "var(--prune)", deep: "var(--prune-d)" },
-  portfolio: { soft: "var(--soleil)", deep: "var(--soleil-d)" },
+  projets: { soft: "var(--soleil)", deep: "var(--soleil-d)" },
 };
 
 export const colorForSection = (id) =>
@@ -42,7 +42,7 @@ export const sectionFromPath = (path) => {
   if (stripped.startsWith("/jobs")) return "experiences";
   if (stripped.startsWith("/studies")) return "formations";
   if (stripped.startsWith("/volunteering")) return "benevolat";
-  if (stripped.startsWith("/portfolio")) return "portfolio";
+  if (stripped.startsWith("/projects")) return "projets";
   return "accueil";
 };
 

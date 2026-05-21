@@ -496,7 +496,7 @@ a.proto-info-card {
 }
 
 /* ============================================================
-   Project (portfolio) — date | body | image
+   Project — date | body | image
    ============================================================ */
 .proto-proj {
   display: grid;
@@ -608,6 +608,25 @@ button.proto-thumb:hover {
   height: 100%;
   object-fit: cover;
 }
+.proto-thumb-count {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  pointer-events: none;
+}
 
 /* Project image modal */
 /* Cache l'util corner pendant que la modal est ouverte */
@@ -666,6 +685,62 @@ body.proto-modal-open .proto-util-corner {
 }
 .proto-modal-close:hover {
   background: rgba(255, 255, 255, 0.25);
+}
+
+/* Flèches prev/next dans la modal */
+.proto-modal-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  border: 0;
+  z-index: 201;
+  transition: background 0.15s;
+  font-family: var(--font-sans);
+  padding-bottom: 4px;
+}
+.proto-modal-nav:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.proto-modal-prev { left: 16px; }
+.proto-modal-next { right: 16px; }
+
+/* Compteur d'images (n / total) */
+.proto-modal-counter {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 201;
+}
+
+@media (max-width: 600px) {
+  .proto-modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+  .proto-modal-prev { left: 8px; }
+  .proto-modal-next { right: 8px; }
+  .proto-modal-counter {
+    bottom: 16px;
+  }
 }
 
 /* ============================================================
@@ -820,7 +895,7 @@ body.proto-modal-open .proto-util-corner {
     -webkit-hyphens: auto;
   }
 
-  /* Project (portfolio) : image en haut, puis date + body */
+  /* Project : image en haut, puis date + body */
   .proto-proj {
     grid-template-columns: 1fr;
     gap: 14px;
