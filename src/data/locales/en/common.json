@@ -1,0 +1,15 @@
+{
+  "carnet": {
+    "label": "Research notebook",
+    "subLabel": "(latest post)",
+    "cta": "Read →"
+  },
+  "current": {
+    "job": {
+      "label": "Right now"
+    },
+    "study": {
+      "label": "Current studies"
+    }
+  }
+}

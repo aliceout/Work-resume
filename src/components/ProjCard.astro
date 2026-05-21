@@ -1,0 +1,164 @@
+---
+import { Image, getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Band from "./Band.astro";
+import Icon from "./Icon.astro";
+import ThemeTags from "./ThemeTags.astro";
+import { useTranslation } from "../utils/i18n.js";
+
+const projectImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/projects/*.{png,jpg,jpeg,webp}",
+  { eager: true }
+);
+
+interface Theme {
+  id: string;
+  name: string;
+  colorDeep: string;
+  colorSoft: string;
+}
+
+interface Project {
+  title?: string;
+  org?: string;
+  year?: string;
+  desc?: string;
+  repo?: string | null;
+  themes?: string[];
+  pictures?: string[];
+}
+
+interface Props {
+  project: Project;
+  themesMeta?: Record<string, Theme>;
+  lang?: string;
+}
+
+const { project, themesMeta = {}, lang = "fr" } = Astro.props;
+const { t } = useTranslation("common", lang);
+
+const parseDate = (d?: string) => {
+  if (!d) return { yr: "", rest: "" };
+  const yearsMatch = d.match(/(\d{4})(?:\s*[-–]\s*(\d{4}))?/);
+  if (!yearsMatch) return { yr: "", rest: d.trim() };
+
+  const yr = yearsMatch[2]
+    ? `${yearsMatch[1]} - ${yearsMatch[2]}`
+    : yearsMatch[1];
+
+  const rest = d
+    .replace(yearsMatch[0], "")
+    .trim()
+    .replace(/^[-–·\s]+/, "")
+    .replace(/[-–·\s]+$/, "")
+    .replace(/\s+[-–·]\s+/g, " · ")
+    .trim();
+
+  return { yr, rest };
+};
+
+const resolvePicture = (file: string): ImageMetadata | undefined => {
+  const name = file.split("/").pop();
+  return projectImages[`../assets/projects/${name}`]?.default;
+};
+
+const { yr, rest } = parseDate(project.year);
+const hasTags = (project.themes || []).length > 0;
+const hasRepo = !!project.repo;
+
+const pictures = (project.pictures || [])
+  .map((p) => resolvePicture(p))
+  .filter((p): p is ImageMetadata => !!p);
+
+const thumbMeta = pictures[0];
+
+const fullImageUrls: string[] = await Promise.all(
+  pictures.map(async (pic) => {
+    const img = await getImage({
+      src: pic,
+      width: 1600,
+      format: "webp",
+      quality: 82,
+    });
+    return img.src;
+  })
+);
+
+const galleryData = JSON.stringify(fullImageUrls);
+const hasMultiple = fullImageUrls.length > 1;
+---
+
+<Band>
+<article class="proto-proj">
+  <div class="proto-date">
+    <div class="proto-yr">{yr}</div>
+    {rest && <div>{rest}</div>}
+    {hasRepo && (
+      <a
+        href={project.repo}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="proto-github-tag"
+      >
+        <Icon name="github" size={12} /> {t("githubLabel")}
+      </a>
+    )}
+  </div>
+  <div class="proto-proj-body">
+    <h4>{project.title}</h4>
+    {project.org && (
+      <div class="proto-org">
+        <span>{project.org}</span>
+      </div>
+    )}
+    {project.desc && <p>{project.desc}</p>}
+    {hasTags && (
+      <div class="proto-proj-actions">
+        <ThemeTags themes={project.themes} themesMeta={themesMeta} lang={lang} />
+      </div>
+    )}
+  </div>
+  {thumbMeta ? (
+    <button
+      type="button"
+      class="proto-thumb proto-thumb-img"
+      data-proj-thumb
+      data-pictures={galleryData}
+      data-title={project.title}
+      aria-label={`Agrandir l'image du projet ${project.title || ""}`}
+    >
+      <Image
+        src={thumbMeta}
+        alt={project.title || ""}
+        width={640}
+        densities={[1, 2]}
+        format="webp"
+        quality={78}
+        loading="lazy"
+      />
+      {hasMultiple && (
+        <span class="proto-thumb-count" aria-hidden="true">
+          {fullImageUrls.length}
+        </span>
+      )}
+    </button>
+  ) : (
+    <div class="proto-thumb">
+      <svg
+        viewBox="0 0 200 100"
+        fill="none"
+        stroke="var(--slate-d)"
+        stroke-width="1.2"
+        opacity="0.7"
+        width="70%"
+      >
+        <rect x="12" y="10" width="176" height="80" rx="6" />
+        <line x1="24" y1="28" x2="100" y2="28" />
+        <line x1="24" y1="42" x2="140" y2="42" />
+        <line x1="24" y1="56" x2="80" y2="56" />
+        <rect x="24" y="70" width="44" height="10" rx="2" />
+      </svg>
+    </div>
+  )}
+</article>
+</Band>

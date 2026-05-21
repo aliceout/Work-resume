@@ -1,32 +1,32 @@
 # syntax=docker/dockerfile:1.7
 
-FROM node:22-alpine AS deps
-WORKDIR /app
-COPY package.json package-lock.json .npmrc ./
-RUN npm ci
-
+# ---------- 1. Build the Astro static site ----------
 FROM node:22-alpine AS builder
 WORKDIR /app
-ENV NEXT_TELEMETRY_DISABLED=1
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-RUN npm run build
 
+# Enable pnpm via corepack (version pinned in package.json's packageManager)
+RUN corepack enable
+
+# Copy ALL pnpm config files so onlyBuiltDependencies (esbuild, sharp) is honoured
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
+
+# Install with --ignore-scripts (pnpm 11's approval check would otherwise fail
+# in CI), then explicitly rebuild native binaries we actually need.
+RUN pnpm install --frozen-lockfile --ignore-scripts \
+ && pnpm rebuild esbuild sharp
+
+# Copy the rest of the source and build the static site → /app/dist
+COPY . .
+RUN pnpm build
+
+# ---------- 2. Serve dist/ as static content ----------
 FROM node:22-alpine AS runner
 WORKDIR /app
-ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
-ENV PORT=3000
-ENV HOSTNAME=0.0.0.0
 
-RUN addgroup --system --gid 1001 nodejs \
- && adduser --system --uid 1001 nextjs
+# `serve` is a small, well-maintained static file server
+RUN npm install -g serve@14
 
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder /app/dist ./dist
 
-USER nextjs
 EXPOSE 3000
-
-CMD ["node", "server.js"]
+CMD ["serve", "-s", "dist", "-l", "3000"]

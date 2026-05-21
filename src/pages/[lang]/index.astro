@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import Band from "../../components/Band.astro";
+import PageHero from "../../components/PageHero.astro";
+import ThemeCard from "../../components/ThemeCard.astro";
+import CarnetCard from "../../components/CarnetCard.astro";
+import CurrentEntryCard from "../../components/CurrentEntryCard.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { fetchLatestCarnetPost } from "../../utils/carnet.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+import { siteConfig } from "../../config.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation(["pages", "common"], lang);
+
+const [homeContent, themesData, jobsData, studiesData, carnetPost] =
+  await Promise.all([
+    getSectionContent("home", lang),
+    getSectionContent("themes", lang),
+    getSectionContent("jobs", lang),
+    getSectionContent("studies", lang),
+    siteConfig.showCarnet
+      ? fetchLatestCarnetPost(t("carnetRssUrl"))
+      : Promise.resolve(null),
+  ]);
+
+const themes = themesData?.items || [];
+const currentJob = (jobsData?.items || []).find((j: any) => j.home) || null;
+const currentStudy =
+  (studiesData?.items || []).find((s: any) => s.home) || null;
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("home.seo.title")}
+  description={t("home.seo.description")}
+  path={`/${lang}/`}
+  jobTitle={t("home.seo.jobTitle")}
+  withPersonSchema={true}
+>
+  <AppShell lang={lang}>
+    <PageHero
+      section="accueil"
+      namespace="home"
+      ledeOverride={homeContent?.lede}
+    />
+
+    {homeContent?.about_summary && (
+      <Band class="proto-about-compact">
+        <h3 class="proto-band-h">{t("home.aboutLabel")}</h3>
+        <p>{homeContent.about_summary}</p>
+      </Band>
+    )}
+
+    {themes && themes.length > 0 && (
+      <Band>
+        <h2 class="proto-band-h">
+          {t("home.themesLabel")}
+          <span class="proto-hint">{t("home.themesHint")}</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {themes.map((theme: any) => <ThemeCard theme={theme} lang={lang} />)}
+        </div>
+      </Band>
+    )}
+
+    {currentJob && (
+      <Band>
+        <div class="proto-now">
+          <CurrentEntryCard
+            href={`/${lang}/jobs/`}
+            label={t("current.job.label")}
+            color="var(--accent-d)"
+            title={currentJob.title}
+            org={currentJob.company}
+            location={currentJob.location}
+            date={currentJob.date}
+            logo={currentJob.logo}
+          />
+          {siteConfig.showCarnet ? (
+            <CarnetCard post={carnetPost} locale={lang} />
+          ) : currentStudy ? (
+            <CurrentEntryCard
+              href={`/${lang}/studies/`}
+              label={t("current.study.label")}
+              color="var(--indigo-d)"
+              title={currentStudy.title}
+              org={currentStudy.location}
+              date={currentStudy.date}
+              logo={currentStudy.logo}
+            />
+          ) : null}
+        </div>
+      </Band>
+    )}
+  </AppShell>
+</BaseLayout>

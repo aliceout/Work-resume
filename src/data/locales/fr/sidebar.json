@@ -1,0 +1,18 @@
+{
+  "fonction": "Coordinatrice de la solidarité internationale",
+  "status": "Localisation : Madagascar",
+  "sectionsLabel": "Sections",
+  "accueil": "Accueil",
+  "experiences": "Expériences",
+  "formations": "Formations",
+  "benevolat": "Bénévolat",
+  "projets": "Projets numériques",
+  "externesLabel": "Liens",
+  "carnetNavLabel": "Carnet de recherche",
+  "contacts": {
+    "signal": "Envoyer un message",
+    "teams": "Appeler via Teams",
+    "email": "Envoyer un email"
+  },
+  "downloadBtn": "Télécharger le CV"
+}

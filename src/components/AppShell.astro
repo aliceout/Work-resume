@@ -1,0 +1,25 @@
+---
+import Sidebar from "./Sidebar.astro";
+import UtilCorner from "./UtilCorner.astro";
+import ProjectImageModal from "./ProjectImageModal.astro";
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = "fr" } = Astro.props;
+---
+
+<div class="proto-shell relative min-h-[100dvh] lg:min-h-screen text-ink bg-surface font-sans">
+  <div aria-hidden class="proto-blob proto-blob-azur" />
+  <div aria-hidden class="proto-blob proto-blob-corail" />
+
+  <Sidebar lang={lang} />
+
+  <main class="relative z-10 lg:ml-[268px] min-h-[100dvh] lg:min-h-screen pt-[64px] pb-8 lg:pt-0 lg:pb-0">
+    <slot />
+  </main>
+
+  <UtilCorner lang={lang} />
+  <ProjectImageModal />
+</div>

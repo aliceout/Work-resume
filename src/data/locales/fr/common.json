@@ -1,0 +1,15 @@
+{
+  "carnet": {
+    "label": "Carnet de recherche",
+    "subLabel": "(dernier billet)",
+    "cta": "Lire →"
+  },
+  "current": {
+    "job": {
+      "label": "En ce moment"
+    },
+    "study": {
+      "label": "Formation en cours"
+    }
+  }
+}

@@ -2,42 +2,37 @@
   "name": "resume",
   "license": "MPL-2.0",
   "private": true,
-  "packageManager": "npm@10.8.2",
+  "type": "module",
+  "packageManager": "pnpm@11.1.3",
   "engines": {
-    "node": ">=20 <23"
+    "node": ">=20"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "cross-env NEXT_TELEMETRY_DISABLED=1 next build",
-    "start": "next start",
-    "lint": "eslint .",
-    "check:translations": "node utils/scripts/check-translations.js",
-    "verify": "npm run lint && npm run check:translations"
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host",
+    "astro": "astro",
+    "audit": "lighthouse http://localhost:4321 --view --preset=desktop",
+    "audit:mobile": "lighthouse http://localhost:4321 --view"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@react-icons/all-files": "^4.1.0",
-    "next": "16.2.6",
-    "next-themes": "^0.2.1",
-    "react": "18.2.0",
-    "react-circle-flags": "^0.0.19",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.12.0",
-    "react-markdown": "^9.0.1",
-    "sass": "^1.69.5",
-    "sharp": "^0.32.6"
+    "@astrojs/sitemap": "^3.7.2",
+    "@iconify-json/lucide": "^1.2.108",
+    "@iconify-json/simple-icons": "^1.2.83",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.6",
+    "astro-icon": "^1.1.5",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "baseline-browser-mapping": "^2.9.19",
-    "cross-env": "^10.1.0",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "16.1.6",
-    "postcss": "^8.5.10",
-    "postcss-nesting": "^12.0.1",
-    "tailwindcss": "^3.4.13"
+    "lighthouse": "^13.3.0"
   },
-  "overrides": {
-    "postcss": "^8.5.10"
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

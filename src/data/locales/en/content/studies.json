@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "title": "Master I and II · Gender Studies",
+      "location": "University of Angers",
+      "date": "2025 - 2027 · In progress",
+      "home": true,
+      "description": [
+        {
+          "text": "Critical and intersectional analysis of gender relations, discrimination and inclusion policies (LGBTQIA+, feminism, minorities). Research tools, project management, advocacy and social change."
+        }
+      ],
+      "themes": ["genre"]
+    },
+    {
+      "title": "Bac+2 · Web and Mobile Web Developer · Full-stack JavaScript",
+      "location": "École O'Clock",
+      "date": "2023",
+      "description": [
+        {
+          "text": "**Frontend**: HTML5 · CSS3 · Sass/SCSS · JavaScript · TypeScript · React \n **Backend**: Node.js · Express.js · PostgreSQL · Sequelize \n **Specialisation**: React · Redux"
+        },
+        {
+          "text": "**Principles and skills**: MVC Architecture · Active Record · Object-Oriented Programming (OOP) · Data Modelling (CDM, LDM) · Agile Project Management · Responsive Web Design · REST API"
+        },
+        {
+          "text": "**Tools and methodologies**: Git · Insomnia, Postman · Shell · ESLint"
+        }
+      ],
+      "themes": ["dev"]
+    },
+    {
+      "title": "Master II · Public Policy · International Humanitarian Action",
+      "location": "Université Paris-Est Créteil",
+      "date": "2018 - 2019",
+      "description": [
+        {
+          "text": "**Option**: Emergency and rehabilitation \n Graduated with honours (AB)"
+        },
+        {
+          "text": "Project cycle management, quality monitoring, evaluation and capitalisation \n Country case studies, role-plays, project design, capacity building and partnerships"
+        },
+        {
+          "text": "**Internship thesis I**: \"*ICTs in the international solidarity sector, reflections on a forced integration*\" \n **Internship thesis II**: \"*The notion of crisis and its use on migration issues, from a mobilisation tool to the misuse of an object turned political*\""
+        }
+      ],
+      "themes": ["migration", "humanitaire"]
+    },
+    {
+      "title": "Master I · International Relations",
+      "location": "Université Lyon III · Jean Moulin",
+      "date": "2017 - 2018",
+      "description": [
+        {
+          "text": "International crisis management simulation, world cultural areas \n Religions and globalisation, European political economy, comparative foreign policies"
+        },
+        {
+          "text": "**Thesis**: \"*The externalisation of migration controls in the Sahel. A study of a new tool of an extra-territorialised European border management policy*\""
+        }
+      ],
+      "themes": ["migration", "humanitaire"]
+    },
+    {
+      "title": "Bachelor · Public law",
+      "location": "Université Toulouse I · Capitole",
+      "date": "2015 - 2017",
+      "description": [
+        {
+          "text": "**Major**: Public law \n Graduated with honours (AB)"
+        },
+        {
+          "text": "Specialisation in administrative law, international law and European law"
+        }
+      ],
+      "themes": ["migration"]
+    },
+    {
+      "title": "Capacité en droit",
+      "location": "IPST · CNAM",
+      "date": "2013 - 2015",
+      "description": [
+        {
+          "text": "Diploma awarded by Université Toulouse I · Capitole \n Graduated with honours (B)"
+        }
+      ]
+    }
+  ]
+}

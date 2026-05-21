@@ -1,0 +1,24 @@
+---
+interface Props {
+  tint?: 1 | 2 | null;
+  class?: string;
+  innerClass?: string;
+  style?: string;
+}
+
+const {
+  tint,
+  class: className = "",
+  innerClass = "",
+  style,
+} = Astro.props;
+
+const tintClass =
+  tint === 1 ? "bg-surface-tint" : tint === 2 ? "bg-surface-tint-2" : "";
+---
+
+<section class:list={["proto-band", tintClass, className]} style={style}>
+  <div class:list={["proto-band-inner", innerClass]}>
+    <slot />
+  </div>
+</section>

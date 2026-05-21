@@ -1,0 +1,203 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AppShell from "../../../components/AppShell.astro";
+import Band from "../../../components/Band.astro";
+import TLEntry from "../../../components/TLEntry.astro";
+import ProjCard from "../../../components/ProjCard.astro";
+import { useTranslation } from "../../../utils/i18n.js";
+import { getSectionContent } from "../../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../../utils/nav.js";
+import { adaptProject } from "../../../utils/projects.js";
+
+export async function getStaticPaths() {
+  const themesFR = await getSectionContent("themes", "fr");
+  const ids = (themesFR?.items || []).map((t: any) => t.id);
+  const paths: any[] = [];
+  for (const lang of SUPPORTED_LOCALES) {
+    for (const id of ids) {
+      paths.push({ params: { lang, id } });
+    }
+  }
+  return paths;
+}
+
+const { lang, id } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [
+  themesContent,
+  jobsContent,
+  studiesContent,
+  volunteeringContent,
+  projectsContent,
+] = await Promise.all([
+  getSectionContent("themes", lang),
+  getSectionContent("jobs", lang),
+  getSectionContent("studies", lang),
+  getSectionContent("volunteering", lang),
+  getSectionContent("projects", lang),
+]);
+
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+const theme = themesMeta[id as string] || null;
+const allThemes = Object.values(themesMeta) as any[];
+
+const matches = (item: any) =>
+  Array.isArray(item.themes) && item.themes.includes(id);
+
+const experiences = (jobsContent?.items || []).filter(matches);
+const studies = (studiesContent?.items || []).filter(matches);
+const volunteering = (volunteeringContent?.items || []).filter(matches);
+const projects = (projectsContent?.projects || []).filter(matches);
+
+const studyToBullets = (study: any) =>
+  (study.description || [])
+    .map((d: any) => d?.text)
+    .filter((tt: any) => typeof tt === "string" && tt.trim().length > 0);
+
+const heroStyle = theme
+  ? `--page-c: ${theme.colorDeep}; --page-c-soft: ${theme.colorSoft};`
+  : undefined;
+---
+
+<BaseLayout
+  lang={lang}
+  title={theme ? `${theme.name} — ${t("themes.seo.title")}` : t("themes.seo.title")}
+  description={theme ? theme.sub : t("themes.seo.description")}
+  path={`/${lang}/themes/${id}`}
+>
+  <AppShell lang={lang}>
+    {theme && (
+      <div style={heroStyle}>
+        <Band class="proto-hero proto-theme-hero">
+          <div class="proto-hero-pill">{t("themes.themeLabel")}</div>
+          <h1>
+            {theme.name}
+            <em>.</em>
+          </h1>
+          <p class="proto-lede">{theme.sub}</p>
+
+          <div class="flex flex-wrap gap-2 mt-6">
+            {allThemes.map((o) => {
+              const isCurrent = o.id === theme.id;
+              return (
+                <a
+                  href={`/${lang}/themes/${o.id}`}
+                  data-active={isCurrent}
+                  class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-line bg-surface-card text-[12px] text-ink-2 hover:border-ink transition-colors data-[active=true]:border-[var(--c)] data-[active=true]:text-[var(--c)]"
+                  style={`--c: ${o.colorDeep};`}
+                >
+                  <span
+                    class="w-1.5 h-1.5 rounded-full"
+                    style="background: var(--c);"
+                  />
+                  {o.name}
+                </a>
+              );
+            })}
+          </div>
+        </Band>
+
+        {experiences.length > 0 && (
+          <>
+            <Band class="proto-section-header">
+              <h2 class="proto-band-h">
+                {t("themes.experiencesSection")}{" "}
+                <span class="proto-hint">{experiences.length}</span>
+              </h2>
+            </Band>
+            {experiences.map((job: any) => (
+              <TLEntry
+                date={job.date}
+                title={job.title}
+                org={job.company}
+                desc={job.description}
+                bullets={job.bullets}
+                themes={job.themes}
+                themesMeta={themesMeta}
+                side={job.location}
+                logo={job.logo}
+                lang={lang}
+              />
+            ))}
+          </>
+        )}
+
+        {studies.length > 0 && (
+          <>
+            <Band class="proto-section-header">
+              <h2 class="proto-band-h">
+                {t("themes.studiesSection")}{" "}
+                <span class="proto-hint">{studies.length}</span>
+              </h2>
+            </Band>
+            {studies.map((s: any) => (
+              <TLEntry
+                date={s.date}
+                title={s.title}
+                org={s.location}
+                bullets={studyToBullets(s)}
+                themes={s.themes}
+                themesMeta={themesMeta}
+              />
+            ))}
+          </>
+        )}
+
+        {volunteering.length > 0 && (
+          <>
+            <Band class="proto-section-header">
+              <h2 class="proto-band-h">
+                {t("themes.volunteeringSection")}{" "}
+                <span class="proto-hint">{volunteering.length}</span>
+              </h2>
+            </Band>
+            {volunteering.map((v: any) => (
+              <TLEntry
+                date={v.date}
+                title={v.company}
+                desc={v.description}
+                bullets={v.bullets}
+                themes={v.themes}
+                themesMeta={themesMeta}
+                side={v.location}
+                logo={v.logo}
+              />
+            ))}
+          </>
+        )}
+
+        {projects.length > 0 && (
+          <>
+            <Band class="proto-section-header">
+              <h2 class="proto-band-h">
+                {t("themes.projetsSection")}{" "}
+                <span class="proto-hint">{projects.length}</span>
+              </h2>
+            </Band>
+            {projects.map((p: any) => (
+              <ProjCard
+                project={adaptProject(p)}
+                themesMeta={themesMeta}
+                lang={lang}
+              />
+            ))}
+          </>
+        )}
+
+        {experiences.length +
+          studies.length +
+          volunteering.length +
+          projects.length ===
+          0 && (
+          <Band>
+            <p class="text-sm text-ink-3">{t("themes.empty")}</p>
+          </Band>
+        )}
+      </div>
+    )}
+  </AppShell>
+</BaseLayout>

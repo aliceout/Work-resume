@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "title": "Carnet de recherche",
+      "date": "2026",
+      "client": "Projet personnel",
+      "languages": "Astro 6 SSR, Payload CMS 3, PostgreSQL, Docker",
+      "repository": "https://github.com/aliceout/Carnet",
+      "url": "https://carnet.aliceosdel.org/",
+      "description": "Carnet de recherche personnel auto-hébergé, équivalent self-hosted d'un carnet Hypothèses. Stack Astro SSR + Payload CMS dockerisée, sans pisteur ni dépendance externe.",
+      "pictures": ["Carnet_1.png", "Carnet_2.png", "Carnet_3.png"],
+      "themes": ["dev", "genre"]
+    },
+    {
+      "title": "Korai",
+      "date": "2026",
+      "client": "Atlas Logistique · Humanité & Inclusion",
+      "languages": "React, TypeScript, Node",
+      "repository": null,
+      "url": null,
+      "description": "MVP d'une application métier pour piloter une plateforme logistique humanitaire mutualisée : demandes de service, gestion de stock, opérations de transport, achats, sécurité, finance et facturation. Modules indépendants reliés à un tableau de bord transverse.",
+      "pictures": ["Korai_1.png", "Korai_2.png", "Korai_3.png"],
+      "themes": ["humanitaire", "dev"]
+    },
+    {
+      "title": "Nodea",
+      "date": "2025",
+      "client": "Projet personnel",
+      "languages": "React 19, Hono, Drizzle ORM, PostgreSQL, OPAQUE + WebAuthn",
+      "repository": "https://github.com/aliceout/Nodea",
+      "url": "https://nodea.app",
+      "description": "Application web de suivi personnel (journal, humeurs, objectifs, habitudes, lectures, bilan annuel) chiffrée de bout en bout et auto-hébergeable. Tout est chiffré côté navigateur avant d'arriver au serveur — même l'admin de l'instance ne peut rien lire.",
+      "pictures": ["Nodea_1.png", "Nodea_2.png", "Nodea_3.png"],
+      "themes": ["dev"]
+    },
+    {
+      "title": "2 Mains de Femme",
+      "date": "2025",
+      "client": "Association 2 Mains de Femme (Lyon)",
+      "languages": "Astro 6 SSR, Tailwind, Payload CMS 3, PostgreSQL, Docker",
+      "repository": "https://github.com/aliceout/2mains",
+      "url": "https://2mainsdefemmes.org",
+      "description": "Refonte du site vitrine de l'association lyonnaise 2 Mains de Femme. Architecture Astro SSR + Payload CMS auto-hébergée, accompagnement de l'équipe sur la gestion du contenu.",
+      "pictures": ["2mains_1.png", "2mains_2.png", "2mains_3.png"],
+      "themes": ["genre", "dev"]
+    },
+    {
+      "title": "Watizat (WebApp)",
+      "date": "2023",
+      "client": "Association Watizat",
+      "languages": "React, Redux, Tailwind",
+      "repository": "https://github.com/Watizat/web_app",
+      "url": null,
+      "description": "Projet de numérisation des guides de l'association Watizat. L'application permet de consulter les guides, de les filtrer par catégorie et d'éditer les données (back-office). Les guides sont également géolocalisés sur une carte. L'application est responsive et fonctionne sur desktop, mobile et tablette.",
+      "pictures": ["watizat.png"],
+      "themes": ["migration", "dev"]
+    },
+    {
+      "title": "My resume",
+      "date": "2023",
+      "client": "Projet personnel",
+      "languages": "Astro, Tailwind",
+      "repository": "https://github.com/aliceout/Work-resume",
+      "url": null,
+      "description": "Reconstruction de mon CV en ligne, comme alternative à LinkedIn et vitrine de mes différents projets.",
+      "pictures": ["resume.png"],
+      "themes": ["dev"]
+    },
+    {
+      "title": "Migrappi",
+      "date": "2019",
+      "client": "ONG Caritas Maroc",
+      "languages": "PHP, Bootstrap",
+      "repository": "https://github.com/aliceout/Migrappi-frontend",
+      "url": null,
+      "description": "Reconstruction d'une application de collecte et de traitement des données des personnes exilées accueillies, pour le compte de l'ONG Caritas au Maroc.\nModélisation de l'interface et construction du front avant passage de relais à un prestataire.",
+      "pictures": ["migrappi.jpg"],
+      "themes": ["migration", "dev"]
+    }
+  ]
+}

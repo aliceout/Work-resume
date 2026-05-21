@@ -1,0 +1,28 @@
+---
+interface Theme {
+  id: string;
+  num: string;
+  name: string;
+  sub: string;
+  colorDeep: string;
+  colorSoft: string;
+}
+
+interface Props {
+  theme: Theme;
+  lang?: string;
+}
+
+const { theme, lang = "fr" } = Astro.props;
+const style = `--c: ${theme.colorDeep}; --c-soft: ${theme.colorSoft};`;
+---
+
+<a href={`/${lang}/themes/${theme.id}`} class="proto-theme-card" style={style}>
+  <div class="proto-card-head">
+    <span class="proto-dot" />
+    <span class="proto-card-num">{theme.num}</span>
+    <span class="proto-card-nm">{theme.name}</span>
+    <span class="proto-card-arr">→</span>
+  </div>
+  <div class="proto-card-sub">{theme.sub}</div>
+</a>

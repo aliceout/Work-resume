@@ -1,0 +1,168 @@
+---
+// Modal listener — to be included once per page where ProjCards are rendered
+---
+
+<div class="proto-modal-root" hidden>
+  <div class="proto-modal-overlay" data-modal-overlay>
+    <button
+      type="button"
+      class="proto-modal-close"
+      data-modal-close
+      aria-label="Fermer"
+    >
+      ×
+    </button>
+
+    <button
+      type="button"
+      class="proto-modal-nav proto-modal-prev"
+      data-modal-prev
+      aria-label="Image précédente"
+      hidden
+    >
+      ‹
+    </button>
+
+    <button
+      type="button"
+      class="proto-modal-nav proto-modal-next"
+      data-modal-next
+      aria-label="Image suivante"
+      hidden
+    >
+      ›
+    </button>
+
+    <div class="proto-modal-content" data-modal-content>
+      <img data-modal-img alt="" />
+    </div>
+
+    <div class="proto-modal-counter" data-modal-counter hidden></div>
+  </div>
+</div>
+
+<script is:inline>
+  // Event delegation — survit aux navigations ClientRouter
+  (function () {
+    if (window.__projModalBound) return;
+    window.__projModalBound = true;
+
+    const state = { pictures: [], index: 0, title: "" };
+
+    const getRoot = () => document.querySelector(".proto-modal-root");
+
+    const render = () => {
+      const root = getRoot();
+      if (!root) return;
+      const img = root.querySelector("[data-modal-img]");
+      const counter = root.querySelector("[data-modal-counter]");
+      const prev = root.querySelector("[data-modal-prev]");
+      const next = root.querySelector("[data-modal-next]");
+
+      img.src = state.pictures[state.index];
+      img.alt = state.title || "";
+
+      const multiple = state.pictures.length > 1;
+      if (counter) {
+        if (multiple) {
+          counter.textContent = `${state.index + 1} / ${state.pictures.length}`;
+          counter.removeAttribute("hidden");
+        } else {
+          counter.setAttribute("hidden", "");
+        }
+      }
+      if (prev && next) {
+        if (multiple) {
+          prev.removeAttribute("hidden");
+          next.removeAttribute("hidden");
+        } else {
+          prev.setAttribute("hidden", "");
+          next.setAttribute("hidden", "");
+        }
+      }
+    };
+
+    const open = (pictures, title) => {
+      const root = getRoot();
+      if (!root || !pictures || pictures.length === 0) return;
+      state.pictures = pictures;
+      state.index = 0;
+      state.title = title || "";
+      render();
+      root.removeAttribute("hidden");
+      document.body.style.overflow = "hidden";
+      document.body.classList.add("proto-modal-open");
+    };
+    const close = () => {
+      const root = getRoot();
+      if (!root) return;
+      const img = root.querySelector("[data-modal-img]");
+      root.setAttribute("hidden", "");
+      img.removeAttribute("src");
+      document.body.style.overflow = "";
+      document.body.classList.remove("proto-modal-open");
+      state.pictures = [];
+      state.index = 0;
+      state.title = "";
+    };
+    const goPrev = () => {
+      if (state.pictures.length <= 1) return;
+      state.index = (state.index - 1 + state.pictures.length) % state.pictures.length;
+      render();
+    };
+    const goNext = () => {
+      if (state.pictures.length <= 1) return;
+      state.index = (state.index + 1) % state.pictures.length;
+      render();
+    };
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest) return;
+
+      if (e.target.closest("[data-modal-prev]")) {
+        e.stopPropagation();
+        goPrev();
+        return;
+      }
+      if (e.target.closest("[data-modal-next]")) {
+        e.stopPropagation();
+        goNext();
+        return;
+      }
+      if (e.target.closest("[data-modal-close]")) {
+        close();
+        return;
+      }
+
+      const thumb = e.target.closest("[data-proj-thumb]");
+      if (thumb) {
+        const raw = thumb.getAttribute("data-pictures");
+        const title = thumb.getAttribute("data-title");
+        let pictures = [];
+        if (raw) {
+          try {
+            pictures = JSON.parse(raw);
+          } catch (_) {
+            pictures = [];
+          }
+        }
+        if (pictures.length) open(pictures, title);
+        return;
+      }
+
+      const overlay = e.target.closest("[data-modal-overlay]");
+      const content = e.target.closest("[data-modal-content]");
+      if (overlay && !content) {
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      const root = getRoot();
+      if (!root || root.hasAttribute("hidden")) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowLeft") goPrev();
+      else if (e.key === "ArrowRight") goNext();
+    });
+  })();
+</script>

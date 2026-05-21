@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppShell from "../../components/AppShell.astro";
+import PageContainer from "../../components/PageContainer.astro";
+import PageHero from "../../components/PageHero.astro";
+import ProjCard from "../../components/ProjCard.astro";
+import { useTranslation } from "../../utils/i18n.js";
+import { getSectionContent } from "../../utils/content.js";
+import { SUPPORTED_LOCALES } from "../../utils/nav.js";
+import { adaptProject } from "../../utils/projects.js";
+
+export async function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { t } = useTranslation("pages", lang);
+
+const [projectsContent, themesContent] = await Promise.all([
+  getSectionContent("projects", lang),
+  getSectionContent("themes", lang),
+]);
+
+const yearOf = (date: string | undefined) => {
+  const m = (date || "").match(/\d{4}/);
+  return m ? parseInt(m[0], 10) : 0;
+};
+
+const projects = [...(projectsContent?.projects || [])].sort(
+  (a: any, b: any) => yearOf(b.date) - yearOf(a.date),
+);
+
+const themesMeta = (themesContent?.items || []).reduce((acc: any, th: any) => {
+  acc[th.id] = th;
+  return acc;
+}, {});
+
+---
+
+<BaseLayout
+  lang={lang}
+  title={t("projets.seo.title")}
+  description={t("projets.seo.description")}
+  path={`/${lang}/projects`}
+>
+  <AppShell lang={lang}>
+    <PageContainer section="projets">
+      <PageHero section="projets" namespace="projets" />
+      {projects.map((project: any) => (
+        <ProjCard
+          project={adaptProject(project)}
+          themesMeta={themesMeta}
+          lang={lang}
+        />
+      ))}
+    </PageContainer>
+  </AppShell>
+</BaseLayout>

@@ -1,0 +1,93 @@
+{
+  "items": [
+    {
+      "location": "Lyon, France",
+      "date": "2025 · En cours",
+      "company": "2 Mains de Femme",
+      "description": "Conception et développement du site web associatif",
+      "bullets": [
+        "Refonte du site web associatif",
+        "Maintenance technique et accompagnement de l'équipe"
+      ],
+      "themes": ["genre", "dev"],
+      "logo": "/images/companies/2mains.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2023 - 2024",
+      "company": "Médecins du Monde",
+      "description": "Programme « Actions mobiles »",
+      "bullets": [
+        "Construction et animation d'un COPIL : cadre, feuilles de route, redéfinition des missions du programme",
+        "Maraude solidaire auprès de publics précaires"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/mdm.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2022 - 2024",
+      "company": "Watizat",
+      "description": "Guide d'information multilingue à destination des personnes exilées",
+      "bullets": [
+        "Rédaction et mise à jour du guide local (Toulouse) listant les services aux personnes exilées",
+        "Cheffe de projet et développeuse d'une application web complète de collecte, traitement et consultation des données"
+      ],
+      "themes": ["migration", "dev"],
+      "logo": "/images/companies/watizat.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2022 - 2023",
+      "company": "La Cimade",
+      "description": "Association d'assistance et d'information juridique auprès des personnes exilées",
+      "bullets": [
+        "Participation à des permanences d'accès aux droits",
+        "Organisation et participation à des actions de sensibilisation"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/cimade.png"
+    },
+    {
+      "location": "Marseille, France",
+      "date": "2019 - 2020",
+      "company": "Médecins du Monde",
+      "description": "Programme « Migrations frontières transalpines »",
+      "bullets": [
+        "Appui transversal : RH (profils, organigramme, base de données), logistique (stocks, parc véhicules), finances (suivi budgétaire et frais bénévoles), informatique (outils collaboratifs)",
+        "Maraude solidaire auprès des personnes exilées au col de Montgenèvre (Briançon)"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/mdm.png"
+    },
+    {
+      "location": "Lyon, France",
+      "date": "2017 - 2018",
+      "company": "La Cimade",
+      "description": "Association d'assistance et d'information juridique auprès des personnes exilées",
+      "bullets": [
+        "Participation à des permanences d'accès aux droits",
+        "Actions de plaidoyer auprès de parlementaires dans le cadre de la loi « asile et immigration »",
+        "Élaboration de supports de communication",
+        "Élaboration et mise en page des rapports d'activité régionaux et du festival Migrant'scène",
+        "Accompagnement à la refonte et à la réorganisation des rôles et missions du pôle « SI, sensibilisation et plaidoyer » de l'antenne locale",
+        "Appui interne sur les outils numériques"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/cimade.png"
+    },
+    {
+      "location": "Toulouse, France",
+      "date": "2015 - 2017",
+      "company": "La Cimade",
+      "description": "Association d'assistance et d'information juridique auprès des personnes exilées",
+      "bullets": [
+        "Participation à des permanences d'accès aux droits",
+        "Élaboration de supports de communication",
+        "Élaboration et mise en page des rapports d'activité régionaux et du festival Migrant'scène"
+      ],
+      "themes": ["migration"],
+      "logo": "/images/companies/cimade.png"
+    }
+  ]
+}
