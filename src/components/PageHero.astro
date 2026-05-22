@@ -6,10 +6,11 @@ interface Props {
   section: string;
   namespace: string;
   ledeOverride?: string;
+  lang?: string;
 }
 
-const { section, namespace, ledeOverride } = Astro.props;
-const { t } = useTranslation("pages", Astro.currentLocale);
+const { section, namespace, ledeOverride, lang } = Astro.props;
+const { t } = useTranslation("pages", lang ?? (Astro.params.lang as string));
 ---
 
 <HeroBand

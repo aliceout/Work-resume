@@ -731,15 +731,35 @@ body.proto-modal-open .proto-util-corner {
 }
 
 @media (max-width: 600px) {
+  /* Mobile: leave room at the bottom for nav controls,
+     arrows go BELOW the image in a row with the counter */
+  .proto-modal-overlay {
+    padding-bottom: 96px;
+  }
+  .proto-modal-content,
+  .proto-modal-content img {
+    max-height: calc(100dvh - 140px);
+  }
+
   .proto-modal-nav {
-    width: 40px;
-    height: 40px;
+    top: auto;
+    bottom: 16px;
+    transform: none;
+    width: 44px;
+    height: 44px;
     font-size: 28px;
   }
-  .proto-modal-prev { left: 8px; }
-  .proto-modal-next { right: 8px; }
+  .proto-modal-prev {
+    left: calc(50% - 70px);
+    right: auto;
+  }
+  .proto-modal-next {
+    left: auto;
+    right: calc(50% - 70px);
+  }
   .proto-modal-counter {
-    bottom: 16px;
+    bottom: 28px;
+    /* center vertically between the two arrows */
   }
 }
 
