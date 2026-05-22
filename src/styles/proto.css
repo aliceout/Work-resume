@@ -750,16 +750,18 @@ body.proto-modal-open .proto-util-corner {
     font-size: 28px;
   }
   .proto-modal-prev {
-    left: calc(50% - 70px);
+    left: calc(50% - 96px);
     right: auto;
   }
   .proto-modal-next {
     left: auto;
-    right: calc(50% - 70px);
+    right: calc(50% - 96px);
   }
   .proto-modal-counter {
-    bottom: 28px;
-    /* center vertically between the two arrows */
+    /* vertically centered on the arrows' midline
+       (arrows: bottom 16 + height 44 → center at y=38)
+       (counter ≈ 24px tall → bottom = 38 - 12 = 26) */
+    bottom: 26px;
   }
 }
 
