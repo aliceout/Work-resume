@@ -7,6 +7,7 @@ import {
   sectionFromPath,
 } from "../utils/nav.js";
 import { useTranslation } from "../utils/i18n.js";
+import { getSectionContent } from "../utils/content.js";
 import { siteConfig } from "../config.js";
 import profilePhoto from "../assets/profile.jpg";
 
@@ -18,6 +19,17 @@ const { lang = "fr" } = Astro.props;
 const { t } = useTranslation(["sidebar", "common"], lang);
 const current = sectionFromPath(Astro.url.pathname);
 const navItems = buildNavItems(lang);
+
+const themesContent = await getSectionContent("themes", lang);
+const themes = (themesContent?.items || []) as Array<{
+  id: string;
+  name: string;
+  colorDeep: string;
+}>;
+
+// Active theme id (when on /[lang]/themes/<id>)
+const themeMatch = Astro.url.pathname.match(/\/themes\/([a-z0-9-]+)/);
+const activeThemeId = themeMatch ? themeMatch[1] : null;
 
 const contacts = [
   { service: "linkedin", icon: "linkedin", title: "LinkedIn", href: t("linkedinUrl") },
@@ -125,6 +137,28 @@ const contacts = [
       );
     })}
   </nav>
+
+  {themes.length > 0 && (
+    <nav class="flex flex-col gap-px">
+      <div class="text-[10px] tracking-[0.12em] uppercase text-ink-3 pt-1 pb-0 px-3">
+        {t("themesLabel")}
+      </div>
+      {themes.map((th) => {
+        const isActive = activeThemeId === th.id;
+        return (
+          <a
+            href={`/${lang}/themes/${th.id}/`}
+            data-active={isActive}
+            class="group flex items-center gap-3 px-3 py-1.5 rounded-[10px] text-[13.5px] font-medium text-ink-2 hover:bg-surface-tint hover:text-ink data-[active=true]:bg-surface-tint data-[active=true]:text-ink transition-colors"
+            style={`--c: ${th.colorDeep};`}
+          >
+            <span class="proto-nav-dot" data-active={isActive} />
+            <span class="flex-1">{th.name}</span>
+          </a>
+        );
+      })}
+    </nav>
+  )}
 
   <nav class="flex flex-col gap-px">
     <div class="text-[10px] tracking-[0.12em] uppercase text-ink-3 pt-1 pb-0 px-3">

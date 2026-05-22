@@ -35,7 +35,7 @@ export const localeFromPath = (path) => {
 };
 
 export const sectionFromPath = (path) => {
-  if (!path) return "accueil";
+  if (!path) return null;
   // Strip leading /xx/ (locale)
   const stripped = path.replace(/^\/[a-z]{2}/, "") || "/";
   if (stripped === "/" || stripped === "") return "accueil";
@@ -43,7 +43,8 @@ export const sectionFromPath = (path) => {
   if (stripped.startsWith("/studies")) return "formations";
   if (stripped.startsWith("/volunteering")) return "benevolat";
   if (stripped.startsWith("/projects")) return "projets";
-  return "accueil";
+  // Other paths (e.g. /themes/...) → no main-nav section is active
+  return null;
 };
 
 export const swapLocaleInPath = (path, nextLocale) => {
