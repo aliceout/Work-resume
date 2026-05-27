@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { getImage } from "astro:assets";
 import { useTranslation } from "../utils/i18n.js";
+import profilePhoto from "../assets/profile.jpg";
 
 interface Props {
   lang?: string;
@@ -28,6 +30,29 @@ const resolvedTitle = title || personName;
 const siteUrl = Astro.site ? Astro.site.toString().replace(/\/$/, "") : "";
 const canonical = `${siteUrl}${path}`;
 
+// 1200×1200 absolute URL for OG / Twitter / Person.image
+const ogImageAsset = await getImage({
+  src: profilePhoto,
+  width: 1200,
+  height: 1200,
+  format: "jpg",
+  quality: 86,
+});
+const ogImage = `${siteUrl}${ogImageAsset.src}`;
+
+const ogLocale = lang === "en" ? "en_US" : "fr_FR";
+const ogLocaleAlternate = lang === "en" ? "fr_FR" : "en_US";
+
+// Site Name signal for Google (rendered on every page; Google reads
+// it preferentially on the homepage when computing the site name)
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: personName,
+  url: siteUrl || canonical,
+  inLanguage: lang === "en" ? "en" : "fr",
+};
+
 const personSchema = withPersonSchema
   ? {
       "@context": "https://schema.org",
@@ -36,6 +61,19 @@ const personSchema = withPersonSchema
       jobTitle,
       description,
       url: canonical,
+      image: ogImage,
+      sameAs: [
+        t("linkedinUrl"),
+        t("githubUrl"),
+        t("carnetUrl"),
+      ].filter((u) => typeof u === "string" && u.startsWith("http")),
+      knowsAbout: [
+        "Solidarité internationale",
+        "Coordination humanitaire",
+        "Politiques migratoires",
+        "Études de genre",
+        "Développement web",
+      ],
     }
   : null;
 ---
@@ -50,6 +88,24 @@ const personSchema = withPersonSchema
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical} />
 
+    {/* Open Graph (LinkedIn, Slack, Bluesky, Discord…) */}
+    <meta property="og:site_name" content={personName} />
+    <meta property="og:title" content={resolvedTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlternate} />
+
+    {/* Twitter / X card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={resolvedTitle} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -63,9 +119,17 @@ const personSchema = withPersonSchema
 
     <ClientRouter />
 
+    {/* WebSite JSON-LD — signals the site name to Google */}
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(websiteSchema)}
+    />
+
     {
       personSchema && (
         <script
+          is:inline
           type="application/ld+json"
           set:html={JSON.stringify(personSchema)}
         />
