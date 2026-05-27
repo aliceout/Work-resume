@@ -109,11 +109,12 @@
   /* Bleu dédié pour les noms d'organisation */
   --org-color: #4a6688;
 
-  /* Typo (CSS vars utilisées par .proto-* + Tailwind via @theme) */
-  --font-serif: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-sans-tight: "Inter Tight", "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  /* Typo (CSS vars utilisées par .proto-* + Tailwind via @theme)
+     Polices auto-hébergées via @fontsource-variable (cf. BaseLayout) */
+  --font-serif: "Fraunces Variable", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-sans-tight: "Inter Tight Variable", "Inter Variable", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
 
   /* Bandes — densité */
   --band-py: 28px;

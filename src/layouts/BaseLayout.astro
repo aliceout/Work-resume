@@ -1,4 +1,13 @@
 ---
+// Self-hosted fonts (variable, weight axis only; Fraunces italic only)
+import "@fontsource-variable/inter/wght.css";
+import "@fontsource-variable/inter-tight/wght.css";
+import "@fontsource-variable/fraunces/wght-italic.css";
+import "@fontsource-variable/jetbrains-mono/wght.css";
+// woff2 URLs for preloading the above-the-fold hero fonts
+import interTightWoff2 from "@fontsource-variable/inter-tight/files/inter-tight-latin-wght-normal.woff2?url";
+import frauncesItalicWoff2 from "@fontsource-variable/fraunces/files/fraunces-latin-wght-italic.woff2?url";
+
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 import { getImage } from "astro:assets";
@@ -106,15 +115,20 @@ const personSchema = withPersonSchema
     {description && <meta name="twitter:description" content={description} />}
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    {/* Preload above-the-fold hero fonts (title + italic em) */}
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
+      rel="preload"
+      href={interTightWoff2}
+      as="font"
+      type="font/woff2"
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@300;400;500;600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href={frauncesItalicWoff2}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
 
     <ClientRouter />
