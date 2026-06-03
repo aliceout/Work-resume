@@ -56,12 +56,15 @@ const ogLocale = lang === "en" ? "en_US" : "fr_FR";
 const ogLocaleAlternate = lang === "en" ? "fr_FR" : "en_US";
 
 // Site Name signal for Google (rendered on every page; Google reads
-// it preferentially on the homepage when computing the site name)
+// it preferentially on the homepage when computing the site name).
+// Trailing slash on URL matches what Google considers a canonical
+// home; alternateName gives Google a backup label.
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: personName,
-  url: siteUrl || canonical,
+  alternateName: t("firstName"),
+  url: `${siteUrl}/`,
   inLanguage: lang === "en" ? "en" : "fr",
 };
 
@@ -98,6 +101,8 @@ const personSchema = withPersonSchema
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{resolvedTitle}</title>
     {description && <meta name="description" content={description} />}
+    {/* application-name = additional site name signal for Google */}
+    <meta name="application-name" content={personName} />
     <link rel="canonical" href={canonical} />
 
     {/* Open Graph (LinkedIn, Slack, Bluesky, Discord…) */}
