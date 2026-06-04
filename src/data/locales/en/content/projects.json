@@ -63,7 +63,7 @@
       "repository": "https://github.com/aliceout/Work-resume",
       "url": null,
       "description": "Rebuilding my CV online as an alternative to LinkedIn, and as a showcase for my different projects.",
-      "pictures": ["resume.png", "resume_2.png"],
+      "pictures": ["resume_1.png", "resume_2.png"],
       "themes": ["dev"]
     },
     {
