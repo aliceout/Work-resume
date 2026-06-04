@@ -63,7 +63,7 @@
       "repository": "https://github.com/aliceout/Work-resume",
       "url": null,
       "description": "Reconstruction de mon CV en ligne, comme alternative à LinkedIn et vitrine de mes différents projets.",
-      "pictures": ["resume.png"],
+      "pictures": ["resume.png", "resume_2.png"],
       "themes": ["dev"]
     },
     {
@@ -74,7 +74,7 @@
       "repository": "https://github.com/aliceout/Migrappi-frontend",
       "url": null,
       "description": "Reconstruction d'une application de collecte et de traitement des données des personnes exilées accueillies, pour le compte de l'ONG Caritas au Maroc.\nModélisation de l'interface et construction du front avant passage de relais à un prestataire.",
-      "pictures": ["migrappi.jpg"],
+      "pictures": ["migrappi_1.jpg", "migrappi_2.png", "migrappi_3.png"],
       "themes": ["migration", "dev"]
     }
   ]

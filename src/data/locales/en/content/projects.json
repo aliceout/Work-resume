@@ -8,15 +8,8 @@
       "repository": "https://github.com/aliceout/Carnet",
       "url": "https://carnet.aliceosdel.org/",
       "description": "Self-hosted personal research notebook, a self-hosted equivalent to an Hypothèses notebook. Astro SSR + Payload CMS stack in Docker, no tracker, no external dependency.",
-      "pictures": [
-        "Carnet_1.png",
-        "Carnet_2.png",
-        "Carnet_3.png"
-      ],
-      "themes": [
-        "dev",
-        "genre"
-      ]
+      "pictures": ["Carnet_1.png", "Carnet_2.png", "Carnet_3.png"],
+      "themes": ["dev", "genre"]
     },
     {
       "title": "Korai",
@@ -26,15 +19,8 @@
       "repository": null,
       "url": null,
       "description": "MVP of a business application to manage a pooled humanitarian logistics platform: service requests, stock management, transport operations, purchasing, security, finance and invoicing. Independent modules connected to a cross-cutting dashboard.",
-      "pictures": [
-        "Korai_1.png",
-        "Korai_2.png",
-        "Korai_3.png"
-      ],
-      "themes": [
-        "humanitaire",
-        "dev"
-      ]
+      "pictures": ["Korai_1.png", "Korai_2.png", "Korai_3.png"],
+      "themes": ["humanitaire", "dev"]
     },
     {
       "title": "Nodea",
@@ -44,14 +30,8 @@
       "repository": "https://github.com/aliceout/Nodea",
       "url": "https://nodea.app",
       "description": "End-to-end encrypted, self-hostable personal tracking web app (journal, mood, goals, habits, reading list, yearly review). Everything is encrypted in the browser before reaching the server — not even the instance admin can read it.",
-      "pictures": [
-        "Nodea_1.png",
-        "Nodea_2.png",
-        "Nodea_3.png"
-      ],
-      "themes": [
-        "dev"
-      ]
+      "pictures": ["Nodea_1.png", "Nodea_2.png", "Nodea_3.png"],
+      "themes": ["dev"]
     },
     {
       "title": "2 Mains de Femme",
@@ -61,15 +41,8 @@
       "repository": "https://github.com/aliceout/2mains",
       "url": "https://2mainsdefemmes.org",
       "description": "Redesign of the public website for the Lyon-based 2 Mains de Femme association. Self-hosted Astro SSR + Payload CMS architecture, with team training on content management.",
-      "pictures": [
-        "2mains_1.png",
-        "2mains_2.png",
-        "2mains_3.png"
-      ],
-      "themes": [
-        "genre",
-        "dev"
-      ]
+      "pictures": ["2mains_1.png", "2mains_2.png", "2mains_3.png"],
+      "themes": ["genre", "dev"]
     },
     {
       "title": "Watizat (WebApp)",
@@ -79,13 +52,8 @@
       "repository": "https://github.com/Watizat/web_app",
       "url": null,
       "description": "Project to digitise the Watizat association's guides. The application lets users browse the guides, filter them by category and edit the data (back-office). Guides are also geolocated on a map. The application is responsive and works on desktop, mobile and tablet.",
-      "pictures": [
-        "watizat.png"
-      ],
-      "themes": [
-        "migration",
-        "dev"
-      ]
+      "pictures": ["watizat.png"],
+      "themes": ["migration", "dev"]
     },
     {
       "title": "My resume",
@@ -95,12 +63,8 @@
       "repository": "https://github.com/aliceout/Work-resume",
       "url": null,
       "description": "Rebuilding my CV online as an alternative to LinkedIn, and as a showcase for my different projects.",
-      "pictures": [
-        "resume.png"
-      ],
-      "themes": [
-        "dev"
-      ]
+      "pictures": ["resume.png", "resume_2.png"],
+      "themes": ["dev"]
     },
     {
       "title": "Migrappi",
@@ -110,13 +74,9 @@
       "repository": "https://github.com/aliceout/Migrappi-frontend",
       "url": null,
       "description": "Rebuild of an application for collecting and processing data on exiled people received, for the NGO Caritas in Morocco.\nInterface modelling and front-end build before handing over to a service provider.",
-      "pictures": [
-        "migrappi.jpg"
-      ],
-      "themes": [
-        "migration",
-        "dev"
-      ]
+      "pictures": ["migrappi_1.jpg", "migrappi_2.png", "migrappi_3.png"],
+
+      "themes": ["migration", "dev"]
     }
   ]
 }
