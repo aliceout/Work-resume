@@ -4,8 +4,9 @@
 FROM node:26-alpine AS builder
 WORKDIR /app
 
-# Enable pnpm via corepack (version pinned in package.json's packageManager)
-RUN corepack enable
+# Enable pnpm via corepack (version pinned in package.json's packageManager).
+# Node 25+ no longer bundles corepack, so install it from npm first.
+RUN npm install -g corepack@0.36.0 && corepack enable
 
 # Copy ALL pnpm config files so allowBuilds (esbuild, sharp) is honoured
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
