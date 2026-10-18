@@ -1,11 +1,12 @@
 # syntax=docker/dockerfile:1
 
 # ---------- 1. Build the Astro static site ----------
-FROM node:24-alpine AS builder
+FROM node:26-alpine AS builder
 WORKDIR /app
 
-# Enable pnpm via corepack (version pinned in package.json's packageManager)
-RUN corepack enable
+# Enable pnpm via corepack (version pinned in package.json's packageManager).
+# Node 25+ no longer bundles corepack, so install it from npm first.
+RUN npm install -g corepack@0.36.0 && corepack enable
 
 # Copy ALL pnpm config files so allowBuilds (esbuild, sharp) is honoured
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
@@ -17,7 +18,7 @@ COPY . .
 RUN pnpm build
 
 # ---------- 2. Serve dist/ as static content ----------
-FROM node:24-alpine AS runner
+FROM node:26-alpine AS runner
 WORKDIR /app
 
 # `serve` is a small, well-maintained static file server
