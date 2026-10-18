@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # ---------- 1. Build the Astro static site ----------
-FROM node:24-alpine AS builder
+FROM node:26-alpine AS builder
 WORKDIR /app
 
 # Enable pnpm via corepack (version pinned in package.json's packageManager)
@@ -17,7 +17,7 @@ COPY . .
 RUN pnpm build
 
 # ---------- 2. Serve dist/ as static content ----------
-FROM node:24-alpine AS runner
+FROM node:26-alpine AS runner
 WORKDIR /app
 
 # `serve` is a small, well-maintained static file server
